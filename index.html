@@ -54,7 +54,7 @@
         </div><!--/.nav-collapse -->
       </div>
     </div>
-	<header>
+	<header class="header">
 		<!-- colocar uma imagem de fundo aqui -->
 		<div class="container">
 			<div class="">
@@ -65,7 +65,7 @@
 
 	<div class="container">
 		<section class="whoiam">
-			<h1>Quem eu sou</h1>
+			<h1 class="sun title">Quem eu sou</h1>
 			<p></p>	
 		</section>
 
@@ -75,7 +75,7 @@
 		</section>
 
 		<section class="skills">
-			<h1>Habilidades de Motivação</h1>
+			<h1 class="sun title">Habilidades de Motivação</h1>
 			<h2></h2>
 		</section>
 
@@ -92,5 +92,13 @@
     
     <script src="https://ajax.googleapis	.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+    	var minHeight =  ($( window ).height());
+    	$(".header").css("height",  minHeight + "px");
+
+    	$( window ).resize(function() {
+			$(".header").css("height",  minHeight + "px");
+		});
+    </script>
 </body>
 </html>
