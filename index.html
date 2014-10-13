@@ -19,44 +19,44 @@
 </head>
 <body>
 	<!-- Fixed navbar -->
-    <div class="navbar navbar-default navbar-fixed-top" role="navigation" style="min-height: 78px;background: white;padding: 13px; opacity:.6;">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Chagas</a>
-        </div>
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li class=""><a href="#">Home</a></li>
-            <li><a href="#about">Profile</a></li>
-            <li><a href="#contact">Portfólio</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li class="divider"></li>
-                <li class="dropdown-header">Nav header</li>
-                <li><a href="#">Separated link</a></li>
-                <li><a href="#">One more separated link</a></li>
-              </ul>
-            </li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="../navbar/">Home</a></li>
-            <li><a href="../navbar-static-top/">Profile</a></li>
-            <li class=""><a href="./">Portfólio</a></li>
-            <li class=""><a href="./">Contato</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
+  <div class="navbar navbar-default navbar-fixed-top" role="navigation" style="min-height: 78px;background: white;padding: 13px; opacity:.6;">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Chagas</a>
       </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li class=""><a href="#">Home</a></li>
+          <li><a href="#about">Profile</a></li>
+          <li><a href="#contact">Portfólio</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li class="divider"></li>
+              <li class="dropdown-header">Nav header</li>
+              <li><a href="#">Separated link</a></li>
+              <li><a href="#">One more separated link</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="../navbar/">Home</a></li>
+          <li><a href="../navbar-static-top/">Profile</a></li>
+          <li class=""><a href="./">Portfólio</a></li>
+          <li class=""><a href="./">Contato</a></li>
+        </ul>
+      </div><!--/.nav-collapse -->
     </div>
+  </div>
 	<header class="header">
 		<!-- colocar uma imagem de fundo aqui -->
 		<div class="container">
@@ -66,21 +66,26 @@
 		</div>	
 	</header>
 
-  <h1 id="sobre" class="sun title">Sobre</h1>
+  <div class="container-fluid">
+    <h1 id="sobre" class="sun title">Sobre</h1>
+
+    <section class="about" style="background:#F1F1F1; text-align:center; padding:40px 0;">
+      
+      <div style="width:320px;margin:0 auto;">
+        <img class="img-responsive img-circle" src="./images/profile-gs-01.jpg">
+      </div>
+      
+      <h1>Fco Chagas</h1>
+    </section>
+  </div>
   
-  <section class="about" style="background:#F1F1F1; text-align:center; padding:40px 0;">
-    
-    <div style="width:320px;margin:0 auto;">
-      <img class="img-responsive img-circle" src="./images/profile-gs-01.jpg">
-    </div>
-    
-    <h1>Fco Chagas</h1>
-  </section>
 
 	<div class="container">
-		<section class="whoiam">
+    <div class="row">
+		<section class="col-md-12">
 			<p>Proin egestas, dui in pellentesque condimentum, est metus venenatis orci, vel lacinia libero justo a sem. Duis venenatis tempor tempus. Pellentesque porttitor nibh nibh, ut vestibulum urna egestas et. Pellentesque pellentesque sem ipsum, imperdiet volutpat mi sagittis lobortis. Fusce semper sem in dui interdum bibendum. Sed blandit pulvinar ex, id mollis nulla pellentesque non. Curabitur eget orci et felis ornare malesuada eu in est. In hac habitasse platea dictumst.</p>	
 		</section>
+    </div>
   </div>
 
   <div class="container">
@@ -108,10 +113,6 @@
         </div>		
 		</section>
 	</div>
-  
-  <div class="container-fluid">
-    
-  </div>]
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
