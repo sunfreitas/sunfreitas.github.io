@@ -1,13 +1,26 @@
 header{
 	min-height: 520px;
 	padding:80px 0 0 80px;
-	background: url(../images/flickr_12.jpg) center center;
+	background: url(../images/flickr_11.jpg) center center;
 	color:white;
+	margin-bottom: 80px;
 }
+.title{text-transform: uppercase;}
 .sun{
 	text-align: center;
 }
 .navbar-default{
 	background-color: rgba(0,0,0,0);
 	border-color: rgba(0,0,0,0);
+}
+.about, .whoiam{
+	margin-bottom: 60px;
+}
+.portfolio .row .col-md-4{
+	padding:0;
+}
+@media(max-width: 990px){
+	.portfolio .row .col-md-4{
+		padding:2px 0;
+	}
 }
