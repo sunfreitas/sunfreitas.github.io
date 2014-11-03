@@ -241,6 +241,11 @@ p {
 }
 
 /* line 51, ../scss/app.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 54, ../scss/app.scss */
 .traducoes,
 header,
 footer {
@@ -267,7 +272,7 @@ header:after,
 footer:after {
   clear: both;
 }
-/* line 56, ../scss/app.scss */
+/* line 59, ../scss/app.scss */
 .traducoes .columns,
 header .columns,
 footer .columns {
