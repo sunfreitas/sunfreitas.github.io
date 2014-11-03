@@ -1,0 +1,218 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'bower',
+1 verbose cli   'gunt-cli' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.32
+4 verbose node symlink C:\Program Files\nodejs\\node.exe
+5 verbose cache add [ 'bower', null ]
+6 verbose cache add name=undefined spec="bower" args=["bower",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: 'bower',
+7 verbose parsed url   path: 'bower',
+7 verbose parsed url   href: 'bower' }
+8 verbose cache add [ 'gunt-cli', null ]
+9 verbose cache add name=undefined spec="gunt-cli" args=["gunt-cli",null]
+10 verbose parsed url { protocol: null,
+10 verbose parsed url   slashes: null,
+10 verbose parsed url   auth: null,
+10 verbose parsed url   host: null,
+10 verbose parsed url   port: null,
+10 verbose parsed url   hostname: null,
+10 verbose parsed url   hash: null,
+10 verbose parsed url   search: null,
+10 verbose parsed url   query: null,
+10 verbose parsed url   pathname: 'gunt-cli',
+10 verbose parsed url   path: 'gunt-cli',
+10 verbose parsed url   href: 'gunt-cli' }
+11 silly lockFile 206e3ce5-bower bower
+12 verbose lock bower C:\Users\Freitas\AppData\Roaming\npm-cache\206e3ce5-bower.lock
+13 silly lockFile 3ff50da1-gunt-cli gunt-cli
+14 verbose lock gunt-cli C:\Users\Freitas\AppData\Roaming\npm-cache\3ff50da1-gunt-cli.lock
+15 silly lockFile 206e3ce5-bower bower
+16 silly lockFile 206e3ce5-bower bower
+17 silly lockFile 3ff50da1-gunt-cli gunt-cli
+18 silly lockFile 3ff50da1-gunt-cli gunt-cli
+19 verbose addNamed [ 'bower', '' ]
+20 verbose addNamed [ null, '*' ]
+21 silly lockFile 1240aab1-bower bower@
+22 verbose lock bower@ C:\Users\Freitas\AppData\Roaming\npm-cache\1240aab1-bower.lock
+23 verbose addNamed [ 'gunt-cli', '' ]
+24 verbose addNamed [ null, '*' ]
+25 silly lockFile a5d8e885-gunt-cli gunt-cli@
+26 verbose lock gunt-cli@ C:\Users\Freitas\AppData\Roaming\npm-cache\a5d8e885-gunt-cli.lock
+27 silly addNameRange { name: 'bower', range: '*', hasData: false }
+28 silly addNameRange { name: 'gunt-cli', range: '*', hasData: false }
+29 verbose request where is /bower
+30 verbose request registry https://registry.npmjs.org/
+31 verbose request id 14db0e366fe0fb8f
+32 verbose url raw /bower
+33 verbose url resolving [ 'https://registry.npmjs.org/', './bower' ]
+34 verbose url resolved https://registry.npmjs.org/bower
+35 verbose request where is https://registry.npmjs.org/bower
+36 info trying registry request attempt 1 at 12:04:26
+37 http GET https://registry.npmjs.org/bower
+38 verbose request where is /gunt-cli
+39 verbose request registry https://registry.npmjs.org/
+40 verbose url raw /gunt-cli
+41 verbose url resolving [ 'https://registry.npmjs.org/', './gunt-cli' ]
+42 verbose url resolved https://registry.npmjs.org/gunt-cli
+43 verbose request where is https://registry.npmjs.org/gunt-cli
+44 info trying registry request attempt 1 at 12:04:26
+45 http GET https://registry.npmjs.org/gunt-cli
+46 http 404 https://registry.npmjs.org/gunt-cli
+47 verbose headers { date: 'Wed, 29 Oct 2014 13:59:31 GMT',
+47 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+47 verbose headers   'content-type': 'application/json',
+47 verbose headers   'cache-control': 'max-age=0',
+47 verbose headers   'content-length': '52',
+47 verbose headers   'accept-ranges': 'bytes',
+47 verbose headers   via: '1.1 varnish',
+47 verbose headers   age: '0',
+47 verbose headers   'x-served-by': 'cache-atl6229-ATL',
+47 verbose headers   'x-cache': 'MISS',
+47 verbose headers   'x-cache-hits': '0',
+47 verbose headers   'x-timer': 'S1414591171.219355,VS0,VE112',
+47 verbose headers   'keep-alive': 'timeout=10, max=50',
+47 verbose headers   connection: 'Keep-Alive' }
+48 silly registry.get cb [ 404,
+48 silly registry.get   { date: 'Wed, 29 Oct 2014 13:59:31 GMT',
+48 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+48 silly registry.get     'content-type': 'application/json',
+48 silly registry.get     'cache-control': 'max-age=0',
+48 silly registry.get     'content-length': '52',
+48 silly registry.get     'accept-ranges': 'bytes',
+48 silly registry.get     via: '1.1 varnish',
+48 silly registry.get     age: '0',
+48 silly registry.get     'x-served-by': 'cache-atl6229-ATL',
+48 silly registry.get     'x-cache': 'MISS',
+48 silly registry.get     'x-cache-hits': '0',
+48 silly registry.get     'x-timer': 'S1414591171.219355,VS0,VE112',
+48 silly registry.get     'keep-alive': 'timeout=10, max=50',
+48 silly registry.get     connection: 'Keep-Alive' } ]
+49 silly lockFile a5d8e885-gunt-cli gunt-cli@
+50 silly lockFile a5d8e885-gunt-cli gunt-cli@
+51 http 200 https://registry.npmjs.org/bower
+52 silly registry.get cb [ 200,
+52 silly registry.get   { date: 'Wed, 29 Oct 2014 13:59:31 GMT',
+52 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+52 silly registry.get     etag: '"CEMR1HQYCLE8N4O2HHP7EN0EZ"',
+52 silly registry.get     'content-type': 'application/json',
+52 silly registry.get     'cache-control': 'max-age=60',
+52 silly registry.get     'content-length': '105358',
+52 silly registry.get     'accept-ranges': 'bytes',
+52 silly registry.get     via: '1.1 varnish',
+52 silly registry.get     age: '35',
+52 silly registry.get     'x-served-by': 'cache-atl6235-ATL',
+52 silly registry.get     'x-cache': 'HIT',
+52 silly registry.get     'x-cache-hits': '1',
+52 silly registry.get     'x-timer': 'S1414591171.218039,VS0,VE1',
+52 silly registry.get     vary: 'Accept',
+52 silly registry.get     'keep-alive': 'timeout=10, max=50',
+52 silly registry.get     connection: 'Keep-Alive' } ]
+53 silly addNameRange number 2 { name: 'bower', range: '*', hasData: true }
+54 silly addNameRange versions [ 'bower',
+54 silly addNameRange   [ '0.1.0',
+54 silly addNameRange     '0.1.2',
+54 silly addNameRange     '0.1.3',
+54 silly addNameRange     '0.2.0',
+54 silly addNameRange     '0.3.0',
+54 silly addNameRange     '0.3.1',
+54 silly addNameRange     '0.3.2',
+54 silly addNameRange     '0.4.0',
+54 silly addNameRange     '0.5.0',
+54 silly addNameRange     '0.5.1',
+54 silly addNameRange     '0.6.0',
+54 silly addNameRange     '0.6.1',
+54 silly addNameRange     '0.6.2',
+54 silly addNameRange     '0.6.3',
+54 silly addNameRange     '0.6.4',
+54 silly addNameRange     '0.6.5',
+54 silly addNameRange     '0.6.6',
+54 silly addNameRange     '0.6.7',
+54 silly addNameRange     '0.6.8',
+54 silly addNameRange     '0.7.0',
+54 silly addNameRange     '0.7.1',
+54 silly addNameRange     '0.8.0',
+54 silly addNameRange     '0.8.1',
+54 silly addNameRange     '0.8.2',
+54 silly addNameRange     '0.8.3',
+54 silly addNameRange     '0.8.4',
+54 silly addNameRange     '0.8.5',
+54 silly addNameRange     '0.8.6',
+54 silly addNameRange     '0.9.0',
+54 silly addNameRange     '0.9.1',
+54 silly addNameRange     '0.9.2',
+54 silly addNameRange     '0.10.0',
+54 silly addNameRange     '1.0.0',
+54 silly addNameRange     '1.0.1',
+54 silly addNameRange     '1.0.2',
+54 silly addNameRange     '1.0.3',
+54 silly addNameRange     '1.1.0',
+54 silly addNameRange     '1.1.1',
+54 silly addNameRange     '1.1.2',
+54 silly addNameRange     '1.2.0',
+54 silly addNameRange     '1.2.1',
+54 silly addNameRange     '1.2.2',
+54 silly addNameRange     '1.2.3',
+54 silly addNameRange     '1.2.4',
+54 silly addNameRange     '1.2.5',
+54 silly addNameRange     '1.2.6',
+54 silly addNameRange     '1.2.7',
+54 silly addNameRange     '1.2.8',
+54 silly addNameRange     '1.3.0',
+54 silly addNameRange     '1.3.1',
+54 silly addNameRange     '1.3.2',
+54 silly addNameRange     '1.3.3',
+54 silly addNameRange     '1.3.4',
+54 silly addNameRange     '1.3.5',
+54 silly addNameRange     '1.3.6',
+54 silly addNameRange     '1.3.7',
+54 silly addNameRange     '1.3.8',
+54 silly addNameRange     '1.3.9',
+54 silly addNameRange     '1.3.10',
+54 silly addNameRange     '1.3.11',
+54 silly addNameRange     '1.3.12' ] ]
+55 verbose addNamed [ 'bower', '1.3.12' ]
+56 verbose addNamed [ '1.3.12', '1.3.12' ]
+57 silly lockFile 9819431c-bower-1-3-12 bower@1.3.12
+58 verbose lock bower@1.3.12 C:\Users\Freitas\AppData\Roaming\npm-cache\9819431c-bower-1-3-12.lock
+59 silly lockFile b05fd70b-npmjs-org-bower-bower-1-3-12-tgz https://registry.npmjs.org/bower/-/bower-1.3.12.tgz
+60 verbose lock https://registry.npmjs.org/bower/-/bower-1.3.12.tgz C:\Users\Freitas\AppData\Roaming\npm-cache\b05fd70b-npmjs-org-bower-bower-1-3-12-tgz.lock
+61 verbose addRemoteTarball [ 'https://registry.npmjs.org/bower/-/bower-1.3.12.tgz',
+61 verbose addRemoteTarball   '37de0edb3904baf90aee13384a1a379a05ee214c' ]
+62 info retry fetch attempt 1 at 12:04:27
+63 verbose fetch to= C:\Users\Freitas\AppData\Local\Temp\npm-1376-ZJfkzVYY\registry.npmjs.org\bower\-\bower-1.3.12.tgz
+64 http GET https://registry.npmjs.org/bower/-/bower-1.3.12.tgz
+65 http 200 https://registry.npmjs.org/bower/-/bower-1.3.12.tgz
+66 silly lockFile b05fd70b-npmjs-org-bower-bower-1-3-12-tgz https://registry.npmjs.org/bower/-/bower-1.3.12.tgz
+67 silly lockFile b05fd70b-npmjs-org-bower-bower-1-3-12-tgz https://registry.npmjs.org/bower/-/bower-1.3.12.tgz
+68 silly lockFile 9819431c-bower-1-3-12 bower@1.3.12
+69 silly lockFile 9819431c-bower-1-3-12 bower@1.3.12
+70 silly lockFile 1240aab1-bower bower@
+71 silly lockFile 1240aab1-bower bower@
+72 error 404 404 Not Found: gunt-cli
+72 error 404
+72 error 404 'gunt-cli' is not in the npm registry.
+72 error 404 You should bug the author to publish it
+72 error 404
+72 error 404 Note that you can also install from a
+72 error 404 tarball, folder, or http url, or git url.
+73 error System Windows_NT 6.1.7601
+74 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "-g" "bower" "gunt-cli"
+75 error cwd C:\Users\Freitas\Documents\GitHub\sunfreitas
+76 error node -v v0.10.32
+77 error npm -v 1.4.28
+78 error code E404
+79 verbose exit [ 1, true ]
