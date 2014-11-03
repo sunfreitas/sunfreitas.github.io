@@ -50,7 +50,13 @@ p{
 }
 a{
 	text-decoration: $anchor-text-decoration;
+	color: $anchor-font-color;
+	&:hover{
+		text-decoration: $anchor-text-decoration-hover;
+		color: $anchor-font-color-hover;
+	}
 }
+
 .traducoes,
 header, 
 footer {

@@ -243,9 +243,15 @@ p {
 /* line 51, ../scss/app.scss */
 a {
   text-decoration: none;
+  color: #008CBA;
+}
+/* line 54, ../scss/app.scss */
+a:hover {
+  text-decoration: none;
+  color: #0078a0;
 }
 
-/* line 54, ../scss/app.scss */
+/* line 60, ../scss/app.scss */
 .traducoes,
 header,
 footer {
@@ -272,7 +278,7 @@ header:after,
 footer:after {
   clear: both;
 }
-/* line 59, ../scss/app.scss */
+/* line 65, ../scss/app.scss */
 .traducoes .columns,
 header .columns,
 footer .columns {
