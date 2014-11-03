@@ -1,0 +1,8 @@
+{
+  "name": "artigos-traduzidos",
+  "version": "0.0.1",
+  "private": "true",
+  "dependencies": {
+    "foundation": "~5.1.0"
+  }
+}
