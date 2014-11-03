@@ -234,7 +234,13 @@ h1 {
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
 }
 
-/* line 48, ../scss/app.scss */
+/* line 47, ../scss/app.scss */
+p {
+  font-size: 1.4375rem;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+}
+
+/* line 51, ../scss/app.scss */
 .traducoes,
 header,
 footer {
@@ -261,7 +267,7 @@ header:after,
 footer:after {
   clear: both;
 }
-/* line 53, ../scss/app.scss */
+/* line 56, ../scss/app.scss */
 .traducoes .columns,
 header .columns,
 footer .columns {
