@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Open Sans";
-  src: url('/fonts/OpenSans-Regular.ttf?1415367000') format('truetype');
+  src: url('/fonts/OpenSans-Regular.ttf?1415367000') format('truetype'), url('/fonts/glyphicons-halflings-regular.eot?1413212111') format('embedded-opentype');
 }
 /* line 24, ../sass/estilos.scss */
 html {
