@@ -2,18 +2,18 @@
   font-family: "Open Sans";
   src: url('/fonts/OpenSans-Regular.ttf?1415367000') format('truetype');
 }
-/* line 23, ../sass/estilos.scss */
+/* line 24, ../sass/estilos.scss */
 html {
   background: #F2F2F2;
 }
 
-/* line 27, ../sass/estilos.scss */
+/* line 28, ../sass/estilos.scss */
 body {
   width: 960px;
   margin: 0 auto;
 }
 
-/* line 31, ../sass/estilos.scss */
+/* line 32, ../sass/estilos.scss */
 .content {
   background: white;
   padding: 20px;
@@ -21,17 +21,18 @@ body {
   -webkit-border-radius: 5;
   border-radius: 5;
 }
-/* line 36, ../sass/estilos.scss */
+/* line 37, ../sass/estilos.scss */
 .content h1 {
   color: black;
   font-size: 32px;
-  font-family: "Open Sans", "Helvetica", sans-serif;
+  font-family: "Helvetica", "Arial", sans-serif;
 }
-/* line 42, ../sass/estilos.scss */
+/* line 43, ../sass/estilos.scss */
 .content p {
   font-size: 18px;
+  font-family: "Open Sans", "Helvetica", sans-serif;
 }
-/* line 44, ../sass/estilos.scss */
+/* line 46, ../sass/estilos.scss */
 .content p a {
   text-decoration: none;
 }
