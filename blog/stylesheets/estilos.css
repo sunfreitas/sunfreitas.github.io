@@ -1,0 +1,10 @@
+/* line 8, ../sass/estilos.scss */
+html {
+  background: #ccc;
+}
+
+/* line 12, ../sass/estilos.scss */
+body {
+  width: 960px;
+  margin: 0 auto;
+}

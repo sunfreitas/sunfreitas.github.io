@@ -1,0 +1,15 @@
+@import "normalize";
+@import "config";
+
+$pri-color:#ccc;
+
+$page-width:960px;
+
+html{
+	background: $pri-color;
+}
+
+body{
+	width:$page-width;
+	margin: 0 auto;
+}
