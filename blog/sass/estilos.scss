@@ -1,7 +1,8 @@
 @import "normalize";
 @import "config";
 
-$pri-color:#ccc;
+$pri-color:#F2F2F2;
+$sec-color:white;
 
 $page-width:960px;
 
@@ -12,4 +13,7 @@ html{
 body{
 	width:$page-width;
 	margin: 0 auto;
+}
+.content{
+	background: $sec-color;
 }

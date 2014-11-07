@@ -1,10 +1,15 @@
-/* line 8, ../sass/estilos.scss */
+/* line 9, ../sass/estilos.scss */
 html {
-  background: #ccc;
+  background: #F2F2F2;
 }
 
-/* line 12, ../sass/estilos.scss */
+/* line 13, ../sass/estilos.scss */
 body {
   width: 960px;
   margin: 0 auto;
+}
+
+/* line 17, ../sass/estilos.scss */
+.content {
+  background: white;
 }
