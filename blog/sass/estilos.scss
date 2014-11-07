@@ -24,10 +24,12 @@ $page-width:960px;
 html{
 	background: $pri-color;
 }
-
 body{
 	width:$page-width;
 	margin: 0 auto;
+}
+a{
+	text-decoration: none;
 }
 .content{
 	background: $sec-color;
@@ -43,8 +45,5 @@ body{
 	p{
 		font-size:$resumo-font-size;
 		font-family: $text-font-family;
-		a{
-			text-decoration: none;
-		}
 	}
 }
