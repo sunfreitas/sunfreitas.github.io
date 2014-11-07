@@ -2,7 +2,7 @@
 @import "config";
 @import "compass";
 
-@include font-face('Opens Sans', font-files("OpenSans-Regular.ttf", "glyphicons-halflings-regular.woff"),'glyphicons-halflings-regular.eot', normal);
+@include font-face('Opens Sans', font-files("OpenSans-Regular.eot"),'OpenSans-Regular.eot', normal);
 
 $pri-color:#F2F2F2;
 $sec-color:white;
