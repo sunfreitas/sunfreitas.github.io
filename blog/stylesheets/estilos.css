@@ -1,7 +1,7 @@
 @font-face {
   font-family: "Opens Sans";
   src: url('/fonts/glyphicons-halflings-regular.eot?1413212111');
-  src: url('/fonts/glyphicons-halflings-regular.eot?&1413212111#iefix') format('embedded-opentype'), url('/fonts/OpenSans-Regular.ttf?1415367000') format('truetype');
+  src: url('/fonts/glyphicons-halflings-regular.eot?&1413212111#iefix') format('embedded-opentype'), url('/fonts/OpenSans-Regular.ttf?1415367000') format('truetype'), url('/fonts/glyphicons-halflings-regular.woff?1413212111') format('woff');
   font-weight: normal;
 }
 /* line 19, ../sass/estilos.scss */
