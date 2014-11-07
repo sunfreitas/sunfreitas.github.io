@@ -1,8 +1,6 @@
 @font-face {
   font-family: "Opens Sans";
-  src: url('/fonts/OpenSans-Regular.eot');
-  src: url('/fonts/OpenSans-Regular.eot?#iefix') format('embedded-opentype'), url('/fonts/OpenSans-Regular.eot') format('embedded-opentype');
-  font-weight: normal;
+  src: url('/fonts/glyphicons-halflings-regular.eot?1413212111') format('embedded-opentype');
 }
 /* line 19, ../sass/estilos.scss */
 html {
@@ -32,4 +30,8 @@ body {
 /* line 38, ../sass/estilos.scss */
 .content p {
   font-size: 18px;
+}
+/* line 40, ../sass/estilos.scss */
+.content p a {
+  text-decoration: none;
 }
