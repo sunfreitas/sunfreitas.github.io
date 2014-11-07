@@ -2,14 +2,18 @@
 @import "config";
 @import "compass";
 
-@include font-face('Opens Sans', font-files("glyphicons-halflings-regular.eot"));
+@include font-face('Opens Sans', font-files("OpenSans-Regular.ttf"));
 
+// Cores
 $pri-color:#F2F2F2;
 $sec-color:white;
 
 $h1-title-color:rgb(0,0,0);
+
+// font families
 $h1-font-family:'Open Sans', 'Helvetica', sans-serif;
 
+// font sizes
 $title-font-size:32px;
 $text-font-size:12px;
 $resumo-font-size:18px;
