@@ -1,199 +1,658 @@
-<!doctype html>
-<html lang='pt_BR'>
+<!DOCTYPE html>
+<html lang='pt_Br'>
 <head>
 	<meta charset='utf-8'>
-	<title>Freitas - Consultoria e Programação Web</title>
-	<meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Francisco C. A. Freitas - Programador Web">
-  <meta name="author" content="Me chamo Francisco Freitas. Sou programador back/front-end que ama UX e Padrões de Projeto.">
-	<title>SunFreitasIO - GItHub</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Portal</title>
+	<!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'> -->
+	<link rel="stylesheet" type="text/css" href="stylesheets/styles.css">
 
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <!--[if lt IE 9]>
+	<!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-
-    <style type="text/css">
-    .header{
-      text-align: center;
-    }
-    .header-info{
-      margin-top: 80px;
-      font-size: 80px;
-      text-transform: uppercase;
-    }
-    .header-sub-info{
-      font-size: 60px;
-      text-transform: uppercase;
-      color:#ccc;
-    }
-    .header-description{
-      font-size:32px;
-    }
-    </style>
 </head>
 <body>
-	<!-- Fixed navbar -->
-  <div class="navbar navbar-default navbar-fixed-top" role="navigation" style="min-height: 78px;background: white;padding: 13px; opacity:.6;">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#">Fco Freitas</a>
-      </div>
-      <div class="navbar-collapse collapse">
-        <!-- <ul class="nav navbar-nav">
-          <li class=""><a href="#">Home</a></li>
-          <li><a href="#about">Profile</a></li>
-          <li><a href="#contact">Portfólio</a></li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
-            <ul class="dropdown-menu" role="menu">
-              <li><a href="#">Action</a></li>
-              <li><a href="#">Another action</a></li>
-              <li><a href="#">Something else here</a></li>
-              <li class="divider"></li>
-              <li class="dropdown-header">Nav header</li>
-              <li><a href="#">Separated link</a></li>
-              <li><a href="#">One more separated link</a></li>
-            </ul>
-          </li>
-        </ul> -->
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="../navbar/">Home</a></li>
-          <li><a href="../navbar-static-top/">Profile</a></li>
-          <li class=""><a href="./">Portfólio</a></li>
-          <li class=""><a href="./">Contato</a></li>
-        </ul>
-      </div><!--/.nav-collapse -->
-    </div>
-  </div>
-	<header class="header">
-		<!-- colocar uma imagem de fundo aqui -->
-		<div class="container">
-			<div class="header">
-				<p class="header-info">Fco Freitas</p>
-        <p class="header-sub-info">Programador Web</p>
-        <p class="header-description">Projetos criados no calor da Terra do Sol do Equador com a qualidade de nossa cajuína cristalina.</p>
-			</div>
-		</div>	
+	<header>
+		<a href="" class="brand"><img src="http://placehold.it/80x80"></a>
+		<!-- /brand -->
+		<nav class="menu">
+			<a href="">Home</a>
+			<a href="">Quem somos</a>
+			<!-- <li>Política</li> -->
+			<a href="">Notícias</a>
+			<!-- <li>Negócios</li>
+			<li>Saúde</li>
+			<li>Cidades</li>
+			<li>Cultura</li>
+			<li>Internacional</li>
+			<li>Esportes</li>
+			<li>Links</li> -->
+		</nav>
+		<!-- /.menu -->
+
+		<form class="search">
+			<input type="text" placeholder="Pesquise no portal">
+			<button>Pesquisar</button>	
+		</form>
+		<!-- /.search -->
+
 	</header>
-  <!-- /sobre -->
-  <div class="container-fluid">
-    <h1 id="sobre" class="sun title">Sobre</h1>
+	<!--  -->
 
-    <section class="about" style="background:#F1F1F1; text-align:center; padding:40px 0;">
-      
-      <div style="width:300px;margin:0 auto;">
-        <img class="img-responsive img-circle" src="./images/profile-gs-01.jpg">
-      </div>
-      
-      <h1>Fco Chagas</h1>
-    </section>
-  </div>
-  <!-- /profile -->
-	<div class="container">
-    <div class="row">
-		<section class="col-md-12">
-			<p>Proin egestas, dui in pellentesque condimentum, est metus venenatis orci, vel lacinia libero justo a sem. Duis venenatis tempor tempus. Pellentesque porttitor nibh nibh, ut vestibulum urna egestas et. Pellentesque pellentesque sem ipsum, imperdiet volutpat mi sagittis lobortis. Fusce semper sem in dui interdum bibendum. Sed blandit pulvinar ex, id mollis nulla pellentesque non. Curabitur eget orci et felis ornare malesuada eu in est. In hac habitasse platea dictumst.</p>	
-		</section>
-    </div>
-  </div>
-  <!-- /Portfólio -->
-  <div class="container">
-		<section class="portfolio">
-			<h1 class="sun title">Portfólio</h1>
-        <div class="row">
-          <div class="col-sm-6 col-md-4">
-            <img class="img-responsive" src="./images/mosaico-gs-min-01.jpg">
-          </div>
-          <div class="col-sm-6 col-md-4">
-            <img class="img-responsive" src="./images/mosaico-gs-min-01.jpg">
-          </div>
-          <div class="col-sm-6 col-md-4">
-            <img class="img-responsive" src="./images/mosaico-gs-min-01.jpg">
-          </div>
-          <div class="col-sm-6 col-md-4">
-            <img class="img-responsive" src="./images/mosaico-gs-min-01.jpg">
-          </div>
-          <div class="col-sm-6 col-md-4">
-            <img class="img-responsive" src="./images/mosaico-gs-min-01.jpg">
-          </div>
-          <div class="col-sm-6 col-md-4">
-            <img class="img-responsive" src="./images/mosaico-gs-min-01.jpg">
-          </div>
-        </div>		
-		</section>
+	<div class="adsenses">
+		<a href="" class="ads">
+			<img src="http://placehold.it/1024x100">
+		</a>
 	</div>
+	<!-- /.adsenses -->
 
-  <section class="container-fluid">
-    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-      </ol>
+	<div class="main">
+		<aside class="navigation">
+			<p class="aside-title">Menu</p>
+			<ul class="menu">
+				<li><a href="">Política</a></li>
+				<li><a href="">Negócios</a></li>
+				<li><a href="">Saúde</a></li>
+				<li><a href="" title="O Piauí de ponta a ponta">Cidades</a></li>
+				<li><a href="">Cultura</a></li>
+				<li><a href="">Internacional</a></li>
+				<li><a href="">Esportes</a></li>
+				<li><a href="">Links</a></li>
+			</ul>
 
-      <!-- Wrapper for slides -->
-      <div class="carousel-inner">
-        <div class="item active">
-          <img src="..." alt="...">
-          <div class="carousel-caption">
-            ...
-          </div>
-        </div>
-        <div class="item">
-          <img src="..." alt="...">
-          <div class="carousel-caption">
-            ...
-          </div>
-        </div>
-        ...
-      </div>
+			<div class="ads">
+				<a href="" class="ads">
+					<img src="http://placehold.it/161x161">
+				</a>
+			</div>
 
-      <!-- Controls -->
-      <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left"></span>
-      </a>
-      <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right"></span>
-      </a>
-    </div>
-  </section>
+			<p class="aside-title">Últimas Notícias</p>
+			<ul class="aside-latest-news">
+				<li>
+					<span>Teresina</span>
+					<p>25 de Nov, 2014</p>
+					<a href="">Chargista Moisés realizará exposição na Sede da Assembleia Legislativa do Estado do Piauí</a>
+				</li>
 
-  <footer class="container-fluid">
-    <div class="row">
-      <div class="col-md-4">asdfasdfasdf</div>
-    </div>
-  </footer>
+				<li>
+					<span>Floriano</span>
+					<p>25 de Nov, 2014</p>
+					<a href="">Chargista Moisés realizará exposição na Sede da Assembleia Legislativa do Estado do Piauí</a>
+				</li>
 
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script type="text/javascript">
-  	var minHeight =  ($( window ).height());
-  	$(".header").css("height",  minHeight + "px");
+				<li>
+					<span>Esperantina</span>
+					<p>25 de Nov, 2014</p>
+					<a href="">Chargista Moisés realizará exposição na Sede da Assembleia Legislativa do Estado do Piauí</a>
+				</li>
 
-  	$( window ).resize(function() {
-		$(".header").css("height",  minHeight + "px");
-	});
-  </script>
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+				<li>
+					<span>Valença</span>
+					<p>25 de Nov, 2014</p>
+					<a href="">Chargista Moisés realizará exposição na Sede da Assembleia Legislativa do Estado do Piauí</a>
+				</li>
 
-    ga('create', 'UA-55606194-1', 'auto');
-    ga('send', 'pageview');
-  </script>
+				<li>
+					<span>Teresina</span>
+					<p>25 de Nov, 2014</p>
+					<a href="">Chargista Moisés realizará exposição na Sede da Assembleia Legislativa do Estado do Piauí</a>
+				</li>
+
+				<li>
+					<span>Teresina</span>
+					<p>25 de Nov, 2014</p>
+					<a href="">Chargista Moisés realizará exposição na Sede da Assembleia Legislativa do Estado do Piauí</a>
+				</li>
+			</ul>
+
+			<div class="ads">
+				<a href="" class="ads">
+					<img src="http://placehold.it/161x161">
+				</a>
+			</div>
+		</aside>
+		<!-- /.navigation -->
+
+		<div class="content">
+			<section class="videos">
+				<div class="main-video">
+					<a href=""><img src="images/serra-da-capivara-834x400.jpg"><!-- <img src="http://placehold.it/843x400"> --></a>
+
+					<div class="caption">
+						<span class="meta-categoria">São Raimundo Nonato</span>
+						<h2 class="title"><a href="">Chargista Moisés realizará exposição na Sede da Assembleia Legislativa do Estado do Piauí</a></h2>
+						<h3 class="resumo">Chargista Moisés realizará exposição na Sede da Assembleia Legislativa do Estado do Piauí</h3>
+						<p><time datetime="2014-11-27">27 de Novembro de 2014</time></p>
+					</div>
+				</div>
+
+				<div class="mais-videos">
+					<div class="video">
+						<a href="" class="video-image">
+						<!-- <img src="http://placehold.it/196x128"> -->
+						<img src="images/serra-da-capivara-196x128.jpg">
+						</a>
+						
+						<div class="caption">
+							<h2 class="title"><a href="">Chargista Moisés realizará exposição na Sede da Assem</a></h2>
+						</div>
+					</div>
+					<!-- /.video -->
+					<div class="video">
+						<a href="" class="video-image">
+						<img src="images/teresina-noturna-196x128.jpg"></a>
+						
+						<div class="caption">
+							<h2 class="title"><a href="">Chargista Moisés realizará exposição na Sede da Assembleia Legislativa</a></h2>
+						</div>
+					</div>
+					<!-- /.video -->
+					<div class="video">
+						<a href="" class="video-image">
+						<img src="images/serra-da-capivara-196x128.jpg"></a>
+						
+						<div class="caption">
+							<h2 class="title"><a href="">Chargista Moisés realizará exposição na Assembleia Legislativa do Piauí</a></h2>
+						</div>
+					</div>
+					<!-- /.video -->
+					<div class="video">
+						<a href="" class="video-image">
+						<img src="images/serra-da-capivara-196x128.jpg"></a>
+						
+						<div class="caption">
+							<h2 class="title"><a href="">Chargista Moisés realizará exposição na Sede da Assembleia Legislativa do Estado do Piauí</a></h2>
+						</div>
+					</div>
+					<!-- /.video -->
+				</div>
+				<div class="mais-videos">
+					<div class="video-double">
+						<a href="" class="video-image"><img src="http://placehold.it/412x304"></a>
+						
+						<div class="caption">
+							<h2 class="title"><a href="">Chargista Moisés realizará exposição na Sede da Assembleia Legislativa</a></h2>
+						</div>
+					</div>
+					<!-- /.video -->
+
+					<div class="wrp-video">
+						
+						<div class="video">
+							<a href="" class="video-image"><img src="images/serra-da-capivara-196x128.jpg"></a>
+							
+							<div class="caption">
+								<h2 class="title"><a href="">Título da Notícia</a></h2>
+							</div>
+						</div>
+						<!-- /.w-video -->
+
+						<div class="video">
+							<a href="" class="video-image"><img src="images/serra-da-capivara-196x128.jpg"></a>
+							
+							<div class="caption">
+								<h2 class="title"><a href="">Título da Notícia</a></h2>
+							</div>
+						</div>
+						<!-- /.video -->
+					</div>
+					<!-- /.wrp-video -->
+					<div class="ads-video">
+						<img src="http://placehold.it/411x154">
+					</div>
+				</div>
+				<!-- <a href="mais">Assista mais vídeos</a> -->
+			</section>
+			<!-- /videos -->
+			<div class="cta"><button class="btn">Mais Vídeos</button></div>
+
+			<hr>
+
+			<section class="news">
+				<div class="destaque">
+					<a href=""><img src="http://placehold.it/695x400"></a>
+				</div>
+
+				<div class="latest-news">
+					<div class="latest">
+						<a href=""><img src="http://placehold.it/137x100"></a>
+
+						<h2 class="title"><a href="">Título da Notícia em no máximo 2 linhas</a></h2>
+						<span class="meta-categoria">Teresina</span>
+						<p><time datetime="2014-11-27">27 de Novembro de 2014</time></p>
+					</div>
+
+					<div class="latest">
+						<a href=""><img src="http://placehold.it/132x100"></a>
+						
+						<h2 class="title"><a href="">Título da Notícia em no máximo 2 linhas</a></h2>
+						<span class="meta-categoria">Teresina</span>
+						<p><time datetime="2014-11-27">27 de Novembro de 2014</time></p>
+					</div>
+					<div class="latest">
+						<a href=""><img src="http://placehold.it/132x100"></a>
+						
+						<h2 class="title"><a href="">Título da Notícia em no máximo 2 linhas</a></h2>
+						<span class="meta-categoria">Teresina</span>
+						<p><time datetime="2014-11-27">27 de Novembro de 2014</time></p>
+					</div>
+				</div>
+			</section>
+			<!-- /.news -->
+
+			<div class="adsenses">
+				<a class="ads">
+					<img src="http://placehold.it/843x100">
+				</a>
+			</div>
+			<!-- /adsenses -->
+		</div>
+		<!-- /content -->
+	</div>
+	<!-- /.main -->
+	<div class="municipios">
+		<div class="wrp-municipios">
+			<div class="ls-municipios">
+				<li>
+					<a href="">Teresina</a>
+				</li>
+
+				<li>
+					<a href="">Parnaíba</a>
+				</li>
+				<li>
+					<a href="">Picos</a>
+				</li>
+
+				<li>
+				<a href="">Piripiri</a>
+				</li>
+
+				<li>
+				<a href="">Floriano</a>
+				</li>
+
+				<li>
+				<a href="">Campo Maior</a>
+				</li>
+
+				<li>
+				<a href="">Barras</a>
+				</li>
+
+				<li>
+				<a href="">União</a>
+				</li>
+
+				<li>
+				<a href="">Altos</a>
+				</li>
+
+				<li>
+				<a href="">Pedro II</a>
+				</li>
+
+				<li>
+				<a href="">José de Freitas</a>
+				</li>
+
+				<li>
+				<a href="">Oeiras</a>
+				</li>
+							<li>
+					<a href="">Teresina</a>
+				</li>
+
+				<li>
+					<a href="">Parnaíba</a>
+				</li>
+				<li>
+					<a href="">Picos</a>
+				</li>
+
+				<li>
+				<a href="">Piripiri</a>
+				</li>
+
+				<li>
+				<a href="">Floriano</a>
+				</li>
+
+				<li>
+				<a href="">Campo Maior</a>
+				</li>
+
+				<li>
+				<a href="">Barras</a>
+				</li>
+
+				<li>
+				<a href="">União</a>
+				</li>
+
+				<li>
+				<a href="">Altos</a>
+				</li>
+
+				<li>
+				<a href="">Pedro II</a>
+				</li>
+
+				<li>
+				<a href="">José de Freitas</a>
+				</li>
+
+				<li>
+				<a href="">Oeiras</a>
+				</li>
+			</div>
+
+			<div class="ls-municipios">
+				<li>
+					<a href="">Teresina</a>
+				</li>
+
+				<li>
+					<a href="">Parnaíba</a>
+				</li>
+				<li>
+					<a href="">Picos</a>
+				</li>
+
+				<li>
+				<a href="">Piripiri</a>
+				</li>
+
+				<li>
+				<a href="">Floriano</a>
+				</li>
+
+				<li>
+				<a href="">Campo Maior</a>
+				</li>
+
+				<li>
+				<a href="">Barras</a>
+				</li>
+
+				<li>
+				<a href="">União</a>
+				</li>
+
+				<li>
+				<a href="">Altos</a>
+				</li>
+
+				<li>
+				<a href="">Pedro II</a>
+				</li>
+
+				<li>
+				<a href="">José de Freitas</a>
+				</li>
+
+				<li>
+				<a href="">Oeiras</a>
+				</li>
+							<li>
+					<a href="">Teresina</a>
+				</li>
+
+				<li>
+					<a href="">Parnaíba</a>
+				</li>
+				<li>
+					<a href="">Picos</a>
+				</li>
+
+				<li>
+				<a href="">Piripiri</a>
+				</li>
+
+				<li>
+				<a href="">Floriano</a>
+				</li>
+
+				<li>
+				<a href="">Campo Maior</a>
+				</li>
+
+				<li>
+				<a href="">Barras</a>
+				</li>
+
+				<li>
+				<a href="">União</a>
+				</li>
+
+				<li>
+				<a href="">Altos</a>
+				</li>
+
+				<li>
+				<a href="">Pedro II</a>
+				</li>
+
+				<li>
+				<a href="">José de Freitas</a>
+				</li>
+
+				<li>
+				<a href="">Oeiras</a>
+				</li>
+			</div>
+
+			<div class="ls-municipios">
+				<li>
+					<a href="">Teresina</a>
+				</li>
+
+				<li>
+					<a href="">Parnaíba</a>
+				</li>
+				<li>
+					<a href="">Picos</a>
+				</li>
+
+				<li>
+				<a href="">Piripiri</a>
+				</li>
+
+				<li>
+				<a href="">Floriano</a>
+				</li>
+
+				<li>
+				<a href="">Campo Maior</a>
+				</li>
+
+				<li>
+				<a href="">Barras</a>
+				</li>
+
+				<li>
+				<a href="">União</a>
+				</li>
+
+				<li>
+				<a href="">Altos</a>
+				</li>
+
+				<li>
+				<a href="">Pedro II</a>
+				</li>
+
+				<li>
+				<a href="">José de Freitas</a>
+				</li>
+
+				<li>
+				<a href="">Oeiras</a>
+				</li>
+							<li>
+					<a href="">Teresina</a>
+				</li>
+
+				<li>
+					<a href="">Parnaíba</a>
+				</li>
+				<li>
+					<a href="">Picos</a>
+				</li>
+
+				<li>
+				<a href="">Piripiri</a>
+				</li>
+
+				<li>
+				<a href="">Floriano</a>
+				</li>
+
+				<li>
+				<a href="">Campo Maior</a>
+				</li>
+
+				<li>
+				<a href="">Barras</a>
+				</li>
+
+				<li>
+				<a href="">União</a>
+				</li>
+
+				<li>
+				<a href="">Altos</a>
+				</li>
+
+				<li>
+				<a href="">Pedro II</a>
+				</li>
+
+				<li>
+				<a href="">José de Freitas</a>
+				</li>
+
+				<li>
+				<a href="">Oeiras</a>
+				</li>
+			</div>
+
+			<div class="ls-municipios">
+				<li>
+					<a href="">Teresina</a>
+				</li>
+
+				<li>
+					<a href="">Parnaíba</a>
+				</li>
+				<li>
+					<a href="">Picos</a>
+				</li>
+
+				<li>
+				<a href="">Piripiri</a>
+				</li>
+
+				<li>
+				<a href="">Floriano</a>
+				</li>
+
+				<li>
+				<a href="">Campo Maior</a>
+				</li>
+
+				<li>
+				<a href="">Barras</a>
+				</li>
+
+				<li>
+				<a href="">União</a>
+				</li>
+
+				<li>
+				<a href="">Altos</a>
+				</li>
+
+				<li>
+				<a href="">Pedro II</a>
+				</li>
+
+				<li>
+				<a href="">José de Freitas</a>
+				</li>
+
+				<li>
+				<a href="">Oeiras</a>
+				</li>
+							<li>
+					<a href="">Teresina</a>
+				</li>
+
+				<li>
+					<a href="">Parnaíba</a>
+				</li>
+				<li>
+					<a href="">Picos</a>
+				</li>
+
+				<li>
+				<a href="">Piripiri</a>
+				</li>
+
+				<li>
+				<a href="">Floriano</a>
+				</li>
+
+				<li>
+				<a href="">Campo Maior</a>
+				</li>
+
+				<li>
+				<a href="">Barras</a>
+				</li>
+
+				<li>
+				<a href="">União</a>
+				</li>
+
+				<li>
+				<a href="">Altos</a>
+				</li>
+
+				<li>
+				<a href="">Pedro II</a>
+				</li>
+
+				<li>
+				<a href="">José de Freitas</a>
+				</li>
+
+				<li>
+				<a href="">Oeiras</a>
+				</li>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<section class="cidades">
+			
+		</section>
+		<!-- / -->
+		<section class="social">
+		</section>
+		<!-- / -->
+		<section class="sitemap">
+						
+		</section>
+		<!-- / -->
+		<section class="social">
+			
+		</section>
+	</footer>
+
+	<div class="copyright">
+		<p></p>
+	</div>
 </body>
 </html>
