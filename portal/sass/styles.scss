@@ -44,11 +44,13 @@ $link-color:#888;
 
 //Stylesheets
 body{
-	max-width:$max-width;
-	margin:0 auto;
 	font-family: 'Open Sans', sans-serif;
 }
 header{
+
+	max-width:$max-width;
+	margin:0 auto;
+
 	margin-bottom:20px;
 	padding:10px 0;
 	@extend %clearfix;
@@ -128,6 +130,9 @@ hr{
 }
 
 .main{
+	max-width:$max-width;
+	margin:0 auto;
+	
 	@extend %clearfix;
 	margin-bottom:40px;
 }
@@ -148,13 +153,14 @@ hr{
 		bottom:0;
 		left:0;
 		padding:40px;
-
+		color:white;
 		span{
 
 		}
 		h2{
 			font-size:32px;
 			margin-bottom:.3em;
+			color:white;
 		}
 		h3{
 			font-size:18px;
@@ -229,7 +235,17 @@ hr{
 		}
 	}
 }
-
+.cta{
+	text-align:center;
+	.btn{
+		border:solid 1px #ccc;
+		border-radius:3px;
+		padding:20px;
+		margin-bottom:20px;
+		background-color:#0A9D22;
+		color:#E5FFE0;
+	}
+}
 .news{
 	margin-bottom:40px;
 }
@@ -254,10 +270,30 @@ hr{
 .latest{
 	@include grid(12);
 }
-.adsenses{
+.adsenses{	
+	max-width:$max-width;
+	margin:0 auto;
+
 	margin-bottom:40px;
 }
-
+.municipios{
+	background:#f1f1f1;
+}
+.wrp-municipios{
+	max-width:$max-width;
+	margin:0 auto;
+	padding:40px 0;
+	@extend %clearfix;
+}
+.ls-municipios{
+	float:left;
+	width:25%;
+	li{
+		list-style:none;
+		margin-bottom:8px;
+		font-size:14px;
+	}
+}
 footer{
 	
 }
