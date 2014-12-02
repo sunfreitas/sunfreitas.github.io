@@ -283,68 +283,91 @@ hr {
 }
 
 /* line 238, ../sass/styles.scss */
+.wrp-video {
+  float: left;
+  width: 48.81%;
+  margin-left: 10px;
+}
+/* line 242, ../sass/styles.scss */
+.wrp-video .video {
+  width: 47.55%;
+  margin-left: 10px;
+}
+
+/* line 247, ../sass/styles.scss */
+.ads-video {
+  margin-left: 10px;
+  display: inline-block;
+  width: 48.8%;
+  height: 154px;
+  background: #ccc;
+  margin-top: 19px;
+}
+
+/* line 255, ../sass/styles.scss */
 .cta {
   text-align: center;
 }
-/* line 240, ../sass/styles.scss */
+/* line 257, ../sass/styles.scss */
 .cta .btn {
   border: solid 1px #ccc;
   border-radius: 3px;
-  padding: 20px;
+  padding: 15px 20px;
   margin-bottom: 20px;
   background-color: #0A9D22;
   color: #E5FFE0;
+  font-size: 18px;
 }
 
-/* line 249, ../sass/styles.scss */
+/* line 267, ../sass/styles.scss */
 .news {
   margin-bottom: 40px;
 }
 
-/* line 253, ../sass/styles.scss */
+/* line 271, ../sass/styles.scss */
 .destaque {
   width: 82.35677%;
   margin-left: 0;
   margin-right: 10px;
 }
 
-/* line 260, ../sass/styles.scss */
+/* line 278, ../sass/styles.scss */
 .latest-news {
   width: 15.6901%;
   margin-left: 10;
   margin-right: 0;
 }
 
-/* line 270, ../sass/styles.scss */
+/* line 288, ../sass/styles.scss */
 .latest {
   width: 99.02344%;
 }
 
-/* line 273, ../sass/styles.scss */
+/* line 291, ../sass/styles.scss */
 .adsenses {
   max-width: 1024px;
   margin: 0 auto;
   margin-bottom: 40px;
 }
 
-/* line 279, ../sass/styles.scss */
+/* line 297, ../sass/styles.scss */
 .municipios {
   background: #f1f1f1;
 }
 
-/* line 282, ../sass/styles.scss */
+/* line 300, ../sass/styles.scss */
 .wrp-municipios {
   max-width: 1024px;
   margin: 0 auto;
   padding: 40px 0;
 }
 
-/* line 288, ../sass/styles.scss */
+/* line 306, ../sass/styles.scss */
 .ls-municipios {
   float: left;
   width: 25%;
 }
-/* line 291, ../sass/styles.scss */
+/* line 309, ../sass/styles.scss */
 .ls-municipios li {
   list-style: none;
   margin-bottom: 8px;

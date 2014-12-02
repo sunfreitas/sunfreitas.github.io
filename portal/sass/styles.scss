@@ -235,15 +235,33 @@ hr{
 		}
 	}
 }
+.wrp-video{
+	float:left;
+	width:48.81%;
+	margin-left:10px;
+	.video{
+		width:47.55%;
+		margin-left:10px;
+	}
+}
+.ads-video{
+	margin-left: 10px;
+	display: inline-block;
+	width: 48.8%;
+	height: 154px;
+	background: #ccc;
+	margin-top: 19px
+}
 .cta{
 	text-align:center;
 	.btn{
 		border:solid 1px #ccc;
 		border-radius:3px;
-		padding:20px;
+		padding:15px 20px;
 		margin-bottom:20px;
 		background-color:#0A9D22;
 		color:#E5FFE0;
+		font-size:18px;
 	}
 }
 .news{
