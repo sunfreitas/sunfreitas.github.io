@@ -154,6 +154,9 @@ hr{
 		left:0;
 		padding:40px;
 		color:white;
+		background:#000;
+		opacity:.8;
+		text-shadow: 1px 1px 7px #000;
 		span{
 
 		}
@@ -168,7 +171,8 @@ hr{
 		}
 		p{
 			font-size:11px;
-			}
+		}
+		a{color:white;}
 	}
 }
 
@@ -180,9 +184,10 @@ hr{
 		color:white;
 		position:absolute;
 		background:black;
+		z-index:0;
 		bottom:0;
 		opacity:0;
-		padding:55px;
+		padding:35px 0;
 		margin-bottom:4px;
 		-webkit-transition: opacity 290ms linear;
 		transition: opacity 290ms linear;
@@ -190,11 +195,15 @@ hr{
 		h2{
 			font-size:12px;
 			text-align:center;
-			//margin-bottom:.3em;
+			line-height:1.5em;
+			a{
+				color:white;
+				font-size:1.2em;
+			}
 		}
 	}
 	&:hover > .caption{
-		opacity:.6;
+		opacity:.8;
 	}
 }
 
@@ -288,6 +297,31 @@ hr{
 .latest{
 	@include grid(12);
 }
+.aside-title{
+	font-size:1.3em;
+	margin-bottom:10px;
+}
+.aside-latest-news{
+	margin-bottom:10px;
+	li{
+		padding:12px 0;
+		border-bottom:solid 1px #ccc;
+
+		span{
+			display:inline-block;
+			font-size:.8em;
+			margin-bottom:.5em;
+		}
+		p{
+			font-size:.8em;
+			margin-bottom:.5em;
+		}
+		a{
+			line-height:1.4;
+		}
+	}
+}
+
 .adsenses{	
 	max-width:$max-width;
 	margin:0 auto;
@@ -313,5 +347,5 @@ hr{
 	}
 }
 footer{
-	
+	height:80px;
 }
