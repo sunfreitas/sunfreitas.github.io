@@ -7,8 +7,7 @@
 <body>
 	<h1>Fundamentos de Programação Web</h1>
 	<h2>Utilizando PHP</h2>
-	
-	<p><strong>Data do Curso:</strong> de 11 de Maio a 13 de maio de 2015</p>
+
 	<p>Sejam bem vindos</p>
 </body>
 </html>
