@@ -1,25 +1,32 @@
 header{
-	min-height: 520px;
-	background: url(../images/flickr_11.jpg) center center;
+	background: #383838;
 	color:white;
-	margin-bottom: 80px;
 }
-.title{text-transform: uppercase;}
-.sun{
+hgroup{
+	width:80%;
+	margin:0 auto;
 	text-align: center;
+	padding: 1em;
 }
-.navbar-default{
-	background-color: rgba(0,0,0,0);
-	border-color: rgba(0,0,0,0);
+img{
+	width:100%;
 }
-.about, .whoiam{
-	margin-bottom: 60px;
+section{
+	padding:1em;
 }
-.portfolio .row .col-md-4{
-	padding:0;
-}
-@media(max-width: 990px){
-	.portfolio .row .col-md-4{
-		padding:2px 0;
+
+
+@media screen and (min-width: 320px){	
+	.profile-image{
+		border-radius: 400px;
+	}
+	hgroup h1{
+		font-size: 2em;
+	}
+	hgroup h2{
+		font-size: 1em;
+	}
+	h1.title{
+		font-size: 2em;
 	}
 }
