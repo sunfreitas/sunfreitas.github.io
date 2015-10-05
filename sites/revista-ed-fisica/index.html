@@ -2,6 +2,10 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+
+	<!-- More about viewports on: https://developer.mozilla.org/en/docs/Mozilla/Mobile/Viewport_meta_tag -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
 	<title>Revista de Educação Física</title>
 
 	<!-- normalize.css from https://github.com/necolas/normalize.css/blob/master/normalize.css -->
@@ -12,14 +16,34 @@
 </head>
 <body>
 	<header>
-		<h1>Revista de Educação Física</h1>
+		<hgroup class="presentation">	
+			<h1>REF</h1>
+			<h2>A primeira revista brasileira de Educação Física</h2>
+
+			<form action="">
+				<input type="text" placeholder="O que você procura no universo da Ed. Física?" class="long">
+			</form>
+		</hgroup>
 	</header>
 	<!--  -->
 	<section class="articles">
-		
+		<div class="article">
+			<a href=""><h1 class="article-title">Diabetes Tipo 2 e a atividade física.</h1></a>
+			
+			<a href=""><img src="images/atividade.jpg" alt=""></a>
+			
+			<p class="excerpt">
+				A diabetes do tipo 2 afeta uma grande parte da população brasileira que se encontra em
+				um estado de...
+			</p>
+		</div>
 	</section>
 	<!-- /articles -->
-	<footer></footer>
+	<footer>
+		<div class="footer-container">
+			Revista de Educação Física - 2015.
+		</div>
+	</footer>
 	<!--  -->
 </body>
 </html>

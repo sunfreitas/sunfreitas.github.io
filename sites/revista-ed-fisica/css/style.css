@@ -1,0 +1,65 @@
+header{
+	background: url('../images/header01.jpg') no-repeat center;
+	color:white;
+	margin-bottom: 5em;
+}
+img{width:100%;}
+
+a{
+	text-decoration: none;
+	color:rgb(82, 167, 230);
+}
+
+.articles{
+	padding:0 2em;
+}
+.float-left{
+	float:left;
+}
+.footer-container{
+	margin:0 auto;
+	width:80%;
+}
+
+/* iputs */
+input{
+	padding: 10px;
+	font-style: italic;
+}
+input.long{width:80%;}
+
+/* 
+ * Max width I found in mobiles.
+ */
+@media screen and (min-width:320px){
+	header {
+		min-height: 10em;
+	}
+
+	hgroup{
+		margin:0 auto;
+		padding:2em;
+		width:80%;
+		text-align: center;
+	}
+	hgroup h1{
+		font-size:7em;
+		margin:0;
+	}
+	hgroup h2{
+		font-weight: normal;
+	}
+	
+	.article{
+		width:100%;
+	}
+}
+
+/* 
+ * Max width of an iphone 6 plus 
+ */
+@media screen and (min-width: 414px;){
+	.article{
+		width:50%;
+	}
+}
