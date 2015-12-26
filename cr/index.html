@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang='Pt-Br'>
+<meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<head>
+	<title>CR Consórcio - Um conceito novo de realizar Negócios!</title>
+
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<!-- <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css"> -->
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+
+	<style type="text/css">
+		body,
+		.contato{
+			font-family: 'Open Sans', sans-serif;
+		}
+		.contato{
+			font-size: 1em;
+		}
+		.img-content{
+			margin-bottom: 2em;
+		}
+		.apresentacao{
+			background: #3498DB;
+		}
+		.apresentacao, .consorcios{
+			color:white;
+		}
+		.consorcios{
+			background: #DED633;
+		}
+		.parceiros{
+			background: #F6F6F6;
+		}
+
+		.consorcios{
+			color:white;
+			text-align: center;
+		}
+		.consorcio-item{
+			margin-bottom: 5em;
+		}
+		.contato{
+			background: url('endereco.jpg') center no-repeat;
+			min-height: 3em;
+		}
+
+		.parceiros p,
+		.consorcio p{
+			color: #777575;
+			margin-bottom: 2em;
+		}
+
+		.contato{
+			color:white;
+		}
+		.apresentacao,
+		.consorcios,
+		.consorcio,
+		.parceiros,
+		.contato,
+		footer{
+			padding: 8em 0 4em 0;
+		}
+
+		.title{
+			/*font-family: 'Poiret One', cursive;*/
+			font-family: 'Roboto Condensed', sans-serif;
+			margin: 0;
+			line-height: .8em;
+		}
+
+		.btn{
+			border: solid 1px #ccc;
+			padding:.5em;
+		}
+		.btn.blue{
+			background: #3498DB;
+			color: white;
+		}
+		.btn.large{
+			padding:1em 4em;
+		}
+		.navbar-cr{
+			background-color: white;
+		}
+		.navbar-toggle{
+			background: #F0F52F;
+		}
+		.navbar-toggle .icon-bar{
+			background: #A4A80D;
+		}
+		header{
+			margin-top: 4em;
+		}
+
+		ul{
+			list-style: none;
+			margin-left: 0;
+			padding-left: 0;
+		}
+		ul li{
+			margin-bottom: .5em;
+		}
+
+		.lead{
+			font-size: 1.5em;
+			margin-top: 0;
+		}
+
+		.icon{
+			display: inline-block;
+			width: 20%;
+			min-height: 2em;
+			background:white;
+			border:solid 3px #000;
+			border-radius: 15em;
+			padding: 3em;
+			-webkit-filter: invert(100%); 
+			filter: invert(100%);
+		}
+
+		.icon-car{
+			background: url('imagens/png/sedan3.png') center no-repeat;
+		}
+		.icon-house{
+			background: url('imagens/png/house111.png') center no-repeat;
+		}
+		.icon-equip{
+			background: url('imagens/png/configuration28.png') center no-repeat;
+		}
+	</style>
+</head>
+<body>
+	<nav class="navbar navbar-cr navbar-fixed-top">
+	  <div class="container-fluid">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <a class="navbar-brand" href="#">CR Consórcio</a>
+	    </div>
+
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      <ul class="nav navbar-nav navbar-right">
+	        <li><a href="#">Quem somos<span class="sr-only">(current)</span></a></li>
+	        <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Serviços <span class="caret"></span></a>
+	          <ul class="dropdown-menu">
+	            <li><a href="#">Consórcios</a></li>
+	            <li role="separator" class="divider"></li>
+	            <li><a href="#">Automóveis</a></li>
+	            <li><a href="#">Imóveis</a></li>
+	            <li><a href="#">Equipamentos</a></li>
+	          </ul>
+	        </li>
+	        <li><a href="#">Contato<span class="sr-only">(current)</span></a></li>
+	        <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Parceiros<span class="caret"></span></a>
+	          <ul class="dropdown-menu">
+	            <li><a href="#">Área de Parceiros</a></li>
+	            <li><a href="#">Cadastro</a></li>
+	          </ul>
+	        </li>
+	      </ul>
+	      <!-- <ul class="nav navbar-nav navbar-right">
+	        <li><a href="#">Link</a></li>
+	        <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+	          <ul class="dropdown-menu">
+	            <li><a href="#">Action</a></li>
+	            <li><a href="#">Another action</a></li>
+	            <li><a href="#">Something else here</a></li>
+	            <li role="separator" class="divider"></li>
+	            <li><a href="#">Separated link</a></li>
+	          </ul>
+	        </li>
+	      </ul> -->
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</nav>
+	<!-- nav -->
+	<header>
+		<div class="wide-container clearfix">
+			<!-- <div class="container"> -->
+				<div class="hidden-xs">
+					<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+					  <!-- Indicators -->
+					  <ol class="carousel-indicators">
+					    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+					    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+					  </ol>
+
+					  <!-- Wrapper for slides -->
+					  <div class="carousel-inner" role="listbox">
+					    <div class="item active">
+					      <img src="slide-01.jpg" alt="...">
+					    </div>
+					    <div class="item">
+					      <img src="slide-02.jpg" alt="...">
+					    </div>
+					  </div>
+
+					  <!-- Controls -->
+					  <!-- <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+					    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+					    <span class="sr-only">Previous</span>
+					  </a>
+					  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+					    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					    <span class="sr-only">Next</span>
+					  </a> -->
+					</div>
+				</div>
+			<!-- </div> -->
+		</div>
+	</header>
+
+	<div class="wide-container apresentacao">
+		<div class="container">
+			<div class="col-xs-12">
+				<h1 class="title">A Empresa</h1>
+				<p>A <strong>CR CONSÓRCIO</strong> tem como principal atividade a prestação de Serviços Bancários e divulgação do produto <strong>BB Consórcio</strong>.</p>
+
+				<p>A parceria entre o <strong>Banco do Brasil</strong> e a <strong>CR CONSÓRCIO</strong> visa divulgar o produto BB Consórcio, através de um contrato específico que terá como foco a captação de negócios através de Canais Digitais. Parceria esta que desde 2008 vem Realizando o Sonho da Casa própria, do Carro zero e da moto de seus clientes.</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="container consorcio">
+		
+		<div class="col-xs-12 col-sm-6">
+			<img src="o-que-e-consorcio.jpg" class="img img-content img-responsive">
+		</div>
+
+		<div class="col-xs-12 col-sm-6">
+			<h1 class="title">O Consórcio</h1>
+			<!-- <span class="glyphicon glyphicon-envelope"></span> -->
+			<h2>O que é Consórcio?</h2>
+			<p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.</p>
+
+			<a href="" class="btn blue large"><span class="glyphicon glyphicon-play"></span> Faça seu Consórcio!</a>
+		</div>
+	</div>
+
+	<div class="wide-container consorcios">
+		<div class="container">
+			<div class="col-xs-12 col-sm-4 consorcio-item">
+				<span class="icon icon-car"><!-- <span class="glyphicon glyphicon-home"></span> --></span>
+				<h1> Automóveis</h1>
+				<p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system.</p>
+			</div>
+
+			<div class="col-xs-12 col-sm-4 consorcio-item">
+				<div class="icon icon-house"><!-- <span class="glyphicon glyphicon-home"></span> --></div>
+				<h1>Imóveis</h1>
+				<p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system.</p>
+			</div>
+
+			<div class="col-xs-12 col-sm-4 consorcio-item">
+				<div class="icon icon-equip"><!-- <span class="glyphicon glyphicon-cog"></span> --></div>
+				<h1>Equipamentos</h1>
+				<p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system.</p>
+			</div>
+		</div>
+	</div>
+	<div class="wide-container parceiros">
+		<div class="container">	
+			<div class="col-xs-12 col-sm-6 col-sm-push-6">
+				<img class="img img-content img-responsive" src="executivo-de-sucesso.jpg">
+			</div>
+
+			<div class="col-xs-12 col-sm-6 col-sm-pull-6 inscricao-parceiro">
+				<h1 class="title">Seja um parceiro</h1>
+				
+				<p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.</p>
+
+				<a href="" class="btn blue large"><span class="glyphicon glyphicon-pencil"></span> Cadastre-se</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="wide-container contato">
+		<div class="container">
+			<div class="col-xs-12">
+				<h1 class="title">Contato</h1>
+				<p><span class="glyphicon glyphicon-map-marker"> Av. Santos Dummond, 11212</span></p>
+				<p>64000-000 Teresina - PI</p>
+				<p><span class="glyphicon glyphicon-phone"> (86)99876-7676</span></p>
+				<p><span class="glyphicon glyphicon-envelope"> atendimento@crconsorcio.com.br</span></p>
+			</div>
+		</div>	
+	</div>
+
+	<footer>
+		<div class="container">
+			
+			<div class="col-xs-12 col-sm-4">
+				<p>CR Consóscio</p>
+				<p>About Unify dolor sit amet, consectetur adipiscing elit. Maecenas eget nisl id libero tincidunt sodales.</p>
+
+				<p>Duis eleifend fermentum ante ut aliquam. Cras mi risus, dignissim sed adipiscing ut, placerat non arcu.</p>
+			</div>
+
+			<div class="col-xs-12 col-sm-4">
+				<p class="lead">Sitemap</p>
+				<ul>
+					<li>QUEM SOMOS</li>
+					<li>PARCERIA BB</li>
+					<li>CONSÓRCIO</li>
+					<li>SEJA UM PARCEIRO</li>
+					<li>CONTATO</li>	
+				</ul>
+			</div>
+
+			<div class="col-xs-12 col-sm-4">
+				<p class="lead">Contato</p>
+				<p><span class="glyphicon glyphicon-map-marker"> Av. Santos Dummond, 11212</span></p>
+				<p>64000-000 Teresina - PI</p>
+				<p><span class="glyphicon glyphicon-phone"> (86)99876-7676</span></p>
+				<p><span class="glyphicon glyphicon-envelope"> atendimento@crconsorcio.com.br</span></p>
+			</div>
+		</div>
+	</footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script type="text/javascript" src="./js/bootstrap.min.js"></script>
+</body>
+</html>
