@@ -1,5 +1,7 @@
+*{font-family:'Open Sans', sans-serif;}
+
 header{
-	background: #383838;
+	background: #1B1B1B;
 	color:white;
 }
 hgroup{
@@ -11,12 +13,21 @@ hgroup{
 img{
 	width:100%;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+	font-family: 'Patua One', cursive;
+}
 section{
-	padding:1em;
+	padding:4em 1em;
+	overflow: hidden;
 }
 section:nth-child(odd)
 {
-	background: #383838;
+	background: #1B1B1B;
 	color: white;
 }
 
@@ -25,6 +36,22 @@ ul{
 	padding:0;
 }
 
+section.portfolio{
+	background: #F3F3F3;
+	color:black;
+}
+
+section.contato{
+	color:white;
+	font-weight: bold;
+	text-align: left;
+	height: 400px;
+	background: url('../images/Teresina.jpg') no-repeat center;
+}
+.content{
+	width:80%;
+	margin:0 auto;
+}
 .clearfix{
 	clear:both;
 }
@@ -40,7 +67,8 @@ ul{
 		font-size: 1em;
 	}
 	h1.title{
-		font-size: 2em;
+		font-size: 3em;
+		margin-bottom: 70px;
 	}
 }
 
@@ -57,4 +85,18 @@ ul{
 		width:30%;
 		float:left;
 	}
+}
+.job{
+	float:left;
+	width:20%;
+	margin-left:2em;
+	margin-right:2em;
+}
+.skill-img, .skill-description{
+	width: 40%;
+	float: left;
+	margin-left:2em;
+	margin-right:2em;
+
+	text-align: left;
 }
