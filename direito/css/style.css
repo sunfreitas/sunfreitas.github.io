@@ -1,0 +1,121 @@
+header{
+	background: url('../images/background-law.jpg') no-repeat center;
+	min-height: 580px;
+}
+
+header h2{
+	margin-bottom: 1em;
+}
+header p{
+	margin-bottom: 5em;
+}
+
+header,
+header a,
+.contato{
+	color:white;
+}
+
+body{
+	font-family: 'Open Sans', sans-serif;
+}
+
+/* Regras gerais do tema */
+.navbar{
+	opacity: .8;
+}
+
+/* Sobrescrevendo o links do nav bootstrap */
+.nav>li>a{
+	color:#AB4A1A;
+}
+
+/* botões */
+a.flat-button{ /* tive que sobrescrever a regra para o link */
+	border:solid 1px #fff; /* o padrão é cinza */
+	padding:1.2em;
+	text-decoration: none;
+	line-height: 3em;
+}
+a.flat-button:hover{
+	color:#ccc;
+	border:solid 1px #ccc;
+}
+a.magenta{
+	border:solid 1px #F7A651;
+	color:#F7A651;
+}
+a.magenta:hover{
+	border:solid 1px #F99731;
+	color:#F99731;
+}
+
+
+.contato{
+	min-height: 300px;
+	background:url('../images/background-law.jpg') no-repeat center;
+}
+.quem-somos{
+	background: #F8F8E8;
+}
+footer{
+	padding:3em 0 3em;
+	background: #1F1F1F;
+}
+
+footer div a{
+	display: block;
+	color: white;
+}
+
+section{
+	padding:6em 0;
+}
+
+.footer-section{
+	margin-bottom: 1em;
+}
+.footer-section > a{
+	line-height: 1.8em;
+}
+
+.brand,
+.brand-footer{
+	font-size: 2em;
+	color:#ccc;
+}
+
+.lead-text{
+	font-size: 1.5em;
+}
+
+.social-icon-fake{
+	border:solid 1px #ccc;
+	padding: 1em 2em;
+	display: inline-block;
+	width: 23px;
+}
+
+@media(min-width: 320px){
+	.navbar-cr{
+		background-color: white;
+	}
+	.navbar-toggle{
+		background: #8D4944;
+	}
+	.navbar-toggle .icon-bar{
+		background: #4E131C;
+	}
+	.navbar-collapse,
+	.navbar-collapse.in,
+	.navbar-collapse.in .dropdown-menu,
+	.navbar-toggle,
+	header{
+		text-align: center;
+	}
+
+	header{
+		padding:6em 2em;
+		min-height: 100px;
+	}
+}

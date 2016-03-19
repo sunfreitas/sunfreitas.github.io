@@ -1,0 +1,175 @@
+<style type="text/css">
+		body,
+		.contato{
+			font-family: 'Open Sans', sans-serif;
+		}
+		.contato{
+			font-size: 1em;
+		}
+		.img-content{
+			margin-bottom: 2em;
+		}
+		.apresentacao{
+			background: #3498DB;
+		}
+		.apresentacao,
+		.parceiros{
+			padding:4em;
+		}
+		.apresentacao, .consorcios{
+			color:white;
+		}
+		.consorcios{
+			background: #5B7FFF;
+		}
+		.parceiro{
+			background: #F6F6F6;
+		}
+
+		.consorcios{
+			color:white;
+			text-align: center;
+		}
+		.consorcio-item{
+			margin-bottom: 5em;
+		}
+		.contato{
+			background: url('../endereco-sepia.jpg') center no-repeat;
+			min-height: 3em;
+		}
+
+		.parceiro p,
+		.consorcio p{
+			color: #777575;
+			margin-bottom: 2em;
+		}
+
+		.contato{
+			color:white;
+			font-family: 'Roboto Condensed', sans-serif;
+		}
+
+		.parceiros{
+			text-align: center;
+		}
+
+		.consorcios,
+		.consorcio,
+		.parceiro,
+		.contato{
+			padding: 8em 0 4em 0;
+		}
+
+		.title{
+			/*font-family: 'Poiret One', cursive;*/
+			font-family: 'Roboto Condensed', sans-serif;
+			margin: 0;
+			line-height: .8em;
+		}
+		.title-section{
+			margin-bottom: 60px;
+			font-family: 'Roboto Condensed',Arial, sans-serif;
+			display: block;
+			border-bottom: solid 1px #F32525;
+
+		}
+
+		.btn{
+			border: solid 1px #ccc;
+			padding:.5em;
+		}
+		.btn.blue{
+			background: #3498DB;
+			color: white;
+		}
+		.btn.large{
+			padding:1em 4em;
+		}
+		.navbar{
+			min-height: 100px;
+			font-family:'Roboto Condensed', Arial, sans-serif;
+			font-weight: 300;
+			font-size: 1.4em;
+		}
+		.navbar-cr{
+			background-color: white;
+
+		}
+		.navbar-toggle{
+			background: #F0F52F;
+		}
+		.navbar-toggle .icon-bar{
+			background: #A4A80D;
+		}
+		header{
+			margin-top: 4em;
+		}
+
+		ul{
+			list-style: none;
+			margin-left: 0;
+			padding-left: 0;
+		}
+		ul li{
+			margin-bottom: .5em;
+		}
+
+		footer{
+			background: #1D1D1D;
+			color:#A9A9A9;
+			padding:4em;
+		}
+		.lead{
+			font-size: 1.5em;
+			margin-top: 0;
+		}
+
+		.icon{
+			display: inline-block;
+			width: 20%;
+			min-height: 2em;
+			background:white;
+			border:solid 3px #000;
+			border-radius: 15em;
+			padding: 3em;
+			-webkit-filter: invert(100%); 
+			filter: invert(100%);
+		}
+
+		.social-icon{
+			display: inline-block;
+			width: 20%;
+			min-height: 3em;
+			background:#A9A9A9;
+			-webkit-filter: invert(64%); 
+			filter: invert(64%);
+		}
+
+		.icon-car{
+			background: url('../imagens/png/sedan3.png') center no-repeat;
+		}
+		.icon-house{
+			background: url('../imagens/png/house111.png') center no-repeat;
+		}
+		.icon-equip{
+			background: url('../imagens/png/configuration28.png') center no-repeat;
+		}
+		.icon-facebook{
+			background: url('../imagens/png/social.png') center no-repeat;
+		}
+		.icon-instagram{
+			background: url('../imagens/png/social-media.png') center no-repeat;
+		}
+		.icon-twitter{
+			background: url('../imagens/png/social-media-1.png') center no-repeat;
+		}
+		.icon-gplus{
+			background: url('../imagens/png/social-media-2.png') center no-repeat;
+		}
+
+		@media (min-width: 768px){}
+			.navbar-right {
+				margin-top:1.4em;
+			}
+		}
+	</style>

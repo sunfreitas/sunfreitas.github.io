@@ -5,18 +5,48 @@
 <head>
 	<title>FEWEPI - Federação de Wushu do Piuaí</title>
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+
+<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<!-- http://www.leonart.gr/htmlthemes/restart_v4.1/index.html -->
+
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 	<style type="text/css">
-		.navbar-cr{
-			background-color: white;
+		body{
+			font-family: 'Open Sans', sans-serif;
 		}
-		.navbar-toggle{
-			background: #F0F52F;
+		.a-fewepi{
+			background: #FDFDFD;
 		}
-		.navbar-toggle .icon-bar{
-			background: #A4A80D;
+		@media(min-width: 320px){
+			body{
+				margin-top:180px;
+			}
+			.navbar-cr{
+				background-color: white;
+			}
+			.navbar-toggle{
+				background: #F0F52F;
+			}
+			.navbar-toggle .icon-bar{
+				background: #A4A80D;
+			}
+			.navbar-collapse,
+			.navbar-collapse.in,
+			.navbar-collapse.in .dropdown-menu,
+			.navbar-toggle{
+				text-align: center;
+			}
+			.navbar-toggle{
+				margin-top:80px;
+			}
+
+			.a-fewepi{
+				text-align: center;
+			}
 		}
+		
 	</style>
 </head>
 <body>
@@ -25,18 +55,19 @@
 	    <!-- Brand and toggle get grouped for better mobile display -->
 	    <div class="navbar-header">
 	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	      	Menu
 	        <span class="sr-only">Toggle navigation</span>
 	        <span class="icon-bar"></span>
 	        <span class="icon-bar"></span>
 	        <span class="icon-bar"></span>
 	      </button>
-	      <a class="navbar-brand" href="#">FEWEPI</a>
+	      <a class="navbar-brand" href="#"><img src="images/logo.jpg" width=100 class="img-responsive"/></a>
 	    </div>
 
 	    <!-- Collect the nav links, forms, and other content for toggling -->
 	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	      <ul class="nav navbar-nav navbar-right">
-	        <li><a href="#">Quem somos<span class="sr-only">(current)</span></a></li>
+	        <li><a href="#">Quem somos<span class="sr-only"></span></a></li>
 	        <li class="dropdown">
 	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Escolas <span class="caret"></span></a>
 	          <ul class="dropdown-menu">
@@ -120,29 +151,32 @@
 			<!-- </div> -->
 		</div>
 	</header>
-	<div class="container a-fewepi">
-		<div class="col-md-12">
+	<div class="container">
+		<div class="col-md-12 a-fewepi">
 			<h1>A FEWEPI</h1>
-			<p></p>
+			<p>A FEWEPI está filiada a Confederação Brasileira de Kungfu Wushu – CBKW responsável pela administração do Wushu no Brasil, sendo filiada da International Wushu Federation – IWUF com sede em Beijing e responsável pela organização, regulamentação e administração do Wushu a nível mundial.
+			</p>
 		</div>
-
+	</div>
+	<div class="container">
 		<div class="col-md-12 escolas">
 			<h1>Escolas</h1>
 			<div class="col-md-3">
-				#1 Escola
+				<img src="images/Fachada-Academia1.jpg" class="img-responsive">
 			</div>
 			<div class="col-md-3">
-				#2 Escola
+				<img src="images/Fachada-Academia1.jpg" class="img-responsive">
 			</div>	
 			<div class="col-md-3">
-				#3 Escola
+				<img src="images/Fachada-Academia1.jpg" class="img-responsive">
 			</div>	
 			<div class="col-md-3">
-				#4 Escola
+				<img src="images/Fachada-Academia1.jpg" class="img-responsive">
 			</div>		
 		</div>
+	</div>
 
-		<div class="col-md-12 eventos">
+			<div class="col-md-12 eventos">
 			<h1>Eventos</h1>
 			<p></p>
 		</div>
@@ -189,7 +223,6 @@
 				</div>
 			</div>
 		</div>
-	</div>
 	<footer>
 		<div class="col-md-12">
 			<div class="col-md-4">
