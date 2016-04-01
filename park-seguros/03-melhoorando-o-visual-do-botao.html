@@ -1,0 +1,171 @@
+<div class="contentBox sectionContent-mainContent contentBox_destaque container" style="border-top-color: #52B3D9">
+	<div class="exerciseContent">
+	
+	<div class="exerciseContent-topWrap">
+			<h1 class="exerciseContent-title">Melhorando o visual do botão</h1>
+	</div>	<div class="exerciseContent-question formattedText">
+					
+			<div class="original-content"><p>O botão já está posicionado corretamente e agora só precisamos melhorar o seu visual. Comece criando um novo XML para representar o desenho de fundo do botão. Para isso, no Android Studio, clique com o botão direito sobre a pasta <strong>app/res/drawable</strong> e selecione <strong>New &gt; Drawable resource file</strong>. Preencha o campo <strong>File name</strong> com o valor <strong>fundo</strong> e clique em <strong>Ok</strong>.</p>
+<p>No XML recém criado, altere a tag <code>&lt;selector&gt;</code> para <code>&lt;shape&gt;</code> e adicione o atributo <code>android:shape</code> para indicar que queremos desenhar uma forma oval:</p>
+<pre class="prettyprint"><code><span class="tag">&lt;shape</span><span class="pln">
+    </span><span class="atn">xmlns:android</span><span class="pun">=</span><span class="atv">"http://schemas.android.com/apk/res/android"</span><span class="pln"> 
+    </span><span class="atn">android:shape</span><span class="pun">=</span><span class="atv">"oval"</span><span class="tag">&gt;</span><span class="pln">
+</span><span class="tag">&lt;/shape&gt;</span></code></pre>
+<p>Agora, dentro da tag <code>&lt;shape&gt;</code>, adicione uma <code>&lt;solid&gt;</code> para indicar que queremos utilizar um preenchimento sólido na nossa forma oval. Além disso, vamos especificar que a cor da nossa forma será vermelha com o atributo <code>android:color</code>:</p>
+<pre class="prettyprint"><code><span class="tag">&lt;shape</span><span class="pln">
+    </span><span class="atn">xmlns:android</span><span class="pun">=</span><span class="atv">"http://schemas.android.com/apk/res/android"</span><span class="pln"> 
+    </span><span class="atn">android:shape</span><span class="pun">=</span><span class="atv">"oval"</span><span class="tag">&gt;</span><span class="pln">
+    </span><span class="tag">&lt;solid</span><span class="pln"> </span><span class="atn">android:color</span><span class="pun">=</span><span class="atv">"#ff0000"</span><span class="tag">/&gt;</span><span class="pln">
+</span><span class="tag">&lt;/shape&gt;</span></code></pre>
+<p>Com o <strong>drawable</strong> pronto, precisamos associá-lo com o botão da lista de alunos. Vamos aproveitar e alterar o tamanho do botão e do texto, além de mudar a cor da fonte também:</p>
+<pre class="prettyprint"><code><span class="tag">&lt;Button</span><span class="pln"> 
+    </span><span class="atn">android:id</span><span class="pun">=</span><span class="atv">"@+id/novo_aluno"</span><span class="pln">
+    </span><span class="atn">android:layout_width</span><span class="pun">=</span><span class="atv">"56dp"</span><span class="pln">
+    </span><span class="atn">android:layout_height</span><span class="pun">=</span><span class="atv">"56dp"</span><span class="pln">
+    </span><span class="atn">android:text</span><span class="pun">=</span><span class="atv">"+"</span><span class="pln">
+    </span><span class="atn">android:textSize</span><span class="pun">=</span><span class="atv">"40dp"</span><span class="pln">
+    </span><span class="atn">android:textColor</span><span class="pun">=</span><span class="atv">"#ffffff"</span><span class="pln">
+    </span><span class="atn">android:layout_alignParentRight</span><span class="pun">=</span><span class="atv">"true"</span><span class="pln">
+    </span><span class="atn">android:layout_alignParentBottom</span><span class="pun">=</span><span class="atv">"true"</span><span class="pln">
+    </span><span class="atn">android:layout_marginRight</span><span class="pun">=</span><span class="atv">"16dp"</span><span class="pln">
+    </span><span class="atn">android:layout_marginBottom</span><span class="pun">=</span><span class="atv">"16dp"</span><span class="pln">
+    </span><span class="atn">android:background</span><span class="pun">=</span><span class="atv">"@drawable/fundo"</span><span class="tag">/&gt;</span></code></pre>
+<p>Finalmente, só falta adicionar os atributos <code>android:elevation</code> e <code>android:stateListAnimator</code> no botão para que a sombra do botão fique visível:</p>
+<pre class="prettyprint"><code><span class="tag">&lt;Button</span><span class="pln"> 
+    </span><span class="atn">android:id</span><span class="pun">=</span><span class="atv">"@+id/novo_aluno"</span><span class="pln">
+    </span><span class="atn">android:layout_width</span><span class="pun">=</span><span class="atv">"56dp"</span><span class="pln">
+    </span><span class="atn">android:layout_height</span><span class="pun">=</span><span class="atv">"56dp"</span><span class="pln">
+    </span><span class="atn">android:text</span><span class="pun">=</span><span class="atv">"+"</span><span class="pln">
+    </span><span class="atn">android:textSize</span><span class="pun">=</span><span class="atv">"40dp"</span><span class="pln">
+    </span><span class="atn">android:textColor</span><span class="pun">=</span><span class="atv">"#ffffff"</span><span class="pln">
+    </span><span class="atn">android:layout_alignParentRight</span><span class="pun">=</span><span class="atv">"true"</span><span class="pln">
+    </span><span class="atn">android:layout_alignParentBottom</span><span class="pun">=</span><span class="atv">"true"</span><span class="pln">
+    </span><span class="atn">android:layout_marginRight</span><span class="pun">=</span><span class="atv">"16dp"</span><span class="pln">
+    </span><span class="atn">android:layout_marginBottom</span><span class="pun">=</span><span class="atv">"16dp"</span><span class="pln">
+    </span><span class="atn">android:background</span><span class="pun">=</span><span class="atv">"@drawable/fundo"</span><span class="pln">
+    </span><span class="atn">android:elevation</span><span class="pun">=</span><span class="atv">"6dp"</span><span class="pln">
+    </span><span class="atn">android:stateListAnimator</span><span class="pun">=</span><span class="atv">"@null"</span><span class="tag">/&gt;</span></code></pre>
+<p>Teste o seu aplicativo e verifique se o botão é exibido corretamente.</p>
+</div>
+			
+				<form class="suggestion" action="/suggestions/createSuggestion" method="post">
+		<input type="hidden" name="course.code" value="android-studio">
+		<input type="hidden" name="suggestionType" value="EXERCISE_QUESTION">
+		<input type="hidden" name="contentId" value="11551">
+		<textarea class="suggestionElement" name="suggestion">O botão já está posicionado corretamente e agora só precisamos melhorar o seu visual. Comece criando um novo XML para representar o desenho de fundo do botão. Para isso, no Android Studio, clique com o botão direito sobre a pasta **app/res/drawable** e selecione **New &gt; Drawable resource file**. Preencha o campo **File name** com o valor **fundo** e clique em **Ok**.
+
+No XML recém criado, altere a tag ```&lt;selector&gt;``` para ```&lt;shape&gt;``` e adicione o atributo ```android:shape``` para indicar que queremos desenhar uma forma oval:
+
+```
+&lt;shape
+	xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:shape="oval"&gt;
+&lt;/shape&gt;
+```
+
+Agora, dentro da tag ```&lt;shape&gt;```, adicione uma ```&lt;solid&gt;``` para indicar que queremos utilizar um preenchimento sólido na nossa forma oval. Além disso, vamos especificar que a cor da nossa forma será vermelha com o atributo ```android:color```:
+
+```
+&lt;shape
+	xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:shape="oval"&gt;
+	&lt;solid android:color="#ff0000"/&gt;
+&lt;/shape&gt;
+```
+
+Com o **drawable** pronto, precisamos associá-lo com o botão da lista de alunos. Vamos aproveitar e alterar o tamanho do botão e do texto, além de mudar a cor da fonte também:
+
+```
+&lt;Button 
+	android:id="@+id/novo_aluno"
+	android:layout_width="56dp"
+	android:layout_height="56dp"
+	android:text="+"
+	android:textSize="40dp"
+	android:textColor="#ffffff"
+	android:layout_alignParentRight="true"
+	android:layout_alignParentBottom="true"
+	android:layout_marginRight="16dp"
+	android:layout_marginBottom="16dp"
+	android:background="@drawable/fundo"/&gt;
+```
+
+Finalmente, só falta adicionar os atributos ```android:elevation``` e ```android:stateListAnimator``` no botão para que a sombra do botão fique visível:
+
+```
+&lt;Button 
+	android:id="@+id/novo_aluno"
+	android:layout_width="56dp"
+	android:layout_height="56dp"
+	android:text="+"
+	android:textSize="40dp"
+	android:textColor="#ffffff"
+	android:layout_alignParentRight="true"
+	android:layout_alignParentBottom="true"
+	android:layout_marginRight="16dp"
+	android:layout_marginBottom="16dp"
+	android:background="@drawable/fundo"
+	android:elevation="6dp"
+	android:stateListAnimator="@null"/&gt;
+```
+
+Teste o seu aplicativo e verifique se o botão é exibido corretamente.</textarea>
+		<label>Descreva sua alteração:
+			<input class="suggestion-description suggestionElement" type="text" maxlength="250" name="description">
+		</label>
+		<input type="submit" class="button buttonAction buttonSmall courseDetailBox-actions-item courseDetailBox-actions-continue suggestionConfirmButton" value="Submeter sugestão">
+		<div class="button buttonSmall courseDetailBox-actions-item courseDetailBox-actions-continue suggestEdition-cancel">Cancelar</div>
+	</form>
+			<a href="#" class="suggestEdition">Sugira uma correção</a>
+		</div>
+</div>		
+		<div class="actions">
+			<form action="/courses/android-studio/sections/3/exercises/3/openAnswer" method="post" class="showOpenAnswer">
+    <input type="hidden" id="changed" name="changed" value="false">
+	<input id="isUnsure" type="hidden" name="answer.isUnsure" value="false">
+	<input type="hidden" name="answer.exercise.id" value="11551">
+	<input type="hidden" name="answer.section.id" value="3322">
+	<input type="hidden" name="answer.section.course.id" value="289">
+	
+	<input type="hidden" name="discussion.course.id" value="289">
+	
+	<div class="markdownEditor isToggled" id="markdownEditor-answer_answeredText">
+		<div class="markdownEditor-buttons">
+		<button class="markdownEditor-button markdownEditor-button-preview isToggled" type="button" data-js-toggle="#markdownEditor-answer_answeredText">
+			Expandir
+		</button>
+		<button class="markdownEditor-button" type="button" data-js-toggle="#markdownEditor-answer_answeredText .markdownEditor-help">
+			Formatação
+		</button>
+	</div>
+		<div class="markdownEditor-area">
+		<textarea class="markdownEditor-source" name="answer.answeredText" id="markdownEditor-answer_answeredText-ta" placeholder=""></textarea>
+		<output class="markdownEditor-preview formattedText" for="markdownEditor-answer_answeredText-ta"></output>
+		<aside class="markdownEditor-help formattedText">
+							<h2>Como formatar códigos</h2>
+				<ul>
+				<li>É possível criar blocos de código adicionando três backticks (```) antes e depois do código</li>
+				<li>Para escapar a formatação, utilize crases `dessa _forma_`</li>
+				<li>Serão exibidas apenas tags HTML e XML que estiverem entre `<crases>`</crases></li></ul>
+						<h2>Formatação básica</h2>
+			<ul>
+			<li>**negrito**</li>
+			<li>*itálico*</li>
+			</ul>
+			<h2>Como formatar links</h2>
+			<ul>
+			<li>&lt;http://google.com&gt;</li>
+			<li>[Google](http://google.com)</li>
+			<li>&lt;a href="http://google.com"&gt;Google&lt;/a&gt;</li></ul>
+		</aside>
+		</div>
+</div>	
+	<div>
+	  	
+	  			  		<input type="submit" id="answerButton" class="button buttonAction answerSubmit" value="Responder">
+		  	<a class="button buttonLight exercise-needhelp" href="/course/android-studio/exercise/11551/opinion">
+	Preciso de ajuda!
+</a>	</div>
+</form>		</div>
+		
+	</div>

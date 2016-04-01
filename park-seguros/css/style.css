@@ -3,8 +3,11 @@
 		.contato{
 			font-family: 'Open Sans', sans-serif;
 		}
+		body p{
+			font-size: 1.2em;
+		}
 		.contato{
-			font-size: 1em;
+			font-size: 1.3em;
 		}
 		.img-content{
 			margin-bottom: 2em;
@@ -154,6 +157,12 @@
 		}
 		.icon-equip{
 			background: url('../imagens/png/configuration28.png') center no-repeat;
+		}
+		.icon-previdencia{
+			background: url('../imagens/png/people.png') center no-repeat;
+		}
+		.icon-viagem{
+			background: url('../imagens/png/transport.png') center no-repeat;
 		}
 		.icon-facebook{
 			background: url('../imagens/png/social.png') center no-repeat;

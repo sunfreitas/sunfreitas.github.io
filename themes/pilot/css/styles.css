@@ -1,0 +1,43 @@
+/* Paleta de cores */
+/* botoes */
+/* line 2, ../sass/_components.scss */
+.button {
+  padding: 1em 2em;
+}
+/* line 5, ../sass/_components.scss */
+.button.default {
+  border: solid 1px #CCCCCC;
+  color: #CCCCCC;
+}
+/* line 9, ../sass/_components.scss */
+.button.default:hover {
+  border: solid 1px black;
+  color: black;
+}
+/* line 15, ../sass/_components.scss */
+.button.information {
+  border: solid 1px #06B981;
+  color: #FFFFFF;
+  background: #28B97D;
+}
+/* line 21, ../sass/_components.scss */
+.button.danger {
+  border: solid 1px #C50C0C;
+  color: #FFFFFF;
+  background: #C31919;
+}
+
+/* line 4, ../sass/styles.scss */
+body {
+  font-family: Arial, Arial, sans-serif;
+}
+
+/* line 8, ../sass/styles.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 12, ../sass/styles.scss */
+h1 {
+  color: #06B981;
+}

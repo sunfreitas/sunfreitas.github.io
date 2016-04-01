@@ -1,0 +1,26 @@
+/* botoes */
+.button{
+	padding: 1em 2em;
+	
+	&.default{
+		border: solid 1px $gray;
+		color:$gray;
+		
+		&:hover{
+			border: solid 1px black;
+			color:black;
+		}
+	}
+
+	&.information{
+		border: solid 1px $green-marine;
+		color: $button-font-color;
+		background:$green-marine-light;
+	}
+
+	&.danger{
+		border: solid 1px $salmon;
+		color: $button-font-color;
+		background: $salmon-light;	
+	}
+}

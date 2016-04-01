@@ -1,0 +1,2 @@
+[Wed Mar 23 17:03:42 2016] [error] [client 177.193.20.103] Directory index forbidden by Options directive: /home/storage/1/ec/d9/parkseguros1/public_html/
+[Wed Mar 23 17:03:42 2016] [error] [client 177.193.20.103] File does not exist: /home/storage/1/ec/d9/parkseguros1/public_html/favicon.ico, referer: http://parkseguros.com.br/
