@@ -6,6 +6,12 @@
 		body p{
 			font-size: 1.2em;
 		}
+		
+		.wide-container{
+			width:100%;
+			display: inline-block;
+		}
+
 		.contato{
 			font-size: 1.2em;
 		}
@@ -107,7 +113,45 @@
 		header{
 			margin-top: 4em;
 		}
+		.imoveis-header{
+			background: #2A5584;
+			color:white;
+		}
+		.header-ofertas{
+			text-align: center;
+		}
+		.header-presentation{
+			padding-top: 6em;
+		}
+		.header-resume{
+			font-size: 1em;
+			color:#DADCFB;
+			text-transform: uppercase;
+		}
+		.header-title{
+			font-size: 3em;
+			color:white;
+			text-transform: uppercase;
+		}
 
+		.header-resume.default,
+		.header-title.default{
+			color:#404040;
+		}
+
+		.sublineado{
+			display: inline-block;
+			width:12%;
+			height: 10px;
+			background: #DADCFB;
+			margin-bottom:12px;
+		}
+		.sublineado.dark-blue{
+			background:#2A5584; 
+		}
+		.nossas-ofertas{
+			padding-top: 6em;
+		}
 		ul{
 			list-style: none;
 			margin-left: 0;
