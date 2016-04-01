@@ -152,6 +152,15 @@
 		.nossas-ofertas{
 			padding-top: 6em;
 		}
+
+		.painel{
+			border:solid 1px #ccc;
+			margin-bottom: 5em;
+			padding: 3em;
+		}
+		.painel.painel-default{
+			background: #eee;
+		}
 		ul{
 			list-style: none;
 			margin-left: 0;
