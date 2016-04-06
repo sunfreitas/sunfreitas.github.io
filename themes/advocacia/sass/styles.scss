@@ -1,0 +1,42 @@
+// Import Bootstrap Compass integration
+@import "bootstrap-compass";
+
+// Import custom Bootstrap variables
+@import "bootstrap-variables";
+
+// Core variables and mixins
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+
+// Reset and dependencies
+@import "bootstrap/normalize";
+@import "bootstrap/print";
+@import "bootstrap/glyphicons";
+
+// Core CSS
+@import "bootstrap/scaffolding";
+@import "bootstrap/grid";
+@import "bootstrap/forms";
+@import "bootstrap/navs";
+@import "bootstrap/navbar";
+
+//Components
+@import "bootstrap/dropdowns";
+
+.apresentacao,
+.areas-de-atuacao{
+	@include container-fixed();
+}
+
+.sabemos-nosso-trabalho,
+.advogados,
+.somos-vencedores,
+.direito-trabalhista,
+.direito-penal,
+.direito-civil{
+	@include make-md-column(4);
+}
+
+.nossas-areas-de-atuacao{
+	@include make-md-column(12);
+}

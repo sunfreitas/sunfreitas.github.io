@@ -3,6 +3,7 @@
 		.contato{
 			font-family: 'Open Sans', sans-serif;
 		}
+
 		body p{
 			font-size: 1.2em;
 		}
@@ -82,7 +83,14 @@
 			border-bottom: solid 1px #F32525;
 
 		}
-
+		.nossas-ofertas{
+			color:#828181;
+		}
+		.nossas-ofertas .contact-title{
+			font-size: 1.4em;
+			text-transform: uppercase;
+			color:#464646;
+		}
 		.btn{
 			border: solid 1px #ccc;
 			padding:.5em;
@@ -102,7 +110,6 @@
 		}
 		.navbar-cr{
 			background-color: white;
-
 		}
 		.navbar-toggle{
 			background: #F0F52F;
