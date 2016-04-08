@@ -62,13 +62,28 @@ footer{
 .nossos-advogados-painel,
 .advogados-associados,
 .nossa-equipe-aprensentacao,
-.endereco,
-.mapa-do-endereco{
+.endereco{
 	@include make-md-column(6)
 }
 
 /* custom grids */
+.mapa-do-endereco{
+	float:left;
+	width:50%;
+	line-height: 0;
+	min-height: 1px;
+	position: relative;
+	box-sizing: border-box;
+}
 
+.endereco{
+	padding:5em 0;
+}
+
+.google-maps{
+	width:100%;
+	height: 310px;
+}
 
 .advogados{
 	background: url("../images/39764894_ml.jpg") no-repeat;
@@ -83,10 +98,10 @@ footer{
 
 .escolha-nossos-advogados,
 .entre-em-contato{
-	padding:5em 0;
 	background: #514056;
 	color:#fff;
 }
+
 
 /* Mobiles */
 @media screen and (min-width: 320px){
@@ -112,6 +127,9 @@ footer{
 
 	.nossas-areas-de-atuacao{
 		text-align: center;
+	}
+	.mapa-do-endereco{
+		width:100%;
 	}
 }
 
