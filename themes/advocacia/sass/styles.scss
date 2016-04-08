@@ -21,13 +21,28 @@
 @import "bootstrap/navbar";
 
 //Components
+@import "bootstrap/component-animations";
 @import "bootstrap/dropdowns";
 
-.apresentacao,
-.areas-de-atuacao{
+//Utilities
+@import "bootstrap/utilities";
+@import "bootstrap/responsive-utilities";
+
+header{
 	@include container-fixed();
 }
 
+/* rows */
+.apresentacao,
+.areas-de-atuacao,
+.escolha-nossos-advogados,
+.conheca-nossa-equipe,
+.entre-em-contato,
+footer{
+	@include make-row();
+}
+
+/* grids */
 .sabemos-nosso-trabalho,
 .advogados,
 .somos-vencedores,
@@ -37,6 +52,17 @@
 	@include make-md-column(4);
 }
 
-.nossas-areas-de-atuacao{
-	@include make-md-column(12);
+.nossos-advogados-apresentacao,
+.nossos-advogados-painel,
+.advogados-associados,
+.nossa-equipe-aprensentacao,
+.endereco,
+.mapa-do-endereco{
+	@include make-md-column(6)
 }
+
+.nossas-areas-de-atuacao{
+	@include make-md-column(12);	
+}
+
+/* custom grids */

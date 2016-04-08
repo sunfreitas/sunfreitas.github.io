@@ -22,10 +22,7 @@
 		.apresentacao{
 			background: #3498DB;
 		}
-		.apresentacao,
-		.parceiros{
-			padding:4em;
-		}
+		
 		.apresentacao, .consorcios{
 			color:white;
 		}
@@ -66,7 +63,9 @@
 		.consorcios,
 		.consorcio,
 		.parceiro,
-		.contato{
+		.contato,
+		.apresentacao,
+		.parceiros{
 			padding: 8em 0 4em 0;
 		}
 
@@ -208,7 +207,15 @@
 			-webkit-filter: invert(64%); 
 			filter: invert(64%);
 		}
-
+		.icon-interface{
+			background: url('../imagens/png/interface.png') center no-repeat;
+		}
+		.icon-medical{
+			background: url('../imagens/png/medical.png') center no-repeat;
+		}
+		.icon-user{
+			background: url('../imagens/png/user.png') center no-repeat;
+		}
 		.icon-car{
 			background: url('../imagens/png/sedan3.png') center no-repeat;
 		}
@@ -235,6 +242,12 @@
 		}
 		.icon-gplus{
 			background: url('../imagens/png/social-media-2.png') center no-repeat;
+		}
+
+		@media screen and (min-width: 320px){
+			.header-presentation{
+				padding-top: 4em;
+			}
 		}
 
 		@media (min-width: 768px){}

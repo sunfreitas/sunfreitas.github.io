@@ -26,22 +26,25 @@
 
 	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	      <ul class="nav navbar-nav navbar-right">
-	        <li><a href="#">Quem somos<span class="sr-only">(current)</span></a></li>
+	        <li><a href="#quem-somos">Quem somos<span class="sr-only">(current)</span></a></li>
 	        <li class="dropdown">
 	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">O Seguro <span class="caret"></span></a>
 	          <ul class="dropdown-menu">
-	            <li><a href="#">Seguros</a></li>
+	            <li><a href="#o-seguro">Seguros</a></li>
 	            <li role="separator" class="divider"></li>
 	            <li><a href="./seguros/equipamentos/">Equipamentos</a></li>
 	            <li><a href="./seguros/imoveis/">Imóveis</a></li>
 	            <li><a href="./seguros/veiculos/">Veículos</a></li>
-	            <li><a href="./seguros/imoveis/">Viagem</a></li>
-	            <li><a href="./seguros/imoveis/">Vida e Previdência</a></li>
+	            <li><a href="./seguros/viagem/">Viagem</a></li>
+	            <li><a href="./seguros/seguro-de-vida/">Seguro de Vida</a></li>
+	            <li><a href="./seguros/previdencia-privada/">Previdência Privada</a></li>
+	            <li><a href="./seguros/seguro-saude/">Seguro Saúde</a></li>
+	            <li><a href="./seguros/seguro-eventos/">Eventos</a></li>
 	          </ul>
 	        </li>
-	        <li><a href="#">Equipe<span class="sr-only"></span></a></li>
-	        <li><a href="#">Parceiros<span class="sr-only"></span></a></li>
-	        <li><a href="#">Contato<span class="sr-only">(current)</span></a></li>
+	        <li><a href="#nossos-servicos">Nossos Serviços<span class="sr-only"></span></a></li>
+	        <li><a href="#seguradoras">Seguradoras<span class="sr-only"></span></a></li>
+	        <li><a href="#contato">Contato<span class="sr-only">(current)</span></a></li>
 	      </ul>
 	    </div>
 	  </div>
@@ -69,7 +72,7 @@
 		</div>
 	</header>
 
-	<div class="wide-container apresentacao">
+	<div class="wide-container apresentacao" id="quem-somos">
 		<div class="container">
 			<div class="col-xs-12">
 				<h1 class="title">A Empresa</h1>
@@ -79,7 +82,7 @@
 		</div>
 	</div>
 
-	<div class="container consorcio">
+	<div class="container consorcio" id="o-seguro">
 		
 		<div class="col-xs-12 col-sm-6">
 			<img src="o-que-e-consorcio.jpg" class="img img-content img-responsive">
@@ -94,20 +97,19 @@
 		</div>
 	</div>
 
-	<div class="wide-container consorcios">
+	<div class="wide-container consorcios" id="nossos-servicos">
 		<div class="container">
 
 			<div class="col-xs-12 col-sm-3 consorcio-item">
 				<a href="./seguros/equipamentos/"><span class="icon icon-equip"><!-- <span class="glyphicon glyphicon-cog"></span> --></span></a>
 				<h1>Equipamentos</h1>
 				<p>Proteja seus equipamentos dos riscos aos quais ele está sujeito.</p>
-				<p><a href="./seguros/equipamentos/">Saiba mais...</a></p>
 			</div>
 
 			<div class="col-xs-12 col-sm-3 consorcio-item">
 				<a href="./seguros/imoveis/"><span class="icon icon-house"><!-- <span class="glyphicon glyphicon-home"></span> --></span></a>
 				<h1>Imóveis</h1>
-				<p>proteja sua casa/apartamento e fique mais tranquilo no caso de imprevistos.</p>
+				<p>Proteja sua casa/apartamento e fique mais tranquilo.</p>
 			</div>
 
 			<div class="col-xs-12 col-sm-3 consorcio-item">
@@ -123,7 +125,7 @@
 			</div>
 
 			<div class="col-xs-12 col-sm-3 consorcio-item">
-				<a href="./seguros/seguro-de-vida/"><span class="icon icon-previdencia"><!-- <span class="glyphicon glyphicon-cog"></span> --></span></a>
+				<a href="./seguros/seguro-de-vida/"><span class="icon icon-user"><!-- <span class="glyphicon glyphicon-cog"></span> --></span></a>
 				<h1>Seguro de Vida</h1>
 				<p>Garanta seu futuro e o futuro de sua família e viva mais tranquilo.</p>
 			</div>
@@ -134,8 +136,13 @@
 				<p>Garanta seu futuro e o futuro de sua família e viva mais tranquilo.</p>
 			</div>
 			<div class="col-xs-12 col-sm-3 consorcio-item">
-				<a href="./seguros/seguro-saúde/"><span class="icon icon-previdencia"><!-- <span class="glyphicon glyphicon-cog"></span> --></span></a>
+				<a href="./seguros/seguro-saude/"><span class="icon icon-medical"><!-- <span class="glyphicon glyphicon-cog"></span> --></span></a>
 				<h1>Seguro Saúde</h1>
+				<p>Garanta seu futuro e o futuro de sua família e viva mais tranquilo.</p>
+			</div>
+			<div class="col-xs-12 col-sm-3 consorcio-item">
+				<a href="./seguros/eventos/"><span class="icon icon-interface"><!--<span class="glyphicon glyphicon-cog"></span> --></span></a>
+				<h1>Eventos</h1>
 				<p>Garanta seu futuro e o futuro de sua família e viva mais tranquilo.</p>
 			</div>
 		</div>
@@ -156,7 +163,7 @@
 		</div>
 	</div>
 
-	<div class="wide-container contato">
+	<div class="wide-container contato" id="contato">
 		<div class="container">
 			<div class="col-xs-12">
 				<h1 class="title">Contato</h1>
@@ -168,9 +175,9 @@
 		</div>	
 	</div>
 
-	<div class="container parceiros">
+	<div class="container parceiros" id="seguradoras">
 		<div class="section-header">
-			<h1 class="">Parceiros</h1>
+			<h1 class="">Seguradoras</h1>
 			<span class="sublineado dark-blue"></span>
 		</div>
 
