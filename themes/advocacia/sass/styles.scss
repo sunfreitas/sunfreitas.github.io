@@ -59,7 +59,6 @@ footer{
 }
 
 .nossos-advogados-apresentacao,
-.nossos-advogados-painel,
 .advogados-associados,
 .nossa-equipe-aprensentacao,
 .endereco{
@@ -67,13 +66,14 @@ footer{
 }
 
 /* custom grids */
-.mapa-do-endereco{
-	float:left;
-	width:50%;
-	line-height: 0;
-	min-height: 1px;
-	position: relative;
-	box-sizing: border-box;
+@mixin make-full-md-column($columns){
+  position: relative;
+  min-height: 1px;
+
+  @media (min-width: $screen-md-min) {
+    float: left;
+    width: percentage(($columns / 12));
+  }
 }
 
 .endereco{
@@ -102,7 +102,6 @@ footer{
 	color:#fff;
 }
 
-
 /* Mobiles */
 @media screen and (min-width: 320px){
 	header{
@@ -111,16 +110,30 @@ footer{
 		text-align: center;
 		color: #fff;
 	}
+	
 	.nossos-advogados-painel{
 		background: url("../images/39764894_ml.jpg") no-repeat;
 		min-height:460px;
+		@include make-full-md-column(12);
 	}
 
+	.sessoes{
+		padding:4em 0 4em 2em;
+	}
+
+	.nossos-advogados-apresentacao,
+	.nossa-equipe-aprensentacao,
+	.endereco{
+		@extend .sessoes;
+	}
+	
 	.sabemos-nosso-trabalho,
-	.somos-vencedores{
-		padding:4em 0 4em 0;
+	.somos-vencedores,
+	{
+		@extend .sessoes;
 		text-align:center;
 	}
+
 	.advogados{
 		min-height:270px;
 	}
@@ -129,11 +142,11 @@ footer{
 		text-align: center;
 	}
 	.mapa-do-endereco{
-		width:100%;
+		@include make-full-md-column(12);
 	}
 }
 
-/*  */
+/* Tablets */
 @media screen and (min-width: 700px){
 	header{
 		background: url("../images/Dollarphotoclub_71289049.jpg") no-repeat center;
@@ -141,5 +154,10 @@ footer{
 		text-align: center;
 		color: #fff;
 		padding:15em;
+	}
+	.mapa-do-endereco{
+		@include make-full-md-column(6);
+		line-height: 0;
+		min-height: 1px;
 	}
 }
