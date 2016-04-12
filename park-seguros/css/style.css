@@ -64,9 +64,16 @@
 		.consorcio,
 		.parceiro,
 		.contato,
-		.apresentacao,
-		.parceiros{
+		.apresentacao{
 			padding: 8em 0 4em 0;
+		}
+
+		.parceiros{
+			padding: 5em 0 4em 0;
+		}
+
+		.section-header{
+			margin-bottom: 50px;
 		}
 
 		.title{
@@ -125,6 +132,7 @@
 		}
 		.header-ofertas{
 			text-align: center;
+			margin-bottom: 50px;
 		}
 		.header-presentation{
 			padding-top: 6em;

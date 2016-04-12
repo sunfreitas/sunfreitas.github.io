@@ -66,6 +66,7 @@ footer{
 }
 
 /* custom grids */
+/* Este mixing vai para um arquivo separado */
 @mixin make-full-md-column($columns){
   position: relative;
   min-height: 1px;
