@@ -197,7 +197,7 @@ footer
 
 	.conheca-nossa-equipe{
 		@include container-fixed();
-		width:$container-lg;
+		width:$container-md;
 	}
 	
 	.nossa-equipe{
@@ -216,7 +216,7 @@ footer
 	}
 
 	.areas-de-atuacao{
-		width:$container-lg;
+		width:$container-md;
 	}
 	.nossas-areas-de-atuacao-apresentacao{
 		@include make-md-column(6);
