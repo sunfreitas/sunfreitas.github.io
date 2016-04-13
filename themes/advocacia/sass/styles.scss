@@ -61,6 +61,24 @@ p{
 	}
 }
 
+/* Social */
+.media{
+	position:relative;
+	padding:1em 2em;
+
+	&.facebook{
+		background: url('../images/social-icons/facebook.png') no-repeat;
+	}
+	&.twitter{
+		background: url('../images/social-icons/twitter.png') no-repeat;
+	}
+	&.instagram{
+		background: url('../images/social-icons/instagram.png') no-repeat;
+	}
+	&.googleplus{
+		background: url('../images/social-icons/googleplus.png') no-repeat;
+	}
+}
 header,
 .areas-de-atuacao,
 .conheca-nossa-equipe,
@@ -69,7 +87,22 @@ footer
 {
 	@include container-fixed();
 }
-
+.footer-apresentacao{
+	p{
+		margin-bottom: 3em;	
+	}
+}
+.sitemap{
+	list-style: none;
+	padding-left: 0;
+	.sitemap__item{
+		margin-bottom: 1em;
+		a{
+			font-family: 'Open Sans', Arial, sans-serif;
+			color:#aaa;
+		}
+	}
+}
 .apresentacao,
 .escolha-nossos-advogados,
 .entre-em-contato{
@@ -105,7 +138,7 @@ footer
 
 .google-maps{
 	width:100%;
-	height: 310px;
+	min-height: 400px;
 }
 
 .sabemos-nosso-trabalho,
@@ -287,11 +320,14 @@ footer
 	}
 
 	.area-do-direito,
-	.footer-apresentacao,
-	.footer-sessao{
+	.footer-apresentacao{
 		@include make-md-column(4);
 	}
 
+	.footer-sessao{
+		@include make-md-column(3);
+	}
+	
 	.nossos-advogados-apresentacao,
 	.nossos-advogados-painel,
 	.nossa-equipe-aprensentacao,
