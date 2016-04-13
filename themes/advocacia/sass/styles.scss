@@ -24,71 +24,57 @@
 @import "bootstrap/navs";
 @import "bootstrap/navbar";
 
-
 //Utilities
 @import "bootstrap/utilities";
 @import "bootstrap/responsive-utilities";
 
+//Meu SaSS
+@import "meus-mixins";
+
 header,
-apresentacao,
-.nossas-areas-de-atuacao,
-.conheca-nossa-equipe
+.areas-de-atuacao,
+.conheca-nossa-equipe,
+footer
 {
 	@include container-fixed();
 }
 
-
+.apresentacao,
 .escolha-nossos-advogados,
 .entre-em-contato{
 	@include container-fixed(100);
 }
 
 /* rows */
-footer{
+.nossas-areas-de-atuacao,
+.footer-content{
 	@include make-row();
 }
 
 /* grids */
 .sabemos-nosso-trabalho,
 .advogados,
-.somos-vencedores,
-.direito-trabalhista,
-.direito-penal,
-.direito-civil{
+.somos-vencedores{
 	@include make-md-column(4);
 }
 
-.nossos-advogados-apresentacao,
-.advogados-associados,
+/*.advogados-associados,
 .nossa-equipe-aprensentacao,
 .endereco{
 	@include make-md-column(6)
-}
+}*/
 
-/* custom grids */
-/* Este mixing vai para um arquivo separado */
-@mixin make-full-md-column($columns){
-  position: relative;
-  min-height: 1px;
-
-  @media (min-width: $screen-md-min) {
-    float: left;
-    width: percentage(($columns / 12));
-  }
-}
-
+/* Custom SCSS */
 .endereco{
 	padding:5em 0;
+}
+.advogados,.nossos-advogados-painel{
+	background: url("../images/39764894_ml.jpg") no-repeat;
 }
 
 .google-maps{
 	width:100%;
 	height: 310px;
-}
-
-.advogados{
-	background: url("../images/39764894_ml.jpg") no-repeat;
-	min-height:460px;
 }
 
 .sabemos-nosso-trabalho,
@@ -111,54 +97,154 @@ footer{
 		text-align: center;
 		color: #fff;
 	}
-	
-	.nossos-advogados-painel{
-		background: url("../images/39764894_ml.jpg") no-repeat;
-		min-height:460px;
-		@include make-full-md-column(12);
-	}
-
 	.sessoes{
-		padding:4em 0 4em 2em;
+		padding:4em 4px;
 	}
 
+	.sessoes-simples{
+		padding-top:4em;
+	}
+	.areas-de-atuacao{
+		@extend .sessoes-simples;
+	}
+
+	.conheca-nossa-equipe,
+	.escolha-nossos-advogados-apresentacao,
 	.nossos-advogados-apresentacao,
-	.nossa-equipe-aprensentacao,
-	.endereco{
+	.endereco,
+	.footer-content{
 		@extend .sessoes;
 	}
-	
+
 	.sabemos-nosso-trabalho,
-	.somos-vencedores,
+	.somos-vencedores
 	{
 		@extend .sessoes;
 		text-align:center;
+		@include make-full-xs-column(12);
+		background: #514056;
+		color: #fff;
 	}
 
-	.advogados{
+	/* Colunas normais */
+	.nossas-areas-de-atuacao-apresentacao,
+	.area-do-direito{
+		@include make-xs-column(12);
+	}
+
+	/* Colunas customizadas */
+	.advogados,
+	.nossos-advogados-painel{
+		@include make-full-xs-column(12);
 		min-height:270px;
+		display: inline-block;
 	}
 
-	.nossas-areas-de-atuacao{
+	.nossas-areas-de-atuacao-apresentacao{
 		text-align: center;
 	}
+
 	.mapa-do-endereco{
 		@include make-full-md-column(12);
 	}
 }
 
 /* Tablets */
-@media screen and (min-width: 700px){
+@media screen and (min-width: 568px){
 	header{
 		background: url("../images/Dollarphotoclub_71289049.jpg") no-repeat center;
-		min-height:700px;
+		min-height:300px;
 		text-align: center;
 		color: #fff;
-		padding:15em;
+		padding:10em 2em 1em 2em;
 	}
+
+	.advogados,
+	.nossos-advogados-painel{
+		min-height:400px;
+		background: url("../images/39764894_ml-sm-large.jpg") no-repeat;
+	}
+	
+	.nossa-equipe-aprensentacao{
+		@include make-xs-column(12);
+	}
+	.advogados-associados{
+		@include make-xs-column(4);
+	}
+
+	.footer-content{
+		padding: 6em 15px;
+	}
+
 	.mapa-do-endereco{
 		@include make-full-md-column(6);
 		line-height: 0;
 		min-height: 1px;
+	}
+}
+
+@media screen and (min-width: 1024px){
+	header{
+		background: url("../images/Dollarphotoclub_71289049.jpg") no-repeat center;
+		min-height:450px;
+		text-align: center;
+		color: #fff;
+		padding:10em 2em 1em 2em;
+	}
+	.sessao-media{
+		padding:4em;
+	}
+
+	.conheca-nossa-equipe{
+		@include container-fixed();
+		width:$container-lg;
+	}
+	
+	.nossa-equipe{
+		@include make-row();
+	}
+
+	.sabemos-nosso-trabalho,
+	.somos-vencedores,
+	.nossas-areas-de-atuacao,
+	.nossos-advogados-apresentacao{
+		@extend .sessao-media;
+	}
+
+	.advogados{
+		@include make-md-column(4);
+	}
+
+	.areas-de-atuacao{
+		width:$container-lg;
+	}
+	.nossas-areas-de-atuacao-apresentacao{
+		@include make-md-column(6);
+	}
+	.nossas-areas-de-atuacao-apresentacao{
+		@include make-md-column-offset(3);
+	}
+
+	.sabemos-nosso-trabalho,
+	.somos-vencedores{
+		@include make-full-md-column(4);
+	}
+
+	.area-do-direito,
+	.footer-apresentacao,
+	.footer-sessao{
+		@include make-md-column(4);
+	}
+
+	.nossos-advogados-apresentacao,
+	.nossos-advogados-painel,
+	.nossa-equipe-aprensentacao,
+	.endereco,
+	.mapa-do-endereco{
+		@include make-full-md-column(6);
+	}
+
+	.advogados-associados{
+		@include make-md-column(2);
 	}
 }
