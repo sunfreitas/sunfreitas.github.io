@@ -43,18 +43,25 @@
 $alpha-bg: #d1d1d1;
 $beta-bg: #ccc;
 
-.section{
+$gutter-sections:40px;
+$gutter-sections-top: $gutter-sections;
+$gutter-sections-bottom: $gutter-sections;
+.section,
+.full-section_content-box{
 	@include container-fixed();
+	
+	padding-top:$padding-section;
+	padding-bottom:$padding-section;
 
 	@media (min-width: $screen-sm-min) {
-	    width: $container-sm;
-	  }
-	  @media (min-width: $screen-md-min) {
-	    width: $container-md;
-	  }
-	  @media (min-width: $screen-lg-min) {
-	    width: $container-lg;
-	  }
+		width: $container-sm;
+	}
+	@media (min-width: $screen-md-min) {
+		width: $container-md;
+	}
+	@media (min-width: $screen-lg-min) {
+		width: $container-lg;
+	}
 }
 
 .full-section{
@@ -62,10 +69,7 @@ $beta-bg: #ccc;
 	background: $beta-bg;
 }
 /* Box sem margens. O equivalente aos columns-** do bootstrap */
-.full-section_content-box{
-	padding-left: 15px;
-	padding-right: 15px;
-}
+
 .full-section_image-box{
 
 }
