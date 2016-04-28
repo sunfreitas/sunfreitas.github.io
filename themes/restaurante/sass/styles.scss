@@ -87,10 +87,10 @@ $gutter-sections-bottom: $gutter-sections;
 		@include make-sm-column(12);
 	}
 	@media (min-width: $screen-md-min) {
-		@include make-sm-column(6);
+		@include make-md-column(6);
 	}
 	@media (min-width: $screen-lg-min) {
-		@include make-sm-column(6);
+		@include make-lg-column(6);
 	}
 }
 
@@ -102,10 +102,10 @@ $gutter-sections-bottom: $gutter-sections;
 		@include make-sm-column(4);
 	}
 	@media (min-width: $screen-md-min) {
-		@include make-sm-column(4);
+		@include make-md-column(4);
 	}
 	@media (min-width: $screen-lg-min) {
-		@include make-sm-column(4);
+		@include make-lg-column(4);
 	}
 }
 
@@ -114,10 +114,10 @@ $gutter-sections-bottom: $gutter-sections;
 		@include make-sm-column(4);
 	}
 	@media (min-width: $screen-md-min) {
-		@include make-sm-column(3);
+		@include make-md-column(3);
 	}
 	@media (min-width: $screen-lg-min) {
-		@include make-sm-column(3);
+		@include make-lg-column(3);
 	}
 }
 
@@ -128,4 +128,32 @@ $gutter-sections-bottom: $gutter-sections;
 .apresentacao{
 	height	:650px;
 	background: url('../imagens/50743_Papel-de-Parede-Design-de-Interior-Sala-de-TV_1680x1050.jpg') no-repeat center;
+}
+
+.sobre-footer,
+.galeria-portfolio,
+.fale-conosco{
+	@media (min-width: $screen-sm-min) {
+		@include make-sm-column(12);
+	}
+	@media (min-width: $screen-md-min) {
+		@include make-md-column(4);
+	}
+	@media (min-width: $screen-lg-min) {
+		@include make-lg-column(4);
+	}
+}
+
+.projeto-da-galeria{
+	margin-bottom: 2em;
+	
+	@media (min-width: $screen-sm-min) {
+		@include make-sm-column(4);
+	}
+	@media (min-width: $screen-md-min) {
+		@include make-md-column(4);
+	}
+	@media (min-width: $screen-lg-min) {
+		@include make-lg-column(4);
+	}
 }
