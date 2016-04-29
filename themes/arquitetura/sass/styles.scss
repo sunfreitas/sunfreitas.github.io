@@ -50,7 +50,6 @@ $gutter-sections-bottom: $gutter-sections;
 
 .section,
 .full-section_content-box{
-	@include container-fixed();
 
 	padding-top:$gutter-sections-top;
 	padding-bottom:$gutter-sections-bottom;
@@ -64,10 +63,14 @@ $gutter-sections-bottom: $gutter-sections;
 	@media (min-width: $screen-lg-min) {
 		width: $container-lg;
 	}
+
+	@include container-fixed();
 }
 
 .content-box{
-	@include make-row();
+	@media (min-width: $screen-sm-min) {
+		@include make-row();
+	}
 }
 
 .full-section{
@@ -134,7 +137,7 @@ $gutter-sections-bottom: $gutter-sections;
 .galeria-portfolio,
 .fale-conosco{
 	@media (min-width: $screen-sm-min) {
-		@include make-sm-column(12);
+		@include make-sm-column(4);
 	}
 	@media (min-width: $screen-md-min) {
 		@include make-md-column(4);
@@ -148,12 +151,21 @@ $gutter-sections-bottom: $gutter-sections;
 	margin-bottom: 2em;
 	
 	@media (min-width: $screen-sm-min) {
-		@include make-sm-column(4);
+		@include make-sm-column(6);
 	}
 	@media (min-width: $screen-md-min) {
-		@include make-md-column(4);
+		@include make-md-column(6);
 	}
 	@media (min-width: $screen-lg-min) {
-		@include make-lg-column(4);
+		@include make-lg-column(6);
+	}
+}
+
+@media screen and (min-width: 320px) {
+	.galeria-portfolio{
+
+	}
+	.projeto-da-galeria{
+		@include make-xs-column(4);
 	}
 }
