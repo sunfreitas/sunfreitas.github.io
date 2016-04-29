@@ -48,11 +48,10 @@ $gutter-sections:40px;
 $gutter-sections-top: $gutter-sections;
 $gutter-sections-bottom: $gutter-sections;
 
-.section,
-.full-section_content-box{
+.section{
 
-	padding-top:$gutter-sections-top;
-	padding-bottom:$gutter-sections-bottom;
+	/* padding-top:$gutter-sections-top;
+	padding-bottom:$gutter-sections-bottom;*/
 
 	@media (min-width: $screen-sm-min) {
 		width: $container-sm;
@@ -68,9 +67,8 @@ $gutter-sections-bottom: $gutter-sections;
 }
 
 .content-box{
-	@media (min-width: $screen-sm-min) {
-		@include make-row();
-	}
+	@include make-row();
+
 }
 
 .full-section{
@@ -79,23 +77,6 @@ $gutter-sections-bottom: $gutter-sections;
 }
 
 /* Pega as margens dos columns-** do bootstrap */
-
-.sobre-nos,
-.slide-projetos{
-
-	@media (min-width: $screen-xs-min) {
-		@include make-xs-column(12);
-	}
-	@media (min-width: $screen-sm-min) {
-		@include make-sm-column(12);
-	}
-	@media (min-width: $screen-md-min) {
-		@include make-md-column(6);
-	}
-	@media (min-width: $screen-lg-min) {
-		@include make-lg-column(6);
-	}
-}
 
 .servico{
 	@media (min-width: $screen-xs-min) {
@@ -122,10 +103,6 @@ $gutter-sections-bottom: $gutter-sections;
 	@media (min-width: $screen-lg-min) {
 		@include make-lg-column(3);
 	}
-}
-
-.contrate-nos{
-	@include make-md-column(12);
 }
 
 .apresentacao{
