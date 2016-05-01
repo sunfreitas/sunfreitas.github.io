@@ -85,7 +85,11 @@ $gutter-sections-bottom: $gutter-sections;
 	padding-left: 0;
 	padding-right: 0;
 }
-
+.top-section{
+	background: #3697d9;
+	color:white;
+	font-size: 12px;
+}
 /**
  * Custom Sections
  */
@@ -103,9 +107,6 @@ h1,h2{
 footer{
 	background: #222222;
 	color:#cccccc;
-}
-.navbar{
-	opacity: .9;
 }
 
 .sobre-footer{
@@ -195,6 +196,18 @@ footer{
  *
  */
 @media screen and (min-width: 320px) {	
+	
+	.top-section_container{
+		margin:0 auto;
+		padding:15px;
+	}
+
+	.contact-info_info{
+		display: block;
+		margin-left:15px;
+		text-align: center;
+	}
+
 	.projeto-da-galeria{
 		@include make-xs-column(4);
 	}
@@ -211,6 +224,25 @@ footer{
 }
 
 @media screen and (min-width: $screen-sm-min) {
+	.top-section{
+		height: 40px;
+	}
+
+	.top-section_container{
+		margin:0 auto;
+		padding-top:10px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	.contact-info_info{
+		display: inline-block;
+		margin-left:15px;
+		float:right;
+	}
+	.top-section_container{
+		width:$container-sm;
+	}
 	.servico{
 		@include make-sm-column(4);
 	}
@@ -232,6 +264,11 @@ footer{
 }
 
 @media screen and (min-width: $screen-md-min) {
+	
+	.top-section_container{
+		width:$container-md;
+	}
+
 	.sobre,
 	.slide-projetos{
 		@include make-sm-column(6);
@@ -239,4 +276,7 @@ footer{
 }
 
 @media screen and (min-width: $screen-lg-min) {
+	.top-section_container{
+		width:$container-lg;
+	}
 }
