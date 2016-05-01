@@ -93,11 +93,21 @@ $gutter-sections-bottom: $gutter-sections;
 	background: url('../imagens/50743_Papel-de-Parede-Design-de-Interior-Sala-de-TV_1680x1050.jpg') no-repeat center;
 	height: 400px;
 }
-
+body{
+	font-family: 'Open Sans', Arial, sans-serif;
+}
+nav,
+h1,h2{
+	font-family: 'Raleway', Arial, sans-serif;
+}
 footer{
 	background: #222222;
 	color:#cccccc;
 }
+.navbar{
+	opacity: .9;
+}
+
 .sobre-footer{
 	font-size: 12px;
 }
