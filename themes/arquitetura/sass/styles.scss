@@ -69,11 +69,21 @@ $gutter-sections-bottom: $gutter-sections;
 .content-box{
 	@include make-row();
 
+	@media(min-width: $screen-xs-min) {
+		
+	}
+
 }
 
 .full-section{
 	width:100%;
 	background: $beta-bg;
+	clear:both;
+}
+
+.full-section_content-box{
+	padding-left: 0;
+	padding-right: 0;
 }
 
 /* Pega as margens dos columns-** do bootstrap */
@@ -144,5 +154,13 @@ $gutter-sections-bottom: $gutter-sections;
 	}
 	.projeto-da-galeria{
 		@include make-xs-column(4);
+	}
+	/* Grid Fixes */
+	.sobre-footer,
+.galeria-portfolio,
+.fale-conosco,
+	.projeto,
+	.servico{
+		@include make-xs-column(12);
 	}
 }
