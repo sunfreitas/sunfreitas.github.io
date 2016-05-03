@@ -124,6 +124,7 @@ $gutter-sections-bottom: $gutter-sections;
 
 .titulo-sessao{
 	text-align: center;
+	text-transform: uppercase;
 }
 
 .separador{
@@ -148,6 +149,7 @@ footer{
 	color:#cccccc;
 }
 .title-brand{
+	max-width: 150px;
 	padding: 8px 12px;
 	border:solid 2px #aaa;
 	font-weight: bold;
@@ -202,9 +204,22 @@ footer{
 }
 
 .apresentacao{
-	height	:650px;
+	height	:600px;
 	margin-top:-20px;
-	background: url('../imagens/50743_Papel-de-Parede-Design-de-Interior-Sala-de-TV_1680x1050-compressed.jpg') no-repeat center;
+	background: url('../imagens/50743_Papel-de-Parede-Design-de-Interior-Sala-de-TV_1680x1050.jpg') no-repeat center;
+	.titulo{
+		text-align: center;
+		padding-top:10%;
+		text-transform: uppercase;
+		font-size:3em;
+		font-weight: bold;
+		color:white;
+	}
+	p{
+		font-size:24px;
+		color:white;
+		text-align: center;
+	}
 }
 
 .sobre-footer,
