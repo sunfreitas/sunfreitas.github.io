@@ -134,7 +134,9 @@ $gutter-sections-bottom: $gutter-sections;
 }
 body{
 	font-family: 'Open Sans', Arial, sans-serif;
-	line-height: 1.7em;
+	p {
+		line-height: 1.7em;
+	}
 }
 nav,
 h1,h2{
@@ -197,6 +199,7 @@ footer{
 
 .apresentacao{
 	height	:650px;
+	margin-top:-20px;
 	background: url('../imagens/50743_Papel-de-Parede-Design-de-Interior-Sala-de-TV_1680x1050-compressed.jpg') no-repeat center;
 }
 
