@@ -177,15 +177,13 @@ footer{
 	margin-bottom: 10px;
 }
 
-
-
-
 /**
  * End custoom sections
  */
 
 /* Pega as margens dos columns-** do bootstrap */
 .projeto{
+	margin-bottom: 10px;
 	@media (min-width: $screen-sm-min) {
 		@include make-sm-column(4);
 	}
