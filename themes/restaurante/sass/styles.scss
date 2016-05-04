@@ -254,21 +254,6 @@ footer{
  *
  */
 @media screen and (min-width: 320px) {	
-	
-	.top-section_container{
-		margin:0 auto;
-		padding:15px;
-	}
-
-	.contact-info_info{
-		display: block;
-		margin-left:15px;
-		text-align: center;
-	}
-
-	.projeto-da-galeria{
-		@include make-xs-column(4);
-	}
 
 	/* Grid Fixes */
 	.sobre,
@@ -288,25 +273,7 @@ footer{
 }
 
 @media screen and (min-width: $screen-sm-min) {
-	.top-section{
-		height: 40px;
-	}
 
-	.top-section_container{
-		margin:0 auto;
-		padding-top:10px;
-		padding-left: 15px;
-		padding-right: 15px;
-	}
-
-	.contact-info_info{
-		display: inline-block;
-		margin-left:15px;
-		float:right;
-	}
-	.top-section_container{
-		width:$container-sm;
-	}
 	.servico{
 		@include make-sm-column(4);
 	}
@@ -332,10 +299,6 @@ footer{
 }
 
 @media screen and (min-width: $screen-md-min) {
-	
-	.top-section_container{
-		width:$container-md;
-	}
 
 	.sobre,
 	.slide-projetos{
@@ -344,7 +307,4 @@ footer{
 }
 
 @media screen and (min-width: $screen-lg-min) {
-	.top-section_container{
-		width:$container-lg;
-	}
 }
