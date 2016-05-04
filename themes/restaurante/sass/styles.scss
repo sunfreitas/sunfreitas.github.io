@@ -95,36 +95,64 @@ $gutter-sections-bottom: $gutter-sections;
 /**
  * End Full Responsive Sections
  */
-.top-section{
-	background: #3697d9;
+
+body{
+	font-family: 'Open Sans', Arial, sans-serif;
+	padding-top: 70px;
+	p {
+		line-height: 1.7em;
+	}
+}
+nav,
+h1,h2{
+	/* font-family: 'Pacifico', Arial, cursive;*/
+	font-family: 'Kaushan Script', Arial, cursive;
+}
+footer{
+	background: #222222;
+	color:#cccccc;
+}
+
+/* Componentes */
+.title-brand{
+	max-width: 150px;
+	padding: 8px 12px;
+	border:solid 2px #aaa;
+	font-weight: bold;
+	color:#aaa;
+}
+
+.sobre-footer{
+	font-size: 12px;
+}
+
+.formulario-de-reserva{
+	padding-top: 0px;
+}
+.formulario-de-reserva_nome,
+.formulario-de-reserva_fone{
+	display:inline-block;
+	width:100%;
+	padding:6px;
+	margin-bottom: 10px;
+	background-color: #777777;
+	border:solid 1px #777777;
+}
+.formulario-de-reserva_botao{
+	padding:6px 18px;
 	color:white;
-	font-size: 14px;
+	background-color: #404040;
+	border:solid 1px #404040;
+	margin-bottom: 10px;
 }
-.contact-info_info{
-	font-family: Arial, Arial, sans-serif;
-}
+/* End Componentes */
+
 /**
  * Custom Sections
  */
 
-.metodologias,
-.tecnologias{
-	background: #3697d9;
-	color:white;
-}
-.etica{
-	background:#1B4C6D;
-	color:white;
-}
-.recomendacoes{
-	background: url('../imagens/50743_Papel-de-Parede-Design-de-Interior-Sala-de-TV_1680x1050.jpg') no-repeat center;
-	height: 400px;
-	color:white;
-}
-
 .titulo-sessao{
 	text-align: center;
-	text-transform: uppercase;
 }
 
 .separador{
@@ -134,74 +162,6 @@ $gutter-sections-bottom: $gutter-sections;
 	display: block;
 	margin-bottom: 35px;
 }
-body{
-	font-family: 'Open Sans', Arial, sans-serif;
-	p {
-		line-height: 1.7em;
-	}
-}
-nav,
-h1,h2{
-	font-family: 'Raleway', Arial, sans-serif;
-}
-footer{
-	background: #222222;
-	color:#cccccc;
-}
-.title-brand{
-	max-width: 150px;
-	padding: 8px 12px;
-	border:solid 2px #aaa;
-	font-weight: bold;
-	color:#aaa;
-}
-.sobre-footer{
-	font-size: 12px;
-}
-.arquiterura-resumo{
-	display: inline-block;
-	border-bottom:solid 1px #ffffff;
-	padding-bottom: 1em;
-	margin-bottom: 0;
-}
-
-.form{
-	padding-top: 0px;
-}
-.form_email-field,
-.form_message-field{
-	display:inline-block;
-	width:100%;
-	padding:6px;
-	margin-bottom: 10px;
-	background-color: #777777;
-	border:solid 1px #777777;
-}
-.form_buttom{
-	padding:6px 18px;
-	color:white;
-	background-color: #404040;
-	border:solid 1px #404040;
-	margin-bottom: 10px;
-}
-
-/**
- * End custoom sections
- */
-
-/* Pega as margens dos columns-** do bootstrap */
-.projeto{
-	margin-bottom: 10px;
-	@media (min-width: $screen-sm-min) {
-		@include make-sm-column(4);
-	}
-	@media (min-width: $screen-md-min) {
-		@include make-md-column(3);
-	}
-	@media (min-width: $screen-lg-min) {
-		@include make-lg-column(3);
-	}
-}
 
 .apresentacao{
 	height	:600px;
@@ -210,7 +170,6 @@ footer{
 	.titulo{
 		text-align: center;
 		padding-top:10%;
-		text-transform: uppercase;
 		font-size:3em;
 		font-weight: bold;
 		color:white;
@@ -222,39 +181,28 @@ footer{
 	}
 }
 
-.sobre-footer,
-.galeria-portfolio,
-.fale-conosco{
-	@media (min-width: $screen-sm-min) {
-		@include make-sm-column(4);
-	}
-	@media (min-width: $screen-md-min) {
-		@include make-md-column(4);
-	}
-	@media (min-width: $screen-lg-min) {
-		@include make-lg-column(4);
-	}
+.cardapio{
+	background: url('../imagens/2-Sakagura_PA_ElvisFernandes.jpg') no-repeat center;
+		color:white;
 }
 
-.projeto-da-galeria{
-	margin-bottom: 2em;
-	
-	@media (min-width: $screen-sm-min) {
-		@include make-sm-column(6);
-	}
-	@media (min-width: $screen-md-min) {
-		@include make-md-column(6);
-	}
-	@media (min-width: $screen-lg-min) {
-		@include make-lg-column(6);
-	}
+.horarios{
+	background: url('../imagens/2-Sakagura_PA_ElvisFernandes.jpg') no-repeat center;
+		color:white;
 }
+/**
+ * End custoom sections
+ */
+
 
 /**
- *
+ * Media Queries
  */
 @media screen and (min-width: 320px) {	
-
+	.espaco,
+	.reserva{
+		@include make-xs-column(12);
+	}
 	/* Grid Fixes */
 	.sobre,
 	.slide-projetos,
@@ -266,44 +214,14 @@ footer{
 	.recomendacao{
 		@include make-xs-column(12);
 	}
-
-	.metodologias-de-trabalho{
-		@include make-full-xs-column(12);
-	}
 }
 
 @media screen and (min-width: $screen-sm-min) {
 
-	.servico{
-		@include make-sm-column(4);
-	}
-
-	.projeto{
-		@include make-sm-column(3);
-	}
-
-	.sobre,
-	.slide-projetos{
-		@include make-sm-column(6);
-	}
-
-	.sobre-footer,
-	.galeria-portfolio,
-	.fale-conosco{
-		@include make-sm-column(4);
-	}
-
-	.metodologias-de-trabalho{
-		@include make-full-md-column(4)
-	}
 }
 
 @media screen and (min-width: $screen-md-min) {
 
-	.sobre,
-	.slide-projetos{
-		@include make-sm-column(6);
-	}
 }
 
 @media screen and (min-width: $screen-lg-min) {
