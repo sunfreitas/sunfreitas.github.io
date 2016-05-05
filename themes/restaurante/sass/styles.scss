@@ -225,7 +225,8 @@ body{
 	.espaco{
 		@include make-xs-column(6);
 	}
-	.reserva{
+	.reserva,
+	.refeicoes{
 		@include make-xs-column(12);
 	}
 	/* Grid Fixes */
