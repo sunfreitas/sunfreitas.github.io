@@ -95,19 +95,6 @@ $gutter-sections-bottom: $gutter-sections;
 /**
  * End Full Responsive Sections
  */
-
-body{
-	font-family: 'Open Sans', Arial, sans-serif;
-	padding-top: 70px;
-	p {
-		line-height: 1.7em;
-	}
-}
-nav,
-h1,h2{
-	/* font-family: 'Pacifico', Arial, cursive;*/
-	font-family: 'Kaushan Script', Arial, cursive;
-}
 footer{
 	background: #222222;
 	color:#cccccc;
@@ -151,10 +138,6 @@ footer{
  * Custom Sections
  */
 
-.titulo-sessao{
-	text-align: center;
-}
-
 .separador{
 	height: 1px;
 	background-color: #ccc;
@@ -173,6 +156,7 @@ footer{
 		font-size:3em;
 		font-weight: bold;
 		color:white;
+		text-shadow: 2px 1px #333333;
 	}
 	p{
 		font-size:24px;
@@ -190,16 +174,56 @@ footer{
 	background: url('../imagens/2-Sakagura_PA_ElvisFernandes.jpg') no-repeat center;
 		color:white;
 }
+.prato-do-dia{
+	background: url('../imagens/2-Sakagura_PA_ElvisFernandes.jpg') no-repeat center;
+	color:white;
+}
+.recomenadacao{
+	text-align: center;
+}
 /**
  * End custoom sections
  */
 
+/* Tipografia */
+body{
+	font-family: 'Open Sans', Arial, sans-serif;
+	padding-top: 70px;
+
+	p {
+		font-size: 1.4em;
+		line-height: 1.7em;
+	}
+}
+
+.titulo,
+.small-title,
+.titulo-sessao{
+	/* font-family: 'Pacifico', Arial, cursive;*/
+	font-family: 'Kaushan Script', Arial, cursive;
+	font-size: 3em;
+}
+
+.titulo,
+.small-title,
+.titulo-sessao,
+.resumo-apresentacao,
+.apresentacao-sessao{
+	text-align: center;
+}
 
 /**
  * Media Queries
  */
-@media screen and (min-width: 320px) {	
-	.espaco,
+@media screen and (min-width: 320px) {
+	.titulo-interno{
+		font-family: 'Kaushan Script', Arial, cursive;
+		text-align: center;
+	}
+
+	.espaco{
+		@include make-xs-column(6);
+	}
 	.reserva{
 		@include make-xs-column(12);
 	}
@@ -217,7 +241,23 @@ footer{
 }
 
 @media screen and (min-width: $screen-sm-min) {
+	.apresentacao-sessao
+	{
+		@include make-sm-column(8);
+		@include make-sm-column-offset(2);
+	}
 
+	.titulo-interno{
+		text-align: left;
+	}
+
+	.sobre,
+	.sobre-imagem{
+		@include make-sm-column(6);
+	}
+	.refeicoes{
+		@include make-sm-column(4);
+	}
 }
 
 @media screen and (min-width: $screen-md-min) {
