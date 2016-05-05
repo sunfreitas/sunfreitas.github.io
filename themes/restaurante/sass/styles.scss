@@ -117,19 +117,20 @@ footer{
 	padding-top: 0px;
 }
 .formulario-de-reserva_nome,
-.formulario-de-reserva_fone{
+.formulario-de-reserva_fone,
+.formulario-de-reserva_data,
+.formulario-de-reserva_horario{
 	display:inline-block;
 	width:100%;
 	padding:6px;
 	margin-bottom: 10px;
-	background-color: #777777;
 	border:solid 1px #777777;
 }
 .formulario-de-reserva_botao{
 	padding:6px 18px;
 	color:white;
-	background-color: #404040;
-	border:solid 1px #404040;
+	background-color: #EF431B;
+	border:solid 1px #AF3C02;
 	margin-bottom: 10px;
 }
 /* End Componentes */
