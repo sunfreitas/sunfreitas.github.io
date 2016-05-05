@@ -167,8 +167,16 @@ footer{
 }
 
 .cardapio{
-	background: url('../imagens/2-Sakagura_PA_ElvisFernandes.jpg') no-repeat center;
+	background: url('../imagens/asian-space.jpg') no-repeat center;
 		color:white;
+	.prato-cardapio{
+		font-family: 'Kaushan Script', Arial, cursive;
+	}
+	.prato-descricao,
+	.prato-valor{
+		font-size: 1.2em;
+		line-height: 1em;
+	}
 }
 
 .horarios{
@@ -231,12 +239,8 @@ body{
 	}
 	/* Grid Fixes */
 	.sobre,
-	.slide-projetos,
 	.sobre-footer,
-	.galeria-portfolio,
 	.fale-conosco,
-	.projeto,
-	.servico,
 	.recomendacao{
 		@include make-xs-column(12);
 	}
