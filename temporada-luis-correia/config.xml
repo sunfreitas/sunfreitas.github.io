@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3c.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" version="1.0.0" id="br.com.noudi.temporada">
+	<name>
+		Temporada Luís Correia
+	</name>
+
+	<description>
+		Encontre o lugar perfeito para relaxar no nosso litoral. Este app lhe ajuda a encontrar casas, apartamentos ou pousadas para aluguel ou venda no litoral do Piauí. Fale diretamente com os proprietários sobre localização, valores, períodos de estadia ou negociações.
+	</description>
+
+	<author href="http://noudi.com.br" email="sun.freitas@gmail.com">
+		Fco Freitas
+	</author>
+
+	<icon src="icon.png" />
+
+	<gap:splash src="splash.png" />
+</widget>
