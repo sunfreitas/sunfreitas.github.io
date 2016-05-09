@@ -17,7 +17,7 @@ na medida em que considerar o seu design. Estas restrições de design lhe darã
 para todos os seus usuários.
 
 Na medida em que ler estas orientações, considere que não queremos projetar para seus colegas de design.
-
+[](https://cdn-images-2.medium.com/max/800/0*bhC1d9AMLq7EA4bv.jpg)
 Projete para os diversos grupos de usuários que irão interagir com seus produtos.
 
 Isso pode incluir pessoas que são cegas, daltônicos ou baixa visão, aqueles que são surdos ou possuem baixa audição, pessoas com dificuldades
