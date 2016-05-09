@@ -73,3 +73,74 @@ também o WebAIM's Color Contrast Checker, que lhe deixará testar as cores que 
 
 Logos ou elementos atualmente em um estado desabilitado estão isentos deste padrão. Isso inclui botões ou itens de menu inativos. Placeholder ou
 textos fantasmas para campos de formulário *não* estão isentos deste padrão.
+
+Aqui está um exemplo de um blog popular com o contraste do texto abaixo do padrão. Apenas o contraste da letra "M" gigante atende ao padrão.
+
+![](https://cdn-images-2.medium.com/max/800/0*tvvQcCsqdHROnBzK.)
+
+O exemplo seguinte da BBC mostra a UI com passagem de combinação de cores. Você pode dizer que eles estão ativamente procurando passar taxas de
+contraste desde que seu cinza mais alto é #767676.
+
+![](https://cdn-images-2.medium.com/max/800/0*Y0AhWKKQ3mbgUzWs.)
+
+Eu estou orgulhoso de trabalhar com o time da Salesforce Design System, onde eles abraçaram as orientações de contraste de cores para a
+aplicação mobile da Salesforce1.
+
+![Passing colors in Salesforce1](https://cdn-images-2.medium.com/max/800/1*o6kxU1Gm4SaOPpTmhPOg0A.png)
+
+Explore utilizar combinações de cores de alto contraste. Designers que tem feito este exercício estão frequentemente surpresos pela forma como
+eles preferem designs com maior contraste. Estou confiante que você também vai achar que exibir texto utilizando o mínimo de contraste permitido
+não irá depreciar seus produtos.
+
+Confira [Projectors Don't Lie](https://medium.com/salesforce-ux/projectors-dont-lie-b85ef628b04) and [Accessible Interface Design](https://medium.com/salesforce-ux/accessible-interface-design-d80e95cbb2c1) para mais sobre contraste de cor.
+
+##4.Proporcione incicação de foco visual para foco de teclado
+
+Vamos dar um momento para parabenizar a folha de estilo reset e todas as utilidades que tem dado ao moderno web designer. Sem a folha de estilo
+reset, seria muito mais difícil criar experiências consistentes através de diferentes dispositivos e navegadores.
+
+E agora vamos dar um momento para culpar as folhas de estilo reset por desempenhar um papel em uma das tolices de acessibilidade mais difundidas
+na internet.
+
+> *:focus{outline:o;}*
+
+Este única linha de CSS torna quase impossível para um usuário sem deficiência visual utilizar o site apenas com o teclado. Felizmente, desde que
+os resets CSS iniciais foram liberados, muitos outros populares incluindo o do [Erick Meyer](http://meyerweb.com/eric/thoughts/2011/01/03/reset-revisited/) tem sido atualizados para remover o un-styling da pseudo classe :focus.
+
+A intenção de remover o estilo para o focus foi nobre o bastante: remover estilos de foco padrão com a intenção de que designers e desenvolvedores
+o substituirão por algo que é ambos visível e relaciona o estilo de suas páginas web. É muito fácil não gostar da borda cinza trachejada no 
+focus do IE e Firefox ou a auréola azul no Chrome.
+
+![](https://cdn-images-2.medium.com/max/800/1*ADqQnz8LvA2ACpAsYrQH9w.png)
+
+O problema é que muitos websites não criam seus próprios estilos para focus. Estes indicadores de foco, os quais são fundamentais para o sucesso 
+de usuários de teclado, são largamente ausentes na web.
+
+Como um exercício rápido para experimentar um site que jamais fornece foco visual, abra uma aba e visite o website da companhia que faz o seu
+celular. Pressione a tecla Tab repedidamente para navegar através da página. Você vê o indicador do foco visual enquanto navega? Talvez você veja 
+para alguns links na página mas não para todos? Leve em consideração o efeito que isso tem em alguém que usa apenas o teclado para interagir
+com a web.
+
+Se você estivar num Mac, você pode habilitar o Acesso Completo ao Teclado dentro de Preferências de Sistema > Teclado > Atalhos. Fica na parte inferior.
+
+![](https://d262ilb51hltx0.cloudfront.net/max/800/1*j7NH2HQiSo8Ly7KOgGx-nA.png)
+
+Se você remove o foco padrão, substitua por algo que seja *melhor* do que o que o seu navegador disponibiliza.
+
+No exemplo abaixo, a BBC utiliza uma barra de cor para indicar qual link de sessão está em foco.
+
+![](https://d262ilb51hltx0.cloudfront.net/max/800/0*BNrgAFEkXG8HxbA1.)
+
+O Twitter usa uma combinação de foco padrão e uma dica para mostrar o foco do teclado. O ícone também muda do cinza para o verde. Estes três
+visuais separados para indicar o foco para usuários de teclado.
+
+![](https://d262ilb51hltx0.cloudfront.net/max/800/0*Rzkmsk2iwQz6h4yM.)
+
+Quando fornever seus própios estados de foco, tenha certeza de remover o estado padrão de forma que você não encontre algo parecido com este
+exemplo onde o retângulo azul do Chrome sobrepõe esta pílula azul do menu.
+
+![](https://d262ilb51hltx0.cloudfront.net/max/800/0*SYm5Ja2u1Ed5ptGL.)
+
+## 5.Seja carinhoso com formulários
+
+
