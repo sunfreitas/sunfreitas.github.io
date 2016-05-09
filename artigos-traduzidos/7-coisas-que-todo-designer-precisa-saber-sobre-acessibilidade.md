@@ -8,7 +8,7 @@ desenvolvedores sabem tudo o que há pra saber sobre acessibilidade. Você proje
 em si pode causar problemas em pessoas com deficiência utilizando um produto.
 
 Estas orientações irão abranger as maiores coisas que você precisa saber para que seus produtos sejam "no ponto" para atender o mínimo de
-padrões na Section 508 e no Web Content Accessibility Guidelines 2.0. O resto ficará por conta do desenvolvimento e da qualidade de testes.
+padrões na [Section 508](http://www.section508.gov/section-508-standards-guide) e no [Web Content Accessibility Guidelines 2.0](http://www.w3.org/TR/WCAG20/). O resto ficará por conta do desenvolvimento e da qualidade de testes.
 
 ## 1.Acessibilidade não é uma barreira para a inovação
 
@@ -17,8 +17,12 @@ na medida em que considerar o seu design. Estas restrições de design lhe darã
 para todos os seus usuários.
 
 Na medida em que ler estas orientações, considere que não queremos projetar para seus colegas de design.
+
 ![Eager to escape the tech bubble for a weekend, Designer Dude and his circle of start-up friends went to Yosemite, where he spent most of his time dribbbling on a slack-line near their basecamp.](https://cdn-images-2.medium.com/max/800/0*bhC1d9AMLq7EA4bv.)
+
 Projete para os diversos grupos de usuários que irão interagir com seus produtos.
+
+![](https://cdn-images-2.medium.com/max/1200/0*Y8EzNegFamAO5_zV.)
 
 Isso pode incluir pessoas que são cegas, daltônicos ou baixa visão, aqueles que são surdos ou possuem baixa audição, pessoas com dificuldades
 de movimentação, que podem ser temporárias ou permamentes, ou pessoas com deficiências cognitivas. Projete para pessoas que são jovens, velhas,
