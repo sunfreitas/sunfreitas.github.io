@@ -143,4 +143,54 @@ exemplo onde o retângulo azul do Chrome sobrepõe esta pílula azul do menu.
 
 ## 5.Seja carinhoso com formulários
 
+Nos últimos anos temos experimentado uma involução nos campos de formulário. Designers modernos renunciaram atributos de identificação tradicionais 
+e facilidades interativas em favor de uma abordagem mais minimalista. Hoje os formulários necessitam de dois itens específicos que são vitais para 
+a acessibilidade: limites claramente definidos e rótulos visíveis.
+
+### Formulários sem Bordas
+
+Abaixo é um exemplo de um campo de texto tradicional. É um retângulo com uma fronteira definida. Ele pode ser preenchido com cor, mas não tem que
+ser preenchido. Há também um rótulo visível, o qual no exemplo ele senta do lado esquerdo do campo.
+
+![](https://d262ilb51hltx0.cloudfront.net/max/800/0*ErvTpvrIKSMCLR_3.)
+
+Fronteiras claramente definidas para campos de formulário são importantes para usuários com dificulades de movimento e com problemas cognitivos.
+Conhecendo o local e o tamanho do clique de destino é importante para pessoas que usam um padrão ou um [dispositivo de apontar adaptado](http://iuadapts.indiana.edu/technology/hardware/mice/index.html). Usuários com disfunções cognitivas podem ter dificuldade em encontar e interagir 
+com campos sem as pistas visuais comuns.
+
+Abaixo está um exemplo de um campo de busca de um popular aplicativo de notas.
+
+![](https://d262ilb51hltx0.cloudfront.net/max/800/0*At-5IS3mUpUsPfh5.)
+
+Há apenas uma entrada na tela. Você pode adivinhar as fronteiras do campo de formulário? Clicando em qualquer lugar nas palavras "search notes", 
+lhe colocará dentro do campo.
+
+Aqui está outro exemplo de campos de formulário sem fronteiras de uma popular plataforma de blog. Abaixo existem dois campos de formulários na
+página. Onde na tela eu posso clicar de forma a entrear na text area "Tell your story..."?
+
+![](https://d262ilb51hltx0.cloudfront.net/max/800/1*T8z2EeDpJz49Xg9SuYlhXw.png)
+
+Aqui está a mesma tela com o um retângulo azul adicionado para mostrar as fronteiras da área de texto. Se você clicar em qualquer lugar dessa
+região, nada acontece.
+
+![](https://d262ilb51hltx0.cloudfront.net/max/800/1*BTZJzKyh_QDGMQoRReWlzw.png)
+
+Abaixo está outro exemplo de um design de notas. Este também não utiliza as entradas visuais tradicionais, mas dá a usuários com deficiências
+mais informação. O título da nota vem entre duas linhas horizontais, e o usuário pode clicar em qualquer lugar entre as duas linhas de baixo
+para começar a escrever sua nota.
+
+![](https://d262ilb51hltx0.cloudfront.net/max/800/1*pElu7shS8G92yqrOTE4Waw.png)
+
+Você pode pensar em outras opções para estes designers? Como você projetaria um aplicativo de notas ou blog de postagens?
+
+### Formulários sem Rótulos
+
+Rótulos falam para o usuário o propósito do campo, mantêm sua utilidade quando o foco e colocado dentro do campo e permanece mesmo depois
+de completar o campo. Texto de placeholder é um substituto pobre para um rótulo visual.
+
+Eles estão tipicamente em baixo contraste. De sete exemplos abaixo apenas um tem contraste suficiente para atender nossas taxa de 4,5:1 necessária.
+
+![](https://d262ilb51hltx0.cloudfront.net/max/800/1*kHRRhIPx8yb-TanFha3Ggg.png)
+
+
 
