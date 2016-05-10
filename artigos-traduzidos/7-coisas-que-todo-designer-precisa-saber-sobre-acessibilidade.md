@@ -192,5 +192,65 @@ Eles estão tipicamente em baixo contraste. De sete exemplos abaixo apenas um te
 
 ![](https://d262ilb51hltx0.cloudfront.net/max/800/1*kHRRhIPx8yb-TanFha3Ggg.png)
 
+Textos do placeholder desaparecem. Nos exemplos abaixo, o que eu imaginaria colocar dentro do campo de texto? Para o exemplo do JetBlue eu deveria
+colocar meu nome de usuário, email, ou meu número TrueBlue? Para o exemplo do Caviar, eu deveria "Começar"* digitando minha comida favorita, 
+restaurante preferido, ou meu endereço? São campos de preço para o mínimo ou o máximo, acima e abaixo, ou antes e depois?
+
+![](https://cdn-images-2.medium.com/max/800/1*zTDCz2B_Se005nG2pYO47w.png)
+
+Aqui está uma forma mais acessível de projetar o campo de  Preço composto mostrado acima. Iremos ver os rótulos, min e max, mesmo depois que 
+preenchermos os campos.
+
+![](https://cdn-images-2.medium.com/max/800/1*AhJDVHKxgvgdjoKqb6ta4g.png)
+
+## 6.Evite crise de identidade do componente
+
+> *P: Quando um menu deixou de ser um menu?*
+> *R: Quando ele é um diálogo não modal.*
+
+Esta questão está no cerne dos maiores problemas de acessibilidade web de hoje. De forma a entender isso completamente, leve em
+consideração [W3C's Authoring Practices for Design Patterns](http://www.w3.org/TR/wai-aria-practices/#aria_ex). Este é um guia de como construir
+uma versão acessível de muitos padrões de design comuns de hoje incluindo menus, modals, autocompletes, árvores, tabsets e muitos outros.
+
+Cada um destes padrões tem um conjunto específico de semânticas HTML esperados, comportamentos de teclado 
+e uso de atributos [ARIA](http://www.w3.org/WAI/intro/aria.php). Estes atributos ARIA instruem usuários de leitura de tela em como interagir com
+um componente quando utilizando um teclado. Eles também fornecem atualização de estados enquanto o usuário está interagindo com um componente.
+Por exemplo, eles instruem pessoas interagindo com um menu a usar a teclas de setas para mover para cima e para baixo na lista.
+
+Conheça o humilde typeahead com autocompletar.
+
+![](https://cdn-images-2.medium.com/max/800/0*P023AU5dmQmRtS5F.)
+
+Este é o mesmo typeahead, mas com ícones próximos a cada item da lista.
+
+![](https://cdn-images-2.medium.com/max/800/0*AezBPXAP0wbrxiup.)
+
+Estes são essencialmente o mesmo exato padrão de UI. O usuário digita dento do campo. Uma caixa de resultados filtrados com o texto digitado aparece
+abaixo. O usuário pode então utilizar as setas do teclado ou o mouse para localizar e seleciolnar um item da lista.
+
+O exemplo abaixo é um autocompletar com uma crise de identidade. Os usuários podem não apenas filtrar e selecionar um item da lista, mas também 
+escolher editar ou excluir cada item clicando no ícone do lápis ou lixeira. A adição destes dois botões é o que dá a crise de identidade para
+este autocompletar.
+
+![](https://cdn-images-2.medium.com/max/800/0*3ot2zGo5fldq-cGo.)
+
+Isso causa problemas de acessibilidade em partes porque isso quebra a forma como o modelo de interação padrão com o teclado para um autocompletar. 
+A tecnologia assitiva não pode comuncar sempre a identidade, operação e estado de componentes confusos como a W3C's WAI não definiu uma
+especificação para a comunicação deste tipo de UI.
+
+A mesma regra permanece verdadeira para menus. Nos exemplos abaixo da Virgin America, enquanto muito similar visualmente, apenas o dropdown
+da direita é um "menu" de verdade. O da esquerda é um diálogo não modal.
+
+![](https://cdn-images-2.medium.com/max/800/1*67YpMl-31t9q3WYBnVSpZQ.png)
+
+O menu é uma ferramenta que oferece ao usuário uma lista de escolhas. Tão logo nós oferecemos múltiplas escolhas por linha, como o exemplo da
+esquerda faz, nós não temos um menu. Isso muda o modelo de interação com o teclado em usar as teclas de seta, para usar a tecla tab. Isso muda como 
+o foco do teclado é tratado e se perde quando o dropdows é fechado.
+
+Diferente do exemplo acima com autocomplear, diálogos não-modais felizmente podem ser acessíveis. Conheça a diferença entre eles e o efeito que
+tem na experiência com o usuário. Compreendendo como o menor mudança no design pode levar a mudanças no modelo de interação do usuário. Isso 
+lhe permitirá escolher o padrão apropriado para o seu produto.
+
+## 7.Não faça as pessoas pairarem para encontrar as coisas
 
 
