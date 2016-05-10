@@ -253,4 +253,21 @@ lhe permitirá escolher o padrão apropriado para o seu produto.
 
 ## 7.Não faça as pessoas pairarem para encontrar as coisas
 
+Este princípio serve principalmente a pessoas com disfunções motoras. Isto inclui usuário de teclado com visão e aqueles que utilizam ferramentas
+de reconhecimento de voz como [Dragon NaturallySpeaking](http://www.nuance.com/dragon/index.htm) para interagir com páginas web. Usuários de
+teclado e tecnologias assistivas com a Dragon dependem de itens acionáveis sendo vistos na tela. Se um link ou botão não pode ser visto pela 
+Dragon, ele não pode ser velbalmente "clicado". Se um usuário de teclado não pode ver que um botão existe na página, como podemos esperar que ele 
+navegue para o espaço vazio onde ele irá aparecer finalmente?
+
+Abaixo é uma tela do Gmail com o Dragon Naturally Speaking mostrando uma sobreposição com hyperlinks indentificados por número. O usuário agora
+pode falar alto um número e ativar um link. O que acontece se um link não é visível até que a região seja pairada? Teríamos números sendo
+exibidos próximos os espaços vazios.
+
+![](https://cdn-images-2.medium.com/max/800/0*FqrNj6IGqTjOc021.)
+
+Eu entendo como esta prática de esconder itens acionáveis ao estarem em estado pairado garnhou popularidade. Isso serve como uma solução para 
+a heurística de usalibilidade bem estabelecida notada pelo cientista da computação Alan Kay.
+
+> *"Coisas simples deveriam ser simples, coisas complexas deveriam ser possíveis" - Alan Kay* 
+
 
