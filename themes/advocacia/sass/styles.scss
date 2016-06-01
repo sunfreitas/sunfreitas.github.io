@@ -89,7 +89,7 @@ footer
 }
 .footer-apresentacao{
 	p{
-		margin-bottom: 3em;	
+		margin-bottom: 3em;
 	}
 }
 .sitemap{
@@ -232,7 +232,7 @@ footer
 		min-height:400px;
 		background: url("../images/39764894_ml-sm-large.jpg") no-repeat;
 	}
-	
+
 	.nossa-equipe-aprensentacao{
 		@include make-xs-column(12);
 	}
@@ -327,7 +327,7 @@ footer
 	.footer-sessao{
 		@include make-md-column(3);
 	}
-	
+
 	.nossos-advogados-apresentacao,
 	.nossos-advogados-painel,
 	.nossa-equipe-aprensentacao,
@@ -351,7 +351,7 @@ footer
 		@extend .sessao-media;
 	}
 	.nossos-advogados-painel{
-		background: url("../images/39764894_ml-lg.jpg") no-repeat;
+		background: url("../images/39764894_ml-lg-compressed.jpg") no-repeat;
 	}
 }
 
