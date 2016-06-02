@@ -1,112 +1,275 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<meta charset="UTF-8">
-	<!-- More about viewports on: https://developer.mozilla.org/en/docs/Mozilla/Mobile/Viewport_meta_tag -->
+  	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Francisco Freitas - Portfólio</title>
 
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,800' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Patua+One' rel='stylesheet' type='text/css'>
+	<title>Agência Noudi</title>
 
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" type="image/icon" href="http://sunfreitas.github.io/favicon.png">
+
+	<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" type="text/css" href="./stylesheets/styles.css">
+
 </head>
 <body>
+	<!--navbar-fixed-top-->
+	<nav class="navbar navbar-default">
+		<div class="container">
 
-	<header>
-		<hgroup>
-			<img class="profile-image" src="images/profile01.jpg" alt="Fancisco Freitas">
-			<h1>Francisco Freitas</h1>
-			<h2>Webdesign e Desenvolvedor</h2>
-		</hgroup>
-	</header>
-	<!-- /header-->
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#"><span class="title-brand">Agência Noudi</span></a>
+			</div>
 
-	<section class="skills clearfix">
-		<!-- <h1 class="title">HABILIDADES</h1> -->
-		<div class="content">
-		<div class="skill-img">
-			<img src="images/logo_html5.png" alt="">
-		</div>
-
-		<div class="skill-description">
-			<p>Alguma descrição bem interessante acerda da imagem ao lado. Alguma descrição bem interessante acerda da imagem ao lado Alguma descrição bem interessante acerda da imagem ao lado Alguma descrição bem interessante acerda da imagem ao lado Alguma descrição bem interessante acerda da imagem ao lado Alguma descrição bem interessante acerda da imagem ao lado</p>
-		</div>
-		<!-- /.skill -->
-		</div>
-	</section>
-	<!-- /.skills -->
-
-	<!-- <section class="technologies">
-		<h1 class="title">Ferramentas</h1>
-		<ul>
-			<li>Wordpress</li>
-			<li>Laravel</li>
-			<li>Jquery</li>
-			<li>PhoneGrap</li>
-		</ul>
-
-	</section> -->
-	<!-- /.technologies -->
-	
-	<section class="portfolio clearfix">
-		<div class="content">
-		<h1 class="title">PORTFÓLIO</h1>
-		<div class="job">
-			<a href="http://uninovafapi.edu.br" title="Centro Universitári Uninovafapi">
-				<img src="images/centro-universitario-uninovafapi.jpg" alt="Centro Universitári Uninovafapi">
-			</a>
-			<a href="http://uninovafapi.edu.br">Centro Universitário UNINOVAFAPI</a>
-		</div>
-
-		<div class="job">
-			<a href="http://postosjaguar.com.br/" title="Postos Jaguar - Teresina PI">
-				<img src="images/postos-jaguar.jpg" alt="Postos Jaguar - Teresina PI">
-			</a>
-			<a href="http://postosjaguar.com.br/">Postos Jaguar</a>
-		</div>
-
-		<div class="job">
-			<a href="http://postosjaguar.com.br/" title="O seu pode ser o próximo">
-				<img src="#" alt="O seu pode ser o próximo">
-			</a>
-			<a href="http://postosjaguar.com.br/">O seu pode ser o próximo</a>
-		</div>
-		</div>
-	</section>
-	<!-- /.portfolio -->
-
-	<!-- <section class="education clearfix">
-		<h1 class="title">Educação</h1>
-	</section> -->
-	<!-- /.education -->
-	
-	<section class="blog clearfix">
-		<h1 class="title">BLOG</h1>
-
-		<div class="post">
-			<a href="#"><img src="" alt=""></a>
-			<a href=""><h2>Título da postagem</h2></a>
-		</div>
-
-	</section>
-	<!-- /.blog -->
-
-	<section class="contato">
-		<div class="content">
-			<h1>ONDE ME ENCONTRAR</h1>
-			<p>sun.freitas@gmail.com</p>
-			<p>+55 86 99906 6628</p>
-			<p>Teresina - PI</p>
-		</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#">Sobre</a></li>
+					<li><a href="#">Por quê a Noudi?</a></li>
+					<li><a href="#">Serviços</a></li>
+					<li><a href="#">Projetos</a></li>
+					<li><a href="#">Clientes</a></li>
+					<li><a href="#">Contato</a></li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>
+	<!--
+	# assume o comportamento de um container fixo do bootstrap
+	-->
+	<section class="full-section apresentacao">
+			<h1 class="titulo">Um Novo Conceito em Tecnologia</h1>
+      <h2>Bem vindo a Agência Noudi</h2>
+			<p>Com um arsenal do que há de mais moderno em tecnologia, a <span class="text-blue">Agência Noudi</span> tem o prazer de
+      oferecer as melhores soluções para a criação daquele site ou aplicativo mobile tanto desejado.</p>
 	</section>
 
-	<footer>
-		+55 86 99906 6628
-		sun.freitas@gmail.com
-		Teresina - PI
+	<!--
+	# assume o comportamento de um container padrão do bootstrap
+	-->
+	<!-- <section class="section">
+		<div class="content-box">
+
+			<h1 class="titulo-sessao">Nós Somos o Projeto</h1>
+			<span class="separador"></span>
+			<div class="sobre">
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+				</p>
+				<p>Blanditiis aspernatur, non quasi, maxime corporis officiis quia. Cupiditate, voluptatibus ducimus, natus, labore mollitia dolorem incidunt voluptatum, delectus eius fugit porro placeat animi voluptatem autem hic eligendi sint. Amet pariatur odit repudiandae sunt. Rem ipsum dolor sit amet, consectetur adipisicing elit. Sunt asperiores a.</p>
+			</div>
+			<div class="slide-projetos">
+				<img src="./imagens/big-2816-Apartamento_Palazzo_Designer_de_Interiores_e_Paisagista_Iara_Kilaris__(2).jpg" class="img-responsive">
+			</div>
+		</div>
+	</section>-->
+
+	<section class="full-section">
+
+		<div class="metodologias-de-trabalho metodologias">
+			<div class="content-text">
+				<h3>Moderna</h3>
+				<p>
+          Seus projetos desenvolvidos com o que há de mais recente no
+          desenvolvimento web e mobile. Trabalhamos com sites responsivos,
+          rápidos e otimizados para os mecanismos de busca do Google e outras
+          ferramentas de busca.
+        </p>
+        <p>
+          Desenvolvemos aplicativos para Andoid, Windows Mobile e iOs sob demanda
+          para o seu negócio.
+        </p>
+			</div>
+		</div>
+
+		<div class="metodologias-de-trabalho etica">
+			<div class="content-text">
+				<h3>Planejamento</h3>
+				<p>Seus projetos são desenvolvidos com análise e rigorosos testes de
+          qualidade antes de serem publicados.</p>
+        <p>
+          No processo de desenvolvimento, o cliente recebe feedbacks programados
+          sobre o andamento do seu projeto enquanto cuidamos do trabalho pesado.
+        </p>
+
+			</div>
+		</div>
+
+		<div class="metodologias-de-trabalho tecnologias">
+			<div class="content-text">
+				<h3>Somos os Melhores</h3>
+				<p>A Agência Noudi reconhece que nossos profissionais precisam estar
+          em constante busca por novos conhecimentos. Desta forma garantimos
+        rapidez e qualidade na entrega de nossos serviços.</p>
+        <p>
+          Participamos ativamente de nossa comunidade traduzindo livros,
+          artigos e produzindo conteúdo com os materiais mais recentes que vão
+          surgindo pela frente.
+        </p>
+			</div>
+		</div>
+
+	</section>
+
+	<!--
+		Nossos Serviços
+	-->
+	<section class="section">
+		<h1 class="titulo-sessao">Nossos Serviços</h1>
+		<span class="separador"></span>
+		<div class="content-box">
+			<div class="servico">
+				<img src="./imagens/icons/domain-registration.svg" class="icon website">
+				<p>Desenvolvimento de Sites e Sistemas Web</p>
+			</div>
+			<div class="servico">
+				<img src="./imagens/icons/smartphone.svg" class="icon mobile">
+				<p>Desenvolvimento Mobile para Android, Windows Mobile e iOS</p>
+			</div>
+			<div class="servico">
+				<img src="./imagens/icons/search.svg" class="icon seo">
+				<p>Otimização de Sites e Search Engine Optimization</p>
+			</div>
+		</div>
+	</section>
+
+	<!--
+		#todo
+		Aqui é pra ser uma full section, mas vamos trablhar isso apenas quando terminarmos o
+		estilo do resto do HTML.
+	-->
+	<!--<section class="full-section nos-escolha">
+		<div class="full-section_content-box">
+			<h1 class="titulo-sessao">Porquê nos Escolher</h1>
+			<span class="separador"></span>
+			<p>
+				Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+			</p>
+		</div>
+	</section>-->
+
+	<!--  -->
+	<section class="section portfolio">
+		<h1 class="titulo-sessao">Projetos</h1>
+		<span class="separador"></span>
+		<div class="content-box">
+
+			<div class="projeto">
+				<img src="./imagens/casacor_foto_gerson_lima.jpg" class="img-responsive">
+			</div>
+
+			<div class="projeto">
+				<img src="./imagens/2-Vistadasaladeestar(FotoStudioAluizio).jpg" class="img-responsive">
+			</div>
+
+			<div class="projeto">
+				<img src="./imagens/casacor_foto_gerson_lima.jpg" class="img-responsive">
+			</div>
+
+			<div class="projeto">
+				<img src="./imagens/minimalist_style_interior_design_2.jpg" class="img-responsive">
+			</div>
+
+			<div class="projeto">
+				<img src="./imagens/2-Vistadasaladeestar(FotoStudioAluizio).jpg" class="img-responsive">
+			</div>
+
+			<div class="projeto">
+				<img src="./imagens/minimalist_style_interior_design_2.jpg" class="img-responsive">
+			</div>
+
+			<div class="projeto">
+				<img src="./imagens/minimalist_style_interior_design_2.jpg" class="img-responsive">
+			</div>
+
+			<div class="projeto">
+				<img src="./imagens/2-Vistadasaladeestar(FotoStudioAluizio).jpg" class="img-responsive">
+			</div>
+		</div>
+	</section>
+	<!-- /-->
+
+	<section class="full-section recomendacoes">
+		<div class="full-section_content-box">
+			<div class="recomendacao">
+				<h1 class="titulo-sessao">O que Nossos Clientes Falam</h1>
+			</div>
+		</div>
+	</section>
+
+	<footer class="full-section">
+
+		<div class="full-section_content-box">
+			<div class="sobre-footer">
+				<h1 class="title-brand">Agência Noudi</h1>
+				<p class="arquiterura-resumo">
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+				</p>
+				<p>Av. Vilmary, 2060. Sala 03. Jóquei Clube. Teresina - PI.</p>
+				<p><span></span><b>+55 (86)99999-9999</i> <span></span><b>atendimento@noudi.com.br</i></p>
+			</div>
+			<div class="galeria-portfolio">
+				<h2>Galeria de Portfólio</h2>
+				<div class="content-box">
+					<div class="projeto-da-galeria">
+						<img src="./imagens/casacor_foto_gerson_lima.jpg" class="img-responsive">
+					</div>
+					<div class="projeto-da-galeria">
+						<img src="./imagens/casacor_foto_gerson_lima.jpg" class="img-responsive">
+					</div>
+					<div class="projeto-da-galeria">
+						<img src="./imagens/casacor_foto_gerson_lima.jpg" class="img-responsive">
+					</div>
+					<div class="projeto-da-galeria">
+						<img src="./imagens/casacor_foto_gerson_lima.jpg" class="img-responsive">
+					</div>
+					<div class="projeto-da-galeria">
+						<img src="./imagens/casacor_foto_gerson_lima.jpg" class="img-responsive">
+					</div>
+					<div class="projeto-da-galeria">
+						<img src="./imagens/casacor_foto_gerson_lima.jpg" class="img-responsive">
+					</div>
+				</div>
+			</div>
+
+			<div class="fale-conosco">
+				<h2>Entre em contato conosco</h2>
+				<div class="formulario-de-contato">
+					<form class="form">
+						<input type="text" name="email" class="form_email-field" placeholder="email"></input>
+						<textarea name="mensagem" class="form_message-field" placeholder="Digite sua mensagem"></textarea>
+						<button class="form_buttom">Enviar</button>
+					</form>
+				</div>
+				<div class="informacoes-de-contato">
+
+
+				</div>
+				<div class="social-media">
+					Facebook Twitter Google+ Instagram
+				</div>
+			</div>
+		</div>
 	</footer>
-	<!-- / -->
+
+	<!-- Copyright -->
+	<div class="copyright">
+		<p>Copyright &copy; 2016	Andréa Noleto - Agência Noudi & Interiores desenvolvido por <a href="http://noudi.com.br" title="Agência Noudi - Av. Vilmary, 2060. Sala 03. Jóquei Clube. Teresina-PI">Agência Noudi</a>. Todos os direitos reservados.</p>
+	</div>
+	<!-- /copyright -->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="./javascripts/holder.min.js"></script>
+
 </body>
 </html>

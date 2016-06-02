@@ -1,351 +1,362 @@
-@import "compass";
-@import "compass/reset";
-@import "queries";
+/**
+ * Original compass imports
+ *
+// Import Bootstrap Compass integration
+@import "bootstrap-compass";
 
-*{
-	margin:0;
-	padding:0;
-	box-sizing:border-box;
-}
+// Import custom Bootstrap variables
+@import "bootstrap-variables";
 
-//Globals
-$float-left:left;
+// Import Bootstrap for Sass
+@import "bootstrap"; */
 
-$max-width:1024px;
-$container:$max-width;
+// Import Bootstrap Compass integration
+@import "bootstrap-compass";
 
-$margin:10px;
-$margin-left:$margin;
-$margin-right:$margin;
+// Import custom Bootstrap variables
+@import "bootstrap-variables";
 
-$grid:12;
+// Core variables and mixins
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
 
-$per-margin:0.9765;
+// Reset and dependencies
+@import "bootstrap/normalize";
+@import "bootstrap/print";
+@import "bootstrap/glyphicons";
 
-$link-color:#888;
+// Core CSS
+@import "bootstrap/scaffolding";
+@import "bootstrap/grid";
+@import "bootstrap/forms";
 
-//Grids
-@mixin grid($unidade){
-	width: ( ( ( ( $container / $grid ) * $unidade ) - 10 ) * 100% / $container);
-}
+//Components
+@import "bootstrap/component-animations";
+@import "bootstrap/dropdowns";
+@import "bootstrap/navs";
+@import "bootstrap/navbar";
 
-@mixin grid-relative($unidade){
-	width: ( ( ( ( 100% / $grid ) * $unidade ) - $per-margin ));
-}
+/*Utilities*/
+@import "bootstrap/utilities";
+@import "bootstrap/responsive-utilities";
 
-//Placeholders
-%float-left{
-	float:$float-left;
-}
+@import "full-responsive";
 
-%clearfix{
-	@include clearfix;
-}
+/* Noudi Settings */
+$alpha-bg: #d1d1d1;
+$beta-bg: #ccc;
 
-//Stylesheets
-body{
-	font-family: 'Open Sans', sans-serif;
-}
-header{
+$gutter-sections:50px;
+$gutter-sections-top: $gutter-sections;
+$gutter-sections-bottom: $gutter-sections;
 
-	max-width:$max-width;
-	margin:0 auto;
+.section,
+.full-section_content-box{ /* Isto daqui deveria ser um grid!? */
 
-	margin-bottom:20px;
-	padding:10px 0;
-	@extend %clearfix;
-	
-	.menu{
-		margin-top:65px;
+	@include container-fixed();
+
+	padding-top:$gutter-sections-top;
+	padding-bottom:$gutter-sections-bottom;
+
+	@media (min-width: $screen-sm-min) {
+		width: $container-sm;
 	}
-	.search{
-		margin-top:42px;
-		float:right;
-		input{
-			padding:10px;
-			width:300px;
-		}
-		button{
-			background: white;
-			border: solid 1px #ccc;
-			border-radius: 3px;
-			padding: 11px;
-			color: #888;
-		}
+	@media (min-width: $screen-md-min) {
+		width: $container-md;
+	}
+	@media (min-width: $screen-lg-min) {
+		width: $container-lg;
 	}
 }
 
-a{
-	text-decoration:none;
-	color:$link-color;
-}
+.content-box{
+	@include make-row();
 
-hr{
-	max-width:1024px;
-	margin-bottom:2em;
-}
+	@media(min-width: $screen-xs-min) {
 
-.menu > a{
-	margin-right:30px;
-}
-
-.brand{
-	@extend %float-left;
-	margin-right:$margin-right;
-}
-
-.menu{
-	@extend %float-left;
-	list-style:none;
-
-	li{
-		margin-bottom:10px;
 	}
-}
-
-.search{
-	margin-left:$margin-left;
-}
-
-.navigation{
-	@extend %float-left;
-	@include grid(2);
-
-	margin-left:0;
-	margin-right:10px;
-
-	margin-bottom:20px;
-
 
 }
 
-.content{
-	@extend %float-left;
-	@include grid(10);
-	
-	margin-left:10px;
-	margin-right:0;
+/**
+ * Espaço reservado para Full Responsive Sections
+ *
+ */
 
-	margin-bottom:40px;
-}
-
-.main{
-	max-width:$max-width;
-	margin:0 auto;
-	
-	@extend %clearfix;
-	margin-bottom:40px;
-}
-
-.videos{
-	@extend %clearfix;
-
-	h2{font-weight:bold;}
-	span{font-size:.8em;}
-	p{font-size:.8em;}
-}
-
-.main-video, mais-videos{
-	margin-bottom:40px;
-	position:relative;
-	.caption{
-		position:absolute;
-		bottom:0;
-		left:0;
-		padding:40px;
-		color:white;
-		background:#000;
-		opacity:.8;
-		text-shadow: 1px 1px 7px #000;
-		span{
-
-		}
-		h2{
-			font-size:32px;
-			margin-bottom:.3em;
-			color:white;
-		}
-		h3{
-			font-size:18px;
-			margin-bottom:.2em;
-		}
-		p{
-			font-size:11px;
-		}
-		a{color:white;}
-	}
-}
-
-.video, .video-double{
-	position:relative;
-	min-height:125px;
-
-	.caption{
-		color:white;
-		position:absolute;
-		background:black;
-		z-index:0;
-		bottom:0;
-		opacity:0;
-		padding:35px 0;
-		margin-bottom:4px;
-		-webkit-transition: opacity 290ms linear;
-		transition: opacity 290ms linear;
-
-		h2{
-			font-size:12px;
-			text-align:center;
-			line-height:1.5em;
-			a{
-				color:white;
-				font-size:1.2em;
-			}
-		}
-	}
-	&:hover > .caption{
-		opacity:.8;
-	}
-}
-
-.mais-videos{
+.full-section{
 	width:100%;
-	@extend %clearfix;
-	margin-bottom:1.2em;
-
-	.video{
-		position:relative;
-		width:23.2222%;
-		float:left;
-		margin-left:10px;
-		margin-right:10px;
-
-		&:first-child{
-			margin-left:0;
-		}
-
-		&:last-child{
-			margin-right:0;
-		}
-	}
-
-	.video-double{
-		position:relative;
-		width:48.81%;
-		float:left;
-		margin-left:10px;
-		margin-right:10px;
-
-		&:first-child{
-			margin-left:0;
-		}
-
-		&:last-child{
-			margin-right:0;
-		}
-	}
+	@include clearfix();
 }
-.wrp-video{
-	float:left;
-	width:48.81%;
-	margin-left:10px;
-	.video{
-		width:47.55%;
-		margin-left:10px;
-	}
+
+.content-text{
+	padding:30px;
 }
-.ads-video{
-	margin-left: 10px;
-	display: inline-block;
-	width: 48.8%;
-	height: 154px;
-	background: #ccc;
-	margin-top: 19px
+
+/**
+ * End Full Responsive Sections
+ */
+.top-section{
+	background: #3697d9;
+	color:white;
+	font-size: 14px;
 }
-.cta{
-	text-align:center;
-	.btn{
-		border:solid 1px #ccc;
-		border-radius:3px;
-		padding:15px 20px;
-		margin-bottom:20px;
-		background-color:#0A9D22;
-		color:#E5FFE0;
-		font-size:18px;
+.contact-info_info{
+	font-family: Arial, Arial, sans-serif;
+}
+/**
+ * Custom Sections
+ */
+
+.metodologias,
+.tecnologias{
+	background: #3697d9;
+	color:white;
+}
+.etica{
+	background:#1B4C6D;
+	color:white;
+}
+.recomendacoes{
+	background: url('../imagens/50743_Papel-de-Parede-Design-de-Interior-Sala-de-TV_1680x1050.jpg') no-repeat center;
+	height: 400px;
+	color:white;
+}
+
+.titulo-sessao{
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.separador{
+	height: 1px;
+	background-color: #ccc;
+	width: 100%;
+	display: block;
+	margin-bottom: 35px;
+}
+body{
+	font-family: 'Open Sans', Arial, sans-serif;
+	p {
+		line-height: 1.7em;
 	}
 }
-.news{
-	margin-bottom:40px;
-}
-
-.destaque{
-	@extend %float-left;
-	@include grid(10);
-	margin-left:0;
-	margin-right:10px;
-	}
-
-.latest-news{
-	//@extend %float-left;
-	@include grid(2);
-	margin-left:10;
-	margin-right:0;
-	
-	&:last-child{
-		@extend %clearfix;
-	}
-}
-.latest{
-	@include grid(12);
-}
-.aside-title{
-	font-size:1.3em;
-	margin-bottom:10px;
-}
-.aside-latest-news{
-	margin-bottom:10px;
-	li{
-		padding:12px 0;
-		border-bottom:solid 1px #ccc;
-
-		span{
-			display:inline-block;
-			font-size:.8em;
-			margin-bottom:.5em;
-		}
-		p{
-			font-size:.8em;
-			margin-bottom:.5em;
-		}
-		a{
-			line-height:1.4;
-		}
-	}
-}
-
-.adsenses{	
-	max-width:$max-width;
-	margin:0 auto;
-
-	margin-bottom:40px;
-}
-.municipios{
-	background:#f1f1f1;
-}
-.wrp-municipios{
-	max-width:$max-width;
-	margin:0 auto;
-	padding:40px 0;
-	@extend %clearfix;
-}
-.ls-municipios{
-	float:left;
-	width:25%;
-	li{
-		list-style:none;
-		margin-bottom:8px;
-		font-size:14px;
-	}
+nav,
+h1,h2{
+	font-family: 'Raleway', Arial, sans-serif;
 }
 footer{
-	height:80px;
+	background: #222222;
+	color:#cccccc;
+}
+.title-brand{
+	max-width: 150px;
+	padding: 8px 12px;
+	border:solid 2px #aaa;
+	font-weight: bold;
+	color:#aaa;
+}
+.sobre-footer{
+	font-size: 12px;
+}
+.arquiterura-resumo{
+	display: inline-block;
+	border-bottom:solid 1px #ffffff;
+	padding-bottom: 1em;
+	margin-bottom: 0;
+}
+
+.form{
+	padding-top: 0px;
+}
+.form_email-field,
+.form_message-field{
+	display:inline-block;
+	width:100%;
+	padding:6px;
+	margin-bottom: 10px;
+	background-color: #777777;
+	border:solid 1px #777777;
+}
+.form_buttom{
+	padding:6px 18px;
+	color:white;
+	background-color: #404040;
+	border:solid 1px #404040;
+	margin-bottom: 10px;
+}
+
+/**
+ * End custoom sections
+ */
+
+/* Pega as margens dos columns-** do bootstrap */
+.projeto{
+	margin-bottom: 10px;
+	@media (min-width: $screen-sm-min) {
+		@include make-sm-column(4);
+	}
+	@media (min-width: $screen-md-min) {
+		@include make-md-column(3);
+	}
+	@media (min-width: $screen-lg-min) {
+		@include make-lg-column(3);
+	}
+}
+
+.apresentacao{
+	height	:600px;
+	margin-top:-20px;
+	background: url('../imagens/50743_Papel-de-Parede-Design-de-Interior-Sala-de-TV_1680x1050.jpg') no-repeat center;
+	.titulo{
+		text-align: center;
+		padding-top:10%;
+		text-transform: uppercase;
+		font-size:3em;
+		font-weight: bold;
+		color:white;
+	}
+	p{
+		font-size:24px;
+		color:white;
+		text-align: center;
+	}
+}
+/* Icons */
+.servico{
+	text-align: center;
+	fill:blue;
+}
+.icon{
+	width:100px;
+	text-align: center;
+	fill:#ccc;
+}
+.icon.wesite{
+
+}
+.sobre-footer,
+.galeria-portfolio,
+.fale-conosco{
+	@media (min-width: $screen-sm-min) {
+		@include make-sm-column(4);
+	}
+	@media (min-width: $screen-md-min) {
+		@include make-md-column(4);
+	}
+	@media (min-width: $screen-lg-min) {
+		@include make-lg-column(4);
+	}
+}
+
+.projeto-da-galeria{
+	margin-bottom: 2em;
+
+	@media (min-width: $screen-sm-min) {
+		@include make-sm-column(6);
+	}
+	@media (min-width: $screen-md-min) {
+		@include make-md-column(6);
+	}
+	@media (min-width: $screen-lg-min) {
+		@include make-lg-column(6);
+	}
+}
+
+/**
+ *
+ */
+@media screen and (min-width: 320px) {
+
+	.top-section_container{
+		margin:0 auto;
+		padding:15px;
+	}
+
+	.contact-info_info{
+		display: block;
+		margin-left:15px;
+		text-align: center;
+	}
+
+	.projeto-da-galeria{
+		@include make-xs-column(4);
+	}
+
+	/* Grid Fixes */
+	.sobre,
+	.slide-projetos,
+	.sobre-footer,
+	.galeria-portfolio,
+	.fale-conosco,
+	.projeto,
+	.servico,
+	.recomendacao{
+		@include make-xs-column(12);
+	}
+
+	.metodologias-de-trabalho{
+		@include make-full-xs-column(12);
+	}
+}
+
+@media screen and (min-width: $screen-sm-min) {
+	.top-section{
+		height: 40px;
+	}
+
+	.top-section_container{
+		margin:0 auto;
+		padding-top:10px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	.contact-info_info{
+		display: inline-block;
+		margin-left:15px;
+		float:right;
+	}
+	.top-section_container{
+		width:$container-sm;
+	}
+	.servico{
+		@include make-sm-column(4);
+	}
+
+	.projeto{
+		@include make-sm-column(3);
+	}
+
+	.sobre,
+	.slide-projetos{
+		@include make-sm-column(6);
+	}
+
+	.sobre-footer,
+	.galeria-portfolio,
+	.fale-conosco{
+		@include make-sm-column(4);
+	}
+
+	.metodologias-de-trabalho{
+		@include make-full-md-column(4)
+	}
+}
+
+@media screen and (min-width: $screen-md-min) {
+
+	.top-section_container{
+		width:$container-md;
+	}
+
+	.sobre,
+	.slide-projetos{
+		@include make-sm-column(6);
+	}
+}
+
+@media screen and (min-width: $screen-lg-min) {
+	.top-section_container{
+		width:$container-lg;
+	}
 }

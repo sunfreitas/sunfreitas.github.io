@@ -1,0 +1,17 @@
+/* Este mixing vai para um arquivo separado */
+@mixin make-full-md-column($columns){
+  position: relative;
+  min-height: 1px;
+
+  @media (min-width: $screen-md-min) {
+    float: left;
+    width: percentage(($columns / $grid-columns));
+  }
+}
+
+@mixin make-full-xs-column($columns, $gutter: $grid-gutter-width) {
+  position: relative;
+  float: left;
+  width: percentage(($columns / $grid-columns));
+  min-height: 1px;
+}
