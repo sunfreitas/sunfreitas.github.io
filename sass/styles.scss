@@ -206,22 +206,18 @@ footer{
 .apresentacao{
 	height	:585px;
 	margin-top:-20px;
-	padding-left: 15px;
 	background: url('../imagens/banner001.jpg') no-repeat center;
 	.titulo{
-		padding-top:15%;
+		padding-top:10%;
 		text-transform: uppercase;
 		font-size:3em;
 		font-weight: bold;
-		color:#CFCFCF;
-		border-bottom: solid 1px #ccc;
-		width:650px;
+		color:#FFFFFF;
+		line-height: .5;
 	}
 	p{
 		font-size:18px;
-		color:#CFCFCF;
-		text-transform: uppercase;
-		width:650px;
+		color:#FFFFFF;
 	}
 }
 /* Icons */
@@ -274,6 +270,12 @@ footer{
 	}
 }
 
+.content-box_apresentacao{
+		@media (min-width: $screen-sm-min) {
+			@include make-sm-column(9);
+		}
+}
+
 .projeto-da-galeria{
 	margin-bottom: 2em;
 
@@ -292,16 +294,7 @@ footer{
  *
  */
 @media screen and (min-width: 320px) {
-
-	.top-section_container{
-		margin:0 auto;
-		padding:15px;
-	}
-
 	.contact-info_info{
-		display: block;
-		margin-left:15px;
-		text-align: center;
 	}
 
 	.projeto-da-galeria{
@@ -338,10 +331,9 @@ footer{
 	}
 
 	.contact-info_info{
-		display: inline-block;
-		margin-left:15px;
-		float:right;
+
 	}
+
 	.top-section_container{
 		width:$container-sm;
 	}
