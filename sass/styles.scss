@@ -95,14 +95,12 @@ $gutter-sections-bottom: $gutter-sections;
 /**
  * End Full Responsive Sections
  */
-.top-section{
-	background: #3697d9;
-	color:white;
-	font-size: 14px;
-}
+
 .contact-info_info{
-	font-family: Arial, Arial, sans-serif;
+	font-family: 'Open Sans', Arial, sans-serif;
+	font-size: 1.4em;
 }
+
 /**
  * Custom Sections
  */
@@ -140,14 +138,19 @@ body{
 		line-height: 1.7em;
 	}
 }
+
 nav,
 h1,h2{
-	font-family: 'Raleway', Arial, sans-serif;
+	/*font-family: 'Raleway', Arial, sans-serif;*/
+	/*font-family: 'Open Sans Condensed', Arial, sans-serif;*/
+	font-family: 'Poiret One', Arial, sans-serif;
 }
+
 footer{
-	background: #222222;
-	color:#cccccc;
+	background:#f9f9f9;
+	text-align: center;
 }
+
 .title-brand{
 	max-width: 150px;
 	padding: 8px 12px;
@@ -203,23 +206,6 @@ footer{
 	}
 }
 
-.apresentacao{
-	height	:585px;
-	margin-top:-20px;
-	background: url('../imagens/banner001.jpg') no-repeat center;
-	.titulo{
-		padding-top:10%;
-		text-transform: uppercase;
-		font-size:3em;
-		font-weight: bold;
-		color:#FFFFFF;
-		line-height: .5;
-	}
-	p{
-		font-size:18px;
-		color:#FFFFFF;
-	}
-}
 /* Icons */
 .servico{
 	text-align: center;
@@ -245,17 +231,6 @@ footer{
 }
 /* end Icons */
 
-.leia-mais{
-	color:white;
-	border: solid 1px #FFFFFF;
-	padding:10px;
-	&:hover{
-		text-decoration: none;
-		color: #c8c8c8;
-		border: solid 1px #c8c8c8;
-	}
-}
-
 .sobre-footer,
 .galeria-portfolio,
 .fale-conosco{
@@ -268,12 +243,6 @@ footer{
 	@media (min-width: $screen-lg-min) {
 		@include make-lg-column(4);
 	}
-}
-
-.content-box_apresentacao{
-		@media (min-width: $screen-sm-min) {
-			@include make-sm-column(9);
-		}
 }
 
 .projeto-da-galeria{
@@ -294,7 +263,34 @@ footer{
  *
  */
 @media screen and (min-width: 320px) {
-	.contact-info_info{
+
+	.leia-mais{
+		color:white;
+		border: solid 1px #FFFFFF;
+		padding:10px;
+		&:hover{
+			text-decoration: none;
+			color: #c8c8c8;
+			border: solid 1px #c8c8c8;
+		}
+	}
+
+	.apresentacao{
+		min-height	:400px;
+		margin-top:-20px;
+		background: url('../imagens/banner001.jpg') no-repeat center;
+		.titulo{
+			padding-top:3.5em;
+			text-transform: uppercase;
+			font-size:2em;
+			font-weight: bold;
+			color:#FFFFFF;
+			line-height: 1;
+		}
+		p{
+			font-size:1.5em;
+			color:#FFFFFF;
+		}
 	}
 
 	.projeto-da-galeria{
@@ -304,9 +300,6 @@ footer{
 	/* Grid Fixes */
 	.sobre,
 	.slide-projetos,
-	.sobre-footer,
-	.galeria-portfolio,
-	.fale-conosco,
 	.projeto,
 	.servico,
 	.recomendacao{
@@ -315,28 +308,14 @@ footer{
 
 	.metodologias-de-trabalho{
 		@include make-full-xs-column(12);
+		font-size: 1.3em;
 	}
 }
+/* end Media XS */
 
+/* Media SM */
 @media screen and (min-width: $screen-sm-min) {
-	.top-section{
-		height: 40px;
-	}
 
-	.top-section_container{
-		margin:0 auto;
-		padding-top:10px;
-		padding-left: 15px;
-		padding-right: 15px;
-	}
-
-	.contact-info_info{
-
-	}
-
-	.top-section_container{
-		width:$container-sm;
-	}
 	.servico{
 		@include make-sm-column(4);
 	}
@@ -350,9 +329,7 @@ footer{
 		@include make-sm-column(6);
 	}
 
-	.sobre-footer,
-	.galeria-portfolio,
-	.fale-conosco{
+	.sobre-footer{
 		@include make-sm-column(4);
 	}
 
@@ -362,11 +339,6 @@ footer{
 }
 
 @media screen and (min-width: $screen-md-min) {
-
-	.top-section_container{
-		width:$container-md;
-	}
-
 	.sobre,
 	.slide-projetos{
 		@include make-sm-column(6);
@@ -374,11 +346,8 @@ footer{
 }
 
 @media screen and (min-width: $screen-lg-min) {
-	.top-section_container{
-		width:$container-lg;
-	}
 
 	.metodologias-de-trabalho{
-		min-height: 340px;
+		min-height: 465px;
 	}
 }
