@@ -204,36 +204,62 @@ footer{
 }
 
 .apresentacao{
-	height	:600px;
+	height	:585px;
 	margin-top:-20px;
+	padding-left: 15px;
 	background: url('../imagens/50743_Papel-de-Parede-Design-de-Interior-Sala-de-TV_1680x1050.jpg') no-repeat center;
 	.titulo{
-		text-align: center;
-		padding-top:10%;
+		padding-top:15%;
 		text-transform: uppercase;
 		font-size:3em;
 		font-weight: bold;
-		color:white;
+		color:#CFCFCF;
+		border-bottom: solid 1px #ccc;
+		width:650px;
 	}
 	p{
-		font-size:24px;
-		color:white;
-		text-align: center;
+		font-size:18px;
+		color:#CFCFCF;
+		text-transform: uppercase;
+		width:650px;
 	}
 }
 /* Icons */
 .servico{
 	text-align: center;
-	fill:blue;
 }
-.icon{
-	width:100px;
-	text-align: center;
-	fill:#ccc;
-}
-.icon.wesite{
 
+.icon{
+	display:inline-block;
+	width:160px;
+	height:160px;
+	background: url('../imagens/icons/website.png') no-repeat center;
+	border: solid 5px #F1F1F1;
+	border-radius: 6em;
 }
+
+.icon-website{
+	background: url('../imagens/icons/website.png') no-repeat center;
+}
+.icon-mobile{
+	background: url('../imagens/icons/mobile.png') no-repeat center;
+}
+.icon-seo{
+	background: url('../imagens/icons/seo.png') no-repeat center;
+}
+/* end Icons */
+
+.leia-mais{
+	color:white;
+	border: solid 1px #FFFFFF;
+	padding:10px;
+	&:hover{
+		text-decoration: none;
+		color: #c8c8c8;
+		border: solid 1px #c8c8c8;
+	}
+}
+
 .sobre-footer,
 .galeria-portfolio,
 .fale-conosco{
@@ -358,5 +384,9 @@ footer{
 @media screen and (min-width: $screen-lg-min) {
 	.top-section_container{
 		width:$container-lg;
+	}
+
+	.metodologias-de-trabalho{
+		min-height: 340px;
 	}
 }
