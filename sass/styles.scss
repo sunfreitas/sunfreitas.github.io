@@ -94,6 +94,10 @@ $gutter-sections-bottom: $gutter-sections;
 /**
  * End Full Responsive Sections
  */
+.contact-info{
+		background: url('../imagens/meting.jpg') no-repeat center;
+		color:#FFF
+}
 
 .contact-info_info{
 	font-family: 'Open Sans', Arial, sans-serif;
@@ -119,7 +123,8 @@ $gutter-sections-bottom: $gutter-sections;
 	color:white;
 }
 
-.titulo-sessao{
+.titulo-sessao,
+.subtitulo{
 	text-align: center;
 	text-transform: uppercase;
 }
@@ -138,7 +143,6 @@ body{
 	}
 }
 
-nav,
 h1,h2{
 	/*font-family: 'Raleway', Arial, sans-serif;*/
 	/*font-family: 'Open Sans Condensed', Arial, sans-serif;*/
@@ -150,13 +154,17 @@ footer{
 	text-align: center;
 }
 
-.title-brand{
-	max-width: 150px;
-	padding: 8px 12px;
-	border:solid 2px #aaa;
-	font-weight: bold;
-	color:#aaa;
+.navbar-brand{
+	display: inline-block;
+	width: 164px;
+	height: 80px;
+	background: url('../imagens/logo-nomeada.png') no-repeat center;
 }
+
+.title-brand{
+
+}
+
 .sobre-footer{
 	font-size: 12px;
 }
