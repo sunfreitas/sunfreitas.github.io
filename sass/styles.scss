@@ -50,6 +50,27 @@ $gutter-sections:50px;
 $gutter-sections-top: $gutter-sections;
 $gutter-sections-bottom: $gutter-sections;
 
+/* Blue Pallet */
+$primary-color:#2196F3; /* RGB 33, 150, 243  */
+$secondary-color-lighten:#42A5F5;
+$secondary-color-darker:#0D47A1;
+$accent-color-white-bg:#FFAB91;
+$accent-color-dark-bg:#FFFFfF;
+
+
+body{
+	font-family: 'Open Sans', Arial, sans-serif;
+	p {
+		line-height: 1.7em;
+	}
+}
+
+h1,h2{
+	/*font-family: 'Raleway', Arial, sans-serif;*/
+	/*font-family: 'Open Sans Condensed', Arial, sans-serif;*/
+	font-family: 'Poiret One', Arial, sans-serif;
+}
+
 .section,
 .full-section_content-box{ /* Isto daqui deveria ser um grid!? */
 
@@ -94,15 +115,7 @@ $gutter-sections-bottom: $gutter-sections;
 /**
  * End Full Responsive Sections
  */
-.contact-info{
-		background: url('../imagens/meting.jpg') no-repeat center;
-		color:#FFF
-}
 
-.contact-info_info{
-	font-family: 'Open Sans', Arial, sans-serif;
-	font-size: 1.4em;
-}
 
 /**
  * Custom Sections
@@ -110,74 +123,61 @@ $gutter-sections-bottom: $gutter-sections;
 
 .metodologias,
 .tecnologias{
-	background: #3697d9;
-	color:white;
+	background: $secondary-color-darker;
+	color:$accent-color-dark-bg;
 }
 .etica{
-	background:#1B4C6D;
-	color:white;
+	background:$secondary-color-lighten;
+	color:$accent-color-dark-bg;
 }
 .recomendacoes{
 	background: url('../imagens/50743_Papel-de-Parede-Design-de-Interior-Sala-de-TV_1680x1050.jpg') no-repeat center;
 	height: 400px;
-	color:white;
+	color:$accent-color-dark-bg;
 }
 
-.titulo-sessao,
+.titulo-sessao-light-bg,
 .subtitulo{
+	color:$primary-color;
 	text-align: center;
 	text-transform: uppercase;
+	@include opacity(.87);
+}
+.titulo-sessao-darken-bg{
+	color:$accent-color-dark-bg;
 }
 
 .separador{
 	height: 1px;
-	background-color: #ccc;
 	width: 100%;
-	display: block;
+	display: inline-block;
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(35%, rgba(0, 0, 0, 0.09)), color-stop(70%, rgba(0, 0, 0, 0.09)), color-stop(100%, rgba(0, 0, 0, 0)));
+	background-color: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.09) 35%, rgba(0, 0, 0, 0.09) 70%, rgba(0, 0, 0, 0) 100%);
 	margin-bottom: 35px;
-}
-body{
-	font-family: 'Open Sans', Arial, sans-serif;
-	p {
-		line-height: 1.7em;
-	}
-}
-
-h1,h2{
-	/*font-family: 'Raleway', Arial, sans-serif;*/
-	/*font-family: 'Open Sans Condensed', Arial, sans-serif;*/
-	font-family: 'Poiret One', Arial, sans-serif;
-}
-
-footer{
-	background:#f9f9f9;
-	text-align: center;
 }
 
 .navbar-brand{
 	display: inline-block;
-	width: 164px;
+	width: 168px;
 	height: 80px;
 	background: url('../imagens/logo-nomeada.png') no-repeat center;
 }
 
-.title-brand{
-
+.contact-info{
+		background: url('../imagens/meting.jpg') no-repeat center;
+		color:$accent-color-dark-bg;
+		text-align: center;
 }
 
-.sobre-footer{
-	font-size: 12px;
-}
-.arquiterura-resumo{
-	display: inline-block;
-	border-bottom:solid 1px #ffffff;
-	padding-bottom: 1em;
-	margin-bottom: 0;
+.contact-info_info{
+	font-family: 'Open Sans', Arial, sans-serif;
+	font-size: 1.4em;
 }
 
 .form{
 	padding-top: 0px;
 }
+
 .form_email-field,
 .form_message-field{
 	display:inline-block;
@@ -272,12 +272,12 @@ footer{
 @media screen and (min-width: 320px) {
 
 	.text-blue{
-		color:#A4D3F3;
+		color:$secondary-color-lighten;
 	}
 
 	.leia-mais{
-		color:white;
-		border: solid 1px #FFFFFF;
+		color:$accent-color-dark-bg;
+		border: solid 1px $accent-color-dark-bg;
 		padding:10px;
 		&:hover{
 			text-decoration: none;
@@ -295,12 +295,13 @@ footer{
 			text-transform: uppercase;
 			font-size:2em;
 			font-weight: bold;
-			color:#FFFFFF;
+			color:$accent-color-dark-bg;
 			line-height: 1;
 		}
 		p{
 			font-size:1.5em;
-			color:#FFFFFF;
+			color:$accent-color-dark-bg;
+			@include opacity(.70);
 		}
 	}
 
@@ -320,6 +321,15 @@ footer{
 	.metodologias-de-trabalho{
 		@include make-full-xs-column(12);
 		font-size: 1.3em;
+	}
+
+	 .titulo-servico{
+		 	@include opacity(.87);
+			font-size: 1.2em;
+	 }
+
+	.copyright{
+		@include make-xs-column(12);
 	}
 }
 /* end Media XS */
@@ -347,9 +357,21 @@ footer{
 	.metodologias-de-trabalho{
 		@include make-full-md-column(4)
 	}
+
+	.copyright{
+		@include make-md-column(12);
+	}
 }
 
 @media screen and (min-width: $screen-md-min) {
+	.navbar-default{
+		font-size:1.2em;
+	}
+	.contact-info_info{
+		@include make-md-column(6);
+		@include make-md-column-offset(3);
+	}
+
 	.content-box_apresentacao{
 		@include make-sm-column(8);
 	}
