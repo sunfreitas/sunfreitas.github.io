@@ -1,0 +1,330 @@
+/**
+ * Original compass imports
+ *
+// Import Bootstrap Compass integration
+@import "bootstrap-compass";
+
+// Import custom Bootstrap variables
+@import "bootstrap-variables";
+
+// Import Bootstrap for Sass
+@import "bootstrap"; */
+
+// Import Bootstrap Compass integration
+@import "bootstrap-compass";
+
+// Import custom Bootstrap variables
+@import "bootstrap-variables";
+
+// Core variables and mixins
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+
+// Reset and dependencies
+@import "bootstrap/normalize";
+@import "bootstrap/print";
+@import "bootstrap/glyphicons";
+
+// Core CSS
+@import "bootstrap/scaffolding";
+@import "bootstrap/grid";
+@import "bootstrap/forms";
+
+//Components
+@import "bootstrap/component-animations";
+@import "bootstrap/dropdowns";
+@import "bootstrap/navs";
+@import "bootstrap/navbar";
+
+/*Utilities*/
+@import "bootstrap/utilities";
+@import "bootstrap/responsive-utilities";
+
+@import "full-responsive";
+
+/* Noudi Settings */
+$primary-color:#F44336;
+$secondary-color-darken:#C62828;
+$secondary-color-lighten:#EF5350;
+
+$alpha-bg: #d1d1d1;
+$beta-bg: #ccc;
+
+$gutter-sections:50px;
+$gutter-sections-top: $gutter-sections;
+$gutter-sections-bottom: $gutter-sections;
+
+.section,
+.full-section_content-box{ /* Isto daqui deveria ser um grid!? */
+
+	@include container-fixed();
+
+	padding-top:$gutter-sections-top;
+	padding-bottom:$gutter-sections-bottom;
+
+	@media (min-width: $screen-sm-min) {
+		width: $container-sm;
+	}
+	@media (min-width: $screen-md-min) {
+		width: $container-md;
+	}
+	@media (min-width: $screen-lg-min) {
+		width: $container-lg;
+	}
+}
+
+.content-box{
+	@include make-row();
+
+	@media(min-width: $screen-xs-min) {
+
+	}
+
+}
+
+/**
+ * Espaço reservado para Full Responsive Sections
+ *
+ */
+
+.full-section{
+	width:100%;
+	@include clearfix();
+}
+
+.content-text{
+	padding:30px;
+}
+
+/**
+ * End Full Responsive Sections
+ */
+
+/**
+ * Custom Sections
+ */
+
+.metodologias,
+.tecnologias{
+	background: #3697d9;
+	color:white;
+}
+.etica{
+	background:#1B4C6D;
+	color:white;
+}
+.recomendacoes{
+	background: url('../imagens/50743_Papel-de-Parede-Design-de-Interior-Sala-de-TV_1680x1050.jpg') no-repeat center;
+	height: 400px;
+	color:white;
+}
+
+.titulo-sessao{
+	font-family: Merienda, Arial, cursive;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.separador{
+	height: 1px;
+	background-color: #ccc;
+	width: 100%;
+	display: block;
+	margin-bottom: 35px;
+}
+body{
+	font-family: 'Open Sans', Arial, sans-serif;
+	p {
+		font-size: 1.2em;
+		line-height: 1.7em;
+	}
+}
+footer{
+	background: #222222;
+	color:#cccccc;
+}
+.title-brand{
+	max-width: 150px;
+	padding: 8px 12px;
+	border:solid 2px #aaa;
+	font-weight: bold;
+	color:#aaa;
+}
+.sobre-footer{
+	font-size: 12px;
+}
+.arquiterura-resumo{
+	display: inline-block;
+	border-bottom:solid 1px #ffffff;
+	padding-bottom: 1em;
+	margin-bottom: 0;
+}
+
+.form{
+	padding-top: 0px;
+}
+.form_email-field,
+.form_message-field{
+	display:inline-block;
+	width:100%;
+	padding:6px;
+	margin-bottom: 10px;
+	background-color: #777777;
+	border:solid 1px #777777;
+}
+.form_buttom{
+	padding:6px 18px;
+	color:white;
+	background-color: #404040;
+	border:solid 1px #404040;
+	margin-bottom: 10px;
+}
+
+/**
+ * End custoom sections
+ */
+
+/* Pega as margens dos columns-** do bootstrap */
+.projeto{
+	margin-bottom: 10px;
+	@media (min-width: $screen-sm-min) {
+		@include make-sm-column(4);
+	}
+	@media (min-width: $screen-md-min) {
+		@include make-md-column(3);
+	}
+	@media (min-width: $screen-lg-min) {
+		@include make-lg-column(3);
+	}
+}
+
+.apresentacao{
+	height	:600px;
+	margin-top:-20px;
+	background: url('../imagens/50743_Papel-de-Parede-Design-de-Interior-Sala-de-TV_1680x1050.jpg') no-repeat center;
+	.titulo{
+		text-align: center;
+		padding-top:10%;
+		text-transform: uppercase;
+		font-size:3em;
+		font-weight: bold;
+		color:white;
+	}
+	p{
+		font-size:24px;
+		color:white;
+		text-align: center;
+	}
+}
+
+.sobre-footer,
+.galeria-portfolio,
+.fale-conosco{
+	@media (min-width: $screen-sm-min) {
+		@include make-sm-column(4);
+	}
+	@media (min-width: $screen-md-min) {
+		@include make-md-column(4);
+	}
+	@media (min-width: $screen-lg-min) {
+		@include make-lg-column(4);
+	}
+}
+
+.projeto-da-galeria{
+	margin-bottom: 2em;
+
+	@media (min-width: $screen-sm-min) {
+		@include make-sm-column(6);
+	}
+	@media (min-width: $screen-md-min) {
+		@include make-md-column(6);
+	}
+	@media (min-width: $screen-lg-min) {
+		@include make-lg-column(6);
+	}
+}
+
+/**
+ *
+ */
+@media screen and (min-width: 320px) {
+
+	.contact-info_info{
+		display: block;
+		margin-left:15px;
+		text-align: center;
+	}
+
+	.projeto-da-galeria{
+		@include make-xs-column(4);
+	}
+
+	.historia{
+		background: url(../imagens/Bing_wallpapers_China-9-darken-and-compressed.jpg) center no-repeat;
+		color:white;
+	}
+
+	.google-maps{
+		width:100%;
+		min-height: 400px;
+	}
+
+	/* Grid Fixes */
+	.historia_sobre,
+	.escola_sobre,
+	.escola_sobre-imagem,
+	.slide-projetos,
+	.sobre-footer,
+	.galeria-portfolio,
+	.fale-conosco{
+		@include make-xs-column(12);
+	}
+}
+
+@media screen and (min-width: $screen-sm-min) {
+
+	.contact-info_info{
+		display: inline-block;
+		margin-left:15px;
+		float:right;
+	}
+	.historia_sobre{
+		@include make-sm-column(8);
+		@include make-sm-column-offset(2);
+		text-align: center;
+	}
+	.escola_sobre-imagem,
+	.slide-projetos{
+		@include make-sm-column(6);
+	}
+
+	.sobre-footer,
+	.galeria-portfolio,
+	.fale-conosco{
+		@include make-sm-column(4);
+	}
+
+	.mapa-do-endereco{
+			@include make-full-md-column(12);
+	}
+}
+
+@media screen and (min-width: $screen-md-min) {
+
+	.top-section_container{
+		width:$container-md;
+	}
+
+	.escola_sobre,
+	.escola_sobre-imagem,
+	.slide-projetos{
+		@include make-md-column(6);
+	}
+}
+
+@media screen and (min-width: $screen-lg-min) {
+	.mapa-do-endereco{
+		@include make-full-md-column(12);
+	}
+}
