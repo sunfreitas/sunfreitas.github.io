@@ -280,6 +280,13 @@ footer{
 	.fale-conosco{
 		@include make-xs-column(12);
 	}
+
+	.leia-mais{
+		color:white;
+		background: #F44336;
+		padding:1em;
+		border: solid 1px #F5766D;
+	}
 }
 
 @media screen and (min-width: $screen-sm-min) {
