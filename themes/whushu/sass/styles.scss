@@ -280,12 +280,21 @@ footer{
 	.fale-conosco{
 		@include make-xs-column(12);
 	}
+	/* o restante das configurações fica em _bootstrap-variables */
+	.navbar-default{
+		opacity: .6;
+	}
 
 	.leia-mais{
 		color:white;
 		background: #F44336;
 		padding:1em;
 		border: solid 1px #F5766D;
+		&.leia-mais:hover{
+			text-decoration: none;
+			color:#ccc;
+			background: #F33527;
+		}
 	}
 }
 
