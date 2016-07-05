@@ -263,13 +263,14 @@ body{
 		opacity: .54;
 		text-align: center;
 	}
-	.clientes-lista{
-		@include make-sm-column(9);
-		@include make-sm-column-offset(2);
+
+	.clientes-lista-mobile{
+		text-align: center;
 	}
+
 	.cycle-slide{
-		margin-left: 20px;
-		margin-right:20px;
+		// margin-left: 18px;
+		// margin-right:18px;
 	}
 
 	/* Grid Fixes */
@@ -288,9 +289,16 @@ body{
 
 @media screen and (min-width: $screen-sm-min) {
 	.apresentacao{
-		background: url('../imagens/b78a77a2c57dc77e73b4593fe33139ab.jpg') no-repeat center;
+		background: url('../imagens/header.jpg') no-repeat center;
 	}
 
+	.clientes-lista{
+		@include make-sm-column(10);
+		@include make-sm-column-offset(1);
+	}
+	.cycle-slide{
+		margin-left: 15px;
+	}
 	.sobre,
 	.slide-projetos{
 		@include make-sm-column(6);
@@ -303,6 +311,13 @@ body{
 }
 
 @media screen and (min-width: $screen-md-min) {
+	.clientes-lista{
+			@include make-sm-column(10);
+			@include make-sm-column-offset(2);
+	}
+	.cycle-slide{
+		margin-left: 15px;
+	}
 	.sobre,
 	.slide-projetos{
 		@include make-sm-column(6);
