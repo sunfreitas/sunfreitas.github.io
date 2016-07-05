@@ -265,7 +265,8 @@ body{
 	}
 
 	.clientes-lista-mobile{
-		text-align: center;
+		margin:0 auto;
+		width: 35%;
 	}
 
 	.cycle-slide{
@@ -281,15 +282,19 @@ body{
 	.recomendacao{
 		@include make-xs-column(12);
 	}
+}
 
-	.metodologias-de-trabalho{
-		@include make-full-xs-column(12);
+@media screen and (min-width:425px){
+	.clientes-lista-mobile{
+		margin:0 auto;
+		width: 25%;
 	}
 }
 
 @media screen and (min-width: $screen-sm-min) {
 	.apresentacao{
 		background: url('../imagens/header.jpg') no-repeat center;
+		min-height: 600px;
 	}
 
 	.clientes-lista{
@@ -325,7 +330,8 @@ body{
 }
 
 @media screen and (min-width: $screen-lg-min) {
-	.top-section_container{
-		width:$container-lg;
+	.clientes-lista{
+			@include make-lg-column(8);
+			@include make-lg-column-offset(3);
 	}
 }
