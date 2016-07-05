@@ -216,14 +216,25 @@ body{
  */
 @media screen and (min-width: 320px) {
 	.apresentacao{
+		display: inline-block;
 		height	:460px;
 		margin-top:-20px;
 		background: url('../imagens/bg-header-mobile.jpg') no-repeat center;
+    box-shadow: .01em .1em .5em #9a9a9a;
 	}
 	.apresentacao-mobile{
 		background: #f7f7f7;
 		border-bottom: solid 1px #e6e6e6;
 	}
+
+	.cto-contato{
+    padding: 1em;
+    background: #F44336;
+    color: white;
+    line-height: 4em;
+    box-shadow: .1em .1em .1em #9a9a9a;
+	}
+
 	.clientes{
 		background: #f7f7f7;
 		border-bottom: solid 1px #e6e6e6;
