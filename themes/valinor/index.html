@@ -44,8 +44,8 @@
 		</div><!-- /.container-fluid -->
 	</nav>
 
-	<section id="home" class="full-section apresentacao">
-      <header class="apresentacao_header hidden-xs">
+	<section id="home" class="full-section apresentacao hidden-xs">
+      <header class="apresentacao_header">
 
   			<p>Somos a Valinor Painéis de Led - Publicidade para sua empresa, produto ou serviço em alta resolução.</p>
 
@@ -54,12 +54,16 @@
 	</section>
 
   <!-- apresentar apenas em dispositivos pequenos -->
-  <section class="full-section apresentacao-mobile">
+  <section class="full-section apresentacao-mobile hidden-sm hidden-md hidden-lg">
+
+  </section>
+
+  <section class="full-section hidden-sm hidden-md hidden-lg">
     <header class="full-section_content-box apresentacao-mobile_header">
       <p class="apresentacao-mobile_descricao">
         Somos a Valinor Painéis de Led - Publicidade para sua empresa, produto ou serviço em alta resolução.
       </p>
-      <a href="#" class="cto-contato">Faça seu orçamento</a>
+      <a href="#contato" class="cto-contato">Faça seu orçamento</a>
     </header>
   </section>
 
@@ -92,29 +96,70 @@
 
       <div class="full-section_content-box">
         <h1 class="titulo-sessao">Clientes</h1>
+        <span class="separador"></span>
 
+        <!--  -->
         <div class="recomendacoes">
-          <img src="./imagens/testimonial01.jpg" alt="" class="img-responsive img-circle recomendacao-autor_imagem"/>
+            <div class="cycle-slideshow"
+              data-cycle-center-horz=true
+              data-cycle-caption="#alt-caption"
+              data-cycle-caption-template="{{alt}}">
+              <img src="./imagens/testimonial01.jpg"
+                alt="'Muito boa a empresa, o serviço mostrou resultados
+                impressionantes no meu negócio - John Doe.'"
+                class="img-responsive img-circle recomendacao-autor_imagem"/>
 
-          <p class="recomendacao">
-            <em>"Lorem Ipsum is simply dummy text of the printing and typesetting industry."</em>
-          </p>
+              <img src="./imagens/testimonial02.jpg"
+                alt="<em>'Fui muito bem atendido. A empresa é responsiva com seus prazos e passa
+                feedback constantemente no decorrer do negócio.'<em> - Mariah Doe." class="img-responsive img-circle recomendacao-autor_imagem"/>
+            </div>
+            <div id="alt-caption" class="recomendacao-autor"></div>
+        </div>
+        <!--  -->
 
-          <p class="recomendacao-autor">
-            - John Doe
-          </p>
+        <div class="clientes-lista-mobile visible-xs-block hidden-sm hidden-md">
+          <div class="cycle-slideshow"
+            data-cycle-fx=carousel
+            data-cycle-timeout=1000
+            data-cycle-carousel-visible=2
+            data-cycle-speed="800"
+            data-cycle-manualSpeed="500"
+          >
+            <img src="./imagens/clientes/brand01.png" alt="" />
 
-          <p class="recomendacao-autor_empresa">
-            Empresa
-          </p>
+            <img src="./imagens/clientes/brand01.png" alt="" />
+
+            <img src="./imagens/clientes/brand01.png" alt="" />
+
+            <img src="./imagens/clientes/brand01.png" alt="" />
+
+            <img src="./imagens/clientes/brand01.png" alt="" />
+
+            <img src="./imagens/clientes/brand01.png" alt="" />
+          </div>
+
         </div>
 
-        <div class="clientes-lista">
+        <div class="clientes-lista hidden-xs">
+          <div class="cycle-slideshow"
+            data-cycle-fx=carousel
+            data-cycle-timeout=1000
+            data-cycle-carousel-visible=5
+            data-cycle-speed="800"
+            data-cycle-manualSpeed="500"
+          >
           <img src="./imagens/clientes/brand01.png" alt="" />
 
           <img src="./imagens/clientes/brand01.png" alt="" />
 
           <img src="./imagens/clientes/brand01.png" alt="" />
+
+          <img src="./imagens/clientes/brand01.png" alt="" />
+
+          <img src="./imagens/clientes/brand01.png" alt="" />
+
+          <img src="./imagens/clientes/brand01.png" alt="" />
+          </div>
 
         </div>
       </div>
@@ -139,7 +184,7 @@
           <div class="form-group">
             <input type="text" name="email" placeholder="Email" class="form-control">
           </div>
-          <button type="button" name="button" class="btn btn-primary">Enviar</button>
+          <button type="button" name="button" class="bnt-enviar">Enviar</button>
   			</form>
       </div>
 		</div>
@@ -190,7 +235,9 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-	<script type="text/javascript" src="./javascripts/holder.min.js"></script>
+  <script src="./javascripts/jquery.cycle2.min.js" type="text/javascript"></script>
+  <script src="./javascripts/jquery.cycle2.center.min.js" type="text/javascript"></script>
+	<script type="text/javascript" src="./javascripts/jquery.cycle2.carousel.min.js"></script>
 
 </body>
 </html>

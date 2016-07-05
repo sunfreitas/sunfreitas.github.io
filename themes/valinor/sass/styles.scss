@@ -100,12 +100,6 @@ $gutter-sections-bottom: $gutter-sections;
  * Custom Sections
  */
 
-.recomendacoes{
-	background: url('../imagens/50743_Papel-de-Parede-Design-de-Interior-Sala-de-TV_1680x1050.jpg') no-repeat center;
-	height: 400px;
-	color:white;
-}
-
 .titulo-sessao{
 	text-align: center;
 	text-transform: uppercase;
@@ -215,16 +209,13 @@ body{
  *
  */
 @media screen and (min-width: 320px) {
-	.apresentacao{
+	.apresentacao-mobile{
 		display: inline-block;
 		height	:460px;
 		margin-top:-20px;
 		background: url('../imagens/bg-header-mobile.jpg') no-repeat center;
     box-shadow: .01em .1em .5em #9a9a9a;
-	}
-	.apresentacao-mobile{
-		background: #f7f7f7;
-		border-bottom: solid 1px #e6e6e6;
+		text-align: center;
 	}
 
 	.cto-contato{
@@ -235,33 +226,50 @@ body{
     box-shadow: .1em .1em .1em #9a9a9a;
 	}
 
+	.bnt-enviar{
+		border: solid 1px #f44336;
+		    background: #F44336;
+		    color: white;
+		    padding: .5em 2em;
+
+		    box-shadow: .1em .1em .1em #9a9a9a;
+	}
+
+	.apresentacao-mobile_header,
 	.clientes{
 		background: #f7f7f7;
 		border-bottom: solid 1px #e6e6e6;
+		text-align: center;
 	}
+
 	.apresentacao-mobile,
 	.recomendacoes,
 	.contato-form_descricao{
 		text-align: center;
 		color:black;
 	}
-	.recomendacao-autor_imagem{
-		display: inline-block;
+
+	.recomendacoes{
+		min-height: 230px;
 	}
+
+	.apresentacao-mobile_descricao,
 	.recomendacao{
 		opacity: .78;
 	}
 	.recomendacao-autor{
-
-			line-height: .5em;
+		margin-top:1.2em;
+		line-height: 2em;
 		opacity: .54;
+		text-align: center;
 	}
-	.recomendacao-autor_empresa{
-		font-weight: bold;
+	.clientes-lista{
+		@include make-sm-column(9);
+		@include make-sm-column-offset(2);
 	}
-
-	.projeto-da-galeria{
-		@include make-xs-column(4);
+	.cycle-slide{
+		margin-left: 20px;
+		margin-right:20px;
 	}
 
 	/* Grid Fixes */
@@ -279,31 +287,8 @@ body{
 }
 
 @media screen and (min-width: $screen-sm-min) {
-	.top-section{
-		height: 40px;
-	}
-
-	.top-section_container{
-		margin:0 auto;
-		padding-top:10px;
-		padding-left: 15px;
-		padding-right: 15px;
-	}
-
-	.contact-info_info{
-		display: inline-block;
-		margin-left:15px;
-		float:right;
-	}
-	.top-section_container{
-		width:$container-sm;
-	}
-	.servico{
-		@include make-sm-column(4);
-	}
-
-	.projeto{
-		@include make-sm-column(3);
+	.apresentacao{
+		background: url('../imagens/b78a77a2c57dc77e73b4593fe33139ab.jpg') no-repeat center;
 	}
 
 	.sobre,
@@ -312,22 +297,12 @@ body{
 	}
 
 	.sobre-footer,
-	.galeria-portfolio,
 	.fale-conosco{
 		@include make-sm-column(4);
-	}
-
-	.metodologias-de-trabalho{
-		@include make-full-md-column(4)
 	}
 }
 
 @media screen and (min-width: $screen-md-min) {
-
-	.top-section_container{
-		width:$container-md;
-	}
-
 	.sobre,
 	.slide-projetos{
 		@include make-sm-column(6);
