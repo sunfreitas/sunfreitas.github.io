@@ -1,14 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-  	<meta charset="utf-8">
+  <meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
 	<title>Valinor Paineis de Led</title>
-
 	<link rel="shortcut icon" type="image/icon" href="http://sunfreitas.github.io/favicon.png">
-
 	<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
   <style media="screen">
@@ -17,11 +14,10 @@
     		display: inline-block;
     		height	:460px;
     		margin-top:-20px;
-    		background: url('../imagens/bg-header-mobile.jpg') no-repeat center;
+    		background: url('./imagens/bg-header-mobile.jpg') no-repeat center;
         box-shadow: .01em .1em .5em #9a9a9a;
     		text-align: center;
     	}
-
     	.cto-contato{
         padding: 1em;
         background: #F44336;
@@ -30,22 +26,138 @@
         box-shadow: .1em .1em .1em #9a9a9a;
     	}
     }
-
-    @media screen and (min-width: $screen-sm-min) {
+    @media screen and (min-width: 768px) {
     	.apresentacao{
-    		background: url('../imagens/header.jpg') no-repeat center;
+    		background: url('./imagens/header.jpg') no-repeat center;
     		min-height: 600px;
     	}
     }
   </style>
-	<link rel="stylesheet" type="text/css" href="./stylesheets/styles.css">
+  <script type="text/javascript">
+  /*! loadCSS: load a CSS file asynchronously. [c]2016 @scottjehl, Filament Group, Inc. Licensed MIT */
+  (function(w){
+    "use strict";
+    /* exported loadCSS */
+    var loadCSS = function( href, before, media ){
+      // Arguments explained:
+      // `href` [REQUIRED] is the URL for your CSS file.
+      // `before` [OPTIONAL] is the element the script should use as a reference for injecting our stylesheet <link> before
+        // By default, loadCSS attempts to inject the link after the last stylesheet or script in the DOM. However, you might desire a more specific location in your document.
+      // `media` [OPTIONAL] is the media type or query of the stylesheet. By default it will be 'all'
+      var doc = w.document;
+      var ss = doc.createElement( "link" );
+      var ref;
+      if( before ){
+        ref = before;
+      }
+      else {
+        var refs = ( doc.body || doc.getElementsByTagName( "head" )[ 0 ] ).childNodes;
+        ref = refs[ refs.length - 1];
+      }
 
+      var sheets = doc.styleSheets;
+      ss.rel = "stylesheet";
+      ss.href = href;
+      // temporarily set media to something inapplicable to ensure it'll fetch without blocking render
+      ss.media = "only x";
+
+      // wait until body is defined before injecting link. This ensures a non-blocking load in IE11.
+      function ready( cb ){
+        if( doc.body ){
+          return cb();
+        }
+        setTimeout(function(){
+          ready( cb );
+        });
+      }
+      // Inject link
+        // Note: the ternary preserves the existing behavior of "before" argument, but we could choose to change the argument to "after" in a later release and standardize on ref.nextSibling for all refs
+        // Note: `insertBefore` is used instead of `appendChild`, for safety re: http://www.paulirish.com/2011/surefire-dom-element-insertion/
+      ready( function(){
+        ref.parentNode.insertBefore( ss, ( before ? ref : ref.nextSibling ) );
+      });
+      // A method (exposed on return object for external use) that mimics onload by polling document.styleSheets until it includes the new sheet.
+      var onloadcssdefined = function( cb ){
+        var resolvedHref = ss.href;
+        var i = sheets.length;
+        while( i-- ){
+          if( sheets[ i ].href === resolvedHref ){
+            return cb();
+          }
+        }
+        setTimeout(function() {
+          onloadcssdefined( cb );
+        });
+      };
+
+      function loadCB(){
+        if( ss.addEventListener ){
+          ss.removeEventListener( "load", loadCB );
+        }
+        ss.media = media || "all";
+      }
+
+      // once loaded, set link's media back to `all` so that the stylesheet applies once it loads
+      if( ss.addEventListener ){
+        ss.addEventListener( "load", loadCB);
+      }
+      ss.onloadcssdefined = onloadcssdefined;
+      onloadcssdefined( loadCB );
+      return ss;
+    };
+    // commonjs
+    if( typeof exports !== "undefined" ){
+      exports.loadCSS = loadCSS;
+    }
+    else {
+      w.loadCSS = loadCSS;
+    }
+  }( typeof global !== "undefined" ? global : this ));
+
+
+  /*! onloadCSS: adds onload support for asynchronous stylesheets loaded with loadCSS. [c]2016 @zachleat, Filament Group, Inc. Licensed MIT */
+  /* global navigator */
+  /* exported onloadCSS */
+  function onloadCSS( ss, callback ) {
+    var called;
+    function newcb(){
+        if( !called && callback ){
+          called = true;
+          callback.call( ss );
+        }
+    }
+    if( ss.addEventListener ){
+      ss.addEventListener( "load", newcb );
+    }
+    if( ss.attachEvent ){
+      ss.attachEvent( "onload", newcb );
+    }
+
+    // This code is for browsers that don’t support onload
+    // No support for onload (it'll bind but never fire):
+    //	* Android 4.3 (Samsung Galaxy S4, Browserstack)
+    //	* Android 4.2 Browser (Samsung Galaxy SIII Mini GT-I8200L)
+    //	* Android 2.3 (Pantech Burst P9070)
+
+    // Weak inference targets Android < 4.4
+    if( "isApplicationInstalled" in navigator && "onloadcssdefined" in ss ) {
+      ss.onloadcssdefined( newcb );
+    }
+  }
+
+
+    var stylesheets = loadCSS("./stylesheets/styles.css");
+
+    onloadCSS(stylesheets, function(){
+      console.log("CSS foi carregado");
+    });
+  </script>
+	<!-- <link rel="stylesheet" type="text/css" href="./stylesheets/styles.css"> -->
 </head>
 <body>
 	<!--navbar-fixed-top-->
 	<nav class="navbar navbar-default navbar-fixed-top">
 		<div class="container">
-
 			<!-- Brand and toggle get grouped for better mobile display -->
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -56,7 +168,6 @@
 				</button>
 				<a class="navbar-brand" href="#"><span class="title-brand">Valinor Paineis</sspan></a>
 			</div>
-
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav navbar-right">
@@ -69,21 +180,15 @@
 			</div><!-- /.navbar-collapse -->
 		</div><!-- /.container-fluid -->
 	</nav>
-
 	<section id="home" class="full-section apresentacao hidden-xs">
       <header class="apresentacao_header">
-
   			<p>Somos a Valinor Painéis de Led - Publicidade para sua empresa, produto ou serviço em alta resolução.</p>
-
         <a href="#" class="cto-contato">Faça seu orçamento</a>
       </header>
 	</section>
-
   <!-- apresentar apenas em dispositivos pequenos -->
   <section class="full-section apresentacao-mobile hidden-sm hidden-md hidden-lg">
-
   </section>
-
   <section class="full-section hidden-sm hidden-md hidden-lg">
     <header class="full-section_content-box apresentacao-mobile_header">
       <p class="apresentacao-mobile_descricao">
@@ -92,10 +197,8 @@
       <a href="#contato" class="cto-contato">Faça seu orçamento</a>
     </header>
   </section>
-
 	<section  id="paineis" class="section paineis">
 		<div class="content-box">
-
 			<div class="sobre">
         <h1 class="titulo-sessao">Painéis</h1>
   			<span class="separador"></span>
@@ -113,18 +216,14 @@
 			</div>
 			<div class="imagem-promo">
 				<img src="./imagens/maxresdefault-compressed.jpg" class="img-responsive">
-        <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/0-nNdED3yB4" frameborder="0" allowfullscreen></iframe> -->
 			</div>
 		</div>
 	</section>
-
 	<section id="clientes" class="full-section clientes">
-
       <div class="full-section_content-box">
         <h1 class="titulo-sessao">Clientes</h1>
         <span class="separador"></span>
 
-        <!--  -->
         <div class="recomendacoes">
             <div class="cycle-slideshow"
               data-cycle-center-horz=true
@@ -141,8 +240,6 @@
             </div>
             <div id="alt-caption" class="recomendacao-autor"></div>
         </div>
-        <!--  -->
-
         <div class="clientes-lista-mobile visible-xs-block hidden-sm hidden-md">
           <div class="cycle-slideshow"
             data-cycle-fx=carousel
@@ -152,18 +249,12 @@
             data-cycle-manualSpeed="500"
           >
             <img src="./imagens/clientes/brand01.png" alt="" />
-
             <img src="./imagens/clientes/brand01.png" alt="" />
-
             <img src="./imagens/clientes/brand01.png" alt="" />
-
             <img src="./imagens/clientes/brand01.png" alt="" />
-
             <img src="./imagens/clientes/brand01.png" alt="" />
-
             <img src="./imagens/clientes/brand01.png" alt="" />
           </div>
-
         </div>
 
         <div class="clientes-lista hidden-xs">
@@ -175,15 +266,10 @@
             data-cycle-manualSpeed="500"
           >
           <img src="./imagens/clientes/brand01.png" alt="" />
-
           <img src="./imagens/clientes/brand01.png" alt="" />
-
           <img src="./imagens/clientes/brand01.png" alt="" />
-
           <img src="./imagens/clientes/brand01.png" alt="" />
-
           <img src="./imagens/clientes/brand01.png" alt="" />
-
           <img src="./imagens/clientes/brand01.png" alt="" />
           </div>
 
@@ -311,6 +397,7 @@
       loadScript("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js", function(){
         console.log("bootstrap Carregado");
       });
+
     }());
     // $(document).ready(function(){
     //   $.getScript("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js", function(){
