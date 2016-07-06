@@ -122,7 +122,7 @@ body{
 
 /* footer */
 .informacoes-de-contato{
-	background: #222222;
+	// background: #222222;
 	color:#cccccc;
 }
 
@@ -305,8 +305,13 @@ body{
 		margin-left: 15px;
 	}
 	.sobre,
-	.slide-projetos{
+	.imagem-promo{
 		@include make-sm-column(6);
+	}
+
+	.contato-form{
+		@include make-sm-column(6);
+		@include make-sm-column-offset(3);
 	}
 
 	.sobre-footer,

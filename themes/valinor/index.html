@@ -34,11 +34,11 @@
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Paineis</a></li>
-					<li><a href="#">Clientes</a></li>
-          <li><a href="#">Planos</a></li>
-					<li><a href="#">Contato</a></li>
+					<li><a href="#home">Home</a></li>
+					<li><a href="#paineis">Paineis</a></li>
+					<li><a href="#clientes">Clientes</a></li>
+          <li><a href="#planos">Planos</a></li>
+					<li><a href="#contato">Contato</a></li>
 				</ul>
 			</div><!-- /.navbar-collapse -->
 		</div><!-- /.container-fluid -->
@@ -167,30 +167,39 @@
 
 	<section id="contato" class="section contato">
     <div class="content-box">
-      <h1 class="titulo-sessao">Contato</h1>
-		  <span class="separador"></span>
       <div class="contato-form">
-        <p class="contato-form_descricao">
-          Blanditiis aspernatur, non quasi, maxime corporis officiis quia.
-          Cupiditate, voluptatibus ducimus, natus, labore mollitia dolorem
-          incidunt voluptatum, delectus eius fugit porro placeat animi voluptatem
-          autem hic eligendi sint. Amet pariatur odit repudiandae sunt.
-        </p>
 
-        <form class="form" action="index.html" method="post">
-          <div class="form-group">
-            <input type="text" name="name" placeholder="Nome" class="form-control">
-          </div>
-          <div class="form-group">
-            <input type="text" name="email" placeholder="Email" class="form-control">
-          </div>
-          <button type="button" name="button" class="bnt-enviar">Enviar</button>
-  			</form>
+        <h1 class="titulo-sessao">Contato</h1>
+		      <span class="separador"></span>
+          <p class="contato-form_descricao">
+            Blanditiis aspernatur, non quasi, maxime corporis officiis quia.
+            Cupiditate, voluptatibus ducimus, natus, labore mollitia dolorem
+            incidunt voluptatum, delectus eius fugit porro placeat animi voluptatem
+            autem hic eligendi sint. Amet pariatur odit repudiandae sunt.
+          </p>
+
+          <form class="form" action="index.html" method="post">
+            <div class="form-group">
+              <input type="text" name="name" placeholder="Nome" class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="text" name="email" placeholder="Email" class="form-control">
+            </div>
+            <button type="button" name="button" class="bnt-enviar">Enviar</button>
+    			</form>
       </div>
 		</div>
 	</section>
 
-	<footer class="full-section informacoes-de-contato">
+  <section class="full-section horario">
+    <div class="full-section_content-box">
+      <p>
+        <span class="glyphicons glyphicons-time"></span> Segunda a Sexta. Das 8h às 18h.
+      </p>
+    </div>
+  </section>
+
+  <footer class="full-section informacoes-de-contato">
 		<div class="full-section_content-box">
 			<div class="sobre-footer">
 				<h1 class="title-brand">Valinor Paineis de Led</h1>
@@ -216,10 +225,7 @@
 						<button class="form_buttom">Enviar</button>
 					</form>
 				</div>
-				<div class="informacoes-de-contato">
 
-
-				</div>
 				<div class="social-media">
 					Facebook Twitter Google+ Instagram
 				</div>
