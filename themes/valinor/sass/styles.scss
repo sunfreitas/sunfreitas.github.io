@@ -121,10 +121,6 @@ body{
 }
 
 /* footer */
-.informacoes-de-contato{
-	// background: #222222;
-	color:#cccccc;
-}
 
 .title-brand{
 	max-width: 150px;
@@ -269,11 +265,6 @@ body{
 		width: 35%;
 	}
 
-	.cycle-slide{
-		// margin-left: 18px;
-		// margin-right:18px;
-	}
-
 	/* Grid Fixes */
 	.sobre,
 	.imagem-promo,
@@ -294,6 +285,11 @@ body{
 	.footer-info{
 		@include make-xs-column(12);
 		text-align: center;
+		opacity: .78;
+	}
+	.valinor-brand{
+		min-height: 155px;
+		background: url('../imagens/logo.png') no-repeat center;
 	}
 }
 
