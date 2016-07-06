@@ -11,7 +11,33 @@
 
 	<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+  <style media="screen">
+    @media screen and (min-width: 320px){
+      .apresentacao-mobile{
+    		display: inline-block;
+    		height	:460px;
+    		margin-top:-20px;
+    		background: url('../imagens/bg-header-mobile.jpg') no-repeat center;
+        box-shadow: .01em .1em .5em #9a9a9a;
+    		text-align: center;
+    	}
 
+    	.cto-contato{
+        padding: 1em;
+        background: #F44336;
+        color: white;
+        line-height: 4em;
+        box-shadow: .1em .1em .1em #9a9a9a;
+    	}
+    }
+
+    @media screen and (min-width: $screen-sm-min) {
+    	.apresentacao{
+    		background: url('../imagens/header.jpg') no-repeat center;
+    		min-height: 600px;
+    	}
+    }
+  </style>
 	<link rel="stylesheet" type="text/css" href="./stylesheets/styles.css">
 
 </head>
