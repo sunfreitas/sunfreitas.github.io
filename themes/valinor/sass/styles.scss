@@ -286,7 +286,7 @@ body{
 	.horario{
 		background: #2196F3;
 		box-shadow: .1em .1em .1em #9a9a9a;
-		font-size:2em;
+		font-size:1em;
 		color:white;
 		opacity: .78;
 	}
@@ -335,6 +335,16 @@ body{
 	}
 	.cycle-slide{
 		margin-left: 15px;
+	}
+	.endereco,
+	.mapa-do-endereco{
+		@include make-full-md-column(6);
+		line-height: 0;
+	}
+
+	.google-maps{
+		width:100%;
+		min-height: 400px;
 	}
 	.sobre,
 	.slide-projetos{
