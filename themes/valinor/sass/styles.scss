@@ -83,11 +83,6 @@ $gutter-sections-bottom: $gutter-sections;
  *
  */
 
-.full-section{
-	width:100%;
-	@include clearfix();
-}
-
 .content-text{
 	padding:30px;
 }
@@ -130,31 +125,6 @@ body{
 	color:#aaa;
 }
 
-.sobre-footer{
-	font-size: 12px;
-}
-
-.form{
-	padding-top: 0px;
-}
-
-.form_email-field,
-.form_message-field{
-	display:inline-block;
-	width:100%;
-	padding:6px;
-	margin-bottom: 10px;
-	background-color: #777777;
-	border:solid 1px #777777;
-}
-.form_buttom{
-	padding:6px 18px;
-	color:white;
-	background-color: #404040;
-	border:solid 1px #404040;
-	margin-bottom: 10px;
-}
-
 /**
  * End custoom sections
  */
@@ -174,7 +144,6 @@ body{
 }
 
 .sobre-footer,
-.galeria-portfolio,
 .fale-conosco{
 	@media (min-width: $screen-sm-min) {
 		@include make-sm-column(4);
@@ -207,21 +176,18 @@ body{
 @media screen and (min-width: 320px) {
 	.bnt-enviar{
 		border: solid 1px #f44336;
-		    background: #F44336;
-		    color: white;
-		    padding: .5em 2em;
-
-		    box-shadow: .1em .1em .1em #9a9a9a;
+    background: #F44336;
+    color: white;
+    padding: .5em 2em;
+    box-shadow: .1em .1em .1em #9a9a9a;
 	}
 
-	.apresentacao-mobile_header,
 	.clientes{
 		background: #f7f7f7;
 		border-bottom: solid 1px #e6e6e6;
 		text-align: center;
 	}
 
-	.apresentacao-mobile,
 	.recomendacoes,
 	.contato-form_descricao{
 		text-align: center;
@@ -232,10 +198,10 @@ body{
 		min-height: 230px;
 	}
 
-	.apresentacao-mobile_descricao,
 	.recomendacao{
 		opacity: .78;
 	}
+
 	.recomendacao-autor{
 		margin-top:1.2em;
 		line-height: 2em;
@@ -249,10 +215,8 @@ body{
 	}
 
 	/* Grid Fixes */
-	.sobre,
-	.imagem-promo,
-	.sobre-footer,
 	.contato-form,
+	.imagem-promo,
 	.recomendacao{
 		@include make-xs-column(12);
 	}

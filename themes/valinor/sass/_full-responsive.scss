@@ -1,3 +1,8 @@
+.full-section{
+	width:100%;
+	@include clearfix();
+}
+
 /* Este mixing vai para um arquivo separado */
 @mixin make-full-md-column($columns){
   position: relative;
