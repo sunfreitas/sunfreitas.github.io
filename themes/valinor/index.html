@@ -256,8 +256,44 @@
 
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" defer></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous" defer></script>
-  <script src="./javascripts/jquery.cycle2.min.js" type="text/javascript" defer></script>
+  <script type="text/javascript" defer>
+    function loadScript(){
+      var s,
+      r,
+      t;
+      r = false;
+      s = document.createElement('script');
+      s.type = 'text/javascript';
+      s.src = src;
+      s.onload = s.onreadystatechange = function() {
+        //console.log( this.readyState ); //uncomment this line to see which ready states are called.
+        if ( !r && (!this.readyState || this.readyState == 'complete') )
+        {
+          r = true;
+          callback();
+        }
+      };
+      t = document.getElementsByTagName('script')[0];
+      t.parentNode.insertBefore(s, t);
+    }
+
+    $(document).ready(function(){
+      $.getScript("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js", function(){
+        console.log('bootstrap loaded');
+      });
+      $.getScript("./javascripts/jquery.cycle2.min.js", function(){
+        console.log('cycle2 loaded',);
+      });
+      $.getScript("./javascripts/jquery.cycle2.center.min.js", function(){
+        console.log('cycle2 center plugin loaded',);
+      });
+      $.getScript("./javascripts/jquery.cycle2.carousel.min.js", function(){
+        console.log('cycle2 carousel plugin loaded',);
+      });
+    });
+  </script>
+	<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous" defer></script> -->
+  <!-- <script src="./javascripts/jquery.cycle2.min.js" type="text/javascript" defer></script> -->
   <script src="./javascripts/jquery.cycle2.center.min.js" type="text/javascript" defer></script>
 	<script type="text/javascript" src="./javascripts/jquery.cycle2.carousel.min.js" defer></script>
 
