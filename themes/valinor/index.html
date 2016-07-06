@@ -279,8 +279,11 @@
       $.getScript("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js", function(){
         console.log('bootstrap loaded');
       });
-      $.getScript("./javascripts/jquery.cycle2.min.js", function(){
-        console.log('cycle2 loaded');
+      $.getScript("./javascripts/jquery.cycle2.min.js", function(data, textStatus, jqxhr){
+        console.log(data);
+        console.log(textStatus);
+        console.log(jqxhr.status);
+        console.log("Carregamento realizado");
       });
       $.getScript("./javascripts/jquery.cycle2.center.min.js", function(){
         console.log('cycle2 center plugin loaded');
