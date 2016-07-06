@@ -253,9 +253,9 @@
 		</div>
 	</footer>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
   <script type="text/javascript" defer>
-    function loadScript(){
+    function loadScript(src, callback){
       var s,
       r,
       t;
@@ -275,17 +275,28 @@
       t.parentNode.insertBefore(s, t);
     }
 
-    $(document).ready(function(){
-      $.getScript("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js", function(){
-        console.log('bootstrap loaded');
+    document.onload = (function(){
+      loadScript("https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js", function(){
+        console.log("Jquery Carregado");
+        loadScript("./javascripts/jquery.cycle2.min.js", function(){
+          console.log("Cycle2 Carregado");
+        });
       });
-      $.getScript("./javascripts/jquery.cycle2.min.js", function(data, textStatus, jqxhr){
-        console.log(data);
-        console.log(textStatus);
-        console.log(jqxhr.status);
-        console.log("Carregamento realizado");
+      loadScript("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js", function(){
+        console.log("bootstrap Carregado");
       });
-    });
+    }());
+    // $(document).ready(function(){
+    //   $.getScript("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js", function(){
+    //     console.log('bootstrap loaded');
+    //   });
+    //   $.getScript("./javascripts/jquery.cycle2.min.js", function(data, textStatus, jqxhr){
+    //     console.log(data);
+    //     console.log(textStatus);
+    //     console.log(jqxhr.status);
+    //     console.log("Carregamento realizado");
+    //   });
+    // });
   </script>
 	<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous" defer></script> -->
   <!-- <script src="./javascripts/jquery.cycle2.min.js" type="text/javascript" defer></script> -->
