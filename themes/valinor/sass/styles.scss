@@ -282,6 +282,14 @@ body{
 	.recomendacao{
 		@include make-xs-column(12);
 	}
+
+	.horario{
+		background: #2196F3;
+		box-shadow: .1em .1em .1em #9a9a9a;
+		font-size:2em;
+		color:white;
+		opacity: .78;
+	}
 }
 
 @media screen and (min-width:425px){
