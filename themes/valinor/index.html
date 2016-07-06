@@ -285,11 +285,17 @@
         console.log(jqxhr.status);
         console.log("Carregamento realizado");
       });
-      $.getScript("./javascripts/jquery.cycle2.center.min.js", function(){
-        console.log('cycle2 center plugin loaded');
+      $.getScript("./javascripts/jquery.cycle2.center.min.js", function(data, textStatus, jqxhr){
+        console.log(data);
+        console.log(textStatus);
+        console.log(jqxhr.status);
+        console.log("Carregamento realizado");
       });
-      $.getScript("./javascripts/jquery.cycle2.carousel.min.js", function(){
-        console.log('cycle2 carousel plugin loaded');
+      $.getScript("./javascripts/jquery.cycle2.carousel.min.js", function(data, textStatus, jqxhr){
+        console.log(data);
+        console.log(textStatus);
+        console.log(jqxhr.status);
+        console.log("Carregamento realizado");
       });
     });
   </script>
