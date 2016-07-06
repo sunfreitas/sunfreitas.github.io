@@ -290,6 +290,11 @@ body{
 		color:white;
 		opacity: .78;
 	}
+
+	.footer-info{
+		@include make-xs-column(12);
+		text-align: center;
+	}
 }
 
 @media screen and (min-width:425px){
@@ -322,9 +327,12 @@ body{
 		@include make-sm-column-offset(3);
 	}
 
-	.sobre-footer,
 	.fale-conosco{
 		@include make-sm-column(4);
+	}
+	.footer-info{
+		@include make-sm-column(4);
+		@include make-sm-column-offset(4);
 	}
 }
 
