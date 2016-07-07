@@ -225,7 +225,12 @@ body{
 	.recomendacao{
 		@include make-xs-column(12);
 	}
-
+	.titulo-contato{
+		margin-bottom: 0;
+	}
+	.info-contato{
+		line-height: 1em;
+	}
 	.horario{
 		background: #2196F3;
 		box-shadow: .1em .1em .1em #9a9a9a;
