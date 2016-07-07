@@ -185,6 +185,9 @@ body{
 
 	.titulo-apresentacao{
 		margin:0;
+		display: inline-block;
+		border-bottom: solid 3px #f44336;
+		min-width: 100px;
 	}
 
 	.recomendacoes,
