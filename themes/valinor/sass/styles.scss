@@ -183,6 +183,10 @@ body{
 		text-align: center;
 	}
 
+	.titulo-apresentacao{
+		margin:0;
+	}
+
 	.recomendacoes,
 	.contato-form_descricao{
 		text-align: center;
@@ -247,9 +251,7 @@ body{
 		@include make-sm-column(10);
 		@include make-sm-column-offset(1);
 	}
-	.cycle-slide{
-		margin-left: 15px;
-	}
+
 	.sobre,
 	.imagem-promo{
 		@include make-sm-column(6);
@@ -293,9 +295,6 @@ body{
 	.clientes-lista{
 			@include make-sm-column(10);
 			@include make-sm-column-offset(2);
-	}
-	.cycle-slide{
-		margin-left: 15px;
 	}
 
 	.sobre,
