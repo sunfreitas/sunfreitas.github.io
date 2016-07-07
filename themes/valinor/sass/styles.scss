@@ -83,19 +83,9 @@ $gutter-sections-bottom: $gutter-sections;
  *
  */
 
-.full-section{
-	width:100%;
-	@include clearfix();
-}
-
 .content-text{
 	padding:30px;
 }
-
-/**
- * End Full Responsive Sections
- */
-
 /**
  * Custom Sections
  */
@@ -130,31 +120,6 @@ body{
 	color:#aaa;
 }
 
-.sobre-footer{
-	font-size: 12px;
-}
-
-.form{
-	padding-top: 0px;
-}
-
-.form_email-field,
-.form_message-field{
-	display:inline-block;
-	width:100%;
-	padding:6px;
-	margin-bottom: 10px;
-	background-color: #777777;
-	border:solid 1px #777777;
-}
-.form_buttom{
-	padding:6px 18px;
-	color:white;
-	background-color: #404040;
-	border:solid 1px #404040;
-	margin-bottom: 10px;
-}
-
 /**
  * End custoom sections
  */
@@ -174,7 +139,6 @@ body{
 }
 
 .sobre-footer,
-.galeria-portfolio,
 .fale-conosco{
 	@media (min-width: $screen-sm-min) {
 		@include make-sm-column(4);
@@ -207,21 +171,18 @@ body{
 @media screen and (min-width: 320px) {
 	.bnt-enviar{
 		border: solid 1px #f44336;
-		    background: #F44336;
-		    color: white;
-		    padding: .5em 2em;
-
-		    box-shadow: .1em .1em .1em #9a9a9a;
+    background: #F44336;
+    color: white;
+    padding: .5em 2em;
+    box-shadow: .1em .1em .1em #9a9a9a;
 	}
 
-	.apresentacao-mobile_header,
 	.clientes{
 		background: #f7f7f7;
 		border-bottom: solid 1px #e6e6e6;
 		text-align: center;
 	}
 
-	.apresentacao-mobile,
 	.recomendacoes,
 	.contato-form_descricao{
 		text-align: center;
@@ -232,10 +193,10 @@ body{
 		min-height: 230px;
 	}
 
-	.apresentacao-mobile_descricao,
 	.recomendacao{
 		opacity: .78;
 	}
+
 	.recomendacao-autor{
 		margin-top:1.2em;
 		line-height: 2em;
@@ -249,10 +210,8 @@ body{
 	}
 
 	/* Grid Fixes */
-	.sobre,
-	.imagem-promo,
-	.sobre-footer,
 	.contato-form,
+	.imagem-promo,
 	.recomendacao{
 		@include make-xs-column(12);
 	}
@@ -265,14 +224,14 @@ body{
 		opacity: .78;
 	}
 
+	.google-maps{
+		width:100%;
+		min-height: 400px;
+	}
 	.footer-info{
 		@include make-xs-column(12);
 		text-align: center;
 		opacity: .78;
-	}
-	.valinor-brand{
-		min-height: 155px;
-		background: url('../imagens/logo.png') no-repeat center;
 	}
 }
 
@@ -304,6 +263,26 @@ body{
 	.fale-conosco{
 		@include make-sm-column(4);
 	}
+
+	.horario{
+		width:100%;
+		margin-left: auto;
+		margin-right: auto;
+		@include clearfix();
+	}
+
+	.mapa-do-endereco{
+		float:left;
+		width:50%;
+		line-height: 0;
+	}
+
+	.endereco{
+		float:left;
+		width:50%;
+		padding-left:15px;
+	}
+
 	.footer-info{
 		@include make-sm-column(4);
 		@include make-sm-column-offset(4);
@@ -318,16 +297,7 @@ body{
 	.cycle-slide{
 		margin-left: 15px;
 	}
-	.endereco,
-	.mapa-do-endereco{
-		@include make-full-md-column(6);
-		line-height: 0;
-	}
 
-	.google-maps{
-		width:100%;
-		min-height: 400px;
-	}
 	.sobre,
 	.slide-projetos{
 		@include make-sm-column(6);
@@ -339,4 +309,32 @@ body{
 			@include make-lg-column(8);
 			@include make-lg-column-offset(3);
 	}
+}
+
+.rounded{
+	border-radius: 50%;
+}
+.icon{
+	background: url("../imagens/valinor-spritesheet.png") no-repeat;
+	display: inline-block;
+}
+.icon.customer1{
+	width:100px;
+	height: 100px;
+	background-position: -13px -11px;
+}
+.icon.customer2{
+	width:100px;
+	height: 100px;
+	background-position:-14px -120px;
+}
+.icon.blu-brand{
+	width:100px;
+	height: 100px;
+	background-position: -339px -13px;
+}
+.icon.valinor-brand{
+	width:200px;
+	height: 200px;
+	background-position: -128px -13px;
 }
