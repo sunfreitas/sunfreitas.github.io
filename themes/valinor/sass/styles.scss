@@ -93,6 +93,9 @@ $gutter-sections-bottom: $gutter-sections;
 .titulo-sessao{
 	text-align: center;
 	text-transform: uppercase;
+	display: inline-block;
+	border-bottom: 2px solid #f44336;
+	padding-bottom: 2px;
 }
 
 .separador{
@@ -185,9 +188,9 @@ body{
 
 	.titulo-apresentacao{
 		margin:0;
+		padding-bottom: 2px;
 		display: inline-block;
 		border-bottom: solid 3px #f44336;
-		min-width: 100px;
 	}
 
 	.recomendacoes,
@@ -261,6 +264,7 @@ body{
 	}
 
 	.contato-form{
+		text-align:center;
 		@include make-sm-column(6);
 		@include make-sm-column-offset(3);
 	}
