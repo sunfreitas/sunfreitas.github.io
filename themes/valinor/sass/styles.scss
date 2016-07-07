@@ -86,11 +86,6 @@ $gutter-sections-bottom: $gutter-sections;
 .content-text{
 	padding:30px;
 }
-
-/**
- * End Full Responsive Sections
- */
-
 /**
  * Custom Sections
  */
@@ -238,10 +233,6 @@ body{
 		text-align: center;
 		opacity: .78;
 	}
-	.valinor-brand{
-		min-height: 155px;
-		background: url('../imagens/logo.png') no-repeat center;
-	}
 }
 
 @media screen and (min-width:425px){
@@ -272,6 +263,26 @@ body{
 	.fale-conosco{
 		@include make-sm-column(4);
 	}
+
+	.horario{
+		width:100%;
+		margin-left: auto;
+		margin-right: auto;
+		@include clearfix();
+	}
+
+	.mapa-do-endereco{
+		float:left;
+		width:50%;
+		line-height: 0;
+	}
+
+	.endereco{
+		float:left;
+		width:50%;
+		padding-left:15px;
+	}
+
 	.footer-info{
 		@include make-sm-column(4);
 		@include make-sm-column-offset(4);
@@ -286,11 +297,7 @@ body{
 	.cycle-slide{
 		margin-left: 15px;
 	}
-	.endereco,
-	.mapa-do-endereco{
-		@include make-full-md-column(6);
-		line-height: 0;
-	}
+
 	.sobre,
 	.slide-projetos{
 		@include make-sm-column(6);
@@ -302,4 +309,32 @@ body{
 			@include make-lg-column(8);
 			@include make-lg-column-offset(3);
 	}
+}
+
+.rounded{
+	border-radius: 50%;
+}
+.icon{
+	background: url("../imagens/valinor-spritesheet.png") no-repeat;
+	display: inline-block;
+}
+.icon.customer1{
+	width:100px;
+	height: 100px;
+	background-position: -13px -11px;
+}
+.icon.customer2{
+	width:100px;
+	height: 100px;
+	background-position:-14px -120px;
+}
+.icon.blu-brand{
+	width:100px;
+	height: 100px;
+	background-position: -339px -13px;
+}
+.icon.valinor-brand{
+	width:200px;
+	height: 200px;
+	background-position: -128px -13px;
 }

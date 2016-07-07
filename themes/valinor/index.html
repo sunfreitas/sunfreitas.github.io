@@ -111,18 +111,37 @@
         <div class="recomendacoes">
             <div class="cycle-slideshow"
               data-cycle-center-horz=true
-              data-cycle-caption="#alt-caption"
-              data-cycle-caption-template="{{alt}}">
-              <img src="./imagens/testimonial01.jpg"
-                alt="'Muito boa a empresa, o serviço mostrou resultados
-                impressionantes no meu negócio - John Doe.'"
-                class="img-responsive img-circle recomendacao-autor_imagem"/>
+              data-cycle-slides="> div">
+              <div class="">
+                <span class="icon customer1 rounded"></span>
+                <p>
+                  "Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry’s
+                  standard dummy text ever since the 1500s"
+                </p>
+                <p>
+                  John Doe
+                </p>
+                <p>
+                  Empresa Y
+                </p>
+              </div>
 
-              <img src="./imagens/testimonial02.jpg"
-                alt="<em>'Fui muito bem atendido. A empresa é responsiva com seus prazos e passa
-                feedback constantemente no decorrer do negócio.'<em> - Mariah Doe." class="img-responsive img-circle recomendacao-autor_imagem"/>
+              <div class="">
+                <span class="icon customer2 rounded"></span>
+                <p>
+                  "Blanditiis aspernatur, non quasi, maxime corporis officiis
+                  quia. Cupiditate, voluptatibus ducimus, natus, labore
+                  mollitia dolorem incidunt voluptatum"
+                </p>
+                <p>
+                  Mariah
+                </p>
+                <p>
+                  Empresa X
+                </p>
+              </div>
             </div>
-            <div id="alt-caption" class="recomendacao-autor"></div>
         </div>
         <div class="clientes-lista-mobile visible-xs-block hidden-sm hidden-md">
           <div class="cycle-slideshow"
@@ -131,13 +150,14 @@
             data-cycle-carousel-visible=1
             data-cycle-speed="800"
             data-cycle-manualSpeed="500"
+            data-cycle-slides="> span"
           >
-            <img src="./imagens/clientes/brand01.png" alt="" />
-            <img src="./imagens/clientes/brand01.png" alt="" />
-            <img src="./imagens/clientes/brand01.png" alt="" />
-            <img src="./imagens/clientes/brand01.png" alt="" />
-            <img src="./imagens/clientes/brand01.png" alt="" />
-            <img src="./imagens/clientes/brand01.png" alt="" />
+            <span class="icon blu-brand"></span>
+            <span class="icon blu-brand"></span>
+            <span class="icon blu-brand"></span>
+            <span class="icon blu-brand"></span>
+            <span class="icon blu-brand"></span>
+            <span class="icon blu-brand"></span>
           </div>
         </div>
 
@@ -148,15 +168,15 @@
             data-cycle-carousel-visible=5
             data-cycle-speed="800"
             data-cycle-manualSpeed="500"
+            data-cycle-slides="> span"
           >
-          <img src="./imagens/clientes/brand01.png" alt="" />
-          <img src="./imagens/clientes/brand01.png" alt="" />
-          <img src="./imagens/clientes/brand01.png" alt="" />
-          <img src="./imagens/clientes/brand01.png" alt="" />
-          <img src="./imagens/clientes/brand01.png" alt="" />
-          <img src="./imagens/clientes/brand01.png" alt="" />
+          <span class="icon blu-brand"></span>
+          <span class="icon blu-brand"></span>
+          <span class="icon blu-brand"></span>
+          <span class="icon blu-brand"></span>
+          <span class="icon blu-brand"></span>
+          <span class="icon blu-brand"></span>
           </div>
-
         </div>
       </div>
 	</section>
@@ -187,14 +207,12 @@
 		</div>
 	</section>
 
-  <section class="full-section horario">
-
+  <section class="horario">
     <div class="mapa-do-endereco">
       <iframe class="google-maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3974.2367322562473!2d-42.76751858573364!3d-5.065337296323495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x78e3a49e956ec13%3A0xf0d598bf26683a79!2sR.+Cresc%C3%AAncio+Ferreira%2C+1770+-+Morada+do+Sol%2C+Teresina+-+PI%2C+64056-440!5e0!3m2!1sen!2sbr!4v1467813162499" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
 
-    <div class="endereco">
-      <div class="full-section_content-box">
+     <div class="endereco">
         <h2>Como nos Encontrar</h2>
         <p>
           <span class="glyphicon glyphicon-home"></span> R. Crescencio Ferreira, 1770. Morada do Sol
@@ -216,14 +234,12 @@
         <p>
           <span class="glyphicon glyphicon-time"></span> 8h às 12h e das 14h às 18h
         </p>
-      </div>
-
     </div>
   </section>
 
   <footer class="full-section informacoes-de-contato">
 		<div class="full-section_content-box footer-info">
-			<div class="valinor-brand">
+			<div class="icon valinor-brand">
 
 			</div>
       <div class="footer-description">
