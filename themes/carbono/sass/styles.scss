@@ -1,0 +1,45 @@
+// Import Bootstrap Compass integration
+@import "bootstrap-compass";
+
+// Import custom Bootstrap variables
+@import "bootstrap-variables";
+
+// Import Bootstrap for Sass
+// @import "bootstrap";
+*{
+  box-sizing: border-box;
+}
+@import "bootstrap/normalize";
+
+@import "bootstrap/mixins/clearfix";
+@import "bootstrap/mixins/grid";
+
+@media(min-width:320px){
+  // Coloque todos os containers aqui
+  .header-info,
+  .servicos{
+    @include container-fixed();
+    // o bootstrap define um width baseado nas variáveis $container-sm/md/lg
+  }
+
+  // Coloque todas as rows aqui
+  .header-info_conteudo,
+  .servicos_container{
+    @include make-row();
+  }
+
+  // Daqui em diante colocar todas as grigs
+  .info_conteudo{
+    @include make-xs-column(12);
+  }
+  .servico{
+    @include make-xs-column(6);
+    background: #ccc;
+  }
+}
+
+@media(min-width:$screen-sm-min){
+  .servico{
+    @include make-sm-column(6);
+  }
+}
