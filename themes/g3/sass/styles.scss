@@ -6,9 +6,13 @@
 
 // Import Bootstrap for Sass
 @import "bootstrap";
-
+p{
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 1.3em;
+}
 @media(min-width:320px){
   .informacoes-de-contato-top{
+    font-size: .8em;
     background: #f5f5f5;
     border-bottom: solid 1px #ccc;
     padding-top:1em;
@@ -32,6 +36,8 @@
   .paineis-de-planos,
   .contato-container{
     @include container-fixed();
+    padding-top:50px;
+    padding-bottom: 50px;
   }
   .paineis-de-planos_container{
     @include make-row();
@@ -40,7 +46,9 @@
     border-top: solid 1px #ccc;
     background: #f9f9f9;
   }
-
+  .plano{
+    @include make-xs-column(12);
+  }
   .plano-panel{
       border:solid 1px #ccc;
       margin-bottom: 10px;
@@ -49,23 +57,26 @@
       position: relative;
       background: white;
       header{
+        font-family: 'Comfortaa', cursive;
+        color: white;
         padding-top: 1em;
-        padding-bottom: 1em;
+        padding-bottom: 2em;
         margin-bottom: 50px;
         font-size: 2em;
       }
       .valor-plano{
-        font-size: 2em;
+        font-size: 3em;
+        font-weight: bold;
         background:white;
-        width:200px;
-        height: 200px;
+        width:224px;
+        height: 216px;
         margin: auto;
         border: solid 1px white;
-        border-radius: 100px;
-        padding:1em;
+        border-radius: 112px;
+        padding:1em .2em;
         position:absolute;
-        top:60px;
-        left:16%;
+        top:85px;
+        left:11%;
       }
       .descricao-plano, .cta-assinatura{
         position:relative;
@@ -82,23 +93,30 @@
     header{
       background: #3498db;
     }
+    .valor-plano{
+      color:#3498db;
+    }
   }
   .plano2{
-
     header{
       background: #555555;
+    }
+    .valor-plano{
+      color:#555555;
     }
   }
   .plano3{
     header{
-
         background: #e74c3c;
+    }
+    .valor-plano{
+      color:#e74c3c;
     }
   }
 
   .contato{
     color: rgba(255,255,255,.78);
-    background: url(../imagens/person-apple-laptop-notebook.jpg) no-repeat center;
+    background: url(../imagens/person-apple-laptop-notebook.jpg) no-repeat right bottom;
   }
   .contato-formulario{
     margin-bottom: 20px;
@@ -108,11 +126,11 @@
     width: 100%;
     display: block;
     margin-bottom: 20px;
-    padding: 1em;
+    padding: .8em;
   }
   .campo-mensagem{
     width: 100%;
-    padding:1em;
+    padding:.5em;
   }
   .btn-enviar{
     background: #d03333;
@@ -134,12 +152,22 @@
     text-align: center;
     color: rgba(0,0,0, .78);
   }
+  .header-sections.darken{
+    color: rgba(255,255,255, .78);
+  }
+
+  .copyright{
+    font-size: .8em;
+    color: rgba(0, 0, 0, .78);
+    padding:1em 0 0;
+    text-align: center;
+  }
 }
 
 @media(min-width:375px){
   .plano{
     .valor-plano{
-      left:21%;
+      left:17%;
     }
   }
 }
@@ -147,7 +175,7 @@
 @media(min-width:425px){
   .plano{
     .valor-plano{
-      left:25%;
+      left:22%;
     }
   }
 }
@@ -158,7 +186,7 @@
     width:$container-sm;
   }
     .informacoes-de-contato-top{
-      padding: 15px;
+      padding: 10px 15px 20px;
     }
 
     .contato-left{
@@ -183,7 +211,7 @@
       @include make-sm-column(4);
       // @include make-sm-column-offset(3);
       .valor-plano{
-        left:4%;
+        left:-1%;
       }
     }
 }
@@ -197,7 +225,7 @@
 
   .planos{
     .valor-plano{
-      left: 15%;
+      left: 12%;
     }
   }
   // .plano{
@@ -219,7 +247,7 @@
   }
   .planos{
     .valor-plano{
-      left: 22%;
+      left: 20%;
     }
   }
 }
