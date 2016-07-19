@@ -1,0 +1,27 @@
+// Import Bootstrap Compass integration
+@import "bootstrap-compass";
+
+// Import custom Bootstrap variables
+@import "bootstrap-variables";
+
+// Import Bootstrap for Sass
+@import "bootstrap";
+
+@media(min-width:320px){
+  .mobile-brand{
+    padding-top: 2em;
+    padding-bottom: 2em;
+    text-align: center;
+    background: #180e8e;
+  }
+
+  .empresa,
+  .planos,
+  .contato-container{
+    @include container-fixed();
+  }
+
+  .contato{
+    background: url(../imagens/person-apple-laptop-notebook.jpg) no-repeat center;
+  }
+}
