@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title>G3 Telecom</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Development only. Remove this font call to a css file and call assyncronously -->
+    <link href='https://fonts.googleapis.com/css?family=Comfortaa:700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="./stylesheets/styles.css" media="screen" title="no title" charset="utf-8">
   </head>
   <body>
@@ -61,7 +63,10 @@
   </section>
 
   <section class="empresa">
-    <h1>A Empresa</h1>
+    <div class="header-sections">
+      <h1 class="titulo-sessao">A Empresa</h1>
+      <span class="separador"></span>
+    </div>
     <p>
       Lorem Ipsum is simply dummy text of the printing and
       typesetting industry. Lorem Ipsum has been the industry’s
@@ -74,65 +79,79 @@
   </section>
 
   <section class="planos">
-    <h1>Planos</h1>
-    <div class="plano plano1">
-      <header>
-        <p>
-          1Mb
-        </p>
-      </header>
+    <div class="paineis-de-planos">
+      <div class="header-sections">
+        <h1 class="titulo-sessao">Planos</h1>
+        <span class="separador"></span>
+      </div>
+      <div class="paineis-de-planos_container">
 
-      <p class="valor-plano">
-        R$70,00
-      </p>
+        <div class="plano plano1">
+          <div class="plano-panel">
+            <header>
+              <p>
+                1Mb
+              </p>
+            </header>
 
-      <p class="descricao-plano">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna lorem,
-        ullamcorper eu sem sed, sodales rutrum libero. Proin ultricies dapibus
-        faucibus. Sed et dolor quam.
-      </p>
+            <p class="valor-plano">
+              R$70,00
+            </p>
 
-      <a href="#" class="cta-assinatura">Assine Agora</a>
-    </div>
+            <p class="descricao-plano">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna lorem,
+              ullamcorper eu sem sed, sodales rutrum libero. Proin ultricies dapibus
+              faucibus. Sed et dolor quam.
+            </p>
 
-    <div class="plano plano2">
-      <header>
-        <p>
-          3Mb
-        </p>
-      </header>
+            <a href="#" class="cta-assinatura">Assine Agora</a>
+          </div>
+        </div>
 
-      <p class="valor-plano">
-        R$105,00
-      </p>
+        <div class="plano plano2">
+          <div class="plano-panel">
+            <header>
+              <p>
+                3Mb
+              </p>
+            </header>
 
-      <p class="descricao-plano">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna lorem,
-        ullamcorper eu sem sed, sodales rutrum libero. Proin ultricies dapibus
-        faucibus. Sed et dolor quam.
-      </p>
+            <p class="valor-plano">
+              R$105,00
+            </p>
 
-      <a href="#" class="cta-assinatura">Assine Agora</a>
-    </div>
+            <p class="descricao-plano">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna lorem,
+              ullamcorper eu sem sed, sodales rutrum libero. Proin ultricies dapibus
+              faucibus. Sed et dolor quam.
+            </p>
 
-    <div class="plano plano3">
-      <header>
-        <p>
-          5Mb
-        </p>
-      </header>
+            <a href="#" class="cta-assinatura">Assine Agora</a>
+          </div>
+        </div>
 
-      <p class="valor-plano">
-        R$150,00
-      </p>
+        <div class="plano plano3">
+          <div class="plano-panel">
+            <header>
+              <p>
+                5Mb
+              </p>
+            </header>
 
-      <p class="descricao-plano">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna lorem,
-        ullamcorper eu sem sed, sodales rutrum libero. Proin ultricies dapibus
-        faucibus. Sed et dolor quam.
-      </p>
+            <p class="valor-plano">
+              R$150,00
+            </p>
 
-      <a href="#" class="cta-assinatura">Assine Agora</a>
+            <p class="descricao-plano">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna lorem,
+              ullamcorper eu sem sed, sodales rutrum libero. Proin ultricies dapibus
+              faucibus. Sed et dolor quam.
+            </p>
+
+            <a href="#" class="cta-assinatura">Assine Agora</a>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -140,7 +159,10 @@
     <div class="contato-container">
 
       <div class="contato-informacoes">
-        <h1>Contato</h1>
+        <div class="header-sections">
+          <h1 class="titulo-sessao">Contato</h1>
+          <span class="separador"></span>
+        </div>
 
         <p>
           <span class="glyphicon glyphicon-home"></span> Av. Pref Freitas Neto, 21. Mocambinho (em frente ao Comercial Carvalho)

@@ -8821,7 +8821,7 @@ button.close {
 
   /* line 31, ../sass/styles.scss */
   .empresa,
-  .planos,
+  .paineis-de-planos,
   .contato-container {
     margin-right: auto;
     margin-left: auto;
@@ -8830,8 +8830,8 @@ button.close {
   }
   /* line 14, ../../../../../../../../var/lib/gems/2.1.0/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
   .empresa:before, .empresa:after,
-  .planos:before,
-  .planos:after,
+  .paineis-de-planos:before,
+  .paineis-de-planos:after,
   .contato-container:before,
   .contato-container:after {
     content: " ";
@@ -8839,28 +8839,50 @@ button.close {
   }
   /* line 19, ../../../../../../../../var/lib/gems/2.1.0/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
   .empresa:after,
-  .planos:after,
+  .paineis-de-planos:after,
   .contato-container:after {
     clear: both;
   }
 
-  /* line 37, ../sass/styles.scss */
-  .plano {
+  /* line 36, ../sass/styles.scss */
+  .paineis-de-planos_container {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  /* line 14, ../../../../../../../../var/lib/gems/2.1.0/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
+  .paineis-de-planos_container:before, .paineis-de-planos_container:after {
+    content: " ";
+    display: table;
+  }
+  /* line 19, ../../../../../../../../var/lib/gems/2.1.0/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
+  .paineis-de-planos_container:after {
+    clear: both;
+  }
+
+  /* line 39, ../sass/styles.scss */
+  .planos {
+    border-top: solid 1px #ccc;
+    background: #f9f9f9;
+  }
+
+  /* line 44, ../sass/styles.scss */
+  .plano-panel {
     border: solid 1px #ccc;
     margin-bottom: 10px;
     text-align: center;
     padding-bottom: 2em;
     position: relative;
+    background: white;
   }
-  /* line 43, ../sass/styles.scss */
-  .plano header {
+  /* line 51, ../sass/styles.scss */
+  .plano-panel header {
     padding-top: 1em;
     padding-bottom: 1em;
     margin-bottom: 50px;
     font-size: 2em;
   }
-  /* line 49, ../sass/styles.scss */
-  .plano .valor-plano {
+  /* line 57, ../sass/styles.scss */
+  .plano-panel .valor-plano {
     font-size: 2em;
     background: white;
     width: 200px;
@@ -8873,47 +8895,47 @@ button.close {
     top: 60px;
     left: 16%;
   }
-  /* line 62, ../sass/styles.scss */
-  .plano .descricao-plano, .plano .cta-assinatura {
+  /* line 70, ../sass/styles.scss */
+  .plano-panel .descricao-plano, .plano-panel .cta-assinatura {
     position: relative;
     z-index: 1;
   }
-  /* line 66, ../sass/styles.scss */
-  .plano .cta-assinatura {
+  /* line 74, ../sass/styles.scss */
+  .plano-panel .cta-assinatura {
     display: inline-block;
     background: #F12D2D;
     padding: 1em;
     color: rgba(255, 255, 255, 0.78);
   }
 
-  /* line 74, ../sass/styles.scss */
+  /* line 82, ../sass/styles.scss */
   .plano1 header {
     background: #3498db;
   }
 
-  /* line 80, ../sass/styles.scss */
+  /* line 88, ../sass/styles.scss */
   .plano2 header {
     background: #555555;
   }
 
-  /* line 85, ../sass/styles.scss */
+  /* line 93, ../sass/styles.scss */
   .plano3 header {
     background: #e74c3c;
   }
 
-  /* line 91, ../sass/styles.scss */
+  /* line 99, ../sass/styles.scss */
   .contato {
     color: rgba(255, 255, 255, 0.78);
     background: url(../imagens/person-apple-laptop-notebook.jpg) no-repeat center;
   }
 
-  /* line 95, ../sass/styles.scss */
+  /* line 103, ../sass/styles.scss */
   .contato-formulario {
     margin-bottom: 20px;
     color: rgba(0, 0, 0, 0.54);
   }
 
-  /* line 99, ../sass/styles.scss */
+  /* line 107, ../sass/styles.scss */
   .campo-contato {
     width: 100%;
     display: block;
@@ -8921,17 +8943,146 @@ button.close {
     padding: 1em;
   }
 
-  /* line 105, ../sass/styles.scss */
+  /* line 113, ../sass/styles.scss */
   .campo-mensagem {
     width: 100%;
     padding: 1em;
   }
 
-  /* line 109, ../sass/styles.scss */
+  /* line 117, ../sass/styles.scss */
   .btn-enviar {
     background: #d03333;
     border: solid 1px #d03333;
     color: rgba(255, 255, 255, 0.78);
     padding: 1em 1.5em;
+  }
+
+  /* line 124, ../sass/styles.scss */
+  .separador {
+    display: inline-block;
+    width: 80px;
+    height: 2px;
+    background: #3682ff;
+    margin-bottom: 20px;
+  }
+
+  /* line 132, ../sass/styles.scss */
+  .header-sections {
+    font-family: 'Comfortaa', cursive;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.78);
+  }
+}
+@media (min-width: 375px) {
+  /* line 141, ../sass/styles.scss */
+  .plano .valor-plano {
+    left: 21%;
+  }
+}
+@media (min-width: 425px) {
+  /* line 149, ../sass/styles.scss */
+  .plano .valor-plano {
+    left: 25%;
+  }
+}
+@media (min-width: 768px) {
+  /* line 156, ../sass/styles.scss */
+  .empresa,
+  .contato-container {
+    width: 750px;
+  }
+
+  /* line 160, ../sass/styles.scss */
+  .informacoes-de-contato-top {
+    padding: 15px;
+  }
+
+  /* line 164, ../sass/styles.scss */
+  .contato-left {
+    float: left;
+  }
+  /* line 166, ../sass/styles.scss */
+  .contato-left p {
+    display: inline;
+  }
+
+  /* line 170, ../sass/styles.scss */
+  .contato-right {
+    float: right;
+  }
+
+  /* line 174, ../sass/styles.scss */
+  .apresentacao {
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.54);
+  }
+
+  /* line 178, ../sass/styles.scss */
+  .paineis-de-planos {
+    width: 750px;
+  }
+
+  /* line 182, ../sass/styles.scss */
+  .plano {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media (min-width: 768px) and (min-width: 768px) {
+  /* line 182, ../sass/styles.scss */
+  .plano {
+    float: left;
+    width: 33.33333333%;
+  }
+}
+@media (min-width: 768px) {
+  /* line 185, ../sass/styles.scss */
+  .plano .valor-plano {
+    left: 4%;
+  }
+}
+@media (min-width: 992px) {
+  /* line 192, ../sass/styles.scss */
+  .empresa,
+  .paineis-de-planos,
+  .contato-container {
+    width: 970px;
+  }
+
+  /* line 199, ../sass/styles.scss */
+  .planos .valor-plano {
+    left: 15%;
+  }
+
+  /* line 208, ../sass/styles.scss */
+  .contato-informacoes,
+  .contato-container-formulario {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media (min-width: 992px) and (min-width: 992px) {
+  /* line 208, ../sass/styles.scss */
+  .contato-informacoes,
+  .contato-container-formulario {
+    float: left;
+    width: 50%;
+  }
+}
+
+@media (min-width: 1200px) {
+  /* line 215, ../sass/styles.scss */
+  .empresa,
+  .paineis-de-planos,
+  .contato-container {
+    width: 1170px;
+  }
+
+  /* line 221, ../sass/styles.scss */
+  .planos .valor-plano {
+    left: 22%;
   }
 }

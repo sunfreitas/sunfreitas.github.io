@@ -29,17 +29,25 @@
     text-align: center;
   }
   .empresa,
-  .planos,
+  .paineis-de-planos,
   .contato-container{
     @include container-fixed();
   }
+  .paineis-de-planos_container{
+    @include make-row();
+  }
+  .planos{
+    border-top: solid 1px #ccc;
+    background: #f9f9f9;
+  }
 
-  .plano{
+  .plano-panel{
       border:solid 1px #ccc;
       margin-bottom: 10px;
       text-align: center;
       padding-bottom: 2em;
       position: relative;
+      background: white;
       header{
         padding-top: 1em;
         padding-bottom: 1em;
@@ -111,5 +119,107 @@
     border: solid 1px #d03333;
     color: rgba(255, 255, 255, .78);
     padding:1em 1.5em;
+  }
+
+  .separador{
+    display: inline-block;
+    width: 80px;
+    height: 2px;
+    background: #3682ff;
+    margin-bottom: 20px;
+  }
+
+  .header-sections{
+    font-family: 'Comfortaa', cursive;
+    text-align: center;
+    color: rgba(0,0,0, .78);
+  }
+}
+
+@media(min-width:375px){
+  .plano{
+    .valor-plano{
+      left:21%;
+    }
+  }
+}
+
+@media(min-width:425px){
+  .plano{
+    .valor-plano{
+      left:25%;
+    }
+  }
+}
+
+@media(min-width: $screen-sm){
+  .empresa,
+  .contato-container{
+    width:$container-sm;
+  }
+    .informacoes-de-contato-top{
+      padding: 15px;
+    }
+
+    .contato-left{
+      float: left;
+      p{
+        display: inline;
+      }
+    }
+    .contato-right{
+      float: right;
+    }
+
+    .apresentacao{
+      box-shadow: 0 2px 2px rgba(0, 0, 0, .54);
+    }
+
+    .paineis-de-planos{
+      width: $container-sm;
+    }
+
+    .plano{
+      @include make-sm-column(4);
+      // @include make-sm-column-offset(3);
+      .valor-plano{
+        left:4%;
+      }
+    }
+}
+
+@media(min-width:$screen-md){
+  .empresa,
+  .paineis-de-planos,
+  .contato-container{
+    width:$container-md;
+  }
+
+  .planos{
+    .valor-plano{
+      left: 15%;
+    }
+  }
+  // .plano{
+  //   @include make-md-column(4);
+  //   @include make-md-column-offset(3);
+  // }
+
+  .contato-informacoes,
+  .contato-container-formulario{
+    @include make-md-column(6);
+  }
+}
+
+@media(min-width:$screen-lg){
+  .empresa,
+  .paineis-de-planos,
+  .contato-container{
+    width:$container-lg;
+  }
+  .planos{
+    .valor-plano{
+      left: 22%;
+    }
   }
 }
