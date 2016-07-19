@@ -8,7 +8,7 @@
 @import "bootstrap";
 p{
   font-family: 'Open Sans', Arial, sans-serif;
-  font-size: 1.3em;
+  font-size: 1em;
 }
 @media(min-width:320px){
   .informacoes-de-contato-top{
@@ -29,7 +29,8 @@ p{
     text-align: center;
   }
 
-  .navbar-default .navbar-collapse{
+  .navbar-default .navbar-collapse,
+  .empresa-description{
     text-align: center;
   }
   .empresa,
@@ -39,6 +40,7 @@ p{
     padding-top:50px;
     padding-bottom: 50px;
   }
+
   .paineis-de-planos_container{
     @include make-row();
   }
@@ -202,7 +204,9 @@ p{
     .apresentacao{
       box-shadow: 0 2px 2px rgba(0, 0, 0, .54);
     }
-
+    .vantagem{
+        @include make-sm-column(4);
+    }
     .paineis-de-planos{
       width: $container-sm;
     }

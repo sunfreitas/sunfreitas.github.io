@@ -8794,7 +8794,7 @@ button.close {
 /* line 9, ../sass/styles.scss */
 p {
   font-family: 'Open Sans', Arial, sans-serif;
-  font-size: 1.3em;
+  font-size: 1em;
 }
 
 @media (min-width: 320px) {
@@ -8822,11 +8822,12 @@ p {
   }
 
   /* line 32, ../sass/styles.scss */
-  .navbar-default .navbar-collapse {
+  .navbar-default .navbar-collapse,
+  .empresa-description {
     text-align: center;
   }
 
-  /* line 35, ../sass/styles.scss */
+  /* line 36, ../sass/styles.scss */
   .empresa,
   .paineis-de-planos,
   .contato-container {
@@ -8853,7 +8854,7 @@ p {
     clear: both;
   }
 
-  /* line 42, ../sass/styles.scss */
+  /* line 44, ../sass/styles.scss */
   .paineis-de-planos_container {
     margin-left: -15px;
     margin-right: -15px;
@@ -8868,13 +8869,13 @@ p {
     clear: both;
   }
 
-  /* line 45, ../sass/styles.scss */
+  /* line 47, ../sass/styles.scss */
   .planos {
     border-top: solid 1px #ccc;
     background: #f9f9f9;
   }
 
-  /* line 49, ../sass/styles.scss */
+  /* line 51, ../sass/styles.scss */
   .plano {
     position: relative;
     float: left;
@@ -8884,7 +8885,7 @@ p {
     padding-right: 15px;
   }
 
-  /* line 52, ../sass/styles.scss */
+  /* line 54, ../sass/styles.scss */
   .plano-panel {
     border: solid 1px #ccc;
     margin-bottom: 10px;
@@ -8893,7 +8894,7 @@ p {
     position: relative;
     background: white;
   }
-  /* line 59, ../sass/styles.scss */
+  /* line 61, ../sass/styles.scss */
   .plano-panel header {
     font-family: 'Comfortaa', cursive;
     color: white;
@@ -8902,7 +8903,7 @@ p {
     margin-bottom: 50px;
     font-size: 2em;
   }
-  /* line 67, ../sass/styles.scss */
+  /* line 69, ../sass/styles.scss */
   .plano-panel .valor-plano {
     font-size: 3em;
     font-weight: bold;
@@ -8917,12 +8918,12 @@ p {
     top: 85px;
     left: 11%;
   }
-  /* line 81, ../sass/styles.scss */
+  /* line 83, ../sass/styles.scss */
   .plano-panel .descricao-plano, .plano-panel .cta-assinatura {
     position: relative;
     z-index: 1;
   }
-  /* line 85, ../sass/styles.scss */
+  /* line 87, ../sass/styles.scss */
   .plano-panel .cta-assinatura {
     display: inline-block;
     background: #F12D2D;
@@ -8930,46 +8931,46 @@ p {
     color: rgba(255, 255, 255, 0.78);
   }
 
-  /* line 93, ../sass/styles.scss */
+  /* line 95, ../sass/styles.scss */
   .plano1 header {
     background: #3498db;
   }
-  /* line 96, ../sass/styles.scss */
+  /* line 98, ../sass/styles.scss */
   .plano1 .valor-plano {
     color: #3498db;
   }
 
-  /* line 101, ../sass/styles.scss */
+  /* line 103, ../sass/styles.scss */
   .plano2 header {
     background: #555555;
   }
-  /* line 104, ../sass/styles.scss */
+  /* line 106, ../sass/styles.scss */
   .plano2 .valor-plano {
     color: #555555;
   }
 
-  /* line 109, ../sass/styles.scss */
+  /* line 111, ../sass/styles.scss */
   .plano3 header {
     background: #e74c3c;
   }
-  /* line 112, ../sass/styles.scss */
+  /* line 114, ../sass/styles.scss */
   .plano3 .valor-plano {
     color: #e74c3c;
   }
 
-  /* line 117, ../sass/styles.scss */
+  /* line 119, ../sass/styles.scss */
   .contato {
     color: rgba(255, 255, 255, 0.78);
     background: url(../imagens/person-apple-laptop-notebook.jpg) no-repeat right bottom;
   }
 
-  /* line 121, ../sass/styles.scss */
+  /* line 123, ../sass/styles.scss */
   .contato-formulario {
     margin-bottom: 20px;
     color: rgba(0, 0, 0, 0.54);
   }
 
-  /* line 125, ../sass/styles.scss */
+  /* line 127, ../sass/styles.scss */
   .campo-contato {
     width: 100%;
     display: block;
@@ -8977,13 +8978,13 @@ p {
     padding: .8em;
   }
 
-  /* line 131, ../sass/styles.scss */
+  /* line 133, ../sass/styles.scss */
   .campo-mensagem {
     width: 100%;
     padding: .5em;
   }
 
-  /* line 135, ../sass/styles.scss */
+  /* line 137, ../sass/styles.scss */
   .btn-enviar {
     background: #d03333;
     border: solid 1px #d03333;
@@ -8991,7 +8992,7 @@ p {
     padding: 1em 1.5em;
   }
 
-  /* line 142, ../sass/styles.scss */
+  /* line 144, ../sass/styles.scss */
   .separador {
     display: inline-block;
     width: 80px;
@@ -9000,19 +9001,19 @@ p {
     margin-bottom: 20px;
   }
 
-  /* line 150, ../sass/styles.scss */
+  /* line 152, ../sass/styles.scss */
   .header-sections {
     font-family: 'Comfortaa', cursive;
     text-align: center;
     color: rgba(0, 0, 0, 0.78);
   }
 
-  /* line 155, ../sass/styles.scss */
+  /* line 157, ../sass/styles.scss */
   .header-sections.darken {
     color: rgba(255, 255, 255, 0.78);
   }
 
-  /* line 159, ../sass/styles.scss */
+  /* line 161, ../sass/styles.scss */
   .copyright {
     font-size: .8em;
     color: rgba(0, 0, 0, 0.78);
@@ -9021,54 +9022,71 @@ p {
   }
 }
 @media (min-width: 375px) {
-  /* line 169, ../sass/styles.scss */
+  /* line 171, ../sass/styles.scss */
   .plano .valor-plano {
     left: 17%;
   }
 }
 @media (min-width: 425px) {
-  /* line 177, ../sass/styles.scss */
+  /* line 179, ../sass/styles.scss */
   .plano .valor-plano {
     left: 22%;
   }
 }
 @media (min-width: 768px) {
-  /* line 184, ../sass/styles.scss */
+  /* line 186, ../sass/styles.scss */
   .empresa,
   .contato-container {
     width: 750px;
   }
 
-  /* line 188, ../sass/styles.scss */
+  /* line 190, ../sass/styles.scss */
   .informacoes-de-contato-top {
     padding: 10px 15px 20px;
   }
 
-  /* line 192, ../sass/styles.scss */
+  /* line 194, ../sass/styles.scss */
   .contato-left {
     float: left;
   }
-  /* line 194, ../sass/styles.scss */
+  /* line 196, ../sass/styles.scss */
   .contato-left p {
     display: inline;
   }
 
-  /* line 198, ../sass/styles.scss */
+  /* line 200, ../sass/styles.scss */
   .contato-right {
     float: right;
   }
 
-  /* line 202, ../sass/styles.scss */
+  /* line 204, ../sass/styles.scss */
   .apresentacao {
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.54);
   }
 
-  /* line 206, ../sass/styles.scss */
+  /* line 207, ../sass/styles.scss */
+  .vantagem {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media (min-width: 768px) and (min-width: 768px) {
+  /* line 207, ../sass/styles.scss */
+  .vantagem {
+    float: left;
+    width: 33.33333333%;
+  }
+}
+
+@media (min-width: 768px) {
+  /* line 210, ../sass/styles.scss */
   .paineis-de-planos {
     width: 750px;
   }
 
-  /* line 210, ../sass/styles.scss */
+  /* line 214, ../sass/styles.scss */
   .plano {
     position: relative;
     min-height: 1px;
@@ -9077,32 +9095,32 @@ p {
   }
 }
 @media (min-width: 768px) and (min-width: 768px) {
-  /* line 210, ../sass/styles.scss */
+  /* line 214, ../sass/styles.scss */
   .plano {
     float: left;
     width: 33.33333333%;
   }
 }
 @media (min-width: 768px) {
-  /* line 213, ../sass/styles.scss */
+  /* line 217, ../sass/styles.scss */
   .plano .valor-plano {
     left: -1%;
   }
 }
 @media (min-width: 992px) {
-  /* line 220, ../sass/styles.scss */
+  /* line 224, ../sass/styles.scss */
   .empresa,
   .paineis-de-planos,
   .contato-container {
     width: 970px;
   }
 
-  /* line 227, ../sass/styles.scss */
+  /* line 231, ../sass/styles.scss */
   .planos .valor-plano {
     left: 12%;
   }
 
-  /* line 236, ../sass/styles.scss */
+  /* line 240, ../sass/styles.scss */
   .contato-informacoes,
   .contato-container-formulario {
     position: relative;
@@ -9112,7 +9130,7 @@ p {
   }
 }
 @media (min-width: 992px) and (min-width: 992px) {
-  /* line 236, ../sass/styles.scss */
+  /* line 240, ../sass/styles.scss */
   .contato-informacoes,
   .contato-container-formulario {
     float: left;
@@ -9121,14 +9139,14 @@ p {
 }
 
 @media (min-width: 1200px) {
-  /* line 243, ../sass/styles.scss */
+  /* line 247, ../sass/styles.scss */
   .empresa,
   .paineis-de-planos,
   .contato-container {
     width: 1170px;
   }
 
-  /* line 249, ../sass/styles.scss */
+  /* line 253, ../sass/styles.scss */
   .planos .valor-plano {
     left: 20%;
   }
