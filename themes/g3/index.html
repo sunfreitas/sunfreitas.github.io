@@ -75,37 +75,64 @@
 
   <section class="planos">
     <h1>Planos</h1>
-    <div class="plano">
-      <header class="valor-plano">
+    <div class="plano plano1">
+      <header>
         <p>
-          R$70,00
+          1Mb
         </p>
       </header>
-      <p class="descricao-plano">
 
+      <p class="valor-plano">
+        R$70,00
       </p>
+
+      <p class="descricao-plano">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna lorem,
+        ullamcorper eu sem sed, sodales rutrum libero. Proin ultricies dapibus
+        faucibus. Sed et dolor quam.
+      </p>
+
+      <a href="#" class="cta-assinatura">Assine Agora</a>
     </div>
 
-    <div class="plano">
-      <header class="valor-plano">
+    <div class="plano plano2">
+      <header>
         <p>
-          R$70,00
+          3Mb
         </p>
       </header>
-      <p class="descricao-plano">
 
+      <p class="valor-plano">
+        R$105,00
       </p>
+
+      <p class="descricao-plano">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna lorem,
+        ullamcorper eu sem sed, sodales rutrum libero. Proin ultricies dapibus
+        faucibus. Sed et dolor quam.
+      </p>
+
+      <a href="#" class="cta-assinatura">Assine Agora</a>
     </div>
 
-    <div class="plano">
-      <header class="valor-plano">
+    <div class="plano plano3">
+      <header>
         <p>
-          R$70,00
+          5Mb
         </p>
       </header>
-      <p class="descricao-plano">
 
+      <p class="valor-plano">
+        R$150,00
       </p>
+
+      <p class="descricao-plano">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna lorem,
+        ullamcorper eu sem sed, sodales rutrum libero. Proin ultricies dapibus
+        faucibus. Sed et dolor quam.
+      </p>
+
+      <a href="#" class="cta-assinatura">Assine Agora</a>
     </div>
   </section>
 
@@ -126,15 +153,20 @@
           <span class="glyphicon glyphicon-phone"></span> (86) 98837 3979/ 99437 1087/ 99811 8797
         </p>
       </div>
+
       <div class="contato-container-formulario">
         <p>
           Envie seus dados para um de nossos atendentes entrar em contato com você.
         </p>
 
         <form class="contato-formulario" action="index.html" method="post">
-          <input type="text" name="name" value="">
-          <input type="text" name="name" value="">
-          <textarea name="name" rows="8" cols="40"></textarea>
+          <input type="text" name="nome" value="" placeholder="Digite seu nome*" class="campo-contato">
+          <input type="text" name="celular" placeholder="Digite seu celular*" class="campo-contato">
+          <input type="text" name="email" placeholder="Digite seu email" class="campo-contato">
+          <!--  -->
+          <textarea name="name" rows="8" cols="40" class="campo-mensagem" placeholder="Deixe uma mensagem *"></textarea>
+          <!--  -->
+          <button type="button" name="enviar" class="btn-enviar"><span class="glyphicon glyphicon-send"></span> Enviar</button>
         </form>
       </div>
     </div>
