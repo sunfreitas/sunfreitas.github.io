@@ -50,7 +50,8 @@ p{
     text-align: center;
   }
   .empresa,
-  .paineis-de-planos{
+  .paineis-de-planos,
+  .assinatura{
     @include container-fixed();
     padding-top:50px;
     padding-bottom: 50px;
@@ -61,14 +62,18 @@ p{
   .lead{
     margin-bottom: 0;
   }
-  .paineis-de-planos_container{
+  .paineis-de-planos_container,
+  .assinatura-container{
     @include make-row();
   }
+
   .planos{
     border-top: solid 1px #ccc;
     background: #f9f9f9;
   }
-  .plano{
+  .plano,
+  .call-center-atendente,
+  .faca-assinatura{
     @include make-xs-column(12);
   }
   .plano-panel{
@@ -115,6 +120,10 @@ p{
         padding: 1em;
         color:rgba(255, 255, 255, .78);
       }
+  }
+  .img-circle-blue{
+    border:solid 5px #2196f3;
+    border-radius: 50%;
   }
   .plano1{
     header{
@@ -172,6 +181,13 @@ p{
   }
   .mapa-do-endereco{
     @include make-full-xs-column(12);
+  }
+  .assinatura{
+    background: #f6f6f6;
+  }
+  
+  .fone-assinatura{
+    font-size: 2em;
   }
 
   .google-maps{
@@ -238,6 +254,11 @@ p{
       .valor-plano{
         left:-1%;
       }
+    }
+
+    .call-center-atendente,
+    .faca-assinatura{
+      @include make-sm-column(6);
     }
 }
 
