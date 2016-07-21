@@ -57,7 +57,12 @@ p{
     padding-top:50px;
     padding-bottom: 50px;
   }
-
+  .empresa-description{
+    margin-bottom: 30px;
+  }
+  .lead{
+    margin-bottom: 0;
+  }
   .paineis-de-planos_container{
     @include make-row();
   }
