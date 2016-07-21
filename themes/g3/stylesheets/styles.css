@@ -5614,7 +5614,7 @@ tbody.collapse.in {
 .navbar {
   position: relative;
   min-height: 50px;
-  margin-bottom: 20px;
+  margin-bottom: 0;
   border: 1px solid transparent;
 }
 /* line 14, ../../../../../../../../var/lib/gems/2.1.0/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
@@ -8946,29 +8946,32 @@ p {
     background: #3498db;
   }
   /* line 123, ../sass/styles.scss */
-  .plano1 .valor-plano {
+  .plano1 .valor-plano,
+  .plano1 .periodicidade-plano {
     color: #3498db;
   }
 
-  /* line 128, ../sass/styles.scss */
+  /* line 129, ../sass/styles.scss */
   .plano2 header {
-    background: #555555;
+    background: #FF9800;
   }
-  /* line 131, ../sass/styles.scss */
-  .plano2 .valor-plano {
-    color: #555555;
+  /* line 132, ../sass/styles.scss */
+  .plano2 .valor-plano,
+  .plano2 .periodicidade-plano {
+    color: #FF9800;
   }
 
-  /* line 136, ../sass/styles.scss */
+  /* line 138, ../sass/styles.scss */
   .plano3 header {
     background: #e74c3c;
   }
-  /* line 139, ../sass/styles.scss */
-  .plano3 .valor-plano {
+  /* line 141, ../sass/styles.scss */
+  .plano3 .valor-plano,
+  .plano3 .periodicidade-plano {
     color: #e74c3c;
   }
 
-  /* line 143, ../sass/styles.scss */
+  /* line 146, ../sass/styles.scss */
   .contato {
     background: #2196F3;
   }
@@ -8982,7 +8985,7 @@ p {
     clear: both;
   }
 
-  /* line 148, ../sass/styles.scss */
+  /* line 151, ../sass/styles.scss */
   .separador {
     display: inline-block;
     width: 80px;
@@ -8991,26 +8994,26 @@ p {
     margin-bottom: 20px;
   }
 
-  /* line 156, ../sass/styles.scss */
+  /* line 159, ../sass/styles.scss */
   .header-sections {
     font-family: 'Comfortaa', cursive;
     text-align: center;
     color: rgba(0, 0, 0, 0.78);
   }
 
-  /* line 161, ../sass/styles.scss */
+  /* line 164, ../sass/styles.scss */
   .header-sections.darken {
     color: rgba(255, 255, 255, 0.78);
   }
 
-  /* line 165, ../sass/styles.scss */
+  /* line 168, ../sass/styles.scss */
   .contato-informacoes {
     padding-left: 15px;
     padding-right: 15px;
     color: rgba(255, 255, 255, 0.78);
   }
 
-  /* line 170, ../sass/styles.scss */
+  /* line 173, ../sass/styles.scss */
   .mapa-do-endereco {
     position: relative;
     float: left;
@@ -9018,13 +9021,13 @@ p {
     min-height: 1px;
   }
 
-  /* line 174, ../sass/styles.scss */
+  /* line 177, ../sass/styles.scss */
   .google-maps {
     width: 100%;
     min-height: 450px;
   }
 
-  /* line 178, ../sass/styles.scss */
+  /* line 181, ../sass/styles.scss */
   .copyright {
     font-size: .8em;
     color: rgba(0, 0, 0, 0.78);
@@ -9033,49 +9036,49 @@ p {
   }
 }
 @media (min-width: 375px) {
-  /* line 188, ../sass/styles.scss */
+  /* line 191, ../sass/styles.scss */
   .plano .valor-plano {
     left: 17%;
   }
 }
 @media (min-width: 425px) {
-  /* line 196, ../sass/styles.scss */
+  /* line 199, ../sass/styles.scss */
   .plano .valor-plano {
     left: 22%;
   }
 }
 @media (min-width: 768px) {
-  /* line 203, ../sass/styles.scss */
+  /* line 206, ../sass/styles.scss */
   .empresa,
   .contato-container {
     width: 750px;
   }
 
-  /* line 207, ../sass/styles.scss */
+  /* line 210, ../sass/styles.scss */
   .informacoes-de-contato-top {
     padding: 10px 15px 20px;
   }
 
-  /* line 211, ../sass/styles.scss */
+  /* line 214, ../sass/styles.scss */
   .contato-left {
     float: left;
   }
-  /* line 213, ../sass/styles.scss */
+  /* line 216, ../sass/styles.scss */
   .contato-left p {
     display: inline;
   }
 
-  /* line 217, ../sass/styles.scss */
+  /* line 220, ../sass/styles.scss */
   .contato-right {
     float: right;
   }
 
-  /* line 221, ../sass/styles.scss */
+  /* line 224, ../sass/styles.scss */
   .apresentacao {
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.54);
   }
 
-  /* line 224, ../sass/styles.scss */
+  /* line 228, ../sass/styles.scss */
   .vantagem {
     position: relative;
     min-height: 1px;
@@ -9084,7 +9087,7 @@ p {
   }
 }
 @media (min-width: 768px) and (min-width: 768px) {
-  /* line 224, ../sass/styles.scss */
+  /* line 228, ../sass/styles.scss */
   .vantagem {
     float: left;
     width: 33.33333333%;
@@ -9092,12 +9095,12 @@ p {
 }
 
 @media (min-width: 768px) {
-  /* line 227, ../sass/styles.scss */
+  /* line 231, ../sass/styles.scss */
   .paineis-de-planos {
     width: 750px;
   }
 
-  /* line 231, ../sass/styles.scss */
+  /* line 235, ../sass/styles.scss */
   .plano {
     position: relative;
     min-height: 1px;
@@ -9106,32 +9109,32 @@ p {
   }
 }
 @media (min-width: 768px) and (min-width: 768px) {
-  /* line 231, ../sass/styles.scss */
+  /* line 235, ../sass/styles.scss */
   .plano {
     float: left;
     width: 33.33333333%;
   }
 }
 @media (min-width: 768px) {
-  /* line 234, ../sass/styles.scss */
+  /* line 238, ../sass/styles.scss */
   .plano .valor-plano {
     left: -1%;
   }
 }
 @media (min-width: 992px) {
-  /* line 241, ../sass/styles.scss */
+  /* line 245, ../sass/styles.scss */
   .empresa,
   .paineis-de-planos,
   .contato-container {
     width: 970px;
   }
 
-  /* line 248, ../sass/styles.scss */
+  /* line 252, ../sass/styles.scss */
   .planos .valor-plano {
     left: 12%;
   }
 
-  /* line 257, ../sass/styles.scss */
+  /* line 261, ../sass/styles.scss */
   .contato-informacoes,
   .mapa-do-endereco {
     color: rgba(255, 255, 255, 0.78);
@@ -9142,7 +9145,7 @@ p {
   }
 }
 @media (min-width: 992px) and (min-width: 992px) {
-  /* line 257, ../sass/styles.scss */
+  /* line 261, ../sass/styles.scss */
   .contato-informacoes,
   .mapa-do-endereco {
     float: left;
@@ -9151,14 +9154,14 @@ p {
 }
 
 @media (min-width: 1200px) {
-  /* line 267, ../sass/styles.scss */
+  /* line 271, ../sass/styles.scss */
   .empresa,
   .paineis-de-planos,
   .contato-container {
     width: 1170px;
   }
 
-  /* line 273, ../sass/styles.scss */
+  /* line 277, ../sass/styles.scss */
   .planos .valor-plano {
     left: 20%;
   }

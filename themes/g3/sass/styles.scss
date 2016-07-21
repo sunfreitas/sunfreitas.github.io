@@ -120,23 +120,26 @@ p{
     header{
       background: #3498db;
     }
-    .valor-plano{
+    .valor-plano,
+    .periodicidade-plano{
       color:#3498db;
     }
   }
   .plano2{
     header{
-      background: #555555;
+      background: #FF9800;
     }
-    .valor-plano{
-      color:#555555;
+    .valor-plano,
+    .periodicidade-plano{
+      color:#FF9800;
     }
   }
   .plano3{
     header{
         background: #e74c3c;
     }
-    .valor-plano{
+    .valor-plano,
+    .periodicidade-plano{
       color:#e74c3c;
     }
   }
@@ -220,6 +223,7 @@ p{
 
     .apresentacao{
       box-shadow: 0 2px 2px rgba(0, 0, 0, .54);
+      // margin-top:-20px;
     }
     .vantagem{
         @include make-sm-column(4);
