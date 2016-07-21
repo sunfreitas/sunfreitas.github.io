@@ -9053,7 +9053,12 @@ p {
     min-height: 450px;
   }
 
-  /* line 197, ../sass/styles.scss */
+  /* line 198, ../sass/styles.scss */
+  .text-blue {
+    color: #2196f3;
+  }
+
+  /* line 202, ../sass/styles.scss */
   .copyright {
     font-size: .8em;
     color: rgba(0, 0, 0, 0.78);
@@ -9062,49 +9067,49 @@ p {
   }
 }
 @media (min-width: 375px) {
-  /* line 207, ../sass/styles.scss */
+  /* line 212, ../sass/styles.scss */
   .plano .valor-plano {
     left: 17%;
   }
 }
 @media (min-width: 425px) {
-  /* line 215, ../sass/styles.scss */
+  /* line 220, ../sass/styles.scss */
   .plano .valor-plano {
     left: 22%;
   }
 }
 @media (min-width: 768px) {
-  /* line 222, ../sass/styles.scss */
+  /* line 227, ../sass/styles.scss */
   .empresa,
   .contato-container {
     width: 750px;
   }
 
-  /* line 226, ../sass/styles.scss */
+  /* line 231, ../sass/styles.scss */
   .informacoes-de-contato-top {
     padding: 10px 15px 20px;
   }
 
-  /* line 230, ../sass/styles.scss */
+  /* line 235, ../sass/styles.scss */
   .contato-left {
     float: left;
   }
-  /* line 232, ../sass/styles.scss */
+  /* line 237, ../sass/styles.scss */
   .contato-left p {
     display: inline;
   }
 
-  /* line 236, ../sass/styles.scss */
+  /* line 241, ../sass/styles.scss */
   .contato-right {
     float: right;
   }
 
-  /* line 240, ../sass/styles.scss */
+  /* line 245, ../sass/styles.scss */
   .apresentacao {
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.54);
   }
 
-  /* line 244, ../sass/styles.scss */
+  /* line 249, ../sass/styles.scss */
   .vantagem {
     position: relative;
     min-height: 1px;
@@ -9113,7 +9118,7 @@ p {
   }
 }
 @media (min-width: 768px) and (min-width: 768px) {
-  /* line 244, ../sass/styles.scss */
+  /* line 249, ../sass/styles.scss */
   .vantagem {
     float: left;
     width: 33.33333333%;
@@ -9121,12 +9126,12 @@ p {
 }
 
 @media (min-width: 768px) {
-  /* line 247, ../sass/styles.scss */
+  /* line 252, ../sass/styles.scss */
   .paineis-de-planos {
     width: 750px;
   }
 
-  /* line 251, ../sass/styles.scss */
+  /* line 256, ../sass/styles.scss */
   .plano {
     position: relative;
     min-height: 1px;
@@ -9135,19 +9140,19 @@ p {
   }
 }
 @media (min-width: 768px) and (min-width: 768px) {
-  /* line 251, ../sass/styles.scss */
+  /* line 256, ../sass/styles.scss */
   .plano {
     float: left;
     width: 33.33333333%;
   }
 }
 @media (min-width: 768px) {
-  /* line 254, ../sass/styles.scss */
+  /* line 259, ../sass/styles.scss */
   .plano .valor-plano {
     left: -1%;
   }
 
-  /* line 259, ../sass/styles.scss */
+  /* line 264, ../sass/styles.scss */
   .call-center-atendente,
   .faca-assinatura {
     position: relative;
@@ -9157,7 +9162,7 @@ p {
   }
 }
 @media (min-width: 768px) and (min-width: 768px) {
-  /* line 259, ../sass/styles.scss */
+  /* line 264, ../sass/styles.scss */
   .call-center-atendente,
   .faca-assinatura {
     float: left;
@@ -9166,19 +9171,19 @@ p {
 }
 
 @media (min-width: 992px) {
-  /* line 266, ../sass/styles.scss */
+  /* line 271, ../sass/styles.scss */
   .empresa,
   .paineis-de-planos,
   .contato-container {
     width: 970px;
   }
 
-  /* line 273, ../sass/styles.scss */
+  /* line 278, ../sass/styles.scss */
   .planos .valor-plano {
     left: 12%;
   }
 
-  /* line 282, ../sass/styles.scss */
+  /* line 287, ../sass/styles.scss */
   .contato-informacoes,
   .mapa-do-endereco {
     color: rgba(255, 255, 255, 0.78);
@@ -9189,7 +9194,7 @@ p {
   }
 }
 @media (min-width: 992px) and (min-width: 992px) {
-  /* line 282, ../sass/styles.scss */
+  /* line 287, ../sass/styles.scss */
   .contato-informacoes,
   .mapa-do-endereco {
     float: left;
@@ -9198,14 +9203,14 @@ p {
 }
 
 @media (min-width: 1200px) {
-  /* line 292, ../sass/styles.scss */
+  /* line 297, ../sass/styles.scss */
   .empresa,
   .paineis-de-planos,
   .contato-container {
     width: 1170px;
   }
 
-  /* line 298, ../sass/styles.scss */
+  /* line 303, ../sass/styles.scss */
   .planos .valor-plano {
     left: 20%;
   }
