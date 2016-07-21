@@ -8816,18 +8816,16 @@ p {
 
   /* line 44, ../sass/styles.scss */
   .mobile-brand {
-    padding-top: 2em;
-    padding-bottom: 2em;
     text-align: center;
   }
 
-  /* line 50, ../sass/styles.scss */
+  /* line 48, ../sass/styles.scss */
   .navbar-default .navbar-collapse,
   .empresa-description {
     text-align: center;
   }
 
-  /* line 54, ../sass/styles.scss */
+  /* line 52, ../sass/styles.scss */
   .empresa,
   .paineis-de-planos {
     margin-right: auto;
@@ -8850,17 +8848,17 @@ p {
     clear: both;
   }
 
-  /* line 60, ../sass/styles.scss */
+  /* line 58, ../sass/styles.scss */
   .empresa-description {
     margin-bottom: 30px;
   }
 
-  /* line 63, ../sass/styles.scss */
+  /* line 61, ../sass/styles.scss */
   .lead {
     margin-bottom: 0;
   }
 
-  /* line 66, ../sass/styles.scss */
+  /* line 64, ../sass/styles.scss */
   .paineis-de-planos_container {
     margin-left: -15px;
     margin-right: -15px;
@@ -8875,13 +8873,13 @@ p {
     clear: both;
   }
 
-  /* line 69, ../sass/styles.scss */
+  /* line 67, ../sass/styles.scss */
   .planos {
     border-top: solid 1px #ccc;
     background: #f9f9f9;
   }
 
-  /* line 73, ../sass/styles.scss */
+  /* line 71, ../sass/styles.scss */
   .plano {
     position: relative;
     float: left;
@@ -8891,7 +8889,7 @@ p {
     padding-right: 15px;
   }
 
-  /* line 76, ../sass/styles.scss */
+  /* line 74, ../sass/styles.scss */
   .plano-panel {
     border: solid 1px #ccc;
     margin-bottom: 10px;
@@ -8900,7 +8898,7 @@ p {
     position: relative;
     background: white;
   }
-  /* line 83, ../sass/styles.scss */
+  /* line 81, ../sass/styles.scss */
   .plano-panel header {
     font-family: 'Comfortaa', cursive;
     color: white;
@@ -8909,7 +8907,7 @@ p {
     margin-bottom: 50px;
     font-size: 2em;
   }
-  /* line 91, ../sass/styles.scss */
+  /* line 89, ../sass/styles.scss */
   .plano-panel .valor-plano {
     font-size: 3em;
     font-weight: bold;
@@ -8924,18 +8922,18 @@ p {
     top: 85px;
     left: 11%;
   }
-  /* line 105, ../sass/styles.scss */
+  /* line 103, ../sass/styles.scss */
   .plano-panel .periodicidade-plano {
     color: rgba(0, 0, 0, 0.78);
     position: relative;
     z-index: 1;
   }
-  /* line 110, ../sass/styles.scss */
+  /* line 108, ../sass/styles.scss */
   .plano-panel .descricao-plano, .plano-panel .cta-assinatura {
     position: relative;
     z-index: 1;
   }
-  /* line 114, ../sass/styles.scss */
+  /* line 112, ../sass/styles.scss */
   .plano-panel .cta-assinatura {
     display: inline-block;
     background: #F12D2D;
@@ -8943,34 +8941,34 @@ p {
     color: rgba(255, 255, 255, 0.78);
   }
 
-  /* line 122, ../sass/styles.scss */
+  /* line 120, ../sass/styles.scss */
   .plano1 header {
     background: #3498db;
   }
-  /* line 125, ../sass/styles.scss */
+  /* line 123, ../sass/styles.scss */
   .plano1 .valor-plano {
     color: #3498db;
   }
 
-  /* line 130, ../sass/styles.scss */
+  /* line 128, ../sass/styles.scss */
   .plano2 header {
     background: #555555;
   }
-  /* line 133, ../sass/styles.scss */
+  /* line 131, ../sass/styles.scss */
   .plano2 .valor-plano {
     color: #555555;
   }
 
-  /* line 138, ../sass/styles.scss */
+  /* line 136, ../sass/styles.scss */
   .plano3 header {
     background: #e74c3c;
   }
-  /* line 141, ../sass/styles.scss */
+  /* line 139, ../sass/styles.scss */
   .plano3 .valor-plano {
     color: #e74c3c;
   }
 
-  /* line 145, ../sass/styles.scss */
+  /* line 143, ../sass/styles.scss */
   .contato {
     background: #2196F3;
   }
@@ -8984,7 +8982,7 @@ p {
     clear: both;
   }
 
-  /* line 150, ../sass/styles.scss */
+  /* line 148, ../sass/styles.scss */
   .separador {
     display: inline-block;
     width: 80px;
@@ -8993,26 +8991,26 @@ p {
     margin-bottom: 20px;
   }
 
-  /* line 158, ../sass/styles.scss */
+  /* line 156, ../sass/styles.scss */
   .header-sections {
     font-family: 'Comfortaa', cursive;
     text-align: center;
     color: rgba(0, 0, 0, 0.78);
   }
 
-  /* line 163, ../sass/styles.scss */
+  /* line 161, ../sass/styles.scss */
   .header-sections.darken {
     color: rgba(255, 255, 255, 0.78);
   }
 
-  /* line 167, ../sass/styles.scss */
+  /* line 165, ../sass/styles.scss */
   .contato-informacoes {
     padding-left: 15px;
     padding-right: 15px;
     color: rgba(255, 255, 255, 0.78);
   }
 
-  /* line 172, ../sass/styles.scss */
+  /* line 170, ../sass/styles.scss */
   .mapa-do-endereco {
     position: relative;
     float: left;
@@ -9020,13 +9018,13 @@ p {
     min-height: 1px;
   }
 
-  /* line 176, ../sass/styles.scss */
+  /* line 174, ../sass/styles.scss */
   .google-maps {
     width: 100%;
     min-height: 450px;
   }
 
-  /* line 180, ../sass/styles.scss */
+  /* line 178, ../sass/styles.scss */
   .copyright {
     font-size: .8em;
     color: rgba(0, 0, 0, 0.78);
@@ -9035,49 +9033,49 @@ p {
   }
 }
 @media (min-width: 375px) {
-  /* line 190, ../sass/styles.scss */
+  /* line 188, ../sass/styles.scss */
   .plano .valor-plano {
     left: 17%;
   }
 }
 @media (min-width: 425px) {
-  /* line 198, ../sass/styles.scss */
+  /* line 196, ../sass/styles.scss */
   .plano .valor-plano {
     left: 22%;
   }
 }
 @media (min-width: 768px) {
-  /* line 205, ../sass/styles.scss */
+  /* line 203, ../sass/styles.scss */
   .empresa,
   .contato-container {
     width: 750px;
   }
 
-  /* line 209, ../sass/styles.scss */
+  /* line 207, ../sass/styles.scss */
   .informacoes-de-contato-top {
     padding: 10px 15px 20px;
   }
 
-  /* line 213, ../sass/styles.scss */
+  /* line 211, ../sass/styles.scss */
   .contato-left {
     float: left;
   }
-  /* line 215, ../sass/styles.scss */
+  /* line 213, ../sass/styles.scss */
   .contato-left p {
     display: inline;
   }
 
-  /* line 219, ../sass/styles.scss */
+  /* line 217, ../sass/styles.scss */
   .contato-right {
     float: right;
   }
 
-  /* line 223, ../sass/styles.scss */
+  /* line 221, ../sass/styles.scss */
   .apresentacao {
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.54);
   }
 
-  /* line 226, ../sass/styles.scss */
+  /* line 224, ../sass/styles.scss */
   .vantagem {
     position: relative;
     min-height: 1px;
@@ -9086,7 +9084,7 @@ p {
   }
 }
 @media (min-width: 768px) and (min-width: 768px) {
-  /* line 226, ../sass/styles.scss */
+  /* line 224, ../sass/styles.scss */
   .vantagem {
     float: left;
     width: 33.33333333%;
@@ -9094,12 +9092,12 @@ p {
 }
 
 @media (min-width: 768px) {
-  /* line 229, ../sass/styles.scss */
+  /* line 227, ../sass/styles.scss */
   .paineis-de-planos {
     width: 750px;
   }
 
-  /* line 233, ../sass/styles.scss */
+  /* line 231, ../sass/styles.scss */
   .plano {
     position: relative;
     min-height: 1px;
@@ -9108,32 +9106,32 @@ p {
   }
 }
 @media (min-width: 768px) and (min-width: 768px) {
-  /* line 233, ../sass/styles.scss */
+  /* line 231, ../sass/styles.scss */
   .plano {
     float: left;
     width: 33.33333333%;
   }
 }
 @media (min-width: 768px) {
-  /* line 236, ../sass/styles.scss */
+  /* line 234, ../sass/styles.scss */
   .plano .valor-plano {
     left: -1%;
   }
 }
 @media (min-width: 992px) {
-  /* line 243, ../sass/styles.scss */
+  /* line 241, ../sass/styles.scss */
   .empresa,
   .paineis-de-planos,
   .contato-container {
     width: 970px;
   }
 
-  /* line 250, ../sass/styles.scss */
+  /* line 248, ../sass/styles.scss */
   .planos .valor-plano {
     left: 12%;
   }
 
-  /* line 259, ../sass/styles.scss */
+  /* line 257, ../sass/styles.scss */
   .contato-informacoes,
   .mapa-do-endereco {
     color: rgba(255, 255, 255, 0.78);
@@ -9144,7 +9142,7 @@ p {
   }
 }
 @media (min-width: 992px) and (min-width: 992px) {
-  /* line 259, ../sass/styles.scss */
+  /* line 257, ../sass/styles.scss */
   .contato-informacoes,
   .mapa-do-endereco {
     float: left;
@@ -9153,14 +9151,14 @@ p {
 }
 
 @media (min-width: 1200px) {
-  /* line 269, ../sass/styles.scss */
+  /* line 267, ../sass/styles.scss */
   .empresa,
   .paineis-de-planos,
   .contato-container {
     width: 1170px;
   }
 
-  /* line 275, ../sass/styles.scss */
+  /* line 273, ../sass/styles.scss */
   .planos .valor-plano {
     left: 20%;
   }
