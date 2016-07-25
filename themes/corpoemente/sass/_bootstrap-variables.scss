@@ -358,7 +358,7 @@ $navbar-border-radius:             0; //$border-radius-base
 
 $navbar-default-color:             #777;
 $navbar-default-bg:                rgba(0,0,0, .64); //#f8f8f8;
-$navbar-default-border:            darken($navbar-default-bg, 6%)
+$navbar-default-border:            rgba(0,0,0, 0); //darken($navbar-default-bg, 6%)
 
 // Navbar links
 // $navbar-default-link-color:                #777

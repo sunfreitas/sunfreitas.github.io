@@ -6041,7 +6041,7 @@ tbody.collapse.in {
 /* line 397, ../../../../../../../../var/lib/gems/2.1.0/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default {
   background-color: rgba(0, 0, 0, 0.64);
-  border-color: rgba(0, 0, 0, 0.64);
+  border-color: transparent;
 }
 /* line 401, ../../../../../../../../var/lib/gems/2.1.0/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .navbar-brand {
@@ -6090,7 +6090,7 @@ tbody.collapse.in {
 /* line 453, ../../../../../../../../var/lib/gems/2.1.0/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
-  border-color: rgba(0, 0, 0, 0.64);
+  border-color: transparent;
 }
 /* line 462, ../../../../../../../../var/lib/gems/2.1.0/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
@@ -8792,24 +8792,24 @@ button.close {
   }
 }
 @media (min-width: 320px) {
-  /* line 11, ../sass/styles.scss */
+  /* line 21, ../sass/styles.scss */
   .brand {
     background: url(../imagens/imagem-promo.jpg) no-repeat center;
     padding-top: 70px;
     padding-bottom: 10px;
   }
 
-  /* line 17, ../sass/styles.scss */
-  .brand > img {
+  /* line 27, ../sass/styles.scss */
+  .brand > img, .container-de-servicos_servico > img {
     margin: auto;
   }
 
-  /* line 21, ../sass/styles.scss */
+  /* line 31, ../sass/styles.scss */
   .navbar-collapse {
     text-align: center;
   }
 
-  /* line 25, ../sass/styles.scss */
+  /* line 35, ../sass/styles.scss */
   .quem-somos,
   .nossos-servicos,
   .contato,
@@ -8845,5 +8845,49 @@ button.close {
   .rodape-container:after,
   .copyright:after {
     clear: both;
+  }
+
+  /* line 45, ../sass/styles.scss */
+  .contato {
+    background: #333;
+  }
+
+  /* line 49, ../sass/styles.scss */
+  p[class^="contato_"] {
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  /* line 53, ../sass/styles.scss */
+  .titulo,
+  .servico_subtitulo {
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.78);
+  }
+
+  /* line 59, ../sass/styles.scss */
+  .titulo {
+    font-size: 3em;
+  }
+
+  /* line 63, ../sass/styles.scss */
+  .subtitulo,
+  .servico_subtitulo {
+    font-size: 1.5em;
+  }
+
+  /* line 68, ../sass/styles.scss */
+  .titulo.texto-claro {
+    color: white;
+  }
+
+  /* line 71, ../sass/styles.scss */
+  .subtitulo.texto-claro {
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  /* line 75, ../sass/styles.scss */
+  .descricao,
+  .servico_descricao {
+    color: rgba(0, 0, 0, 0.54);
   }
 }
