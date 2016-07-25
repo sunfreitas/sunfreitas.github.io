@@ -34,16 +34,16 @@ $secondary-text-lighten: rgba($lighten-color, .7);
 
   .quem-somos,
   .nossos-servicos,
-  .contato,
-  .localizacao,
+  .contato-container,
   .rodape-container,
   .copyright{
     @include container-fixed();
+    padding:70px 0;
     text-align: center;
   }
 
   .contato{
-    background: #333;
+    background:url(../imagens/imagem-local.jpg) no-repeat center;
   }
 
   p[class^="contato_"]{
@@ -77,5 +77,47 @@ $secondary-text-lighten: rgba($lighten-color, .7);
     color: rgba($darken-color, .54);
   }
 
+  .google-maps{
+    width: 100%;
+    min-height: 300px;
+  }
+}
 
+@media(min-width:$screen-sm){
+  .quem-somos,
+  .nossos-servicos,
+  .contato-container,
+  .rodape-container,
+  .copyright{
+    width: $container-sm;
+  }
+  .nossos-servicos_container-de-servicos{
+    @include make-row();
+  }
+  .container-de-servicos_servico{
+    @include make-sm-column(4);
+  }
+}
+
+@media(min-width:$screen-md){
+  .quem-somos,
+  .nossos-servicos,
+  .contato-container,
+  .rodape-container,
+  .copyright{
+    width: $container-md;
+  }
+  .container-de-servicos_servico{
+    @include make-md-column(3);
+  }
+}
+
+@media(min-width:$screen-lg){
+  .quem-somos,
+  .nossos-servicos,
+  .contato-container,
+  .rodape-container,
+  .copyright{
+    width: $container-lg;
+  }
 }

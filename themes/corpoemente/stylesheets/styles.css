@@ -8812,24 +8812,22 @@ button.close {
   /* line 35, ../sass/styles.scss */
   .quem-somos,
   .nossos-servicos,
-  .contato,
-  .localizacao,
+  .contato-container,
   .rodape-container,
   .copyright {
     margin-right: auto;
     margin-left: auto;
     padding-left: 15px;
     padding-right: 15px;
+    padding: 70px 0;
     text-align: center;
   }
   /* line 14, ../../../../../../../../var/lib/gems/2.1.0/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
   .quem-somos:before, .quem-somos:after,
   .nossos-servicos:before,
   .nossos-servicos:after,
-  .contato:before,
-  .contato:after,
-  .localizacao:before,
-  .localizacao:after,
+  .contato-container:before,
+  .contato-container:after,
   .rodape-container:before,
   .rodape-container:after,
   .copyright:before,
@@ -8840,8 +8838,7 @@ button.close {
   /* line 19, ../../../../../../../../var/lib/gems/2.1.0/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
   .quem-somos:after,
   .nossos-servicos:after,
-  .contato:after,
-  .localizacao:after,
+  .contato-container:after,
   .rodape-container:after,
   .copyright:after {
     clear: both;
@@ -8849,7 +8846,7 @@ button.close {
 
   /* line 45, ../sass/styles.scss */
   .contato {
-    background: #333;
+    background: url(../imagens/imagem-local.jpg) no-repeat center;
   }
 
   /* line 49, ../sass/styles.scss */
@@ -8889,5 +8886,88 @@ button.close {
   .descricao,
   .servico_descricao {
     color: rgba(0, 0, 0, 0.54);
+  }
+
+  /* line 80, ../sass/styles.scss */
+  .google-maps {
+    width: 100%;
+    min-height: 300px;
+  }
+}
+@media (min-width: 768px) {
+  /* line 87, ../sass/styles.scss */
+  .quem-somos,
+  .nossos-servicos,
+  .contato-container,
+  .rodape-container,
+  .copyright {
+    width: 750px;
+  }
+
+  /* line 94, ../sass/styles.scss */
+  .nossos-servicos_container-de-servicos {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  /* line 14, ../../../../../../../../var/lib/gems/2.1.0/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
+  .nossos-servicos_container-de-servicos:before, .nossos-servicos_container-de-servicos:after {
+    content: " ";
+    display: table;
+  }
+  /* line 19, ../../../../../../../../var/lib/gems/2.1.0/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
+  .nossos-servicos_container-de-servicos:after {
+    clear: both;
+  }
+
+  /* line 97, ../sass/styles.scss */
+  .container-de-servicos_servico {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media (min-width: 768px) and (min-width: 768px) {
+  /* line 97, ../sass/styles.scss */
+  .container-de-servicos_servico {
+    float: left;
+    width: 33.33333333%;
+  }
+}
+
+@media (min-width: 992px) {
+  /* line 103, ../sass/styles.scss */
+  .quem-somos,
+  .nossos-servicos,
+  .contato-container,
+  .rodape-container,
+  .copyright {
+    width: 970px;
+  }
+
+  /* line 110, ../sass/styles.scss */
+  .container-de-servicos_servico {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media (min-width: 992px) and (min-width: 992px) {
+  /* line 110, ../sass/styles.scss */
+  .container-de-servicos_servico {
+    float: left;
+    width: 25%;
+  }
+}
+
+@media (min-width: 1200px) {
+  /* line 116, ../sass/styles.scss */
+  .quem-somos,
+  .nossos-servicos,
+  .contato-container,
+  .rodape-container,
+  .copyright {
+    width: 1170px;
   }
 }
