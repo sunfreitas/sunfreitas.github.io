@@ -8807,7 +8807,8 @@ button.close {
   .nossos-servicos,
   .contato,
   .localizacao,
-  .rodape-container {
+  .rodape-container,
+  .copyright {
     margin-right: auto;
     margin-left: auto;
     padding-left: 15px;
@@ -8823,7 +8824,9 @@ button.close {
   .localizacao:before,
   .localizacao:after,
   .rodape-container:before,
-  .rodape-container:after {
+  .rodape-container:after,
+  .copyright:before,
+  .copyright:after {
     content: " ";
     display: table;
   }
@@ -8832,7 +8835,8 @@ button.close {
   .nossos-servicos:after,
   .contato:after,
   .localizacao:after,
-  .rodape-container:after {
+  .rodape-container:after,
+  .copyright:after {
     clear: both;
   }
 }

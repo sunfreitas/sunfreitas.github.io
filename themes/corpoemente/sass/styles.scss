@@ -11,7 +11,7 @@
   .brand > img{
     margin: 10px auto;
   }
-  
+
   .navbar-collapse{
     text-align: center;
   }
@@ -20,9 +20,9 @@
   .nossos-servicos,
   .contato,
   .localizacao,
-  .rodape-container{
+  .rodape-container,
+  .copyright{
     @include container-fixed();
     text-align: center;
   }
-
 }
