@@ -8,8 +8,14 @@
 @import "bootstrap";
 
 @media(min-width:320px){
+  .brand{
+    background: url(../imagens/imagem-promo.jpg) no-repeat center;
+    padding-top: 70px;
+    padding-bottom: 10px;
+    min-height: 500px;
+  }
   .brand > img{
-    margin: 10px auto;
+    margin: auto;
   }
 
   .navbar-collapse{

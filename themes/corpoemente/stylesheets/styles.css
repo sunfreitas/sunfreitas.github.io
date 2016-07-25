@@ -5629,7 +5629,7 @@ tbody.collapse.in {
 @media (min-width: 768px) {
   /* line 11, ../../../../../../../../var/lib/gems/2.1.0/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar {
-    border-radius: 4px;
+    border-radius: 0;
   }
 }
 
@@ -5986,8 +5986,8 @@ tbody.collapse.in {
 /* line 332, ../../../../../../../../var/lib/gems/2.1.0/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-fixed-bottom .navbar-nav > li > .dropdown-menu {
   margin-bottom: 0;
-  border-top-right-radius: 4px;
-  border-top-left-radius: 4px;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
@@ -6040,8 +6040,8 @@ tbody.collapse.in {
 }
 /* line 397, ../../../../../../../../var/lib/gems/2.1.0/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default {
-  background-color: #f8f8f8;
-  border-color: #e7e7e7;
+  background-color: rgba(0, 0, 0, 0.64);
+  border-color: rgba(0, 0, 0, 0.64);
 }
 /* line 401, ../../../../../../../../var/lib/gems/2.1.0/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .navbar-brand {
@@ -6068,7 +6068,7 @@ tbody.collapse.in {
 /* line 425, ../../../../../../../../var/lib/gems/2.1.0/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
   color: #555;
-  background-color: #e7e7e7;
+  background-color: rgba(0, 0, 0, 0.64);
 }
 /* line 433, ../../../../../../../../var/lib/gems/2.1.0/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .navbar-nav > .disabled > a, .navbar-default .navbar-nav > .disabled > a:hover, .navbar-default .navbar-nav > .disabled > a:focus {
@@ -6090,11 +6090,11 @@ tbody.collapse.in {
 /* line 453, ../../../../../../../../var/lib/gems/2.1.0/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
-  border-color: #e7e7e7;
+  border-color: rgba(0, 0, 0, 0.64);
 }
 /* line 462, ../../../../../../../../var/lib/gems/2.1.0/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
-  background-color: #e7e7e7;
+  background-color: rgba(0, 0, 0, 0.64);
   color: #555;
 }
 @media (max-width: 767px) {
@@ -6110,7 +6110,7 @@ tbody.collapse.in {
   /* line 482, ../../../../../../../../var/lib/gems/2.1.0/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
     color: #555;
-    background-color: #e7e7e7;
+    background-color: rgba(0, 0, 0, 0.64);
   }
   /* line 490, ../../../../../../../../var/lib/gems/2.1.0/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:focus {
@@ -8793,16 +8793,24 @@ button.close {
 }
 @media (min-width: 320px) {
   /* line 11, ../sass/styles.scss */
-  .brand > img {
-    margin: 10px auto;
+  .brand {
+    background: url(../imagens/imagem-promo.jpg) no-repeat center;
+    padding-top: 70px;
+    padding-bottom: 10px;
+    min-height: 500px;
   }
 
-  /* line 15, ../sass/styles.scss */
+  /* line 17, ../sass/styles.scss */
+  .brand > img {
+    margin: auto;
+  }
+
+  /* line 21, ../sass/styles.scss */
   .navbar-collapse {
     text-align: center;
   }
 
-  /* line 19, ../sass/styles.scss */
+  /* line 25, ../sass/styles.scss */
   .quem-somos,
   .nossos-servicos,
   .contato,
