@@ -32,8 +32,8 @@
   			</div><!-- /.navbar-collapse -->
   		</div><!-- /.container-fluid -->
   	</nav>
-    
-    <div class="brand">
+
+    <div id="promo" class="brand">
       <img src="./imagens/logo.png" alt="" class="img-responsive"/>
     </div>
 
@@ -211,5 +211,10 @@
 
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script type="text/javascript" src="./javascripts/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        var el = $('#promo').css('min-height', screen.height + 'px');
+      });
+    </script>
   </body>
 </html>
