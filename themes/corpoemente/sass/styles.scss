@@ -6,3 +6,23 @@
 
 // Import Bootstrap for Sass
 @import "bootstrap";
+
+@media(min-width:320px){
+  .brand > img{
+    margin: 10px auto;
+  }
+  
+  .navbar-collapse{
+    text-align: center;
+  }
+
+  .quem-somos,
+  .nossos-servicos,
+  .contato,
+  .localizacao,
+  .rodape-container{
+    @include container-fixed();
+    text-align: center;
+  }
+
+}

@@ -367,8 +367,8 @@ th {
 }
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url(/fonts/bootstrap/glyphicons-halflings-regular.eot?1469411264);
-  src: url(/fonts/bootstrap/glyphicons-halflings-regular.eot?&1469411264#iefix) format("embedded-opentype"), url(/fonts/bootstrap/glyphicons-halflings-regular.woff2?1469411264) format("woff2"), url(/fonts/bootstrap/glyphicons-halflings-regular.woff?1469411264) format("woff"), url(/fonts/bootstrap/glyphicons-halflings-regular.ttf?1469411264) format("truetype"), url(/fonts/bootstrap/glyphicons-halflings-regular.svg?1469411264#glyphicons_halflingsregular) format("svg");
+  src: url(/fonts/bootstrap/glyphicons-halflings-regular.eot?1469412434);
+  src: url(/fonts/bootstrap/glyphicons-halflings-regular.eot?&1469412434#iefix) format("embedded-opentype"), url(/fonts/bootstrap/glyphicons-halflings-regular.woff2?1469412434) format("woff2"), url(/fonts/bootstrap/glyphicons-halflings-regular.woff?1469412434) format("woff"), url(/fonts/bootstrap/glyphicons-halflings-regular.ttf?1469412434) format("truetype"), url(/fonts/bootstrap/glyphicons-halflings-regular.svg?1469412434#glyphicons_halflingsregular) format("svg");
 }
 /* line 24, ../../../../../../../../var/lib/gems/2.1.0/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_glyphicons.scss */
 .glyphicon {
@@ -8789,5 +8789,50 @@ button.close {
   /* line 18, ../../../../../../../../var/lib/gems/2.1.0/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/mixins/_responsive-visibility.scss */
   .hidden-print {
     display: none !important;
+  }
+}
+@media (min-width: 320px) {
+  /* line 11, ../sass/styles.scss */
+  .brand > img {
+    margin: 10px auto;
+  }
+
+  /* line 15, ../sass/styles.scss */
+  .navbar-collapse {
+    text-align: center;
+  }
+
+  /* line 19, ../sass/styles.scss */
+  .quem-somos,
+  .nossos-servicos,
+  .contato,
+  .localizacao,
+  .rodape-container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+  }
+  /* line 14, ../../../../../../../../var/lib/gems/2.1.0/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
+  .quem-somos:before, .quem-somos:after,
+  .nossos-servicos:before,
+  .nossos-servicos:after,
+  .contato:before,
+  .contato:after,
+  .localizacao:before,
+  .localizacao:after,
+  .rodape-container:before,
+  .rodape-container:after {
+    content: " ";
+    display: table;
+  }
+  /* line 19, ../../../../../../../../var/lib/gems/2.1.0/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
+  .quem-somos:after,
+  .nossos-servicos:after,
+  .contato:after,
+  .localizacao:after,
+  .rodape-container:after {
+    clear: both;
   }
 }
