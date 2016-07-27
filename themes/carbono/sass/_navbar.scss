@@ -1,10 +1,10 @@
 @media(min-width:320px){
   .navbar{
+    background: #ccc;
     div{
       @include container-fixed();
       position: relative;
       min-height: 50px;
-      background: #ccc;
       ul{
         list-style: none;
         position: absolute;
@@ -14,11 +14,9 @@
         margin: 0;
         padding: 0;
         display: none;
-        width: 100%;
         background: white;
         border-bottom: solid 1px #ccc;
         li{
-          background: white;
           padding: 10px;
           a{
             text-decoration: none;
@@ -51,5 +49,47 @@
   // Controle para exibir/esconder o menu
   .bar-buttom:checked ~ ul{
     display: block;
+    min-width: 100%;
+  }
+}
+
+@media(min-width:$screen-sm-min){
+  .navbar{
+    div{
+      width: $container-sm;
+      ul{
+        position: relative;
+        top: 0;
+        padding-top:5px;
+        display: inline-block;
+        background: none;
+        li{
+          display: inline-block;
+        }
+      }
+      ul.right{
+        float:right;
+        @include clearfix();
+      }
+    }
+  }
+  .buttom-collapse, .bar-buttom{
+    display:none;
+  }
+}
+
+@media(min-width:$screen-md-min){
+  .navbar{
+    div{
+      width: $container-md;
+    }
+  }
+}
+
+@media(min-width: $screen-lg-min){
+  .navbar{
+    div{
+      width: $container-lg;
+    }
   }
 }

@@ -262,7 +262,11 @@ th {
 }
 
 @media (min-width: 320px) {
-  /* line 3, ../sass/_navbar.scss */
+  /* line 2, ../sass/_navbar.scss */
+  .navbar {
+    background: #ccc;
+  }
+  /* line 4, ../sass/_navbar.scss */
   .navbar div {
     margin-right: auto;
     margin-left: auto;
@@ -270,7 +274,6 @@ th {
     padding-right: 15px;
     position: relative;
     min-height: 50px;
-    background: #ccc;
   }
   /* line 14, ../../../../../../../../var/lib/gems/2.1.0/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
   .navbar div:before, .navbar div:after {
@@ -291,27 +294,25 @@ th {
     margin: 0;
     padding: 0;
     display: none;
-    width: 100%;
     background: white;
     border-bottom: solid 1px #ccc;
   }
-  /* line 20, ../sass/_navbar.scss */
+  /* line 19, ../sass/_navbar.scss */
   .navbar div ul li {
-    background: white;
     padding: 10px;
   }
-  /* line 23, ../sass/_navbar.scss */
+  /* line 21, ../sass/_navbar.scss */
   .navbar div ul li a {
     text-decoration: none;
   }
 
-  /* line 30, ../sass/_navbar.scss */
+  /* line 28, ../sass/_navbar.scss */
   .buttom-collapse {
     margin-top: 18px;
     float: right;
   }
 
-  /* line 34, ../sass/_navbar.scss */
+  /* line 32, ../sass/_navbar.scss */
   .bar {
     display: block;
     height: 2px;
@@ -320,7 +321,7 @@ th {
     background: white;
   }
 
-  /* line 43, ../sass/_navbar.scss */
+  /* line 41, ../sass/_navbar.scss */
   .bar-buttom {
     position: absolute;
     width: 30px;
@@ -330,9 +331,58 @@ th {
     right: 15px;
   }
 
-  /* line 52, ../sass/_navbar.scss */
+  /* line 50, ../sass/_navbar.scss */
   .bar-buttom:checked ~ ul {
     display: block;
+    min-width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  /* line 58, ../sass/_navbar.scss */
+  .navbar div {
+    width: 750px;
+  }
+  /* line 60, ../sass/_navbar.scss */
+  .navbar div ul {
+    position: relative;
+    top: 0;
+    padding-top: 5px;
+    display: inline-block;
+    background: none;
+  }
+  /* line 66, ../sass/_navbar.scss */
+  .navbar div ul li {
+    display: inline-block;
+  }
+  /* line 70, ../sass/_navbar.scss */
+  .navbar div ul.right {
+    float: right;
+  }
+  /* line 14, ../../../../../../../../var/lib/gems/2.1.0/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
+  .navbar div ul.right:before, .navbar div ul.right:after {
+    content: " ";
+    display: table;
+  }
+  /* line 19, ../../../../../../../../var/lib/gems/2.1.0/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
+  .navbar div ul.right:after {
+    clear: both;
+  }
+
+  /* line 76, ../sass/_navbar.scss */
+  .buttom-collapse, .bar-buttom {
+    display: none;
+  }
+}
+@media (min-width: 992px) {
+  /* line 83, ../sass/_navbar.scss */
+  .navbar div {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 91, ../sass/_navbar.scss */
+  .navbar div {
+    width: 1170px;
   }
 }
 @media (min-width: 320px) {
