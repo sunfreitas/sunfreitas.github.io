@@ -7,3 +7,57 @@ $primary-text-lighten: rgba($text-lighten, 1.0);
 
 $secondary-text-darken: rgba($text-darken, 0.54);
 $secondary-text-lighten: rgba($text-lighten, 0.70);
+
+@media(min-width:320px){
+  // Formatação de parágrafos
+  .titulo{
+    line-height: 1.4em;
+  }
+
+  .subtitulo{
+    font-size: 1.4em;
+    line-height: 1.45em;
+  }
+
+  // Sublineados
+  .separador{
+    display: block;
+    min-height: 2px;
+    background: $default-accent-color;
+    width:100px;
+  }
+
+  // Cores
+  .titulo.texto-escuro{
+    color:$primary-text-darken;
+  }
+  .subtitulo.texto-escuro{
+    color: $secondary-text-darken;
+  }
+  .subtitulo.texto-escuro.azul{
+    color: rgba($default-color, .78);
+  }
+
+  .titulo.texto-claro{
+    color: $primary-text-lighten;
+  }
+  // Alinhamento
+  // elementos em linha
+  .titulo.centralizado,
+  .subtitulo.centralizado,
+  p.centralizado{
+    text-align: center;
+  }
+
+  // elementos em bloco
+  .separador.centralizado{
+    margin: 0 auto;
+  }
+
+  // Parágrafos
+  p{
+    font-size: .9em;
+    line-height: 1.45em;
+    color: $secondary-text-darken;
+  }
+}
