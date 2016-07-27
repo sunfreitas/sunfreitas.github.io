@@ -1,1 +1,9 @@
 // Tipografia
+$text-darken: #000;
+$text-lighten: #FFF;
+
+$primary-text-darken: rgba($text-darken, 0.78);
+$primary-text-lighten: rgba($text-lighten, 1.0);
+
+$secondary-text-darken: rgba($text-darken, 0.54);
+$secondary-text-lighten: rgba($text-lighten, 0.70);

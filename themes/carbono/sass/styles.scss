@@ -15,17 +15,24 @@
 @import "bootstrap/mixins/grid";
 
 @import "_navbar.scss";
+@import "tipografia";
 
 @media(min-width:320px){
+  .header-promo{
+    background: url(../imagens/promo-01.jpg) no-repeat;
+    min-height:500px;
+    color: $primary-text-lighten;
+  }
+
   // Coloque todos os containers aqui
-  .header-info,
+  .header-promo_box-content,
   .servicos{
     @include container-fixed();
     // o bootstrap define um width baseado nas variáveis $container-sm/md/lg
   }
 
   // Coloque todas as rows aqui
-  .header-info_conteudo,
+  .box-content_promo-description,
   .servicos_container{
     @include make-row();
   }

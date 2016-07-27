@@ -387,7 +387,14 @@ th {
 }
 @media (min-width: 320px) {
   /* line 21, ../sass/styles.scss */
-  .header-info,
+  .header-promo {
+    background: url(../imagens/promo-01.jpg) no-repeat;
+    min-height: 500px;
+    color: white;
+  }
+
+  /* line 28, ../sass/styles.scss */
+  .header-promo_box-content,
   .servicos {
     margin-right: auto;
     margin-left: auto;
@@ -395,38 +402,38 @@ th {
     padding-right: 15px;
   }
   /* line 14, ../../../../../../../../var/lib/gems/2.1.0/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
-  .header-info:before, .header-info:after,
+  .header-promo_box-content:before, .header-promo_box-content:after,
   .servicos:before,
   .servicos:after {
     content: " ";
     display: table;
   }
   /* line 19, ../../../../../../../../var/lib/gems/2.1.0/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
-  .header-info:after,
+  .header-promo_box-content:after,
   .servicos:after {
     clear: both;
   }
 
-  /* line 28, ../sass/styles.scss */
-  .header-info_conteudo,
+  /* line 35, ../sass/styles.scss */
+  .box-content_promo-description,
   .servicos_container {
     margin-left: -15px;
     margin-right: -15px;
   }
   /* line 14, ../../../../../../../../var/lib/gems/2.1.0/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
-  .header-info_conteudo:before, .header-info_conteudo:after,
+  .box-content_promo-description:before, .box-content_promo-description:after,
   .servicos_container:before,
   .servicos_container:after {
     content: " ";
     display: table;
   }
   /* line 19, ../../../../../../../../var/lib/gems/2.1.0/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
-  .header-info_conteudo:after,
+  .box-content_promo-description:after,
   .servicos_container:after {
     clear: both;
   }
 
-  /* line 34, ../sass/styles.scss */
+  /* line 41, ../sass/styles.scss */
   .info_conteudo {
     position: relative;
     float: left;
@@ -436,7 +443,7 @@ th {
     padding-right: 15px;
   }
 
-  /* line 37, ../sass/styles.scss */
+  /* line 44, ../sass/styles.scss */
   .servico {
     position: relative;
     float: left;
@@ -448,7 +455,7 @@ th {
   }
 }
 @media (min-width: 768px) {
-  /* line 44, ../sass/styles.scss */
+  /* line 51, ../sass/styles.scss */
   .servico {
     position: relative;
     min-height: 1px;
@@ -457,7 +464,7 @@ th {
   }
 }
 @media (min-width: 768px) and (min-width: 768px) {
-  /* line 44, ../sass/styles.scss */
+  /* line 51, ../sass/styles.scss */
   .servico {
     float: left;
     width: 50%;
