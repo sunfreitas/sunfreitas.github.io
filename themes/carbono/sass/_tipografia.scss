@@ -18,17 +18,34 @@ $secondary-text-lighten: rgba($text-lighten, 0.70);
     font-size: 1.4em;
     line-height: 1.45em;
   }
-
+  // Parágrafos
+  p{
+    font-size: .9em;
+    line-height: 1.45em;
+    color: $secondary-text-darken;
+  }
+  .sessao-descricao{
+    margin:1em auto 2em;
+  }
+  .item-nomeado{
+    font-size: 1.2em;
+    line-height: 0;
+  }
+  .item-descricao{
+    margin:0 auto 1.4em;
+  }
   // Sublineados
   .separador{
     display: block;
     min-height: 2px;
     background: $default-accent-color;
     width:100px;
+    margin-bottom:20px;
   }
 
   // Cores
-  .titulo.texto-escuro{
+  .titulo.texto-escuro,
+  .item-nomeado.texto-escuro{
     color:$primary-text-darken;
   }
   .subtitulo.texto-escuro{
@@ -54,10 +71,5 @@ $secondary-text-lighten: rgba($text-lighten, 0.70);
     margin: 0 auto;
   }
 
-  // Parágrafos
-  p{
-    font-size: .9em;
-    line-height: 1.45em;
-    color: $secondary-text-darken;
-  }
+
 }

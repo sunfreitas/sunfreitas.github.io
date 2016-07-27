@@ -273,51 +273,69 @@ th {
     line-height: 1.45em;
   }
 
-  /* line 23, ../sass/_tipografia.scss */
+  /* line 22, ../sass/_tipografia.scss */
+  p {
+    font-size: .9em;
+    line-height: 1.45em;
+    color: rgba(0, 0, 0, 0.54);
+  }
+
+  /* line 27, ../sass/_tipografia.scss */
+  .sessao-descricao {
+    margin: 1em auto 2em;
+  }
+
+  /* line 30, ../sass/_tipografia.scss */
+  .item-nomeado {
+    font-size: 1.2em;
+    line-height: 0;
+  }
+
+  /* line 34, ../sass/_tipografia.scss */
+  .item-descricao {
+    margin: 0 auto 1.4em;
+  }
+
+  /* line 38, ../sass/_tipografia.scss */
   .separador {
     display: block;
     min-height: 2px;
     background: #2962FF;
     width: 100px;
+    margin-bottom: 20px;
   }
 
-  /* line 31, ../sass/_tipografia.scss */
-  .titulo.texto-escuro {
+  /* line 47, ../sass/_tipografia.scss */
+  .titulo.texto-escuro,
+  .item-nomeado.texto-escuro {
     color: rgba(0, 0, 0, 0.78);
   }
 
-  /* line 34, ../sass/_tipografia.scss */
+  /* line 51, ../sass/_tipografia.scss */
   .subtitulo.texto-escuro {
     color: rgba(0, 0, 0, 0.54);
   }
 
-  /* line 37, ../sass/_tipografia.scss */
+  /* line 54, ../sass/_tipografia.scss */
   .subtitulo.texto-escuro.azul {
     color: rgba(33, 150, 243, 0.78);
   }
 
-  /* line 41, ../sass/_tipografia.scss */
+  /* line 58, ../sass/_tipografia.scss */
   .titulo.texto-claro {
     color: white;
   }
 
-  /* line 46, ../sass/_tipografia.scss */
+  /* line 63, ../sass/_tipografia.scss */
   .titulo.centralizado,
   .subtitulo.centralizado,
   p.centralizado {
     text-align: center;
   }
 
-  /* line 53, ../sass/_tipografia.scss */
+  /* line 70, ../sass/_tipografia.scss */
   .separador.centralizado {
     margin: 0 auto;
-  }
-
-  /* line 58, ../sass/_tipografia.scss */
-  p {
-    font-size: .9em;
-    line-height: 1.45em;
-    color: rgba(0, 0, 0, 0.54);
   }
 }
 /* line 3, ../sass/_imagem.scss */
@@ -458,7 +476,7 @@ th {
     color: white;
   }
 
-  /* line 30, ../sass/styles.scss */
+  /* line 31, ../sass/styles.scss */
   .barra {
     background: #2196F3;
     padding-left: 15px;
@@ -466,14 +484,19 @@ th {
     padding-top: 15px;
     padding-bottom: 15px;
   }
-  /* line 36, ../sass/styles.scss */
+  /* line 37, ../sass/styles.scss */
   .barra p {
     font-size: 1.2em;
     color: white;
     text-align: center;
   }
 
-  /* line 43, ../sass/styles.scss */
+  /* line 45, ../sass/styles.scss */
+  .produto {
+    margin-bottom: 40px;
+  }
+
+  /* line 51, ../sass/styles.scss */
   .header-promo_box-content,
   .sessao {
     margin-right: auto;
@@ -496,7 +519,7 @@ th {
     clear: both;
   }
 
-  /* line 52, ../sass/styles.scss */
+  /* line 60, ../sass/styles.scss */
   .box-content_promo-description,
   .servicos_container {
     margin-left: -15px;
@@ -515,7 +538,7 @@ th {
     clear: both;
   }
 
-  /* line 58, ../sass/styles.scss */
+  /* line 66, ../sass/styles.scss */
   .info_conteudo {
     position: relative;
     float: left;
@@ -525,7 +548,7 @@ th {
     padding-right: 15px;
   }
 
-  /* line 61, ../sass/styles.scss */
+  /* line 69, ../sass/styles.scss */
   .servico {
     position: relative;
     float: left;
@@ -536,14 +559,14 @@ th {
     background: #ccc;
   }
 
-  /* line 66, ../sass/styles.scss */
+  /* line 75, ../sass/styles.scss */
   footer {
     border-top: solid 2px #2196F3;
     background: #f3f3f3;
   }
 }
 @media (min-width: 768px) {
-  /* line 73, ../sass/styles.scss */
+  /* line 82, ../sass/styles.scss */
   .servico {
     position: relative;
     min-height: 1px;
@@ -552,7 +575,7 @@ th {
   }
 }
 @media (min-width: 768px) and (min-width: 768px) {
-  /* line 73, ../sass/styles.scss */
+  /* line 82, ../sass/styles.scss */
   .servico {
     float: left;
     width: 50%;
