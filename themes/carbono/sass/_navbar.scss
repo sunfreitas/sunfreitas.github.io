@@ -1,0 +1,55 @@
+@media(min-width:320px){
+  .navbar{
+    div{
+      @include container-fixed();
+      position: relative;
+      min-height: 50px;
+      background: #ccc;
+      ul{
+        list-style: none;
+        position: absolute;
+        z-index:1;
+        top:50px;
+        left:0;
+        margin: 0;
+        padding: 0;
+        display: none;
+        width: 100%;
+        background: white;
+        border-bottom: solid 1px #ccc;
+        li{
+          background: white;
+          padding: 10px;
+          a{
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+  .buttom-collapse{
+    margin-top: 10px;
+    float:right;
+  }
+  .bar{
+    display: block;
+    height: 2px;
+    margin-bottom: 5px;
+    width: 30px;
+    background: white;
+  }
+
+  //
+  .bar-buttom{
+    position: absolute;
+    width:30px;
+    height: 30px;
+    opacity: 0;
+    padding:20px;
+    right: 15px;
+  }
+  // Controle para exibir/esconder o menu
+  .bar-buttom:checked ~ ul{
+    display: block;
+  }
+}
