@@ -356,7 +356,7 @@ th {
     padding-left: 15px;
     padding-right: 15px;
     position: relative;
-    min-height: 50px;
+    min-height: 64px;
   }
   /* line 14, ../../../../../../../../var/lib/gems/2.1.0/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
   .navbar div:before, .navbar div:after {
@@ -438,7 +438,7 @@ th {
   .navbar div ul {
     position: relative;
     top: 0;
-    padding-top: 5px;
+    padding-top: 10px;
     display: inline-block;
     background: none;
     border-bottom: none;

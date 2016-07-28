@@ -4,7 +4,7 @@
     div{
       @include container-fixed();
       position: relative;
-      min-height: 50px;
+      min-height: 64px;
       ul{
         list-style: none;
         position: absolute;
@@ -68,7 +68,7 @@
       ul{
         position: relative;
         top: 0;
-        padding-top:5px;
+        padding-top:10px;
         display: inline-block;
         background: none;
         border-bottom: none;
