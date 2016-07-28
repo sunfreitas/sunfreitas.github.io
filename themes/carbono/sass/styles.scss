@@ -95,7 +95,13 @@
 }
 
 @media(min-width:$screen-sm-min){
-  .servico{
-    @include make-sm-column(6);
+  .caracteristica, .produto{
+    @include make-sm-column(4);
+  }
+}
+
+@media(min-width: $screen-md-min){
+  .produto{
+    @include make-md-column(3);
   }
 }
