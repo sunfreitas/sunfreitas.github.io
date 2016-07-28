@@ -1,0 +1,115 @@
+@media(min-width:320px){
+  .navbar{
+    background: $default-color;
+    div{
+      @include container-fixed();
+      position: relative;
+      min-height: 64px;
+      ul{
+        list-style: none;
+        position: absolute;
+        z-index:1;
+        top:50px;
+        left:0;
+        margin: 0;
+        padding: 0;
+        display: none;
+        background: white;
+        border-bottom: solid 1px #ccc;
+        li{
+          padding: 10px;
+          a{
+            text-decoration: none;
+            color:$primary-text-darken;
+
+            &:visited{
+                color:$primary-text-darken;
+            }
+            &:hover{
+              color:$secondary-text-darken;
+            }
+          }
+        }
+      }
+    }
+  }
+  .buttom-collapse{
+    margin-top: 18px;
+    float:right;
+  }
+  .bar{
+    display: block;
+    height: 2px;
+    margin-bottom: 5px;
+    width: 30px;
+    background: white;
+  }
+
+  //
+  .bar-buttom{
+    position: absolute;
+    width:30px;
+    height: 30px;
+    opacity: 0;
+    padding:20px;
+    right: 15px;
+  }
+  // Controle para exibir/esconder o menu
+  .bar-buttom:checked ~ ul{
+    display: block;
+    min-width: 100%;
+  }
+}
+
+@media(min-width:$screen-sm-min){
+  .navbar{
+    div{
+      width: $container-sm;
+      ul{
+        position: relative;
+        top: 0;
+        padding-top:12px;
+        display: inline-block;
+        background: none;
+        border-bottom: none;
+        li{
+          display: inline-block;
+          a{
+            text-decoration: none;
+            color:$primary-text-lighten;
+
+            &:visited{
+                color:$primary-text-lighten;
+            }
+            &:hover{
+              color:$secondary-text-lighten;
+            }
+          }
+        }
+      }
+      ul.right{
+        float:right;
+        @include clearfix();
+      }
+    }
+  }
+  .buttom-collapse, .bar-buttom{
+    display:none;
+  }
+}
+
+@media(min-width:$screen-md-min){
+  .navbar{
+    div{
+      width: $container-md;
+    }
+  }
+}
+
+@media(min-width: $screen-lg-min){
+  .navbar{
+    div{
+      width: $container-lg;
+    }
+  }
+}

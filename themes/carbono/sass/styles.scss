@@ -9,21 +9,71 @@
 *{
   box-sizing: border-box;
 }
-@import "bootstrap/normalize";
 
+@import "bootstrap/normalize";
 @import "bootstrap/mixins/clearfix";
 @import "bootstrap/mixins/grid";
 
+
+@import "cores";
+@import "tipografia";
+@import "imagem";
+@import "navbar";
+
 @media(min-width:320px){
+  .header-hero{
+    background: url(../imagens/hero.jpg) no-repeat;
+    min-height:500px;
+    color: $primary-text-lighten;
+  }
+// Elementos do tema
+  // barra azul full
+  .barra{
+    background: $default-color;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    p{
+      font-size: 1.2em;
+      color: white;
+      text-align: center;
+    }
+  }
+
+  // Produtos
+  .produto{
+    margin-bottom: 40px;
+  }
+
+  // Ícones
+  .icon{
+    display: inline-block;
+    width:24px;
+    height:22px;
+    padding:10px;
+  }
+  .icon-marker{
+    background: url(../imagens/icons/marker.png) no-repeat;
+  }
+  .icon-mobile{
+    background: url(../imagens/icons/mobile.png) no-repeat
+  }
+  .icon-mail{
+    background: url(../imagens/icons/mail.png) no-repeat;
+  }
+
   // Coloque todos os containers aqui
-  .header-info,
-  .servicos{
+  .header-promo_box-content,
+  .sessao{
     @include container-fixed();
     // o bootstrap define um width baseado nas variáveis $container-sm/md/lg
+    padding-top: 40px;
+    padding-bottom:40px;
   }
 
   // Coloque todas as rows aqui
-  .header-info_conteudo,
+  .box-content_promo-description,
   .servicos_container{
     @include make-row();
   }
@@ -36,10 +86,22 @@
     @include make-xs-column(6);
     background: #ccc;
   }
+
+
+  footer{
+    border-top: solid 2px $default-color;
+    background: #f3f3f3;
+  }
 }
 
 @media(min-width:$screen-sm-min){
-  .servico{
-    @include make-sm-column(6);
+  .caracteristica, .produto{
+    @include make-sm-column(4);
+  }
+}
+
+@media(min-width: $screen-md-min){
+  .produto{
+    @include make-md-column(3);
   }
 }
