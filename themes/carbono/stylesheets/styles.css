@@ -387,15 +387,15 @@ th {
   /* line 21, ../sass/_navbar.scss */
   .navbar div ul li a {
     text-decoration: none;
-    color: white;
+    color: rgba(0, 0, 0, 0.78);
   }
   /* line 25, ../sass/_navbar.scss */
   .navbar div ul li a:visited {
-    color: white;
+    color: rgba(0, 0, 0, 0.78);
   }
   /* line 28, ../sass/_navbar.scss */
   .navbar div ul li a:hover {
-    color: #ccc;
+    color: rgba(0, 0, 0, 0.54);
   }
 
   /* line 36, ../sass/_navbar.scss */
@@ -447,7 +447,20 @@ th {
   .navbar div ul li {
     display: inline-block;
   }
-  /* line 79, ../sass/_navbar.scss */
+  /* line 77, ../sass/_navbar.scss */
+  .navbar div ul li a {
+    text-decoration: none;
+    color: white;
+  }
+  /* line 81, ../sass/_navbar.scss */
+  .navbar div ul li a:visited {
+    color: white;
+  }
+  /* line 84, ../sass/_navbar.scss */
+  .navbar div ul li a:hover {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  /* line 90, ../sass/_navbar.scss */
   .navbar div ul.right {
     float: right;
   }
@@ -461,19 +474,19 @@ th {
     clear: both;
   }
 
-  /* line 85, ../sass/_navbar.scss */
+  /* line 96, ../sass/_navbar.scss */
   .buttom-collapse, .bar-buttom {
     display: none;
   }
 }
 @media (min-width: 992px) {
-  /* line 92, ../sass/_navbar.scss */
+  /* line 103, ../sass/_navbar.scss */
   .navbar div {
     width: 970px;
   }
 }
 @media (min-width: 1200px) {
-  /* line 100, ../sass/_navbar.scss */
+  /* line 111, ../sass/_navbar.scss */
   .navbar div {
     width: 1170px;
   }
