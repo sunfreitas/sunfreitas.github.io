@@ -21,8 +21,8 @@
 @import "navbar";
 
 @media(min-width:320px){
-  .header-promo{
-    background: url(../imagens/promo-01.jpg) no-repeat;
+  .header-hero{
+    background: url(../imagens/hero.jpg) no-repeat;
     min-height:500px;
     color: $primary-text-lighten;
   }
