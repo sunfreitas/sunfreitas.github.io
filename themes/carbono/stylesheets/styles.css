@@ -496,7 +496,30 @@ th {
     margin-bottom: 40px;
   }
 
-  /* line 51, ../sass/styles.scss */
+  /* line 50, ../sass/styles.scss */
+  .icon {
+    display: inline-block;
+    width: 24px;
+    height: 22px;
+    padding: 10px;
+  }
+
+  /* line 56, ../sass/styles.scss */
+  .icon-marker {
+    background: url(../imagens/icons/marker.png) no-repeat;
+  }
+
+  /* line 59, ../sass/styles.scss */
+  .icon-mobile {
+    background: url(../imagens/icons/mobile.png) no-repeat;
+  }
+
+  /* line 62, ../sass/styles.scss */
+  .icon-mail {
+    background: url(../imagens/icons/mail.png) no-repeat;
+  }
+
+  /* line 67, ../sass/styles.scss */
   .header-promo_box-content,
   .sessao {
     margin-right: auto;
@@ -519,7 +542,7 @@ th {
     clear: both;
   }
 
-  /* line 60, ../sass/styles.scss */
+  /* line 76, ../sass/styles.scss */
   .box-content_promo-description,
   .servicos_container {
     margin-left: -15px;
@@ -538,7 +561,7 @@ th {
     clear: both;
   }
 
-  /* line 66, ../sass/styles.scss */
+  /* line 82, ../sass/styles.scss */
   .info_conteudo {
     position: relative;
     float: left;
@@ -548,7 +571,7 @@ th {
     padding-right: 15px;
   }
 
-  /* line 69, ../sass/styles.scss */
+  /* line 85, ../sass/styles.scss */
   .servico {
     position: relative;
     float: left;
@@ -559,14 +582,14 @@ th {
     background: #ccc;
   }
 
-  /* line 75, ../sass/styles.scss */
+  /* line 91, ../sass/styles.scss */
   footer {
     border-top: solid 2px #2196F3;
     background: #f3f3f3;
   }
 }
 @media (min-width: 768px) {
-  /* line 82, ../sass/styles.scss */
+  /* line 98, ../sass/styles.scss */
   .servico {
     position: relative;
     min-height: 1px;
@@ -575,7 +598,7 @@ th {
   }
 }
 @media (min-width: 768px) and (min-width: 768px) {
-  /* line 82, ../sass/styles.scss */
+  /* line 98, ../sass/styles.scss */
   .servico {
     float: left;
     width: 50%;

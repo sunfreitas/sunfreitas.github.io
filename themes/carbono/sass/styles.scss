@@ -46,6 +46,22 @@
     margin-bottom: 40px;
   }
 
+  // Ícones
+  .icon{
+    display: inline-block;
+    width:24px;
+    height:22px;
+    padding:10px;
+  }
+  .icon-marker{
+    background: url(../imagens/icons/marker.png) no-repeat;
+  }
+  .icon-mobile{
+    background: url(../imagens/icons/mobile.png) no-repeat
+  }
+  .icon-mail{
+    background: url(../imagens/icons/mail.png) no-repeat;
+  }
 
   // Coloque todos os containers aqui
   .header-promo_box-content,
