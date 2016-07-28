@@ -20,11 +20,13 @@
           padding: 10px;
           a{
             text-decoration: none;
-          &:hover{
-            color:#ccc;
-          }
-          &:visited{
-              color:white;
+            color:white;
+
+            &:visited{
+                color:white;
+            }
+            &:hover{
+              color:#ccc;
             }
           }
         }
