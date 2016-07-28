@@ -388,14 +388,22 @@ th {
   .navbar div ul li a {
     text-decoration: none;
   }
+  /* line 23, ../sass/_navbar.scss */
+  .navbar div ul li a:hover {
+    color: #ccc;
+  }
+  /* line 26, ../sass/_navbar.scss */
+  .navbar div ul li a:visited {
+    color: white;
+  }
 
-  /* line 28, ../sass/_navbar.scss */
+  /* line 34, ../sass/_navbar.scss */
   .buttom-collapse {
     margin-top: 18px;
     float: right;
   }
 
-  /* line 32, ../sass/_navbar.scss */
+  /* line 38, ../sass/_navbar.scss */
   .bar {
     display: block;
     height: 2px;
@@ -404,7 +412,7 @@ th {
     background: white;
   }
 
-  /* line 41, ../sass/_navbar.scss */
+  /* line 47, ../sass/_navbar.scss */
   .bar-buttom {
     position: absolute;
     width: 30px;
@@ -414,30 +422,31 @@ th {
     right: 15px;
   }
 
-  /* line 50, ../sass/_navbar.scss */
+  /* line 56, ../sass/_navbar.scss */
   .bar-buttom:checked ~ ul {
     display: block;
     min-width: 100%;
   }
 }
 @media (min-width: 768px) {
-  /* line 58, ../sass/_navbar.scss */
+  /* line 64, ../sass/_navbar.scss */
   .navbar div {
     width: 750px;
   }
-  /* line 60, ../sass/_navbar.scss */
+  /* line 66, ../sass/_navbar.scss */
   .navbar div ul {
     position: relative;
     top: 0;
     padding-top: 5px;
     display: inline-block;
     background: none;
+    border-bottom: none;
   }
-  /* line 66, ../sass/_navbar.scss */
+  /* line 73, ../sass/_navbar.scss */
   .navbar div ul li {
     display: inline-block;
   }
-  /* line 70, ../sass/_navbar.scss */
+  /* line 77, ../sass/_navbar.scss */
   .navbar div ul.right {
     float: right;
   }
@@ -451,19 +460,19 @@ th {
     clear: both;
   }
 
-  /* line 76, ../sass/_navbar.scss */
+  /* line 83, ../sass/_navbar.scss */
   .buttom-collapse, .bar-buttom {
     display: none;
   }
 }
 @media (min-width: 992px) {
-  /* line 83, ../sass/_navbar.scss */
+  /* line 90, ../sass/_navbar.scss */
   .navbar div {
     width: 970px;
   }
 }
 @media (min-width: 1200px) {
-  /* line 91, ../sass/_navbar.scss */
+  /* line 98, ../sass/_navbar.scss */
   .navbar div {
     width: 1170px;
   }
