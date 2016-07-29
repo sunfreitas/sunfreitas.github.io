@@ -15,8 +15,13 @@ $secondary-text-lighten: rgba($text-lighten, 0.70);
   }
 
   .subtitulo{
-    font-size: 1.4em;
+    font-size: 1.17em;
     line-height: 1.45em;
+  }
+
+  .hero-titulo{
+    font-size: 2em;
+    text-transform: uppercase;
   }
   // Parágrafos
   p{
@@ -33,6 +38,13 @@ $secondary-text-lighten: rgba($text-lighten, 0.70);
   }
   .item-descricao{
     margin:0 auto 1.4em;
+  }
+
+  .azul{
+    color:$default-color;
+  }
+  .azul.claro{ // Azul 200
+    color: #90CAF9;
   }
   // Sublineados
   .separador{
@@ -55,7 +67,8 @@ $secondary-text-lighten: rgba($text-lighten, 0.70);
     color: rgba($default-color, .78);
   }
 
-  .titulo.texto-claro{
+  .titulo.texto-claro,
+  p.texto-claro{
     color: $primary-text-lighten;
   }
   // Alinhamento
@@ -70,6 +83,10 @@ $secondary-text-lighten: rgba($text-lighten, 0.70);
   .separador.centralizado{
     margin: 0 auto;
   }
+}
 
-
+@media(min-width: $screen-lg-min){
+  .hero-titulo{
+    font-size: 3em;
+  }
 }

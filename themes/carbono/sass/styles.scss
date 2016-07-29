@@ -19,6 +19,8 @@
 @import "tipografia";
 @import "imagem";
 @import "navbar";
+@import "botoes";
+@import "animacoes";
 
 @media(min-width:320px){
   .header-hero{
@@ -34,15 +36,24 @@
     padding-right: 15px;
     padding-top: 15px;
     padding-bottom: 15px;
+    @include clearfix();
     p{
       font-size: 1.2em;
       color: white;
-      text-align: center;
     }
   }
-
+  // cabeçalhos de sessões
+  .sessao-header{
+    margin-bottom:50px;
+  }
+  // caracteristica
+  .caracteristica{
+    @include make-xs-column(12);
+    text-align: center;
+  }
   // Produtos
   .produto{
+    height:300px;
     margin-bottom: 40px;
   }
 
@@ -62,9 +73,16 @@
   .icon-mail{
     background: url(../imagens/icons/mail.png) no-repeat;
   }
-
+// Alinhamento de elemtos na página
+  .esquerda{
+    float: left;
+  }
+  .direita{
+    float: right;
+  }
+// Containers
   // Coloque todos os containers aqui
-  .header-promo_box-content,
+  .header-hero_box-content,
   .sessao{
     @include container-fixed();
     // o bootstrap define um width baseado nas variáveis $container-sm/md/lg
@@ -72,19 +90,23 @@
     padding-bottom:40px;
   }
 
+// Linhas
   // Coloque todas as rows aqui
   .box-content_promo-description,
   .servicos_container{
     @include make-row();
   }
 
+// Grids
   // Daqui em diante colocar todas as grigs
   .info_conteudo{
     @include make-xs-column(12);
   }
-  .servico{
-    @include make-xs-column(6);
-    background: #ccc;
+  .informacao-de-contato,
+  .cta-descricao,
+  .cta-button{
+    @include make-xs-column(12);
+    text-align: center;
   }
 
 
@@ -95,13 +117,34 @@
 }
 
 @media(min-width:$screen-sm-min){
-  .caracteristica, .produto{
+  .header-hero_box-content,
+  .sessao{
+    width: $container-sm;
+  }
+  .hero-content,
+  .cta-descricao,
+  .cta-button{
+    @include make-sm-column(6);
+    text-align: left;
+  }
+  .caracteristica, .produto, .informacao-de-contato{
     @include make-sm-column(4);
   }
 }
 
 @media(min-width: $screen-md-min){
+  .header-hero_box-content,
+  .sessao{
+    width:$container-md;
+  }
   .produto{
     @include make-md-column(3);
+  }
+}
+
+@media(min-width:$screen-lg-min){
+  .header-hero_box-content,
+  .sessao{
+    width: $container-lg;
   }
 }
