@@ -103,9 +103,9 @@
   .info_conteudo{
     @include make-xs-column(12);
   }
-  .servico{
-    @include make-xs-column(6);
-    background: #ccc;
+  .informacao-de-contato{
+    @include make-xs-column(12);
+    text-align: center;
   }
 
 
@@ -123,7 +123,7 @@
   .hero-content{
     @include make-sm-column(6);
   }
-  .caracteristica, .produto{
+  .caracteristica, .produto, .informacao-de-contato{
     @include make-sm-column(4);
   }
 }
