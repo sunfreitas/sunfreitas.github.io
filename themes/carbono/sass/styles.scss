@@ -40,7 +40,6 @@
     p{
       font-size: 1.2em;
       color: white;
-      text-align: center;
     }
   }
   // cabeçalhos de sessões
@@ -103,7 +102,9 @@
   .info_conteudo{
     @include make-xs-column(12);
   }
-  .informacao-de-contato{
+  .informacao-de-contato,
+  .cta-descricao,
+  .cta-button{
     @include make-xs-column(12);
     text-align: center;
   }
@@ -120,8 +121,11 @@
   .sessao{
     width: $container-sm;
   }
-  .hero-content{
+  .hero-content,
+  .cta-descricao,
+  .cta-button{
     @include make-sm-column(6);
+    text-align: left;
   }
   .caracteristica, .produto, .informacao-de-contato{
     @include make-sm-column(4);
