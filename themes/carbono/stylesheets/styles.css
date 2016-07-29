@@ -521,6 +521,11 @@ th {
   background: #2196F3;
   color: white;
 }
+/* line 13, ../sass/_botoes.scss */
+.botao.azul:hover {
+  background: #1565C0;
+  color: #F3F3F3;
+}
 
 @media (min-width: 320px) {
   /* line 25, ../sass/styles.scss */
