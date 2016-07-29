@@ -35,6 +35,7 @@
     padding-right: 15px;
     padding-top: 15px;
     padding-bottom: 15px;
+    @include clearfix();
     p{
       font-size: 1.2em;
       color: white;
@@ -63,7 +64,14 @@
   .icon-mail{
     background: url(../imagens/icons/mail.png) no-repeat;
   }
-
+// Alinhamento de elemtos na página
+  .esquerda{
+    float: left;
+  }
+  .direita{
+    float: right;
+  }
+// Containers
   // Coloque todos os containers aqui
   .header-hero_box-content,
   .sessao{
@@ -73,12 +81,14 @@
     padding-bottom:40px;
   }
 
+// Linhas
   // Coloque todas as rows aqui
   .box-content_promo-description,
   .servicos_container{
     @include make-row();
   }
 
+// Grids
   // Daqui em diante colocar todas as grigs
   .info_conteudo{
     @include make-xs-column(12);

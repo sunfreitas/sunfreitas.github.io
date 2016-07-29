@@ -5,13 +5,23 @@
   padding: 1em;
   text-transform: uppercase;
   font-weight: bold;
+  color: white;
+  vertical-align: middle;
 }
 
 .botao.azul{
   background: $default-color;
-  color: white;
+
   &:hover{
     background: $default-secondary-color;
     color: #F3F3F3;
+  }
+}
+
+.botao.escuro{
+  background: #212121;
+  &:hover{
+    background: #000;
+    color:#F3F3F3;
   }
 }
