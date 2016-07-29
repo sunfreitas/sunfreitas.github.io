@@ -19,6 +19,7 @@
 @import "tipografia";
 @import "imagem";
 @import "navbar";
+@import "botoes";
 
 @media(min-width:320px){
   .header-hero{
@@ -98,6 +99,9 @@
   .header-hero_box-content,
   .sessao{
     width: $container-sm;
+  }
+  .hero-content{
+    @include make-sm-column(6);
   }
   .caracteristica, .produto{
     @include make-sm-column(4);

@@ -20,7 +20,8 @@ $secondary-text-lighten: rgba($text-lighten, 0.70);
   }
 
   .hero-titulo{
-    font-size: 4em;
+    font-size: 3em;
+    text-transform: uppercase;
   }
   // Parágrafos
   p{
@@ -37,6 +38,13 @@ $secondary-text-lighten: rgba($text-lighten, 0.70);
   }
   .item-descricao{
     margin:0 auto 1.4em;
+  }
+
+  .azul{
+    color:$default-color;
+  }
+  .azul.claro{ // Azul 200
+    color: #90CAF9;
   }
   // Sublineados
   .separador{
@@ -59,7 +67,8 @@ $secondary-text-lighten: rgba($text-lighten, 0.70);
     color: rgba($default-color, .78);
   }
 
-  .titulo.texto-claro{
+  .titulo.texto-claro,
+  p.texto-claro{
     color: $primary-text-lighten;
   }
   // Alinhamento

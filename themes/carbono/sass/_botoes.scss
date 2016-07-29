@@ -1,0 +1,13 @@
+// Botoes
+
+.botao{
+  text-decoration: none;
+  padding: 1em;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.botao.azul{
+  background: $default-color;
+  color: white;
+}
