@@ -274,29 +274,34 @@ th {
   }
 
   /* line 22, ../sass/_tipografia.scss */
+  .hero-titulo {
+    font-size: 4em;
+  }
+
+  /* line 26, ../sass/_tipografia.scss */
   p {
     font-size: .9em;
     line-height: 1.45em;
     color: rgba(0, 0, 0, 0.54);
   }
 
-  /* line 27, ../sass/_tipografia.scss */
+  /* line 31, ../sass/_tipografia.scss */
   .sessao-descricao {
     margin: 1em auto 2em;
   }
 
-  /* line 30, ../sass/_tipografia.scss */
+  /* line 34, ../sass/_tipografia.scss */
   .item-nomeado {
     font-size: 1.2em;
     line-height: 0;
   }
 
-  /* line 34, ../sass/_tipografia.scss */
+  /* line 38, ../sass/_tipografia.scss */
   .item-descricao {
     margin: 0 auto 1.4em;
   }
 
-  /* line 38, ../sass/_tipografia.scss */
+  /* line 42, ../sass/_tipografia.scss */
   .separador {
     display: block;
     min-height: 2px;
@@ -305,35 +310,35 @@ th {
     margin-bottom: 20px;
   }
 
-  /* line 47, ../sass/_tipografia.scss */
+  /* line 51, ../sass/_tipografia.scss */
   .titulo.texto-escuro,
   .item-nomeado.texto-escuro {
     color: rgba(0, 0, 0, 0.78);
   }
 
-  /* line 51, ../sass/_tipografia.scss */
+  /* line 55, ../sass/_tipografia.scss */
   .subtitulo.texto-escuro {
     color: rgba(0, 0, 0, 0.54);
   }
 
-  /* line 54, ../sass/_tipografia.scss */
+  /* line 58, ../sass/_tipografia.scss */
   .subtitulo.texto-escuro.azul {
     color: rgba(33, 150, 243, 0.78);
   }
 
-  /* line 58, ../sass/_tipografia.scss */
+  /* line 62, ../sass/_tipografia.scss */
   .titulo.texto-claro {
     color: white;
   }
 
-  /* line 63, ../sass/_tipografia.scss */
+  /* line 67, ../sass/_tipografia.scss */
   .titulo.centralizado,
   .subtitulo.centralizado,
   p.centralizado {
     text-align: center;
   }
 
-  /* line 70, ../sass/_tipografia.scss */
+  /* line 74, ../sass/_tipografia.scss */
   .separador.centralizado {
     margin: 0 auto;
   }
@@ -543,7 +548,7 @@ th {
   }
 
   /* line 67, ../sass/styles.scss */
-  .header-promo_box-content,
+  .header-hero_box-content,
   .sessao {
     margin-right: auto;
     margin-left: auto;
@@ -553,14 +558,14 @@ th {
     padding-bottom: 40px;
   }
   /* line 14, ../../../../../../../../var/lib/gems/2.1.0/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
-  .header-promo_box-content:before, .header-promo_box-content:after,
+  .header-hero_box-content:before, .header-hero_box-content:after,
   .sessao:before,
   .sessao:after {
     content: " ";
     display: table;
   }
   /* line 19, ../../../../../../../../var/lib/gems/2.1.0/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
-  .header-promo_box-content:after,
+  .header-hero_box-content:after,
   .sessao:after {
     clear: both;
   }
@@ -613,6 +618,12 @@ th {
 }
 @media (min-width: 768px) {
   /* line 98, ../sass/styles.scss */
+  .header-hero_box-content,
+  .sessao {
+    width: 750px;
+  }
+
+  /* line 102, ../sass/styles.scss */
   .caracteristica, .produto {
     position: relative;
     min-height: 1px;
@@ -621,7 +632,7 @@ th {
   }
 }
 @media (min-width: 768px) and (min-width: 768px) {
-  /* line 98, ../sass/styles.scss */
+  /* line 102, ../sass/styles.scss */
   .caracteristica, .produto {
     float: left;
     width: 33.33333333%;
@@ -629,7 +640,13 @@ th {
 }
 
 @media (min-width: 992px) {
-  /* line 104, ../sass/styles.scss */
+  /* line 108, ../sass/styles.scss */
+  .header-hero_box-content,
+  .sessao {
+    width: 970px;
+  }
+
+  /* line 112, ../sass/styles.scss */
   .produto {
     position: relative;
     min-height: 1px;
@@ -638,9 +655,17 @@ th {
   }
 }
 @media (min-width: 992px) and (min-width: 992px) {
-  /* line 104, ../sass/styles.scss */
+  /* line 112, ../sass/styles.scss */
   .produto {
     float: left;
     width: 25%;
+  }
+}
+
+@media (min-width: 1200px) {
+  /* line 118, ../sass/styles.scss */
+  .header-hero_box-content,
+  .sessao {
+    width: 1170px;
   }
 }

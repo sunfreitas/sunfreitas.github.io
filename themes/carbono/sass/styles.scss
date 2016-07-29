@@ -64,7 +64,7 @@
   }
 
   // Coloque todos os containers aqui
-  .header-promo_box-content,
+  .header-hero_box-content,
   .sessao{
     @include container-fixed();
     // o bootstrap define um width baseado nas variáveis $container-sm/md/lg
@@ -95,13 +95,28 @@
 }
 
 @media(min-width:$screen-sm-min){
+  .header-hero_box-content,
+  .sessao{
+    width: $container-sm;
+  }
   .caracteristica, .produto{
     @include make-sm-column(4);
   }
 }
 
 @media(min-width: $screen-md-min){
+  .header-hero_box-content,
+  .sessao{
+    width:$container-md;
+  }
   .produto{
     @include make-md-column(3);
+  }
+}
+
+@media(min-width:$screen-lg-min){
+  .header-hero_box-content,
+  .sessao{
+    width: $container-lg;
   }
 }
