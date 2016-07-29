@@ -275,7 +275,7 @@ th {
 
   /* line 22, ../sass/_tipografia.scss */
   .hero-titulo {
-    font-size: 3em;
+    font-size: 2em;
     text-transform: uppercase;
   }
 
@@ -538,15 +538,29 @@ th {
   color: #F3F3F3;
 }
 
+/* line 3, ../sass/_animacoes.scss */
+.oi {
+  -webkit-transition: 1s all;
+  transition: .5s all;
+}
+
+/* line 7, ../sass/_animacoes.scss */
+.oi:hover {
+  width: 109%;
+  margin-left: -13px;
+  margin-top: -10px;
+  opacity: .78;
+}
+
 @media (min-width: 320px) {
-  /* line 25, ../sass/styles.scss */
+  /* line 26, ../sass/styles.scss */
   .header-hero {
     background: url(../imagens/hero.jpg) no-repeat;
     min-height: 500px;
     color: white;
   }
 
-  /* line 32, ../sass/styles.scss */
+  /* line 33, ../sass/styles.scss */
   .barra {
     background: #2196F3;
     padding-left: 15px;
@@ -563,19 +577,19 @@ th {
   .barra:after {
     clear: both;
   }
-  /* line 39, ../sass/styles.scss */
+  /* line 40, ../sass/styles.scss */
   .barra p {
     font-size: 1.2em;
     color: white;
     text-align: center;
   }
 
-  /* line 47, ../sass/styles.scss */
+  /* line 48, ../sass/styles.scss */
   .produto {
     margin-bottom: 40px;
   }
 
-  /* line 52, ../sass/styles.scss */
+  /* line 53, ../sass/styles.scss */
   .icon {
     display: inline-block;
     width: 24px;
@@ -583,32 +597,32 @@ th {
     padding: 10px;
   }
 
-  /* line 58, ../sass/styles.scss */
+  /* line 59, ../sass/styles.scss */
   .icon-marker {
     background: url(../imagens/icons/marker.png) no-repeat;
   }
 
-  /* line 61, ../sass/styles.scss */
+  /* line 62, ../sass/styles.scss */
   .icon-mobile {
     background: url(../imagens/icons/mobile.png) no-repeat;
   }
 
-  /* line 64, ../sass/styles.scss */
+  /* line 65, ../sass/styles.scss */
   .icon-mail {
     background: url(../imagens/icons/mail.png) no-repeat;
   }
 
-  /* line 68, ../sass/styles.scss */
+  /* line 69, ../sass/styles.scss */
   .esquerda {
     float: left;
   }
 
-  /* line 71, ../sass/styles.scss */
+  /* line 72, ../sass/styles.scss */
   .direita {
     float: right;
   }
 
-  /* line 76, ../sass/styles.scss */
+  /* line 77, ../sass/styles.scss */
   .header-hero_box-content,
   .sessao {
     margin-right: auto;
@@ -631,7 +645,7 @@ th {
     clear: both;
   }
 
-  /* line 86, ../sass/styles.scss */
+  /* line 87, ../sass/styles.scss */
   .box-content_promo-description,
   .servicos_container {
     margin-left: -15px;
@@ -650,7 +664,7 @@ th {
     clear: both;
   }
 
-  /* line 93, ../sass/styles.scss */
+  /* line 94, ../sass/styles.scss */
   .info_conteudo {
     position: relative;
     float: left;
@@ -660,7 +674,7 @@ th {
     padding-right: 15px;
   }
 
-  /* line 96, ../sass/styles.scss */
+  /* line 97, ../sass/styles.scss */
   .servico {
     position: relative;
     float: left;
@@ -671,20 +685,20 @@ th {
     background: #ccc;
   }
 
-  /* line 102, ../sass/styles.scss */
+  /* line 103, ../sass/styles.scss */
   footer {
     border-top: solid 2px #2196F3;
     background: #f3f3f3;
   }
 }
 @media (min-width: 768px) {
-  /* line 109, ../sass/styles.scss */
+  /* line 110, ../sass/styles.scss */
   .header-hero_box-content,
   .sessao {
     width: 750px;
   }
 
-  /* line 113, ../sass/styles.scss */
+  /* line 114, ../sass/styles.scss */
   .hero-content {
     position: relative;
     min-height: 1px;
@@ -693,7 +707,7 @@ th {
   }
 }
 @media (min-width: 768px) and (min-width: 768px) {
-  /* line 113, ../sass/styles.scss */
+  /* line 114, ../sass/styles.scss */
   .hero-content {
     float: left;
     width: 50%;
@@ -701,7 +715,7 @@ th {
 }
 
 @media (min-width: 768px) {
-  /* line 116, ../sass/styles.scss */
+  /* line 117, ../sass/styles.scss */
   .caracteristica, .produto {
     position: relative;
     min-height: 1px;
@@ -710,7 +724,7 @@ th {
   }
 }
 @media (min-width: 768px) and (min-width: 768px) {
-  /* line 116, ../sass/styles.scss */
+  /* line 117, ../sass/styles.scss */
   .caracteristica, .produto {
     float: left;
     width: 33.33333333%;
@@ -718,13 +732,13 @@ th {
 }
 
 @media (min-width: 992px) {
-  /* line 122, ../sass/styles.scss */
+  /* line 123, ../sass/styles.scss */
   .header-hero_box-content,
   .sessao {
     width: 970px;
   }
 
-  /* line 126, ../sass/styles.scss */
+  /* line 127, ../sass/styles.scss */
   .produto {
     position: relative;
     min-height: 1px;
@@ -733,7 +747,7 @@ th {
   }
 }
 @media (min-width: 992px) and (min-width: 992px) {
-  /* line 126, ../sass/styles.scss */
+  /* line 127, ../sass/styles.scss */
   .produto {
     float: left;
     width: 25%;
@@ -741,7 +755,7 @@ th {
 }
 
 @media (min-width: 1200px) {
-  /* line 132, ../sass/styles.scss */
+  /* line 133, ../sass/styles.scss */
   .header-hero_box-content,
   .sessao {
     width: 1170px;
