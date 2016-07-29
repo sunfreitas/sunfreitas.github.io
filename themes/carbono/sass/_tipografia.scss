@@ -15,7 +15,7 @@ $secondary-text-lighten: rgba($text-lighten, 0.70);
   }
 
   .subtitulo{
-    font-size: 1.4em;
+    font-size: 1.17em;
     line-height: 1.45em;
   }
 
@@ -83,6 +83,10 @@ $secondary-text-lighten: rgba($text-lighten, 0.70);
   .separador.centralizado{
     margin: 0 auto;
   }
+}
 
-
+@media(min-width: $screen-lg-min){
+  .hero-titulo{
+    font-size: 3em;
+  }
 }

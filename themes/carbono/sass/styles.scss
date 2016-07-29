@@ -43,7 +43,15 @@
       text-align: center;
     }
   }
-
+  // cabeçalhos de sessões
+  .sessao-header{
+    margin-bottom:50px;
+  }
+  // caracteristica
+  .caracteristica{
+    @include make-xs-column(12);
+    text-align: center;
+  }
   // Produtos
   .produto{
     height:300px;
