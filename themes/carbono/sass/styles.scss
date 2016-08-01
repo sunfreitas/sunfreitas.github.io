@@ -60,8 +60,8 @@
   // Ícones
   .icon{
     display: inline-block;
-    width:24px;
-    height:22px;
+    width:64px;
+    height:64px;
     padding:10px;
   }
   .icon-marker{
@@ -72,6 +72,9 @@
   }
   .icon-mail{
     background: url(../imagens/icons/mail.png) no-repeat;
+  }
+  .icon-responsive{
+    background: url(../imagens/icons/responsive.png);
   }
 // Alinhamento de elemtos na página
   .esquerda{

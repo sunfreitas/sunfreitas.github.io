@@ -623,8 +623,8 @@ th {
   /* line 61, ../sass/styles.scss */
   .icon {
     display: inline-block;
-    width: 24px;
-    height: 22px;
+    width: 64px;
+    height: 64px;
     padding: 10px;
   }
 
@@ -643,17 +643,22 @@ th {
     background: url(../imagens/icons/mail.png) no-repeat;
   }
 
-  /* line 77, ../sass/styles.scss */
+  /* line 76, ../sass/styles.scss */
+  .icon-responsive {
+    background: url(../imagens/icons/responsive.png);
+  }
+
+  /* line 80, ../sass/styles.scss */
   .esquerda {
     float: left;
   }
 
-  /* line 80, ../sass/styles.scss */
+  /* line 83, ../sass/styles.scss */
   .direita {
     float: right;
   }
 
-  /* line 85, ../sass/styles.scss */
+  /* line 88, ../sass/styles.scss */
   .header-hero_box-content,
   .sessao {
     margin-right: auto;
@@ -676,7 +681,7 @@ th {
     clear: both;
   }
 
-  /* line 95, ../sass/styles.scss */
+  /* line 98, ../sass/styles.scss */
   .box-content_promo-description,
   .servicos_container {
     margin-left: -15px;
@@ -695,7 +700,7 @@ th {
     clear: both;
   }
 
-  /* line 102, ../sass/styles.scss */
+  /* line 105, ../sass/styles.scss */
   .info_conteudo {
     position: relative;
     float: left;
@@ -705,7 +710,7 @@ th {
     padding-right: 15px;
   }
 
-  /* line 105, ../sass/styles.scss */
+  /* line 108, ../sass/styles.scss */
   .informacao-de-contato,
   .cta-descricao,
   .cta-button {
@@ -718,20 +723,20 @@ th {
     text-align: center;
   }
 
-  /* line 113, ../sass/styles.scss */
+  /* line 116, ../sass/styles.scss */
   footer {
     border-top: solid 2px #2196F3;
     background: #f3f3f3;
   }
 }
 @media (min-width: 768px) {
-  /* line 120, ../sass/styles.scss */
+  /* line 123, ../sass/styles.scss */
   .header-hero_box-content,
   .sessao {
     width: 750px;
   }
 
-  /* line 124, ../sass/styles.scss */
+  /* line 127, ../sass/styles.scss */
   .hero-content,
   .cta-descricao,
   .cta-button {
@@ -743,7 +748,7 @@ th {
   }
 }
 @media (min-width: 768px) and (min-width: 768px) {
-  /* line 124, ../sass/styles.scss */
+  /* line 127, ../sass/styles.scss */
   .hero-content,
   .cta-descricao,
   .cta-button {
@@ -753,7 +758,7 @@ th {
 }
 
 @media (min-width: 768px) {
-  /* line 130, ../sass/styles.scss */
+  /* line 133, ../sass/styles.scss */
   .caracteristica, .produto, .informacao-de-contato {
     position: relative;
     min-height: 1px;
@@ -762,7 +767,7 @@ th {
   }
 }
 @media (min-width: 768px) and (min-width: 768px) {
-  /* line 130, ../sass/styles.scss */
+  /* line 133, ../sass/styles.scss */
   .caracteristica, .produto, .informacao-de-contato {
     float: left;
     width: 33.33333333%;
@@ -770,13 +775,13 @@ th {
 }
 
 @media (min-width: 992px) {
-  /* line 136, ../sass/styles.scss */
+  /* line 139, ../sass/styles.scss */
   .header-hero_box-content,
   .sessao {
     width: 970px;
   }
 
-  /* line 140, ../sass/styles.scss */
+  /* line 143, ../sass/styles.scss */
   .produto {
     position: relative;
     min-height: 1px;
@@ -785,7 +790,7 @@ th {
   }
 }
 @media (min-width: 992px) and (min-width: 992px) {
-  /* line 140, ../sass/styles.scss */
+  /* line 143, ../sass/styles.scss */
   .produto {
     float: left;
     width: 25%;
@@ -793,7 +798,7 @@ th {
 }
 
 @media (min-width: 1200px) {
-  /* line 146, ../sass/styles.scss */
+  /* line 149, ../sass/styles.scss */
   .header-hero_box-content,
   .sessao {
     width: 1170px;
