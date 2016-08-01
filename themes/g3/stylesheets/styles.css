@@ -367,8 +367,8 @@ th {
 }
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url(/fonts/bootstrap/glyphicons-halflings-regular.eot?1468844831);
-  src: url(/fonts/bootstrap/glyphicons-halflings-regular.eot?&1468844831#iefix) format("embedded-opentype"), url(/fonts/bootstrap/glyphicons-halflings-regular.woff2?1468844831) format("woff2"), url(/fonts/bootstrap/glyphicons-halflings-regular.woff?1468844831) format("woff"), url(/fonts/bootstrap/glyphicons-halflings-regular.ttf?1468844831) format("truetype"), url(/fonts/bootstrap/glyphicons-halflings-regular.svg?1468844831#glyphicons_halflingsregular) format("svg");
+  src: url(/fonts/bootstrap/glyphicons-halflings-regular.eot?1468937329);
+  src: url(/fonts/bootstrap/glyphicons-halflings-regular.eot?&1468937329#iefix) format("embedded-opentype"), url(/fonts/bootstrap/glyphicons-halflings-regular.woff2?1468937329) format("woff2"), url(/fonts/bootstrap/glyphicons-halflings-regular.woff?1468937329) format("woff"), url(/fonts/bootstrap/glyphicons-halflings-regular.ttf?1468937329) format("truetype"), url(/fonts/bootstrap/glyphicons-halflings-regular.svg?1468937329#glyphicons_halflingsregular) format("svg");
 }
 /* line 24, ../../../../../../../../var/lib/gems/2.1.0/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_glyphicons.scss */
 .glyphicon {
@@ -5614,7 +5614,7 @@ tbody.collapse.in {
 .navbar {
   position: relative;
   min-height: 50px;
-  margin-bottom: 20px;
+  margin-bottom: 0;
   border: 1px solid transparent;
 }
 /* line 14, ../../../../../../../../var/lib/gems/2.1.0/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
@@ -6040,25 +6040,25 @@ tbody.collapse.in {
 }
 /* line 397, ../../../../../../../../var/lib/gems/2.1.0/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default {
-  background-color: #f8f8f8;
-  border-color: #e7e7e7;
+  background-color: #2196F3;
+  border-color: #0c86e6;
 }
 /* line 401, ../../../../../../../../var/lib/gems/2.1.0/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .navbar-brand {
-  color: #777;
+  color: #FFF;
 }
 /* line 403, ../../../../../../../../var/lib/gems/2.1.0/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
-  color: #5e5e5e;
+  color: #e6e6e6;
   background-color: transparent;
 }
 /* line 410, ../../../../../../../../var/lib/gems/2.1.0/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .navbar-text {
-  color: #777;
+  color: #FFF;
 }
 /* line 415, ../../../../../../../../var/lib/gems/2.1.0/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .navbar-nav > li > a {
-  color: #777;
+  color: #FFF;
 }
 /* line 418, ../../../../../../../../var/lib/gems/2.1.0/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
@@ -6068,7 +6068,7 @@ tbody.collapse.in {
 /* line 425, ../../../../../../../../var/lib/gems/2.1.0/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
   color: #555;
-  background-color: #e7e7e7;
+  background-color: #0c86e6;
 }
 /* line 433, ../../../../../../../../var/lib/gems/2.1.0/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .navbar-nav > .disabled > a, .navbar-default .navbar-nav > .disabled > a:hover, .navbar-default .navbar-nav > .disabled > a:focus {
@@ -6090,17 +6090,17 @@ tbody.collapse.in {
 /* line 453, ../../../../../../../../var/lib/gems/2.1.0/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
-  border-color: #e7e7e7;
+  border-color: #0c86e6;
 }
 /* line 462, ../../../../../../../../var/lib/gems/2.1.0/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
-  background-color: #e7e7e7;
+  background-color: #0c86e6;
   color: #555;
 }
 @media (max-width: 767px) {
   /* line 473, ../../../../../../../../var/lib/gems/2.1.0/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-    color: #777;
+    color: #FFF;
   }
   /* line 475, ../../../../../../../../var/lib/gems/2.1.0/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
@@ -6110,7 +6110,7 @@ tbody.collapse.in {
   /* line 482, ../../../../../../../../var/lib/gems/2.1.0/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
     color: #555;
-    background-color: #e7e7e7;
+    background-color: #0c86e6;
   }
   /* line 490, ../../../../../../../../var/lib/gems/2.1.0/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:focus {
@@ -6120,7 +6120,7 @@ tbody.collapse.in {
 }
 /* line 506, ../../../../../../../../var/lib/gems/2.1.0/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .navbar-link {
-  color: #777;
+  color: #FFF;
 }
 /* line 508, ../../../../../../../../var/lib/gems/2.1.0/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .navbar-link:hover {
@@ -6128,7 +6128,7 @@ tbody.collapse.in {
 }
 /* line 513, ../../../../../../../../var/lib/gems/2.1.0/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .btn-link {
-  color: #777;
+  color: #FFF;
 }
 /* line 515, ../../../../../../../../var/lib/gems/2.1.0/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .btn-link:hover, .navbar-default .btn-link:focus {
@@ -8791,42 +8791,427 @@ button.close {
     display: none !important;
   }
 }
+/* line 27, ../sass/styles.scss */
+p {
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 1em;
+}
+
 @media (min-width: 320px) {
-  /* line 11, ../sass/styles.scss */
-  .mobile-brand {
-    padding-top: 2em;
-    padding-bottom: 2em;
-    text-align: center;
-    background: #180e8e;
+  /* line 32, ../sass/styles.scss */
+  .informacoes-de-contato-top {
+    font-size: .8em;
+    background: #f5f5f5;
+    border-bottom: solid 1px #ccc;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    line-height: .5em;
+    color: rgba(0, 0, 0, 0.78);
   }
 
-  /* line 18, ../sass/styles.scss */
+  /* line 41, ../sass/styles.scss */
+  .contato-left, .contato-right {
+    text-align: center;
+  }
+
+  /* line 44, ../sass/styles.scss */
+  .mobile-brand {
+    text-align: center;
+  }
+
+  /* line 48, ../sass/styles.scss */
+  .navbar-default .navbar-collapse,
+  .empresa-description {
+    text-align: center;
+  }
+
+  /* line 52, ../sass/styles.scss */
   .empresa,
-  .planos,
-  .contato-container {
+  .paineis-de-planos,
+  .assinatura {
     margin-right: auto;
     margin-left: auto;
     padding-left: 15px;
     padding-right: 15px;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
   /* line 14, ../../../../../../../../var/lib/gems/2.1.0/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
   .empresa:before, .empresa:after,
-  .planos:before,
-  .planos:after,
-  .contato-container:before,
-  .contato-container:after {
+  .paineis-de-planos:before,
+  .paineis-de-planos:after,
+  .assinatura:before,
+  .assinatura:after {
     content: " ";
     display: table;
   }
   /* line 19, ../../../../../../../../var/lib/gems/2.1.0/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
   .empresa:after,
-  .planos:after,
-  .contato-container:after {
+  .paineis-de-planos:after,
+  .assinatura:after {
     clear: both;
   }
 
-  /* line 24, ../sass/styles.scss */
+  /* line 59, ../sass/styles.scss */
+  .empresa-description {
+    margin-bottom: 30px;
+  }
+
+  /* line 62, ../sass/styles.scss */
+  .lead {
+    margin-bottom: 0;
+  }
+
+  /* line 65, ../sass/styles.scss */
+  .paineis-de-planos_container,
+  .assinatura-container {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  /* line 14, ../../../../../../../../var/lib/gems/2.1.0/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
+  .paineis-de-planos_container:before, .paineis-de-planos_container:after,
+  .assinatura-container:before,
+  .assinatura-container:after {
+    content: " ";
+    display: table;
+  }
+  /* line 19, ../../../../../../../../var/lib/gems/2.1.0/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
+  .paineis-de-planos_container:after,
+  .assinatura-container:after {
+    clear: both;
+  }
+
+  /* line 70, ../sass/styles.scss */
+  .planos {
+    border-top: solid 1px #ccc;
+    background: #f9f9f9;
+  }
+
+  /* line 74, ../sass/styles.scss */
+  .plano,
+  .call-center-atendente,
+  .faca-assinatura {
+    position: relative;
+    float: left;
+    width: 100%;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  /* line 79, ../sass/styles.scss */
+  .plano-panel {
+    border: solid 1px #ccc;
+    margin-bottom: 10px;
+    text-align: center;
+    padding-bottom: 2em;
+    position: relative;
+    background: white;
+  }
+  /* line 86, ../sass/styles.scss */
+  .plano-panel header {
+    font-family: 'Comfortaa', cursive;
+    color: white;
+    padding-top: 1em;
+    padding-bottom: 2em;
+    margin-bottom: 50px;
+    font-size: 2em;
+  }
+  /* line 94, ../sass/styles.scss */
+  .plano-panel .valor-plano {
+    font-size: 3em;
+    font-weight: bold;
+    background: white;
+    width: 224px;
+    height: 216px;
+    margin: auto;
+    border: solid 1px white;
+    border-radius: 112px;
+    padding: 1em .2em;
+    position: absolute;
+    top: 85px;
+    left: 11%;
+  }
+  /* line 108, ../sass/styles.scss */
+  .plano-panel .periodicidade-plano {
+    color: rgba(0, 0, 0, 0.78);
+    position: relative;
+    z-index: 1;
+  }
+  /* line 113, ../sass/styles.scss */
+  .plano-panel .descricao-plano, .plano-panel .cta-assinatura {
+    position: relative;
+    z-index: 1;
+  }
+  /* line 117, ../sass/styles.scss */
+  .plano-panel .cta-assinatura {
+    display: inline-block;
+    background: #F12D2D;
+    padding: 1em;
+    color: rgba(255, 255, 255, 0.78);
+  }
+
+  /* line 124, ../sass/styles.scss */
+  .img-circle-blue {
+    border: solid 5px #2196f3;
+    border-radius: 50%;
+  }
+
+  /* line 129, ../sass/styles.scss */
+  .plano1 header {
+    background: #3498db;
+  }
+  /* line 132, ../sass/styles.scss */
+  .plano1 .valor-plano,
+  .plano1 .periodicidade-plano {
+    color: #3498db;
+  }
+
+  /* line 138, ../sass/styles.scss */
+  .plano2 header {
+    background: #FF9800;
+  }
+  /* line 141, ../sass/styles.scss */
+  .plano2 .valor-plano,
+  .plano2 .periodicidade-plano {
+    color: #FF9800;
+  }
+
+  /* line 147, ../sass/styles.scss */
+  .plano3 header {
+    background: #e74c3c;
+  }
+  /* line 150, ../sass/styles.scss */
+  .plano3 .valor-plano,
+  .plano3 .periodicidade-plano {
+    color: #e74c3c;
+  }
+
+  /* line 155, ../sass/styles.scss */
   .contato {
-    background: url(../imagens/person-apple-laptop-notebook.jpg) no-repeat center;
+    background: #2196F3;
+  }
+  /* line 14, ../../../../../../../../var/lib/gems/2.1.0/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
+  .contato:before, .contato:after {
+    content: " ";
+    display: table;
+  }
+  /* line 19, ../../../../../../../../var/lib/gems/2.1.0/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
+  .contato:after {
+    clear: both;
+  }
+
+  /* line 160, ../sass/styles.scss */
+  .separador {
+    display: inline-block;
+    width: 80px;
+    height: 2px;
+    background: #3682ff;
+    margin-bottom: 20px;
+  }
+
+  /* line 168, ../sass/styles.scss */
+  .header-sections {
+    font-family: 'Comfortaa', cursive;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.78);
+  }
+
+  /* line 173, ../sass/styles.scss */
+  .header-sections.darken {
+    color: rgba(255, 255, 255, 0.78);
+  }
+
+  /* line 177, ../sass/styles.scss */
+  .contato-informacoes {
+    padding-left: 15px;
+    padding-right: 15px;
+    color: rgba(255, 255, 255, 0.78);
+  }
+
+  /* line 182, ../sass/styles.scss */
+  .mapa-do-endereco {
+    position: relative;
+    float: left;
+    width: 100%;
+    min-height: 1px;
+  }
+
+  /* line 185, ../sass/styles.scss */
+  .assinatura {
+    background: #f6f6f6;
+  }
+
+  /* line 189, ../sass/styles.scss */
+  .fone-assinatura {
+    font-size: 2em;
+  }
+
+  /* line 193, ../sass/styles.scss */
+  .google-maps {
+    width: 100%;
+    min-height: 450px;
+  }
+
+  /* line 198, ../sass/styles.scss */
+  .text-blue {
+    color: #2196f3;
+  }
+
+  /* line 202, ../sass/styles.scss */
+  .copyright {
+    font-size: .8em;
+    color: rgba(0, 0, 0, 0.78);
+    padding: 1em 0 0;
+    text-align: center;
+  }
+}
+@media (min-width: 375px) {
+  /* line 212, ../sass/styles.scss */
+  .plano .valor-plano {
+    left: 17%;
+  }
+}
+@media (min-width: 425px) {
+  /* line 220, ../sass/styles.scss */
+  .plano .valor-plano {
+    left: 22%;
+  }
+}
+@media (min-width: 768px) {
+  /* line 227, ../sass/styles.scss */
+  .empresa,
+  .contato-container {
+    width: 750px;
+  }
+
+  /* line 231, ../sass/styles.scss */
+  .informacoes-de-contato-top {
+    padding: 10px 15px 20px;
+  }
+
+  /* line 235, ../sass/styles.scss */
+  .contato-left {
+    float: left;
+  }
+  /* line 237, ../sass/styles.scss */
+  .contato-left p {
+    display: inline;
+  }
+
+  /* line 241, ../sass/styles.scss */
+  .contato-right {
+    float: right;
+  }
+
+  /* line 245, ../sass/styles.scss */
+  .apresentacao {
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.54);
+  }
+
+  /* line 249, ../sass/styles.scss */
+  .vantagem {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media (min-width: 768px) and (min-width: 768px) {
+  /* line 249, ../sass/styles.scss */
+  .vantagem {
+    float: left;
+    width: 33.33333333%;
+  }
+}
+
+@media (min-width: 768px) {
+  /* line 252, ../sass/styles.scss */
+  .paineis-de-planos {
+    width: 750px;
+  }
+
+  /* line 256, ../sass/styles.scss */
+  .plano {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media (min-width: 768px) and (min-width: 768px) {
+  /* line 256, ../sass/styles.scss */
+  .plano {
+    float: left;
+    width: 33.33333333%;
+  }
+}
+@media (min-width: 768px) {
+  /* line 259, ../sass/styles.scss */
+  .plano .valor-plano {
+    left: -1%;
+  }
+
+  /* line 264, ../sass/styles.scss */
+  .call-center-atendente,
+  .faca-assinatura {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media (min-width: 768px) and (min-width: 768px) {
+  /* line 264, ../sass/styles.scss */
+  .call-center-atendente,
+  .faca-assinatura {
+    float: left;
+    width: 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  /* line 271, ../sass/styles.scss */
+  .empresa,
+  .paineis-de-planos,
+  .contato-container {
+    width: 970px;
+  }
+
+  /* line 278, ../sass/styles.scss */
+  .planos .valor-plano {
+    left: 12%;
+  }
+
+  /* line 287, ../sass/styles.scss */
+  .contato-informacoes,
+  .mapa-do-endereco {
+    color: rgba(255, 255, 255, 0.78);
+    background: #2196F3;
+    position: relative;
+    min-height: 1px;
+    min-height: 1px;
+  }
+}
+@media (min-width: 992px) and (min-width: 992px) {
+  /* line 287, ../sass/styles.scss */
+  .contato-informacoes,
+  .mapa-do-endereco {
+    float: left;
+    width: 50%;
+  }
+}
+
+@media (min-width: 1200px) {
+  /* line 297, ../sass/styles.scss */
+  .empresa,
+  .paineis-de-planos,
+  .contato-container {
+    width: 1170px;
+  }
+
+  /* line 303, ../sass/styles.scss */
+  .planos .valor-plano {
+    left: 20%;
   }
 }
