@@ -574,13 +574,18 @@ th {
 
 @media (min-width: 320px) {
   /* line 26, ../sass/styles.scss */
+  .brand {
+    text-align: center;
+  }
+
+  /* line 29, ../sass/styles.scss */
   .header-hero {
     background: url(../imagens/hero.jpg) no-repeat;
     min-height: 500px;
     color: white;
   }
 
-  /* line 33, ../sass/styles.scss */
+  /* line 36, ../sass/styles.scss */
   .barra {
     background: #2196F3;
     padding-left: 15px;
@@ -597,18 +602,26 @@ th {
   .barra:after {
     clear: both;
   }
-  /* line 40, ../sass/styles.scss */
+  /* line 43, ../sass/styles.scss */
   .barra p {
     font-size: 1.2em;
     color: white;
   }
 
-  /* line 46, ../sass/styles.scss */
+  /* line 48, ../sass/styles.scss */
+  .horario {
+    background: url(../imagens/hands-working.jpg) no-repeat center right;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+  }
+
+  /* line 55, ../sass/styles.scss */
   .sessao-header {
     margin-bottom: 50px;
   }
 
-  /* line 50, ../sass/styles.scss */
+  /* line 59, ../sass/styles.scss */
   .caracteristica {
     position: relative;
     float: left;
@@ -619,13 +632,13 @@ th {
     text-align: center;
   }
 
-  /* line 55, ../sass/styles.scss */
+  /* line 64, ../sass/styles.scss */
   .produto {
     height: 300px;
     margin-bottom: 40px;
   }
 
-  /* line 61, ../sass/styles.scss */
+  /* line 70, ../sass/styles.scss */
   .icon {
     display: inline-block;
     width: 64px;
@@ -633,37 +646,37 @@ th {
     padding: 10px;
   }
 
-  /* line 67, ../sass/styles.scss */
+  /* line 76, ../sass/styles.scss */
   .icon-marker {
     background: url(../imagens/icons/marker.png) no-repeat;
   }
 
-  /* line 70, ../sass/styles.scss */
+  /* line 79, ../sass/styles.scss */
   .icon-mobile {
     background: url(../imagens/icons/mobile.png) no-repeat;
   }
 
-  /* line 73, ../sass/styles.scss */
+  /* line 82, ../sass/styles.scss */
   .icon-mail {
     background: url(../imagens/icons/mail.png) no-repeat;
   }
 
-  /* line 76, ../sass/styles.scss */
+  /* line 85, ../sass/styles.scss */
   .icon-responsive {
     background: url(../imagens/icons/responsive.png);
   }
 
-  /* line 80, ../sass/styles.scss */
+  /* line 89, ../sass/styles.scss */
   .esquerda {
     float: left;
   }
 
-  /* line 83, ../sass/styles.scss */
+  /* line 92, ../sass/styles.scss */
   .direita {
     float: right;
   }
 
-  /* line 88, ../sass/styles.scss */
+  /* line 97, ../sass/styles.scss */
   .header-hero_box-content,
   .sessao {
     margin-right: auto;
@@ -686,7 +699,7 @@ th {
     clear: both;
   }
 
-  /* line 98, ../sass/styles.scss */
+  /* line 107, ../sass/styles.scss */
   .box-content_promo-description,
   .servicos_container {
     margin-left: -15px;
@@ -705,7 +718,7 @@ th {
     clear: both;
   }
 
-  /* line 105, ../sass/styles.scss */
+  /* line 114, ../sass/styles.scss */
   .info_conteudo {
     position: relative;
     float: left;
@@ -715,7 +728,7 @@ th {
     padding-right: 15px;
   }
 
-  /* line 108, ../sass/styles.scss */
+  /* line 117, ../sass/styles.scss */
   .informacao-de-contato,
   .cta-descricao,
   .cta-button {
@@ -728,20 +741,25 @@ th {
     text-align: center;
   }
 
-  /* line 116, ../sass/styles.scss */
+  /* line 125, ../sass/styles.scss */
   footer {
     border-top: solid 2px #2196F3;
     background: #f3f3f3;
   }
+
+  /* line 129, ../sass/styles.scss */
+  .footer-container {
+    text-align: center;
+  }
 }
 @media (min-width: 768px) {
-  /* line 123, ../sass/styles.scss */
+  /* line 135, ../sass/styles.scss */
   .header-hero_box-content,
   .sessao {
     width: 750px;
   }
 
-  /* line 127, ../sass/styles.scss */
+  /* line 139, ../sass/styles.scss */
   .hero-content,
   .cta-descricao,
   .cta-button {
@@ -753,7 +771,7 @@ th {
   }
 }
 @media (min-width: 768px) and (min-width: 768px) {
-  /* line 127, ../sass/styles.scss */
+  /* line 139, ../sass/styles.scss */
   .hero-content,
   .cta-descricao,
   .cta-button {
@@ -763,13 +781,13 @@ th {
 }
 
 @media (min-width: 768px) {
-  /* line 133, ../sass/styles.scss */
+  /* line 145, ../sass/styles.scss */
   .cta-button {
     margin-top: 45px;
     text-align: right;
   }
 
-  /* line 137, ../sass/styles.scss */
+  /* line 149, ../sass/styles.scss */
   .caracteristica, .produto, .informacao-de-contato {
     position: relative;
     min-height: 1px;
@@ -778,7 +796,7 @@ th {
   }
 }
 @media (min-width: 768px) and (min-width: 768px) {
-  /* line 137, ../sass/styles.scss */
+  /* line 149, ../sass/styles.scss */
   .caracteristica, .produto, .informacao-de-contato {
     float: left;
     width: 33.33333333%;
@@ -786,13 +804,13 @@ th {
 }
 
 @media (min-width: 992px) {
-  /* line 143, ../sass/styles.scss */
+  /* line 155, ../sass/styles.scss */
   .header-hero_box-content,
   .sessao {
     width: 970px;
   }
 
-  /* line 147, ../sass/styles.scss */
+  /* line 159, ../sass/styles.scss */
   .produto {
     position: relative;
     min-height: 1px;
@@ -801,7 +819,7 @@ th {
   }
 }
 @media (min-width: 992px) and (min-width: 992px) {
-  /* line 147, ../sass/styles.scss */
+  /* line 159, ../sass/styles.scss */
   .produto {
     float: left;
     width: 25%;
@@ -809,7 +827,7 @@ th {
 }
 
 @media (min-width: 1200px) {
-  /* line 153, ../sass/styles.scss */
+  /* line 165, ../sass/styles.scss */
   .header-hero_box-content,
   .sessao {
     width: 1170px;
