@@ -130,6 +130,10 @@
     @include make-sm-column(6);
     text-align: left;
   }
+  .cta-button{
+    margin-top: 45px;
+    text-align: right;
+  }
   .caracteristica, .produto, .informacao-de-contato{
     @include make-sm-column(4);
   }

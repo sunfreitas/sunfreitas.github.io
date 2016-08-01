@@ -337,26 +337,31 @@ th {
     color: rgba(33, 150, 243, 0.78);
   }
 
-  /* line 70, ../sass/_tipografia.scss */
+  /* line 69, ../sass/_tipografia.scss */
+  .subtitulo.texto-claro {
+    color: white;
+  }
+
+  /* line 72, ../sass/_tipografia.scss */
   .titulo.texto-claro,
   p.texto-claro {
     color: white;
   }
 
-  /* line 76, ../sass/_tipografia.scss */
+  /* line 78, ../sass/_tipografia.scss */
   .titulo.centralizado,
   .subtitulo.centralizado,
   p.centralizado {
     text-align: center;
   }
 
-  /* line 83, ../sass/_tipografia.scss */
+  /* line 85, ../sass/_tipografia.scss */
   .separador.centralizado {
     margin: 0 auto;
   }
 }
 @media (min-width: 1200px) {
-  /* line 89, ../sass/_tipografia.scss */
+  /* line 91, ../sass/_tipografia.scss */
   .hero-titulo {
     font-size: 3em;
   }
@@ -759,6 +764,12 @@ th {
 
 @media (min-width: 768px) {
   /* line 133, ../sass/styles.scss */
+  .cta-button {
+    margin-top: 45px;
+    text-align: right;
+  }
+
+  /* line 137, ../sass/styles.scss */
   .caracteristica, .produto, .informacao-de-contato {
     position: relative;
     min-height: 1px;
@@ -767,7 +778,7 @@ th {
   }
 }
 @media (min-width: 768px) and (min-width: 768px) {
-  /* line 133, ../sass/styles.scss */
+  /* line 137, ../sass/styles.scss */
   .caracteristica, .produto, .informacao-de-contato {
     float: left;
     width: 33.33333333%;
@@ -775,13 +786,13 @@ th {
 }
 
 @media (min-width: 992px) {
-  /* line 139, ../sass/styles.scss */
+  /* line 143, ../sass/styles.scss */
   .header-hero_box-content,
   .sessao {
     width: 970px;
   }
 
-  /* line 143, ../sass/styles.scss */
+  /* line 147, ../sass/styles.scss */
   .produto {
     position: relative;
     min-height: 1px;
@@ -790,7 +801,7 @@ th {
   }
 }
 @media (min-width: 992px) and (min-width: 992px) {
-  /* line 143, ../sass/styles.scss */
+  /* line 147, ../sass/styles.scss */
   .produto {
     float: left;
     width: 25%;
@@ -798,7 +809,7 @@ th {
 }
 
 @media (min-width: 1200px) {
-  /* line 149, ../sass/styles.scss */
+  /* line 153, ../sass/styles.scss */
   .header-hero_box-content,
   .sessao {
     width: 1170px;
