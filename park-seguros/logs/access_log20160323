@@ -1,2 +1,0 @@
-177.193.20.103 - - [23/Mar/2016:17:03:42 -0300] "GET / HTTP/1.1" 403 5968 "-" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.87 Safari/537.36"
-177.193.20.103 - - [23/Mar/2016:17:03:42 -0300] "GET /favicon.ico HTTP/1.1" 404 1265 "http://parkseguros.com.br/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.87 Safari/537.36"
