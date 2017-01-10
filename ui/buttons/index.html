@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.register{
+			width:75px;
+			min-height: 35px;
+			margin: 0 auto;
+			border: solid 1px #ccc;
+			border-radius: 4px;
+			position: relative;
+			padding:1px;
+			-webkit-transition: .5s all;
+			transition: .5s all;
+		}
+		.sender-input{
+			display:none;
+			border:none;
+			padding:11px;
+		}
+		.btn_register{
+			position:absolute;
+			right:1px;
+			top:0;
+			background: #84c4f3;
+			border:solid 1px #fff;
+			border-radius: 4px;
+			padding:10px;
+			color:white;
+		}
+		.register.in{	
+			width:280px;
+		}
+		.sender-input.in{
+			display: block;
+			width:180px;
+		}
+	</style>
+</head>
+<body>
+	<div id="btn-register">
+		<div class="register">
+			<input type="email" maxlength="20" class="sender-input" name="">
+			<button class="btn_register">Registrar</button>
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('.btn_register').on('click', function(){
+				$('.register').addClass('in');
+				$('.sender-input').addClass('in').attr('placeholder', 'Digite seu email');
+
+			});
+		});
+	</script>
+</body>
+</html>
