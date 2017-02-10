@@ -325,25 +325,49 @@ th {
   /* line 45, ../sass/styles.scss */
   .experience__item-media {
     margin-top: 15px;
+    padding-left: 15px;
+    border-left: solid 5px #ccc;
   }
-  /* line 48, ../sass/styles.scss */
+  /* line 49, ../sass/styles.scss */
   .experience__item-media:first-child {
     margin-top: 0;
   }
 
-  /* line 53, ../sass/styles.scss */
+  /* line 54, ../sass/styles.scss */
   .experience__item-media,
   .experience__item--body {
     zoom: 1;
     overflow: hidden;
   }
 
-  /* line 59, ../sass/styles.scss */
+  /* line 60, ../sass/styles.scss */
   .experience__item-media--left {
     padding-right: 10px;
   }
+  /* line 62, ../sass/styles.scss */
+  .experience__item-media--left span {
+    font-size: .8em;
+    color: #ccc;
+  }
+  /* line 66, ../sass/styles.scss */
+  .experience__item-media--left h4 {
+    font-size: 1.6em;
+    margin: 5px 0;
+    color: #111;
+  }
+  /* line 71, ../sass/styles.scss */
+  .experience__item-media--left h5 {
+    font-size: 1.2em;
+    color: #666;
+    margin: 5px 0;
+  }
 
-  /* line 63, ../sass/styles.scss */
+  /* line 78, ../sass/styles.scss */
+  .experience__item-media--body p {
+    color: #666;
+  }
+
+  /* line 82, ../sass/styles.scss */
   .experience__item-media--left,
   .experience__item-media--body {
     display: block;

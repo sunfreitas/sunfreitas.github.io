@@ -44,7 +44,8 @@
 
     .experience__item-media{
         margin-top: 15px;
-
+        padding-left:15px;
+        border-left:solid 5px #ccc;
         &:first-child {
             margin-top: 0;
         }
@@ -58,8 +59,26 @@
 
     .experience__item-media--left{   
         padding-right: 10px;
+        span{
+            font-size: .8em;
+            color:#ccc;
+        }
+        h4{
+            font-size: 1.6em;
+            margin: 5px 0;
+            color:#111;
+        }
+        h5{
+            font-size:1.2em;
+            color:#666;
+            margin:5px 0;
+        }
     }
-
+    .experience__item-media--body{
+        p{
+            color:#666;
+        }
+    }
     .experience__item-media--left,
     .experience__item-media--body {
         display: block;
