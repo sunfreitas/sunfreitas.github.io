@@ -5,4 +5,40 @@
 @import "bootstrap-variables";
 
 // Import Bootstrap for Sass
-@import "bootstrap";
+// @import "bootstrap";
+*{
+  box-sizing: border-box;
+}
+
+@import "bootstrap/normalize";
+@import "bootstrap/mixins/clearfix";
+@import "bootstrap/mixins/grid";
+
+.feature-section {
+  @include container-fixed;
+
+  @media (min-width: $screen-sm-min) {
+    width: $container-sm;
+  }
+  @media (min-width: $screen-md-min) {
+    width: $container-md;
+  }
+  @media (min-width: $screen-lg-min) {
+    width: $container-lg;
+  }
+}
+
+@media(min-width:320px){
+    .feature-section--wide{   
+        // @include container-fixed();
+        vertical-align: middle!important;
+        display: table-cell!important;
+        height:500px;
+        background:#00BCD4; //cyan
+    }
+
+    .hero-content{    
+        // @include make-row();
+        @include container-fixed();
+    }
+}
