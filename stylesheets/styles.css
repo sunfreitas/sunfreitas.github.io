@@ -321,4 +321,32 @@ th {
   .hero-content:after {
     clear: both;
   }
+
+  /* line 45, ../sass/styles.scss */
+  .experience__item-media {
+    margin-top: 15px;
+  }
+  /* line 48, ../sass/styles.scss */
+  .experience__item-media:first-child {
+    margin-top: 0;
+  }
+
+  /* line 53, ../sass/styles.scss */
+  .experience__item-media,
+  .experience__item--body {
+    zoom: 1;
+    overflow: hidden;
+  }
+
+  /* line 59, ../sass/styles.scss */
+  .experience__item-media--left {
+    padding-right: 10px;
+  }
+
+  /* line 63, ../sass/styles.scss */
+  .experience__item-media--left,
+  .experience__item-media--body {
+    display: block;
+    vertical-align: top;
+  }
 }

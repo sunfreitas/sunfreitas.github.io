@@ -41,4 +41,28 @@
         // @include make-row();
         @include container-fixed();
     }
+
+    .experience__item-media{
+        margin-top: 15px;
+
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+
+    .experience__item-media,
+    .experience__item--body {
+        zoom: 1;
+        overflow: hidden;
+    }
+
+    .experience__item-media--left{   
+        padding-right: 10px;
+    }
+
+    .experience__item-media--left,
+    .experience__item-media--body {
+        display: block;
+        vertical-align: top;
+    }
 }
