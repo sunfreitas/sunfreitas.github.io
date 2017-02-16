@@ -14,6 +14,24 @@
 @import "bootstrap/mixins/clearfix";
 @import "bootstrap/mixins/grid";
 
+/* Este mixing vai para um arquivo separado */
+@mixin make-full-md-column($columns){
+  position: relative;
+  min-height: 1px;
+
+  @media (min-width: $screen-md-min) {
+    float: left;
+    width: percentage(($columns / $grid-columns));
+  }
+}
+
+@mixin make-full-xs-column($columns, $gutter: $grid-gutter-width) {
+  position: relative;
+  float: left;
+  width: percentage(($columns / $grid-columns));
+  min-height: 1px;
+}
+
 .feature-section,
 .hero-container {
   @include container-fixed;
@@ -28,11 +46,18 @@
     width: $container-lg;
   }
 }
+.feature-section,
+.feature-section--wide{
+    padding-top:40px;
+    padding-bottom:40px;
+}
 
 @media(min-width:320px){
     .feature-section--wide{
-        height:500px;
+        // height:500px;
         background:#00BCD4; //cyan
+        width:100%;
+	    @include clearfix();
         // vertical-align: middle!important;
         // display: table-cell!important;
     }
@@ -46,6 +71,9 @@
     // .hero-container__content{
     //     @include make-row();
     // }
+    .experience__container{
+        @include make-row();
+    }
 
     .experience__item-media{
         margin-top: 15px;
@@ -90,8 +118,17 @@
         // vertical-align: top;
     }
 
+    // .portfolio{
+    //     // @include make-row();
+    // }
+
     .portfolio__item{
-        @include make-md-column(4);
+        @include make-full-md-column(4);
+        img{
+            display:block;
+            width:100%;
+            height: auto;
+        }
     }
 }
 

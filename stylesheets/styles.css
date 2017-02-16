@@ -261,7 +261,8 @@ th {
   padding: 0;
 }
 
-/* line 17, ../sass/styles.scss */
+/* Este mixing vai para um arquivo separado */
+/* line 35, ../sass/styles.scss */
 .feature-section,
 .hero-container {
   margin-right: auto;
@@ -282,97 +283,134 @@ th {
   clear: both;
 }
 @media (min-width: 768px) {
-  /* line 17, ../sass/styles.scss */
+  /* line 35, ../sass/styles.scss */
   .feature-section,
   .hero-container {
     width: 750px;
   }
 }
 @media (min-width: 992px) {
-  /* line 17, ../sass/styles.scss */
+  /* line 35, ../sass/styles.scss */
   .feature-section,
   .hero-container {
     width: 970px;
   }
 }
 @media (min-width: 1200px) {
-  /* line 17, ../sass/styles.scss */
+  /* line 35, ../sass/styles.scss */
   .feature-section,
   .hero-container {
     width: 1170px;
   }
 }
 
+/* line 49, ../sass/styles.scss */
+.feature-section,
+.feature-section--wide {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
 @media (min-width: 320px) {
-  /* line 33, ../sass/styles.scss */
+  /* line 56, ../sass/styles.scss */
   .feature-section--wide {
-    height: 500px;
     background: #00BCD4;
+    width: 100%;
+  }
+  /* line 14, ../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
+  .feature-section--wide:before, .feature-section--wide:after {
+    content: " ";
+    display: table;
+  }
+  /* line 19, ../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
+  .feature-section--wide:after {
+    clear: both;
   }
 
-  /* line 50, ../sass/styles.scss */
+  /* line 74, ../sass/styles.scss */
+  .experience__container {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  /* line 14, ../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
+  .experience__container:before, .experience__container:after {
+    content: " ";
+    display: table;
+  }
+  /* line 19, ../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
+  .experience__container:after {
+    clear: both;
+  }
+
+  /* line 78, ../sass/styles.scss */
   .experience__item-media {
     margin-top: 15px;
     padding-left: 15px;
     border-left: solid 5px #ccc;
   }
-  /* line 54, ../sass/styles.scss */
+  /* line 82, ../sass/styles.scss */
   .experience__item-media:first-child {
     margin-top: 0;
   }
 
-  /* line 59, ../sass/styles.scss */
+  /* line 87, ../sass/styles.scss */
   .experience__item-media,
   .experience__item--body {
     zoom: 1;
     overflow: hidden;
   }
 
-  /* line 65, ../sass/styles.scss */
+  /* line 93, ../sass/styles.scss */
   .experience__item-media--left {
     padding-right: 10px;
   }
-  /* line 67, ../sass/styles.scss */
+  /* line 95, ../sass/styles.scss */
   .experience__item-media--left span {
     font-size: .8em;
     color: #ccc;
   }
-  /* line 71, ../sass/styles.scss */
+  /* line 99, ../sass/styles.scss */
   .experience__item-media--left h4 {
     font-size: 1.6em;
     margin: 5px 0;
     color: #111;
   }
-  /* line 76, ../sass/styles.scss */
+  /* line 104, ../sass/styles.scss */
   .experience__item-media--left h5 {
     font-size: 1.2em;
     color: #666;
     margin: 5px 0;
   }
 
-  /* line 83, ../sass/styles.scss */
+  /* line 111, ../sass/styles.scss */
   .experience__item-media--body p {
     color: #666;
   }
 
-  /* line 87, ../sass/styles.scss */
+  /* line 115, ../sass/styles.scss */
   .experience__item-media--left,
   .experience__item-media--body {
     display: block;
   }
 
-  /* line 93, ../sass/styles.scss */
+  /* line 125, ../sass/styles.scss */
   .portfolio__item {
     position: relative;
     min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
   }
 }
 @media (min-width: 320px) and (min-width: 992px) {
-  /* line 93, ../sass/styles.scss */
+  /* line 125, ../sass/styles.scss */
   .portfolio__item {
     float: left;
     width: 33.33333333%;
+  }
+}
+@media (min-width: 320px) {
+  /* line 127, ../sass/styles.scss */
+  .portfolio__item img {
+    display: block;
+    width: 100%;
+    height: auto;
   }
 }
