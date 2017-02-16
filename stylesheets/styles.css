@@ -360,4 +360,19 @@ th {
   .experience__item-media--body {
     display: block;
   }
+
+  /* line 93, ../sass/styles.scss */
+  .portfolio__item {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media (min-width: 320px) and (min-width: 992px) {
+  /* line 93, ../sass/styles.scss */
+  .portfolio__item {
+    float: left;
+    width: 33.33333333%;
+  }
 }

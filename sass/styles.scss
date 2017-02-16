@@ -89,6 +89,10 @@
         display: block;
         // vertical-align: top;
     }
+
+    .portfolio__item{
+        @include make-md-column(4);
+    }
 }
 
 @media(min-width: $screen-sm-min){
