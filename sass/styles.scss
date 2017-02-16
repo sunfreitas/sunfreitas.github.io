@@ -14,7 +14,8 @@
 @import "bootstrap/mixins/clearfix";
 @import "bootstrap/mixins/grid";
 
-.feature-section {
+.feature-section,
+.hero-container {
   @include container-fixed;
 
   @media (min-width: $screen-sm-min) {
@@ -29,18 +30,22 @@
 }
 
 @media(min-width:320px){
-    .feature-section--wide{   
-        // @include container-fixed();
-        vertical-align: middle!important;
-        display: table-cell!important;
+    .feature-section--wide{
         height:500px;
         background:#00BCD4; //cyan
+        // vertical-align: middle!important;
+        // display: table-cell!important;
     }
 
-    .hero-content{    
-        // @include make-row();
-        @include container-fixed();
-    }
+    // .hero-container{
+    //     @include container-fixed();
+    //     // vertical-align: middle!important;
+    //     // display: table-cell!important;
+    // }
+    
+    // .hero-container__content{
+    //     @include make-row();
+    // }
 
     .experience__item-media{
         margin-top: 15px;
@@ -82,6 +87,10 @@
     .experience__item-media--left,
     .experience__item-media--body {
         display: block;
-        vertical-align: top;
+        // vertical-align: top;
     }
+}
+
+@media(min-width: $screen-sm-min){
+
 }
