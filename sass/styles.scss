@@ -52,10 +52,37 @@
     padding-bottom:40px;
 }
 
+.hero{
+    background:url('../images/hero-xs.jpg') no-repeat center top;
+    height:600px;
+}
+
 @media(min-width:320px){
+    .feature-section__hero-title{
+        font-size:2.2em;
+        color: rgba(255, 255, 255, 1);
+    }
+    
+    .feature-section__default-title{
+        font-size:2.2em;
+        color: rgba(0, 0, 0, .87);
+    }
+
+    .feature-section__hero-subtitle{
+        font-size:1.4em;
+    }
+
+    .feature-section__hero-subtitle,
+    .feature-section__hero-resume{
+        color: rgba(255, 255, 255, .7); 
+    }
+
+    .feature-section__title_header{
+        @include container-fixed();
+    }
     .feature-section--wide{
         // height:500px;
-        background:#00BCD4; //cyan
+        // background:#00BCD4; //cyan
         width:100%;
 	    @include clearfix();
         // vertical-align: middle!important;
