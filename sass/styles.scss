@@ -52,12 +52,11 @@
     padding-bottom:40px;
 }
 
-.hero{
-    background:url('../images/hero-xs.jpg') no-repeat center top;
-    height:600px;
-}
-
 @media(min-width:320px){
+    .hero{
+        background:url('../images/hero-xs.jpg') no-repeat center top;
+        height:600px;
+    }
     .feature-section__hero-title{
         font-size:2.2em;
         color: rgba(255, 255, 255, 1);
@@ -160,5 +159,8 @@
 }
 
 @media(min-width: $screen-sm-min){
-
+    .hero{
+        background:url('../images/hero-lg.jpg') no-repeat center top;
+        height:600px;
+    }
 }
